@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a89b5a8-1500-4489-bfbb-dbfa33fc2a90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JDK-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JDK-1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/AbstractMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/AbstractMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/HashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/TreeMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/TreeMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/TreeSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/TreeSet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="55" column="23" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="23" />
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -29,8 +34,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+            <state relative-caret-position="540">
+              <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17820">
+              <caret line="616" column="5" selection-start-line="616" selection-start-column="5" selection-end-line="616" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/AbstractMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-150">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/TreeMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/TreeSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="249" column="35" lean-forward="true" selection-start-line="249" selection-start-column="35" selection-end-line="249" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -38,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1655">
+            <state relative-caret-position="5430">
               <caret line="208" column="7" selection-start-line="208" selection-start-column="7" selection-end-line="208" selection-end-column="7" />
             </state>
           </provider>
@@ -52,9 +111,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" />
         <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java" />
         <option value="$PROJECT_DIR$/JDK1.8/src/java/util/List.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/HashMap.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/TreeSet.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Map.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/TreeMap.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/AbstractMap.java" />
       </list>
     </option>
   </component>
@@ -94,45 +159,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
-              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
-              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
-              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
-              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,18 +199,21 @@
       <option name="presentableId" value="Default" />
       <updated>1565662968372</updated>
       <workItem from="1565662969733" duration="258000" />
-      <workItem from="1565668125322" duration="523000" />
+      <workItem from="1565668125322" duration="3566000" />
+      <workItem from="1565686874118" duration="880000" />
+      <workItem from="1565764022387" duration="1395000" />
+      <workItem from="1565770339706" duration="548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="781000" />
+    <option name="totallyTimeSpent" value="6647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15085287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -203,7 +235,7 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.32995737" />
@@ -216,24 +248,80 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1655">
-          <caret line="208" column="7" selection-start-line="208" selection-start-column="7" selection-end-line="208" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="55" column="23" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="23" />
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17820">
+          <caret line="616" column="5" selection-start-line="616" selection-start-column="5" selection-end-line="616" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/TreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5430">
+          <caret line="208" column="7" selection-start-line="208" selection-start-column="7" selection-end-line="208" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="249" column="35" lean-forward="true" selection-start-line="249" selection-start-column="35" selection-end-line="249" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="72" column="7" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/AbstractMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="141" column="7" lean-forward="true" selection-start-line="141" selection-start-column="7" selection-end-line="141" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/AbstractMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
