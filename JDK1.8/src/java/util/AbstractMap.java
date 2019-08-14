@@ -132,18 +132,6 @@ public abstract class AbstractMap<K,V> implements Map<K,V> {
             put(e.getKey(), e.getValue());
     }
 
-    /**
-     * {@inheritDoc}
-     *
-     * @implSpec
-     * This implementation calls <tt>entrySet().clear()</tt>.
-     *
-     * <p>Note that this implementation throws an
-     * <tt>UnsupportedOperationException</tt> if the <tt>entrySet</tt>
-     * does not support the <tt>clear</tt> operation.
-     *
-     * @throws UnsupportedOperationException {@inheritDoc}
-     */
     public void clear() {
         entrySet().clear();
     }
