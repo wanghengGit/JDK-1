@@ -37,15 +37,11 @@ package java.util.concurrent.atomic;
 import sun.misc.Unsafe;
 
 /**
- * A {@code boolean} value that may be updated atomically. See the
- * {@link java.util.concurrent.atomic} package specification for
- * description of the properties of atomic variables. An
- * {@code AtomicBoolean} is used in applications such as atomically
- * updated flags, and cannot be used as a replacement for a
- * {@link java.lang.Boolean}.
- *
  * @since 1.5
  * @author Doug Lea
+ *
+ * @author wangheng
+ * @date 2019/08/14
  */
 public class AtomicBoolean implements java.io.Serializable {
     private static final long serialVersionUID = 4654671469794556979L;
@@ -101,18 +97,6 @@ public class AtomicBoolean implements java.io.Serializable {
         return unsafe.compareAndSwapInt(this, valueOffset, e, u);
     }
 
-    /**
-     * Atomically sets the value to the given updated value
-     * if the current value {@code ==} the expected value.
-     *
-     * <p><a href="package-summary.html#weakCompareAndSet">May fail
-     * spuriously and does not provide ordering guarantees</a>, so is
-     * only rarely an appropriate alternative to {@code compareAndSet}.
-     *
-     * @param expect the expected value
-     * @param update the new value
-     * @return {@code true} if successful
-     */
     public boolean weakCompareAndSet(boolean expect, boolean update) {
         int e = expect ? 1 : 0;
         int u = update ? 1 : 0;

@@ -39,17 +39,11 @@ import java.util.function.IntBinaryOperator;
 import sun.misc.Unsafe;
 
 /**
- * An {@code int} value that may be updated atomically.  See the
- * {@link java.util.concurrent.atomic} package specification for
- * description of the properties of atomic variables. An
- * {@code AtomicInteger} is used in applications such as atomically
- * incremented counters, and cannot be used as a replacement for an
- * {@link java.lang.Integer}. However, this class does extend
- * {@code Number} to allow uniform access by tools and utilities that
- * deal with numerically-based classes.
- *
  * @since 1.5
  * @author Doug Lea
+ *
+ * @author wangheng
+ * @date 2019/08/14
 */
 public class AtomicInteger extends Number implements java.io.Serializable {
     private static final long serialVersionUID = 6214790243416807050L;
@@ -120,31 +114,10 @@ public class AtomicInteger extends Number implements java.io.Serializable {
         return unsafe.getAndSetInt(this, valueOffset, newValue);
     }
 
-    /**
-     * Atomically sets the value to the given updated value
-     * if the current value {@code ==} the expected value.
-     *
-     * @param expect the expected value
-     * @param update the new value
-     * @return {@code true} if successful. False return indicates that
-     * the actual value was not equal to the expected value.
-     */
     public final boolean compareAndSet(int expect, int update) {
         return unsafe.compareAndSwapInt(this, valueOffset, expect, update);
     }
 
-    /**
-     * Atomically sets the value to the given updated value
-     * if the current value {@code ==} the expected value.
-     *
-     * <p><a href="package-summary.html#weakCompareAndSet">May fail
-     * spuriously and does not provide ordering guarantees</a>, so is
-     * only rarely an appropriate alternative to {@code compareAndSet}.
-     *
-     * @param expect the expected value
-     * @param update the new value
-     * @return {@code true} if successful
-     */
     public final boolean weakCompareAndSet(int expect, int update) {
         return unsafe.compareAndSwapInt(this, valueOffset, expect, update);
     }
@@ -205,16 +178,6 @@ public class AtomicInteger extends Number implements java.io.Serializable {
         return unsafe.getAndAddInt(this, valueOffset, delta) + delta;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function, returning the previous value. The
-     * function should be side-effect-free, since it may be re-applied
-     * when attempted updates fail due to contention among threads.
-     *
-     * @param updateFunction a side-effect-free function
-     * @return the previous value
-     * @since 1.8
-     */
     public final int getAndUpdate(IntUnaryOperator updateFunction) {
         int prev, next;
         do {
@@ -224,16 +187,6 @@ public class AtomicInteger extends Number implements java.io.Serializable {
         return prev;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function, returning the updated value. The
-     * function should be side-effect-free, since it may be re-applied
-     * when attempted updates fail due to contention among threads.
-     *
-     * @param updateFunction a side-effect-free function
-     * @return the updated value
-     * @since 1.8
-     */
     public final int updateAndGet(IntUnaryOperator updateFunction) {
         int prev, next;
         do {
@@ -243,20 +196,6 @@ public class AtomicInteger extends Number implements java.io.Serializable {
         return next;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function to the current and given values,
-     * returning the previous value. The function should be
-     * side-effect-free, since it may be re-applied when attempted
-     * updates fail due to contention among threads.  The function
-     * is applied with the current value as its first argument,
-     * and the given update as the second argument.
-     *
-     * @param x the update value
-     * @param accumulatorFunction a side-effect-free function of two arguments
-     * @return the previous value
-     * @since 1.8
-     */
     public final int getAndAccumulate(int x,
                                       IntBinaryOperator accumulatorFunction) {
         int prev, next;
@@ -267,20 +206,6 @@ public class AtomicInteger extends Number implements java.io.Serializable {
         return prev;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function to the current and given values,
-     * returning the updated value. The function should be
-     * side-effect-free, since it may be re-applied when attempted
-     * updates fail due to contention among threads.  The function
-     * is applied with the current value as its first argument,
-     * and the given update as the second argument.
-     *
-     * @param x the update value
-     * @param accumulatorFunction a side-effect-free function of two arguments
-     * @return the updated value
-     * @since 1.8
-     */
     public final int accumulateAndGet(int x,
                                       IntBinaryOperator accumulatorFunction) {
         int prev, next;

@@ -1,55 +1,14 @@
-/*
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
-/*
- *
- *
- *
- *
- *
- * Written by Doug Lea with assistance from members of JCP JSR-166
- * Expert Group and released to the public domain, as explained at
- * http://creativecommons.org/publicdomain/zero/1.0/
- */
-
 package java.util.concurrent.atomic;
 import java.util.function.LongUnaryOperator;
 import java.util.function.LongBinaryOperator;
 import sun.misc.Unsafe;
 
 /**
- * A {@code long} value that may be updated atomically.  See the
- * {@link java.util.concurrent.atomic} package specification for
- * description of the properties of atomic variables. An
- * {@code AtomicLong} is used in applications such as atomically
- * incremented sequence numbers, and cannot be used as a replacement
- * for a {@link java.lang.Long}. However, this class does extend
- * {@code Number} to allow uniform access by tools and utilities that
- * deal with numerically-based classes.
- *
  * @since 1.5
  * @author Doug Lea
+ *
+ * @author wangheng
+ * @date 2019/08/14
  */
 public class AtomicLong extends Number implements java.io.Serializable {
     private static final long serialVersionUID = 1927816293512124184L;
@@ -134,31 +93,10 @@ public class AtomicLong extends Number implements java.io.Serializable {
         return unsafe.getAndSetLong(this, valueOffset, newValue);
     }
 
-    /**
-     * Atomically sets the value to the given updated value
-     * if the current value {@code ==} the expected value.
-     *
-     * @param expect the expected value
-     * @param update the new value
-     * @return {@code true} if successful. False return indicates that
-     * the actual value was not equal to the expected value.
-     */
     public final boolean compareAndSet(long expect, long update) {
         return unsafe.compareAndSwapLong(this, valueOffset, expect, update);
     }
 
-    /**
-     * Atomically sets the value to the given updated value
-     * if the current value {@code ==} the expected value.
-     *
-     * <p><a href="package-summary.html#weakCompareAndSet">May fail
-     * spuriously and does not provide ordering guarantees</a>, so is
-     * only rarely an appropriate alternative to {@code compareAndSet}.
-     *
-     * @param expect the expected value
-     * @param update the new value
-     * @return {@code true} if successful
-     */
     public final boolean weakCompareAndSet(long expect, long update) {
         return unsafe.compareAndSwapLong(this, valueOffset, expect, update);
     }
@@ -219,16 +157,6 @@ public class AtomicLong extends Number implements java.io.Serializable {
         return unsafe.getAndAddLong(this, valueOffset, delta) + delta;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function, returning the previous value. The
-     * function should be side-effect-free, since it may be re-applied
-     * when attempted updates fail due to contention among threads.
-     *
-     * @param updateFunction a side-effect-free function
-     * @return the previous value
-     * @since 1.8
-     */
     public final long getAndUpdate(LongUnaryOperator updateFunction) {
         long prev, next;
         do {
@@ -238,16 +166,6 @@ public class AtomicLong extends Number implements java.io.Serializable {
         return prev;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function, returning the updated value. The
-     * function should be side-effect-free, since it may be re-applied
-     * when attempted updates fail due to contention among threads.
-     *
-     * @param updateFunction a side-effect-free function
-     * @return the updated value
-     * @since 1.8
-     */
     public final long updateAndGet(LongUnaryOperator updateFunction) {
         long prev, next;
         do {
@@ -257,20 +175,6 @@ public class AtomicLong extends Number implements java.io.Serializable {
         return next;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function to the current and given values,
-     * returning the previous value. The function should be
-     * side-effect-free, since it may be re-applied when attempted
-     * updates fail due to contention among threads.  The function
-     * is applied with the current value as its first argument,
-     * and the given update as the second argument.
-     *
-     * @param x the update value
-     * @param accumulatorFunction a side-effect-free function of two arguments
-     * @return the previous value
-     * @since 1.8
-     */
     public final long getAndAccumulate(long x,
                                        LongBinaryOperator accumulatorFunction) {
         long prev, next;
@@ -281,20 +185,6 @@ public class AtomicLong extends Number implements java.io.Serializable {
         return prev;
     }
 
-    /**
-     * Atomically updates the current value with the results of
-     * applying the given function to the current and given values,
-     * returning the updated value. The function should be
-     * side-effect-free, since it may be re-applied when attempted
-     * updates fail due to contention among threads.  The function
-     * is applied with the current value as its first argument,
-     * and the given update as the second argument.
-     *
-     * @param x the update value
-     * @param accumulatorFunction a side-effect-free function of two arguments
-     * @return the updated value
-     * @since 1.8
-     */
     public final long accumulateAndGet(long x,
                                        LongBinaryOperator accumulatorFunction) {
         long prev, next;
