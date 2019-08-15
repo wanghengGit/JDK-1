@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 2003, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.io;
 
 import java.io.IOException;
@@ -33,6 +8,9 @@ import java.io.IOException;
  * holding (such as open files).
  *
  * @since 1.5
+ *
+ * @author wangheng
+ * @date 2019/08/14
  */
 public interface Closeable extends AutoCloseable {
 
