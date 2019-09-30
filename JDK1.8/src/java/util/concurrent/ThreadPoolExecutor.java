@@ -29,10 +29,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
     private static int workerCountOf(int c)  { return c & CAPACITY; }
     private static int ctlOf(int rs, int wc) { return rs | wc; }
 
-    /*
-     * Bit field accessors that don't require unpacking ctl.
-     * These depend on the bit layout and on workerCount being never negative.
-     */
 
     private static boolean runStateLessThan(int c, int s) {
         return c < s;
@@ -46,25 +42,14 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         return c < SHUTDOWN;
     }
 
-    /**
-     * Attempts to CAS-increment the workerCount field of ctl.
-     */
     private boolean compareAndIncrementWorkerCount(int expect) {
         return ctl.compareAndSet(expect, expect + 1);
     }
 
-    /**
-     * Attempts to CAS-decrement the workerCount field of ctl.
-     */
     private boolean compareAndDecrementWorkerCount(int expect) {
         return ctl.compareAndSet(expect, expect - 1);
     }
 
-    /**
-     * Decrements the workerCount field of ctl. This is called only on
-     * abrupt termination of a thread (see processWorkerExit). Other
-     * decrements are performed within getTask.
-     */
     private void decrementWorkerCount() {
         do {} while (! compareAndDecrementWorkerCount(ctl.get()));
     }
@@ -73,67 +58,26 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
 
     private final ReentrantLock mainLock = new ReentrantLock();
 
-    /**
-     * Set containing all worker threads in pool. Accessed only when
-     * holding mainLock.
-     */
     private final HashSet<Worker> workers = new HashSet<Worker>();
 
-    /**
-     * Wait condition to support awaitTermination
-     */
     private final Condition termination = mainLock.newCondition();
 
-    /**
-     * Tracks largest attained pool size. Accessed only under
-     * mainLock.
-     */
     private int largestPoolSize;
 
-    /**
-     * Counter for completed tasks. Updated only on termination of
-     * worker threads. Accessed only under mainLock.
-     */
     private long completedTaskCount;
 
     private volatile ThreadFactory threadFactory;
 
-    /**
-     * Handler called when saturated or shutdown in execute.
-     */
     private volatile RejectedExecutionHandler handler;
 
-    /**
-     * Timeout in nanoseconds for idle threads waiting for work.
-     * Threads use this timeout when there are more than corePoolSize
-     * present or if allowCoreThreadTimeOut. Otherwise they wait
-     * forever for new work.
-     */
     private volatile long keepAliveTime;
 
-    /**
-     * If false (default), core threads stay alive even when idle.
-     * If true, core threads use keepAliveTime to time out waiting
-     * for work.
-     */
     private volatile boolean allowCoreThreadTimeOut;
 
-    /**
-     * Core pool size is the minimum number of workers to keep alive
-     * (and not allow to time out etc) unless allowCoreThreadTimeOut
-     * is set, in which case the minimum is zero.
-     */
     private volatile int corePoolSize;
 
-    /**
-     * Maximum pool size. Note that the actual maximum is internally
-     * bounded by CAPACITY.
-     */
     private volatile int maximumPoolSize;
 
-    /**
-     * The default rejected execution handler
-     */
     private static final RejectedExecutionHandler defaultHandler =
         new AbortPolicy();
 
@@ -144,23 +88,12 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         extends AbstractQueuedSynchronizer
         implements Runnable
     {
-        /**
-         * This class will never be serialized, but we provide a
-         * serialVersionUID to suppress a javac warning.
-         */
         private static final long serialVersionUID = 6138294804551838833L;
 
-        /** Thread this worker is running in.  Null if factory fails. */
         final Thread thread;
-        /** Initial task to run.  Possibly null. */
         Runnable firstTask;
-        /** Per-thread task counter */
         volatile long completedTasks;
 
-        /**
-         * Creates with given first task and thread from ThreadFactory.
-         * @param firstTask the first task (null if none)
-         */
         Worker(Runnable firstTask) {
             setState(-1); // inhibit interrupts until runWorker
             this.firstTask = firstTask;
@@ -171,11 +104,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         public void run() {
             runWorker(this);
         }
-
-        // Lock methods
-        //
-        // The value 0 represents the unlocked state.
-        // The value 1 represents the locked state.
 
         protected boolean isHeldExclusively() {
             return getState() != 0;
@@ -266,10 +194,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Interrupts all threads, even if active. Ignores SecurityExceptions
-     * (in which case some threads may remain uninterrupted).
-     */
     private void interruptWorkers() {
         final ReentrantLock mainLock = this.mainLock;
         mainLock.lock();
@@ -303,10 +227,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Common form of interruptIdleWorkers, to avoid having to
-     * remember what the boolean argument means.
-     */
     private void interruptIdleWorkers() {
         interruptIdleWorkers(false);
     }
@@ -320,12 +240,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
     void onShutdown() {
     }
 
-    /**
-     * State check needed by ScheduledThreadPoolExecutor to
-     * enable running tasks during shutdown.
-     *
-     * @param shutdownOK true if should return true if SHUTDOWN
-     */
     final boolean isRunningOrShutdown(boolean shutdownOK) {
         int rs = runStateOf(ctl.get());
         return rs == RUNNING || (rs == SHUTDOWN && shutdownOK);
@@ -666,10 +580,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Invokes {@code shutdown} when this executor is no longer
-     * referenced and it has no threads.
-     */
     protected void finalize() {
         shutdown();
     }
@@ -680,35 +590,16 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         this.threadFactory = threadFactory;
     }
 
-    /**
-     * Returns the thread factory used to create new threads.
-     *
-     * @return the current thread factory
-     * @see #setThreadFactory(ThreadFactory)
-     */
     public ThreadFactory getThreadFactory() {
         return threadFactory;
     }
 
-    /**
-     * Sets a new handler for unexecutable tasks.
-     *
-     * @param handler the new handler
-     * @throws NullPointerException if handler is null
-     * @see #getRejectedExecutionHandler
-     */
     public void setRejectedExecutionHandler(RejectedExecutionHandler handler) {
         if (handler == null)
             throw new NullPointerException();
         this.handler = handler;
     }
 
-    /**
-     * Returns the current handler for unexecutable tasks.
-     *
-     * @return the current handler
-     * @see #setRejectedExecutionHandler(RejectedExecutionHandler)
-     */
     public RejectedExecutionHandler getRejectedExecutionHandler() {
         return handler;
     }
@@ -733,12 +624,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Returns the core number of threads.
-     *
-     * @return the core number of threads
-     * @see #setCorePoolSize
-     */
     public int getCorePoolSize() {
         return corePoolSize;
     }
@@ -748,10 +633,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
             addWorker(null, true);
     }
 
-    /**
-     * Same as prestartCoreThread except arranges that at least one
-     * thread is started even if corePoolSize is 0.
-     */
     void ensurePrestart() {
         int wc = workerCountOf(ctl.get());
         if (wc < corePoolSize)
@@ -789,12 +670,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
             interruptIdleWorkers();
     }
 
-    /**
-     * Returns the maximum allowed number of threads.
-     *
-     * @return the maximum allowed number of threads
-     * @see #setMaximumPoolSize
-     */
     public int getMaximumPoolSize() {
         return maximumPoolSize;
     }
@@ -850,11 +725,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
 
     /* Statistics */
 
-    /**
-     * Returns the current number of threads in the pool.
-     *
-     * @return the number of threads
-     */
     public int getPoolSize() {
         final ReentrantLock mainLock = this.mainLock;
         mainLock.lock();
@@ -868,12 +738,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Returns the approximate number of threads that are actively
-     * executing tasks.
-     *
-     * @return the number of threads
-     */
     public int getActiveCount() {
         final ReentrantLock mainLock = this.mainLock;
         mainLock.lock();
@@ -888,12 +752,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Returns the largest number of threads that have ever
-     * simultaneously been in the pool.
-     *
-     * @return the number of threads
-     */
     public int getLargestPoolSize() {
         final ReentrantLock mainLock = this.mainLock;
         mainLock.lock();
@@ -933,13 +791,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * Returns a string identifying this pool, as well as its state,
-     * including indications of run state and estimated worker and
-     * task counts.
-     *
-     * @return a string identifying this pool, as well as its state
-     */
     public String toString() {
         long ncompleted;
         int nworkers, nactive;
@@ -990,10 +841,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * A handler for rejected tasks that throws a
-     * {@code RejectedExecutionException}.
-     */
     public static class AbortPolicy implements RejectedExecutionHandler {
         /**
          * Creates an {@code AbortPolicy}.
@@ -1007,10 +854,6 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
-    /**
-     * A handler for rejected tasks that silently discards the
-     * rejected task.
-     */
     public static class DiscardPolicy implements RejectedExecutionHandler {
         /**
          * Creates a {@code DiscardPolicy}.

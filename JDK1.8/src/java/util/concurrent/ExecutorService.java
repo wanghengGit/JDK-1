@@ -15,20 +15,8 @@ public interface ExecutorService extends Executor {
 
     List<Runnable> shutdownNow();
 
-    /**
-     * Returns {@code true} if this executor has been shut down.
-     *
-     * @return {@code true} if this executor has been shut down
-     */
     boolean isShutdown();
 
-    /**
-     * Returns {@code true} if all tasks have completed following shut down.
-     * Note that {@code isTerminated} is never {@code true} unless
-     * either {@code shutdown} or {@code shutdownNow} was called first.
-     *
-     * @return {@code true} if all tasks have completed following shut down
-     */
     boolean isTerminated();
 
     boolean awaitTermination(long timeout, TimeUnit unit)
