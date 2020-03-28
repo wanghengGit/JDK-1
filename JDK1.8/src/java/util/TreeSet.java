@@ -26,8 +26,6 @@
 package java.util;
 
 /**
- * @author  wangheng
- * @date 2019/08/14
  * @see     Collection
  * @see     Set
  * @see     HashSet
@@ -35,6 +33,8 @@ package java.util;
  * @see     Comparator
  * @see     TreeMap
  * @since   1.2
+ * @author  wangheng
+ * @date 2019/08/14
  */
 
 public class TreeSet<E> extends AbstractSet<E>

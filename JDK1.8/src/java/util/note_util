@@ -1,0 +1,15 @@
+java.util 包
+
+日期类、日历类（ Data 、 Calendar 、 GregorianCalendar ）
+
+随机数类（ Random ）
+
+位运算类（ BitSet ）
+
+矢量类（ Vector ）
+
+数据结构类（ Stack ）
+
+散列表类（ Hashtable ）
+
+StringTokenizer类（与String.split 的功能类似

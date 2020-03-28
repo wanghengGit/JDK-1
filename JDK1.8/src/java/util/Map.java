@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1997, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.util;
 
 import java.util.function.BiConsumer;
@@ -31,8 +6,6 @@ import java.util.function.Function;
 import java.io.Serializable;
 
 /**
- * @author  wangheng
- * @date 2019/08/14
  * @see HashMap
  * @see TreeMap
  * @see Hashtable
@@ -40,24 +13,13 @@ import java.io.Serializable;
  * @see Collection
  * @see Set
  * @since 1.2
+ * @date 2019/08/14
  */
 public interface Map<K,V> {
     // Query Operations
 
-    /**
-     * Returns the number of key-value mappings in this map.  If the
-     * map contains more than <tt>Integer.MAX_VALUE</tt> elements, returns
-     * <tt>Integer.MAX_VALUE</tt>.
-     *
-     * @return the number of key-value mappings in this map
-     */
     int size();
 
-    /**
-     * Returns <tt>true</tt> if this map contains no key-value mappings.
-     *
-     * @return <tt>true</tt> if this map contains no key-value mappings
-     */
     boolean isEmpty();
 
     boolean containsKey(Object key);
@@ -77,13 +39,6 @@ public interface Map<K,V> {
 
     void putAll(Map<? extends K, ? extends V> m);
 
-    /**
-     * Removes all of the mappings from this map (optional operation).
-     * The map will be empty after this call returns.
-     *
-     * @throws UnsupportedOperationException if the <tt>clear</tt> operation
-     *         is not supported by this map
-     */
     void clear();
 
 
@@ -96,26 +51,9 @@ public interface Map<K,V> {
     Set<Map.Entry<K, V>> entrySet();
 
     interface Entry<K,V> {
-        /**
-         * Returns the key corresponding to this entry.
-         *
-         * @return the key corresponding to this entry
-         * @throws IllegalStateException implementations may, but are not
-         *         required to, throw this exception if the entry has been
-         *         removed from the backing map.
-         */
+
         K getKey();
 
-        /**
-         * Returns the value corresponding to this entry.  If the mapping
-         * has been removed from the backing map (by the iterator's
-         * <tt>remove</tt> operation), the results of this call are undefined.
-         *
-         * @return the value corresponding to this entry
-         * @throws IllegalStateException implementations may, but are not
-         *         required to, throw this exception if the entry has been
-         *         removed from the backing map.
-         */
         V getValue();
 
         V setValue(V value);

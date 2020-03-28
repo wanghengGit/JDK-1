@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1995, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang;
 
 import java.io.*;
@@ -41,6 +16,9 @@ import sun.reflect.Reflection;
  * @author  unascribed
  * @see     java.lang.Runtime#getRuntime()
  * @since   JDK1.0
+ * @date 20200325
+ * Runtime类里面可以获得应用运行时的一些状态（主要包括使用的内存和cpu个数）和在应用运行时执行一些操作
+ * （程序退出、执行gc、设置退出时的钩子函数）
  */
 
 public class Runtime {

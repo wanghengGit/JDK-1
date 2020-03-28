@@ -1,27 +1,3 @@
-/*
- * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
 package java.lang;
 
 import java.io.*;
@@ -55,6 +31,16 @@ import sun.reflect.annotation.AnnotationType;
  *
  * @author  unascribed
  * @since   JDK1.0
+ * @date 20200324
+ * System类包含一些有用的类字段和方法，是final类型，所以不能被实例化。
+ * 在System类提供的设施中，有标准输入、标准输出和错误输出流；对外部定义的属性和环境变量的访问；
+ * 加载文件和库的方法；还有快速复制数组的一部分实用方法。
+ */
+
+/**
+ * Java程序要调用本地方法1；通过System.loadLibrary()将包含本地方法实现的动态文件加载进内存
+ * 2；当Java程序需要调用本地方法时，虚拟机在加载的动态文件中定位并链接该本地方法，从而得以执行本地方法。
+ * registerNatives()的作用就是取代第二步
  */
 public final class System {
 
@@ -1116,6 +1102,7 @@ public final class System {
      *             <code>null</code>
      * @see        java.lang.Runtime#loadLibrary(java.lang.String)
      * @see        java.lang.SecurityManager#checkLink(java.lang.String)
+     * 将包含本地方法实现的动态文件加载进内存
      */
     @CallerSensitive
     public static void loadLibrary(String libname) {

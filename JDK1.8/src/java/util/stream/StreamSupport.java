@@ -36,6 +36,7 @@ import java.util.function.Supplier;
  * the various {@code Stream} classes.
  *
  * @since 1.8
+ * @date 20200325
  */
 public final class StreamSupport {
 

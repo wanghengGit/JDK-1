@@ -57,6 +57,8 @@ import java.nio.ByteBuffer;
  *
  * @author Kenneth Russell
  * @author Nakul Saraiya
+ * @date 20200325
+ * java.lang.reflect.Method类提供有关类或接口上单个方法的信息和访问权限。
  */
 public final class Method extends Executable {
     private Class<?>            clazz;

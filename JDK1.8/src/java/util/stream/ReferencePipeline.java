@@ -53,6 +53,7 @@ import java.util.function.ToLongFunction;
  * @param <P_OUT> type of elements in produced by this stage
  *
  * @since 1.8
+ * @date 20200325
  */
 abstract class ReferencePipeline<P_IN, P_OUT>
         extends AbstractPipeline<P_IN, P_OUT, Stream<P_OUT>>
@@ -535,6 +536,7 @@ abstract class ReferencePipeline<P_IN, P_OUT>
      * @param <E_IN> type of elements in the upstream source
      * @param <E_OUT> type of elements in produced by this stage
      * @since 1.8
+     * @date 20200325
      */
     static class Head<E_IN, E_OUT> extends ReferencePipeline<E_IN, E_OUT> {
         /**

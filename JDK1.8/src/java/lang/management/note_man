@@ -1,0 +1,2 @@
+Management包提供提供管理接口，用于监视和管理Java虚拟机以及Java虚拟机在其上运行的操作系统。
+最常用的有MemoryMXBean、MemoryPoolMXBean、RuntimeMXBean、ThreadMXBean四个获得不同类型数据的MXBean

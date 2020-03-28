@@ -28,13 +28,13 @@ package java.util;
 import java.io.InvalidObjectException;
 
 /**
- * @author  wangheng
- * @date 2019/08/14
  * @see     Collection
  * @see     Set
  * @see     TreeSet
  * @see     HashMap
  * @since   1.2
+ * @author  wangheng
+ * @date 2019/08/14
  */
 
 public class HashSet<E>

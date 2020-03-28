@@ -1,52 +1,21 @@
-/*
- * Copyright (c) 2003, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang;
 
 import sun.misc.FloatingDecimal;
 import java.util.Arrays;
 
 /**
- * A mutable sequence of characters.
- * <p>
- * Implements a modifiable string. At any point in time it contains some
- * particular sequence of characters, but the length and content of the
- * sequence can be changed through certain method calls.
- *
- * <p>Unless otherwise noted, passing a {@code null} argument to a constructor
- * or method in this class will cause a {@link NullPointerException} to be
- * thrown.
- *
  * @author      Michael McCloskey
  * @author      Martin Buchholz
  * @author      Ulf Zibis
  * @since       1.5
+ * @date 20200324
+ * 抽象类与接口的其中一个区别是：抽象类可以定义一些子类的公共方法，
+ * 子类只需要增加新的功能，不需要重复写已经存在的方法；而接口中只是对方法的声明和常量的定义
  */
 abstract class AbstractStringBuilder implements Appendable, CharSequence {
     /**
      * The value is used for character storage.
+     * 可变的
      */
     char[] value;
 

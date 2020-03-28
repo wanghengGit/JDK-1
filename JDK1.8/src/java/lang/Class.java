@@ -82,39 +82,18 @@ import sun.reflect.misc.ReflectUtil;
  * {@code int}, {@code long}, {@code float}, and
  * {@code double}), and the keyword {@code void} are also
  * represented as {@code Class} objects.
- *
- * <p> {@code Class} has no public constructor. Instead {@code Class}
- * objects are constructed automatically by the Java Virtual Machine as classes
- * are loaded and by calls to the {@code defineClass} method in the class
- * loader.
- *
- * <p> The following example uses a {@code Class} object to print the
- * class name of an object:
- *
- * <blockquote><pre>
- *     void printClassName(Object obj) {
- *         System.out.println("The class of " + obj +
- *                            " is " + obj.getClass().getName());
- *     }
- * </pre></blockquote>
- *
- * <p> It is also possible to get the {@code Class} object for a named
- * type (or for void) using a class literal.  See Section 15.8.2 of
- * <cite>The Java&trade; Language Specification</cite>.
- * For example:
- *
- * <blockquote>
- *     {@code System.out.println("The name of class Foo is: "+Foo.class.getName());}
- * </blockquote>
- *
- * @param <T> the type of the class modeled by this {@code Class}
- * object.  For example, the type of {@code String.class} is {@code
- * Class<String>}.  Use {@code Class<?>} if the class being modeled is
- * unknown.
- *
  * @author  unascribed
  * @see     java.lang.ClassLoader#defineClass(byte[], int, int)
  * @since   JDK1.0
+ * @date 20200325
+ * 表示正在运行的Java应用程序中的类和接口，用于记录一个特定的类在运行时的类型信息。
+ * 一个类的定义包含成员变量，成员方法，还有这个类实现的接口，以及这个类的父类。
+ */
+
+/**
+ * 自动构建：Class类没有公共的构造方法，Class对象是在编译后加载类时
+ * 由 Java 虚拟机以及通过调用类加载器中的 defineClass 方法自动构造
+ * 常用方法：返回类名称、类装载器、AnnotatedType对象、对象注释、Constructor对象以及所有与类相关的东西
  */
 public final class Class<T> implements java.io.Serializable,
                               GenericDeclaration,
@@ -672,6 +651,13 @@ public final class Class<T> implements java.io.Serializable,
      * @see java.lang.ClassLoader
      * @see SecurityManager#checkPermission
      * @see java.lang.RuntimePermission
+     */
+    /**
+     * 数组类的Class对象不是由类加载器创建的，而是Java运行时根据需要自动创建。
+     * 数组类的类加载器由Class.getClassLoader()返回
+     * 该加载器与其元素类型加载器是相同的
+     * 如果该元素类型是基本类型，则该数组类没有类加载器
+     * @return
      */
     @CallerSensitive
     public ClassLoader getClassLoader() {

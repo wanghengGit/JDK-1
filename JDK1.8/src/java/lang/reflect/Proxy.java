@@ -224,6 +224,8 @@ import sun.security.util.SecurityConstants;
  * @author      Peter Jones
  * @see         InvocationHandler
  * @since       1.3
+ * @date 20200325
+ * java.lang.reflect.Proxy类提供用于创建动态代理类和实例的静态方法，它也是由这些方法创建的所有动态代理类的超类
  */
 public class Proxy implements java.io.Serializable {
 

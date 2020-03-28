@@ -56,6 +56,8 @@ import java.lang.annotation.AnnotationFormatError;
  *
  * @author      Kenneth Russell
  * @author      Nakul Saraiya
+ * @date 20200325
+ * java.lang.reflect.Constructor类提供了一个类的单个构造函数的信息和访问权限。
  */
 public final class Constructor<T> extends Executable {
     private Class<T>            clazz;

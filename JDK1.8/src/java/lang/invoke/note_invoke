@@ -1,0 +1,4 @@
+The java.lang.invoke package contains dynamic language support
+provided directly by the Java core class libraries and virtual machine.
+
+java.lang.invoke包提供了与Java虚拟机交互的低级原语。

@@ -58,6 +58,8 @@ import sun.reflect.annotation.TypeAnnotationParser;
  *
  * @author Kenneth Russell
  * @author Nakul Saraiya
+ * @date 20200325
+ * java.lang.reflect.Field类提供有关类或接口的单个字段的信息和动态访问。反射的字段可以是类(静态)字段或实例字段
  */
 public final
 class Field extends AccessibleObject implements Member {

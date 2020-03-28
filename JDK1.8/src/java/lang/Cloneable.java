@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1995, 2004, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang;
 
 /**
@@ -49,6 +24,8 @@ package java.lang;
  * @see     java.lang.CloneNotSupportedException
  * @see     java.lang.Object#clone()
  * @since   JDK1.0
+ * @date 20200325
+ * 实现了Cloneable接口的类可以合法的使用Object.clone()方法对其实例进行按字段复制
  */
 public interface Cloneable {
 }

@@ -67,6 +67,7 @@ import java.util.stream.StreamSupport;
  * @author Neal Gafter
  * @author John Rose
  * @since  1.2
+ * @date 20200325
  */
 public class Arrays {
 

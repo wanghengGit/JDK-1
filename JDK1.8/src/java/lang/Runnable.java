@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1994, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang;
 
 /**
@@ -31,7 +6,6 @@ package java.lang;
  * @see     java.util.concurrent.Callable
  * @since   JDK1.0
  *
- * @author wangheng
  * @date 2019/08/14
  */
 @FunctionalInterface

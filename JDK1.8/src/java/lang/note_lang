@@ -1,0 +1,17 @@
+这个包称为 java 语言包，是由编译器自动引入的。程序中不必用 import 语句就可以使用。它所包含的类和接口对所有实际的 Java 程序都是必要的。
+
+object 类
+
+数学类 (Math)
+
+数据类型类
+
+线程类
+
+字符串类 (String 类和 StringBuffer 类 )
+
+系统及运行类 (System 类和 Runtime 类 )
+
+错误和异常处理类 (Throwable 、 Exception 、 Error)
+
+过程类 (process)

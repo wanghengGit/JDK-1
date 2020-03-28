@@ -34,72 +34,11 @@ import sun.misc.DoubleConsts;
  * numeric operations such as the elementary exponential, logarithm,
  * square root, and trigonometric functions.
  *
- * <p>Unlike some of the numeric methods of class
- * {@code StrictMath}, all implementations of the equivalent
- * functions of class {@code Math} are not defined to return the
- * bit-for-bit same results.  This relaxation permits
- * better-performing implementations where strict reproducibility is
- * not required.
- *
- * <p>By default many of the {@code Math} methods simply call
- * the equivalent method in {@code StrictMath} for their
- * implementation.  Code generators are encouraged to use
- * platform-specific native libraries or microprocessor instructions,
- * where available, to provide higher-performance implementations of
- * {@code Math} methods.  Such higher-performance
- * implementations still must conform to the specification for
- * {@code Math}.
- *
- * <p>The quality of implementation specifications concern two
- * properties, accuracy of the returned result and monotonicity of the
- * method.  Accuracy of the floating-point {@code Math} methods is
- * measured in terms of <i>ulps</i>, units in the last place.  For a
- * given floating-point format, an {@linkplain #ulp(double) ulp} of a
- * specific real number value is the distance between the two
- * floating-point values bracketing that numerical value.  When
- * discussing the accuracy of a method as a whole rather than at a
- * specific argument, the number of ulps cited is for the worst-case
- * error at any argument.  If a method always has an error less than
- * 0.5 ulps, the method always returns the floating-point number
- * nearest the exact result; such a method is <i>correctly
- * rounded</i>.  A correctly rounded method is generally the best a
- * floating-point approximation can be; however, it is impractical for
- * many floating-point methods to be correctly rounded.  Instead, for
- * the {@code Math} class, a larger error bound of 1 or 2 ulps is
- * allowed for certain methods.  Informally, with a 1 ulp error bound,
- * when the exact result is a representable number, the exact result
- * should be returned as the computed result; otherwise, either of the
- * two floating-point values which bracket the exact result may be
- * returned.  For exact results large in magnitude, one of the
- * endpoints of the bracket may be infinite.  Besides accuracy at
- * individual arguments, maintaining proper relations between the
- * method at different arguments is also important.  Therefore, most
- * methods with more than 0.5 ulp errors are required to be
- * <i>semi-monotonic</i>: whenever the mathematical function is
- * non-decreasing, so is the floating-point approximation, likewise,
- * whenever the mathematical function is non-increasing, so is the
- * floating-point approximation.  Not all approximations that have 1
- * ulp accuracy will automatically meet the monotonicity requirements.
- *
- * <p>
- * The platform uses signed two's complement integer arithmetic with
- * int and long primitive types.  The developer should choose
- * the primitive type to ensure that arithmetic operations consistently
- * produce correct results, which in some cases means the operations
- * will not overflow the range of values of the computation.
- * The best practice is to choose the primitive type and algorithm to avoid
- * overflow. In cases where the size is {@code int} or {@code long} and
- * overflow errors need to be detected, the methods {@code addExact},
- * {@code subtractExact}, {@code multiplyExact}, and {@code toIntExact}
- * throw an {@code ArithmeticException} when the results overflow.
- * For other arithmetic operations such as divide, absolute value,
- * increment, decrement, and negation overflow occurs only with
- * a specific minimum or maximum value and should be checked against
- * the minimum or maximum as appropriate.
- *
  * @author  unascribed
  * @author  Joseph D. Darcy
  * @since   JDK1.0
+ * @author  wangheng
+ * @date 2019/08/13
  */
 
 public final class Math {
@@ -122,219 +61,50 @@ public final class Math {
      */
     public static final double PI = 3.14159265358979323846;
 
-    /**
-     * Returns the trigonometric sine of an angle.  Special cases:
-     * <ul><li>If the argument is NaN or an infinity, then the
-     * result is NaN.
-     * <li>If the argument is zero, then the result is a zero with the
-     * same sign as the argument.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   an angle, in radians.
-     * @return  the sine of the argument.
-     */
     public static double sin(double a) {
         return StrictMath.sin(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the trigonometric cosine of an angle. Special cases:
-     * <ul><li>If the argument is NaN or an infinity, then the
-     * result is NaN.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   an angle, in radians.
-     * @return  the cosine of the argument.
-     */
     public static double cos(double a) {
         return StrictMath.cos(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the trigonometric tangent of an angle.  Special cases:
-     * <ul><li>If the argument is NaN or an infinity, then the result
-     * is NaN.
-     * <li>If the argument is zero, then the result is a zero with the
-     * same sign as the argument.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   an angle, in radians.
-     * @return  the tangent of the argument.
-     */
     public static double tan(double a) {
         return StrictMath.tan(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the arc sine of a value; the returned angle is in the
-     * range -<i>pi</i>/2 through <i>pi</i>/2.  Special cases:
-     * <ul><li>If the argument is NaN or its absolute value is greater
-     * than 1, then the result is NaN.
-     * <li>If the argument is zero, then the result is a zero with the
-     * same sign as the argument.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   the value whose arc sine is to be returned.
-     * @return  the arc sine of the argument.
-     */
     public static double asin(double a) {
         return StrictMath.asin(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the arc cosine of a value; the returned angle is in the
-     * range 0.0 through <i>pi</i>.  Special case:
-     * <ul><li>If the argument is NaN or its absolute value is greater
-     * than 1, then the result is NaN.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   the value whose arc cosine is to be returned.
-     * @return  the arc cosine of the argument.
-     */
     public static double acos(double a) {
         return StrictMath.acos(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the arc tangent of a value; the returned angle is in the
-     * range -<i>pi</i>/2 through <i>pi</i>/2.  Special cases:
-     * <ul><li>If the argument is NaN, then the result is NaN.
-     * <li>If the argument is zero, then the result is a zero with the
-     * same sign as the argument.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   the value whose arc tangent is to be returned.
-     * @return  the arc tangent of the argument.
-     */
     public static double atan(double a) {
         return StrictMath.atan(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Converts an angle measured in degrees to an approximately
-     * equivalent angle measured in radians.  The conversion from
-     * degrees to radians is generally inexact.
-     *
-     * @param   angdeg   an angle, in degrees
-     * @return  the measurement of the angle {@code angdeg}
-     *          in radians.
-     * @since   1.2
-     */
     public static double toRadians(double angdeg) {
         return angdeg / 180.0 * PI;
     }
 
-    /**
-     * Converts an angle measured in radians to an approximately
-     * equivalent angle measured in degrees.  The conversion from
-     * radians to degrees is generally inexact; users should
-     * <i>not</i> expect {@code cos(toRadians(90.0))} to exactly
-     * equal {@code 0.0}.
-     *
-     * @param   angrad   an angle, in radians
-     * @return  the measurement of the angle {@code angrad}
-     *          in degrees.
-     * @since   1.2
-     */
     public static double toDegrees(double angrad) {
         return angrad * 180.0 / PI;
     }
 
-    /**
-     * Returns Euler's number <i>e</i> raised to the power of a
-     * {@code double} value.  Special cases:
-     * <ul><li>If the argument is NaN, the result is NaN.
-     * <li>If the argument is positive infinity, then the result is
-     * positive infinity.
-     * <li>If the argument is negative infinity, then the result is
-     * positive zero.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   the exponent to raise <i>e</i> to.
-     * @return  the value <i>e</i><sup>{@code a}</sup>,
-     *          where <i>e</i> is the base of the natural logarithms.
-     */
     public static double exp(double a) {
         return StrictMath.exp(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the natural logarithm (base <i>e</i>) of a {@code double}
-     * value.  Special cases:
-     * <ul><li>If the argument is NaN or less than zero, then the result
-     * is NaN.
-     * <li>If the argument is positive infinity, then the result is
-     * positive infinity.
-     * <li>If the argument is positive zero or negative zero, then the
-     * result is negative infinity.</ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   a value
-     * @return  the value ln&nbsp;{@code a}, the natural logarithm of
-     *          {@code a}.
-     */
     public static double log(double a) {
         return StrictMath.log(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the base 10 logarithm of a {@code double} value.
-     * Special cases:
-     *
-     * <ul><li>If the argument is NaN or less than zero, then the result
-     * is NaN.
-     * <li>If the argument is positive infinity, then the result is
-     * positive infinity.
-     * <li>If the argument is positive zero or negative zero, then the
-     * result is negative infinity.
-     * <li> If the argument is equal to 10<sup><i>n</i></sup> for
-     * integer <i>n</i>, then the result is <i>n</i>.
-     * </ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   a   a value
-     * @return  the base 10 logarithm of  {@code a}.
-     * @since 1.5
-     */
     public static double log10(double a) {
         return StrictMath.log10(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the correctly rounded positive square root of a
-     * {@code double} value.
-     * Special cases:
-     * <ul><li>If the argument is NaN or less than zero, then the result
-     * is NaN.
-     * <li>If the argument is positive infinity, then the result is positive
-     * infinity.
-     * <li>If the argument is positive zero or negative zero, then the
-     * result is the same as the argument.</ul>
-     * Otherwise, the result is the {@code double} value closest to
-     * the true mathematical square root of the argument value.
-     *
-     * @param   a   a value.
-     * @return  the positive square root of {@code a}.
-     *          If the argument is NaN or less than zero, the result is NaN.
-     */
     public static double sqrt(double a) {
         return StrictMath.sqrt(a); // default impl. delegates to StrictMath
                                    // Note that hardware sqrt instructions
@@ -344,175 +114,26 @@ public final class Math {
     }
 
 
-    /**
-     * Returns the cube root of a {@code double} value.  For
-     * positive finite {@code x}, {@code cbrt(-x) ==
-     * -cbrt(x)}; that is, the cube root of a negative value is
-     * the negative of the cube root of that value's magnitude.
-     *
-     * Special cases:
-     *
-     * <ul>
-     *
-     * <li>If the argument is NaN, then the result is NaN.
-     *
-     * <li>If the argument is infinite, then the result is an infinity
-     * with the same sign as the argument.
-     *
-     * <li>If the argument is zero, then the result is a zero with the
-     * same sign as the argument.
-     *
-     * </ul>
-     *
-     * <p>The computed result must be within 1 ulp of the exact result.
-     *
-     * @param   a   a value.
-     * @return  the cube root of {@code a}.
-     * @since 1.5
-     */
     public static double cbrt(double a) {
         return StrictMath.cbrt(a);
     }
 
-    /**
-     * Computes the remainder operation on two arguments as prescribed
-     * by the IEEE 754 standard.
-     * The remainder value is mathematically equal to
-     * <code>f1&nbsp;-&nbsp;f2</code>&nbsp;&times;&nbsp;<i>n</i>,
-     * where <i>n</i> is the mathematical integer closest to the exact
-     * mathematical value of the quotient {@code f1/f2}, and if two
-     * mathematical integers are equally close to {@code f1/f2},
-     * then <i>n</i> is the integer that is even. If the remainder is
-     * zero, its sign is the same as the sign of the first argument.
-     * Special cases:
-     * <ul><li>If either argument is NaN, or the first argument is infinite,
-     * or the second argument is positive zero or negative zero, then the
-     * result is NaN.
-     * <li>If the first argument is finite and the second argument is
-     * infinite, then the result is the same as the first argument.</ul>
-     *
-     * @param   f1   the dividend.
-     * @param   f2   the divisor.
-     * @return  the remainder when {@code f1} is divided by
-     *          {@code f2}.
-     */
     public static double IEEEremainder(double f1, double f2) {
         return StrictMath.IEEEremainder(f1, f2); // delegate to StrictMath
     }
 
-    /**
-     * Returns the smallest (closest to negative infinity)
-     * {@code double} value that is greater than or equal to the
-     * argument and is equal to a mathematical integer. Special cases:
-     * <ul><li>If the argument value is already equal to a
-     * mathematical integer, then the result is the same as the
-     * argument.  <li>If the argument is NaN or an infinity or
-     * positive zero or negative zero, then the result is the same as
-     * the argument.  <li>If the argument value is less than zero but
-     * greater than -1.0, then the result is negative zero.</ul> Note
-     * that the value of {@code Math.ceil(x)} is exactly the
-     * value of {@code -Math.floor(-x)}.
-     *
-     *
-     * @param   a   a value.
-     * @return  the smallest (closest to negative infinity)
-     *          floating-point value that is greater than or equal to
-     *          the argument and is equal to a mathematical integer.
-     */
     public static double ceil(double a) {
         return StrictMath.ceil(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the largest (closest to positive infinity)
-     * {@code double} value that is less than or equal to the
-     * argument and is equal to a mathematical integer. Special cases:
-     * <ul><li>If the argument value is already equal to a
-     * mathematical integer, then the result is the same as the
-     * argument.  <li>If the argument is NaN or an infinity or
-     * positive zero or negative zero, then the result is the same as
-     * the argument.</ul>
-     *
-     * @param   a   a value.
-     * @return  the largest (closest to positive infinity)
-     *          floating-point value that less than or equal to the argument
-     *          and is equal to a mathematical integer.
-     */
     public static double floor(double a) {
         return StrictMath.floor(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the {@code double} value that is closest in value
-     * to the argument and is equal to a mathematical integer. If two
-     * {@code double} values that are mathematical integers are
-     * equally close, the result is the integer value that is
-     * even. Special cases:
-     * <ul><li>If the argument value is already equal to a mathematical
-     * integer, then the result is the same as the argument.
-     * <li>If the argument is NaN or an infinity or positive zero or negative
-     * zero, then the result is the same as the argument.</ul>
-     *
-     * @param   a   a {@code double} value.
-     * @return  the closest floating-point value to {@code a} that is
-     *          equal to a mathematical integer.
-     */
     public static double rint(double a) {
         return StrictMath.rint(a); // default impl. delegates to StrictMath
     }
 
-    /**
-     * Returns the angle <i>theta</i> from the conversion of rectangular
-     * coordinates ({@code x},&nbsp;{@code y}) to polar
-     * coordinates (r,&nbsp;<i>theta</i>).
-     * This method computes the phase <i>theta</i> by computing an arc tangent
-     * of {@code y/x} in the range of -<i>pi</i> to <i>pi</i>. Special
-     * cases:
-     * <ul><li>If either argument is NaN, then the result is NaN.
-     * <li>If the first argument is positive zero and the second argument
-     * is positive, or the first argument is positive and finite and the
-     * second argument is positive infinity, then the result is positive
-     * zero.
-     * <li>If the first argument is negative zero and the second argument
-     * is positive, or the first argument is negative and finite and the
-     * second argument is positive infinity, then the result is negative zero.
-     * <li>If the first argument is positive zero and the second argument
-     * is negative, or the first argument is positive and finite and the
-     * second argument is negative infinity, then the result is the
-     * {@code double} value closest to <i>pi</i>.
-     * <li>If the first argument is negative zero and the second argument
-     * is negative, or the first argument is negative and finite and the
-     * second argument is negative infinity, then the result is the
-     * {@code double} value closest to -<i>pi</i>.
-     * <li>If the first argument is positive and the second argument is
-     * positive zero or negative zero, or the first argument is positive
-     * infinity and the second argument is finite, then the result is the
-     * {@code double} value closest to <i>pi</i>/2.
-     * <li>If the first argument is negative and the second argument is
-     * positive zero or negative zero, or the first argument is negative
-     * infinity and the second argument is finite, then the result is the
-     * {@code double} value closest to -<i>pi</i>/2.
-     * <li>If both arguments are positive infinity, then the result is the
-     * {@code double} value closest to <i>pi</i>/4.
-     * <li>If the first argument is positive infinity and the second argument
-     * is negative infinity, then the result is the {@code double}
-     * value closest to 3*<i>pi</i>/4.
-     * <li>If the first argument is negative infinity and the second argument
-     * is positive infinity, then the result is the {@code double} value
-     * closest to -<i>pi</i>/4.
-     * <li>If both arguments are negative infinity, then the result is the
-     * {@code double} value closest to -3*<i>pi</i>/4.</ul>
-     *
-     * <p>The computed result must be within 2 ulps of the exact result.
-     * Results must be semi-monotonic.
-     *
-     * @param   y   the ordinate coordinate
-     * @param   x   the abscissa coordinate
-     * @return  the <i>theta</i> component of the point
-     *          (<i>r</i>,&nbsp;<i>theta</i>)
-     *          in polar coordinates that corresponds to the point
-     *          (<i>x</i>,&nbsp;<i>y</i>) in Cartesian coordinates.
-     */
     public static double atan2(double y, double x) {
         return StrictMath.atan2(y, x); // default impl. delegates to StrictMath
     }

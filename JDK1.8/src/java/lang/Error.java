@@ -45,6 +45,8 @@ package java.lang;
  * @see     java.lang.ThreadDeath
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since   JDK1.0
+ * @date 20200325
+ * 这种异常一般表示与JVM有关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢出等
  */
 public class Error extends Throwable {
     static final long serialVersionUID = 4980196508277280342L;

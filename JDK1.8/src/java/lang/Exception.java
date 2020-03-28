@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1994, 2011, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang;
 
 /**
@@ -41,6 +16,9 @@ package java.lang;
  * @see     java.lang.Error
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since   JDK1.0
+ * @date 20200325
+ * 这种异常是程序可以处理、可以恢复的异常，对于这种异常应该在代码中进行处理，不应该被程序最终抛出
+ * Exception类又被分为两类，一类是需要检查的异常，是被强制要在代码中进行处理，一类是运行时异常，是在代码运行时出现的
  */
 public class Exception extends Throwable {
     static final long serialVersionUID = -3387516993124229948L;

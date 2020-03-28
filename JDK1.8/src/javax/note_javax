@@ -1,0 +1,9 @@
+Java 扩展包 (Java Extension Package)
+
+常用的 Java 扩展包 (Java Extension Package)
+
+javax.accessibility 定义了用户界面组件之间相互访问的一种机制
+
+javax.naming.* 为命名服务提供了一系列类和接口
+
+javax.swing.* 提供了一系列轻量级的用户界面组件，是目前 Java 用户界面常用的包

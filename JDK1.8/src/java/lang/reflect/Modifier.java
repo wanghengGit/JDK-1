@@ -42,6 +42,8 @@ import sun.reflect.ReflectionFactory;
  *
  * @author Nakul Saraiya
  * @author Kenneth Russell
+ * @date 20200325
+ * java.lang.reflect.Modifier类提供了用于解码类和成员访问修饰符的静态方法和常量
  */
 public class Modifier {
 

@@ -60,6 +60,7 @@ import java.util.function.Predicate;
  * @see LongStream
  * @see DoubleStream
  * @see <a href="package-summary.html">java.util.stream</a>
+ * @date 20200325
  */
 public interface BaseStream<T, S extends BaseStream<T, S>>
         extends AutoCloseable {

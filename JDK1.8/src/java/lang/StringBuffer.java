@@ -7,9 +7,8 @@ import java.util.Arrays;
  * @see     java.lang.StringBuilder
  * @see     java.lang.String
  * @since   JDK1.0
- *
- * @author wangheng
  * @date 2019/08/29
+ * 对调用的方法加了同步锁，所以是线程安全的
  */
  public final class StringBuffer
     extends AbstractStringBuilder
@@ -53,7 +52,7 @@ import java.util.Arrays;
     @Override
     public synchronized void ensureCapacity(int minimumCapacity) {
         if (minimumCapacity > value.length) {
-            expandCapacity(minimumCapacity);
+            super.ensureCapacity(minimumCapacity);
         }
     }
 

@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1996, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang.reflect;
 
 /**
@@ -34,6 +9,9 @@ package java.lang.reflect;
  * conversion would occur.
  *
  * @author Nakul Saraiya
+ * @date 20200325
+ * java.lang.reflect.Array类提供静态方法来动态创建和访问Java数组。
+ * Array允许在get或set操作期间扩展转换，但如果发生缩小转换，则会抛出IllegalArgumentException异常。
  */
 public final
 class Array {

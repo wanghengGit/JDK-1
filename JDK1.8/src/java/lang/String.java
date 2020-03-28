@@ -15,29 +15,34 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 /**
- * @author  Lee Boynton
- * @author  Arthur van Hoff
- * @author  Martin Buchholz
- * @author  Ulf Zibis
- * @since   JDK1.0
- *
- * @author wangheng
+ * @author Lee Boynton
+ * @author Arthur van Hoff
+ * @author Martin Buchholz
+ * @author Ulf Zibis
  * @date 2019/08/28
+ * @since JDK1.0
  */
 
 public final class String
-    implements java.io.Serializable, Comparable<String>, CharSequence {
-    /** The value is used for character storage. */
+        implements java.io.Serializable, Comparable<String>, CharSequence {
+    /**
+     * The value is used for character storage.
+     * final修饰，所以，String对象是不可变的
+     **/
     private final char value[];
 
-    /** Cache the hash code for the string */
+    /**
+     * Cache the hash code for the string
+     */
     private int hash; // Default to 0
 
-    /** use serialVersionUID from JDK 1.0.2 for interoperability */
+    /**
+     * use serialVersionUID from JDK 1.0.2 for interoperability
+     */
     private static final long serialVersionUID = -6849794470754667710L;
 
     private static final ObjectStreamField[] serialPersistentFields =
-        new ObjectStreamField[0];
+            new ObjectStreamField[0];
 
     public String() {
         this.value = "".value;
@@ -69,7 +74,7 @@ public final class String
         if (offset > value.length - count) {
             throw new StringIndexOutOfBoundsException(offset + count);
         }
-        this.value = Arrays.copyOfRange(value, offset, offset+count);
+        this.value = Arrays.copyOfRange(value, offset, offset + count);
     }
 
     public String(int[] codePoints, int offset, int count) {
@@ -109,7 +114,7 @@ public final class String
         for (int i = offset, j = 0; i < end; i++, j++) {
             int c = codePoints[i];
             if (Character.isBmpCodePoint(c))
-                v[j] = (char)c;
+                v[j] = (char) c;
             else
                 Character.toSurrogates(c, v, j++);
         }
@@ -123,13 +128,13 @@ public final class String
         char value[] = new char[count];
 
         if (hibyte == 0) {
-            for (int i = count; i-- > 0;) {
-                value[i] = (char)(ascii[i + offset] & 0xff);
+            for (int i = count; i-- > 0; ) {
+                value[i] = (char) (ascii[i + offset] & 0xff);
             }
         } else {
             hibyte <<= 8;
-            for (int i = count; i-- > 0;) {
-                value[i] = (char)(hibyte | (ascii[i + offset] & 0xff));
+            for (int i = count; i-- > 0; ) {
+                value[i] = (char) (hibyte | (ascii[i + offset] & 0xff));
             }
         }
         this.value = value;
@@ -161,7 +166,7 @@ public final class String
         if (charset == null)
             throw new NullPointerException("charset");
         checkBounds(bytes, offset, length);
-        this.value =  StringCoding.decode(charset, bytes, offset, length);
+        this.value = StringCoding.decode(charset, bytes, offset, length);
     }
 
     public String(byte bytes[], String charsetName)
@@ -183,7 +188,7 @@ public final class String
     }
 
     public String(StringBuffer buffer) {
-        synchronized(buffer) {
+        synchronized (buffer) {
             this.value = Arrays.copyOf(buffer.getValue(), buffer.length());
         }
     }
@@ -278,7 +283,7 @@ public final class String
         char[] val = value;   /* avoid getfield opcode */
 
         while (i < n) {
-            dst[j++] = (byte)val[i++];
+            dst[j++] = (byte) val[i++];
         }
     }
 
@@ -301,8 +306,8 @@ public final class String
         if (this == anObject) {
             return true;
         }
-        if (anObject instanceof String) {@
-            String anotherString = (String)anObject;
+        if (anObject instanceof String) {
+            String anotherString = (String) anObject;
             int n = value.length;
             if (n == anotherString.value.length) {
                 char v1[] = value;
@@ -320,7 +325,7 @@ public final class String
     }
 
     public boolean contentEquals(StringBuffer sb) {
-        return contentEquals((CharSequence)sb);
+        return contentEquals((CharSequence) sb);
     }
 
     private boolean nonSyncContentEquals(AbstractStringBuilder sb) {
@@ -342,11 +347,11 @@ public final class String
         // Argument is a StringBuffer, StringBuilder
         if (cs instanceof AbstractStringBuilder) {
             if (cs instanceof StringBuffer) {
-                synchronized(cs) {
-                   return nonSyncContentEquals((AbstractStringBuilder)cs);
+                synchronized (cs) {
+                    return nonSyncContentEquals((AbstractStringBuilder) cs);
                 }
             } else {
-                return nonSyncContentEquals((AbstractStringBuilder)cs);
+                return nonSyncContentEquals((AbstractStringBuilder) cs);
             }
         }
         // Argument is a String
@@ -394,7 +399,8 @@ public final class String
     }
 
     public static final Comparator<String> CASE_INSENSITIVE_ORDER
-                                         = new CaseInsensitiveComparator();
+            = new CaseInsensitiveComparator();
+
     private static class CaseInsensitiveComparator
             implements Comparator<String>, java.io.Serializable {
         // use serialVersionUID from JDK 1.2.2 for interoperability
@@ -423,8 +429,12 @@ public final class String
             return n1 - n2;
         }
 
-        /** Replaces the de-serialized object. */
-        private Object readResolve() { return CASE_INSENSITIVE_ORDER; }
+        /**
+         * Replaces the de-serialized object.
+         */
+        private Object readResolve() {
+            return CASE_INSENSITIVE_ORDER;
+        }
     }
 
     public int compareToIgnoreCase(String str) {
@@ -432,15 +442,15 @@ public final class String
     }
 
     public boolean regionMatches(int toffset, String other, int ooffset,
-            int len) {
+                                 int len) {
         char ta[] = value;
         int to = toffset;
         char pa[] = other.value;
         int po = ooffset;
         // Note: toffset, ooffset, or len might be near -1>>>1.
         if ((ooffset < 0) || (toffset < 0)
-                || (toffset > (long)value.length - len)
-                || (ooffset > (long)other.value.length - len)) {
+                || (toffset > (long) value.length - len)
+                || (ooffset > (long) other.value.length - len)) {
             return false;
         }
         while (len-- > 0) {
@@ -452,15 +462,15 @@ public final class String
     }
 
     public boolean regionMatches(boolean ignoreCase, int toffset,
-            String other, int ooffset, int len) {
+                                 String other, int ooffset, int len) {
         char ta[] = value;
         int to = toffset;
         char pa[] = other.value;
         int po = ooffset;
         // Note: toffset, ooffset, or len might be near -1>>>1.
         if ((ooffset < 0) || (toffset < 0)
-                || (toffset > (long)value.length - len)
-                || (ooffset > (long)other.value.length - len)) {
+                || (toffset > (long) value.length - len)
+                || (ooffset > (long) other.value.length - len)) {
             return false;
         }
         while (len-- > 0) {
@@ -626,15 +636,15 @@ public final class String
     }
 
     static int indexOf(char[] source, int sourceOffset, int sourceCount,
-            String target, int fromIndex) {
+                       String target, int fromIndex) {
         return indexOf(source, sourceOffset, sourceCount,
-                       target.value, 0, target.value.length,
-                       fromIndex);
+                target.value, 0, target.value.length,
+                fromIndex);
     }
 
     static int indexOf(char[] source, int sourceOffset, int sourceCount,
-            char[] target, int targetOffset, int targetCount,
-            int fromIndex) {
+                       char[] target, int targetOffset, int targetCount,
+                       int fromIndex) {
         if (fromIndex >= sourceCount) {
             return (targetCount == 0 ? sourceCount : -1);
         }
@@ -651,7 +661,7 @@ public final class String
         for (int i = sourceOffset + fromIndex; i <= max; i++) {
             /* Look for first character. */
             if (source[i] != first) {
-                while (++i <= max && source[i] != first);
+                while (++i <= max && source[i] != first) ;
             }
 
             /* Found first character, now look at the rest of v2 */
@@ -659,7 +669,8 @@ public final class String
                 int j = i + 1;
                 int end = j + targetCount - 1;
                 for (int k = targetOffset + 1; j < end && source[j]
-                        == target[k]; j++, k++);
+                        == target[k]; j++, k++)
+                    ;
 
                 if (j == end) {
                     /* Found whole string. */
@@ -680,15 +691,15 @@ public final class String
     }
 
     static int lastIndexOf(char[] source, int sourceOffset, int sourceCount,
-            String target, int fromIndex) {
+                           String target, int fromIndex) {
         return lastIndexOf(source, sourceOffset, sourceCount,
-                       target.value, 0, target.value.length,
-                       fromIndex);
+                target.value, 0, target.value.length,
+                fromIndex);
     }
 
     static int lastIndexOf(char[] source, int sourceOffset, int sourceCount,
-            char[] target, int targetOffset, int targetCount,
-            int fromIndex) {
+                           char[] target, int targetOffset, int targetCount,
+                           int fromIndex) {
         /*
          * Check arguments; return immediately where possible. For
          * consistency, don't check for null str.
@@ -710,7 +721,7 @@ public final class String
         int min = sourceOffset + targetCount - 1;
         int i = min + fromIndex;
 
-    startSearchForLastChar:
+        startSearchForLastChar:
         while (true) {
             while (i >= min && source[i] != strLastChar) {
                 i--;
@@ -830,15 +841,14 @@ public final class String
          */
         char ch = 0;
         if (((regex.value.length == 1 &&
-             ".$|()[{^?*+\\".indexOf(ch = regex.charAt(0)) == -1) ||
-             (regex.length() == 2 &&
-              regex.charAt(0) == '\\' &&
-              (((ch = regex.charAt(1))-'0')|('9'-ch)) < 0 &&
-              ((ch-'a')|('z'-ch)) < 0 &&
-              ((ch-'A')|('Z'-ch)) < 0)) &&
-            (ch < Character.MIN_HIGH_SURROGATE ||
-             ch > Character.MAX_LOW_SURROGATE))
-        {
+                ".$|()[{^?*+\\".indexOf(ch = regex.charAt(0)) == -1) ||
+                (regex.length() == 2 &&
+                        regex.charAt(0) == '\\' &&
+                        (((ch = regex.charAt(1)) - '0') | ('9' - ch)) < 0 &&
+                        ((ch - 'a') | ('z' - ch)) < 0 &&
+                        ((ch - 'A') | ('Z' - ch)) < 0)) &&
+                (ch < Character.MIN_HIGH_SURROGATE ||
+                        ch > Character.MAX_LOW_SURROGATE)) {
             int off = 0;
             int next = 0;
             boolean limited = limit > 0;
@@ -879,23 +889,29 @@ public final class String
         return split(regex, 0);
     }
 
+    /**
+     * 1.8版本里面String类还增加了join静态方法用来结合多个字符串
+     * @param delimiter
+     * @param elements
+     * @return
+     */
     public static String join(CharSequence delimiter, CharSequence... elements) {
         Objects.requireNonNull(delimiter);
         Objects.requireNonNull(elements);
         // Number of elements not likely worth Arrays.stream overhead.
         StringJoiner joiner = new StringJoiner(delimiter);
-        for (CharSequence cs: elements) {
+        for (CharSequence cs : elements) {
             joiner.add(cs);
         }
         return joiner.toString();
     }
 
     public static String join(CharSequence delimiter,
-            Iterable<? extends CharSequence> elements) {
+                              Iterable<? extends CharSequence> elements) {
         Objects.requireNonNull(delimiter);
         Objects.requireNonNull(elements);
         StringJoiner joiner = new StringJoiner(delimiter);
-        for (CharSequence cs: elements) {
+        for (CharSequence cs : elements) {
             joiner.add(cs);
         }
         return joiner.toString();
@@ -910,8 +926,9 @@ public final class String
         final int len = value.length;
 
         /* Now check if there are any characters that need to be changed. */
-        scan: {
-            for (firstUpper = 0 ; firstUpper < len; ) {
+        scan:
+        {
+            for (firstUpper = 0; firstUpper < len; ) {
                 char c = value[firstUpper];
                 if ((c >= Character.MIN_HIGH_SURROGATE)
                         && (c <= Character.MAX_HIGH_SURROGATE)) {
@@ -932,7 +949,7 @@ public final class String
 
         char[] result = new char[len];
         int resultOffset = 0;  /* result may grow, so i+resultOffset
-                                * is the write location in result */
+         * is the write location in result */
 
         /* Just copy the first few lowerCase characters. */
         System.arraycopy(value, 0, result, 0, firstUpper);
@@ -945,17 +962,17 @@ public final class String
         int srcChar;
         int srcCount;
         for (int i = firstUpper; i < len; i += srcCount) {
-            srcChar = (int)value[i];
-            if ((char)srcChar >= Character.MIN_HIGH_SURROGATE
-                    && (char)srcChar <= Character.MAX_HIGH_SURROGATE) {
+            srcChar = (int) value[i];
+            if ((char) srcChar >= Character.MIN_HIGH_SURROGATE
+                    && (char) srcChar <= Character.MAX_HIGH_SURROGATE) {
                 srcChar = codePointAt(i);
                 srcCount = Character.charCount(srcChar);
             } else {
                 srcCount = 1;
             }
             if (localeDependent ||
-                srcChar == '\u03A3' || // GREEK CAPITAL LETTER SIGMA
-                srcChar == '\u0130') { // LATIN CAPITAL LETTER I WITH DOT ABOVE
+                    srcChar == '\u03A3' || // GREEK CAPITAL LETTER SIGMA
+                    srcChar == '\u0130') { // LATIN CAPITAL LETTER I WITH DOT ABOVE
                 lowerChar = ConditionalSpecialCasing.toLowerCaseEx(this, i, locale);
             } else {
                 lowerChar = Character.toLowerCase(srcChar);
@@ -984,7 +1001,7 @@ public final class String
                 }
                 resultOffset += (mapLen - srcCount);
             } else {
-                result[i + resultOffset] = (char)lowerChar;
+                result[i + resultOffset] = (char) lowerChar;
             }
         }
         return new String(result, 0, len + resultOffset);
@@ -1003,9 +1020,10 @@ public final class String
         final int len = value.length;
 
         /* Now check if there are any characters that need to be changed. */
-        scan: {
-            for (firstLower = 0 ; firstLower < len; ) {
-                int c = (int)value[firstLower];
+        scan:
+        {
+            for (firstLower = 0; firstLower < len; ) {
+                int c = (int) value[firstLower];
                 int srcCount;
                 if ((c >= Character.MIN_HIGH_SURROGATE)
                         && (c <= Character.MAX_HIGH_SURROGATE)) {
@@ -1039,9 +1057,9 @@ public final class String
         int srcChar;
         int srcCount;
         for (int i = firstLower; i < len; i += srcCount) {
-            srcChar = (int)value[i];
-            if ((char)srcChar >= Character.MIN_HIGH_SURROGATE &&
-                (char)srcChar <= Character.MAX_HIGH_SURROGATE) {
+            srcChar = (int) value[i];
+            if ((char) srcChar >= Character.MIN_HIGH_SURROGATE &&
+                    (char) srcChar <= Character.MAX_HIGH_SURROGATE) {
                 srcChar = codePointAt(i);
                 srcCount = Character.charCount(srcChar);
             } else {
@@ -1080,7 +1098,7 @@ public final class String
                 }
                 resultOffset += (mapLen - srcCount);
             } else {
-                result[i + resultOffset] = (char)upperChar;
+                result[i + resultOffset] = (char) upperChar;
             }
         }
         return new String(result, 0, len + resultOffset);

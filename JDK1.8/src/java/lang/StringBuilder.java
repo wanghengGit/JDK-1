@@ -1,77 +1,12 @@
-/*
- * Copyright (c) 2003, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang;
 
 
 /**
- * A mutable sequence of characters.  This class provides an API compatible
- * with {@code StringBuffer}, but with no guarantee of synchronization.
- * This class is designed for use as a drop-in replacement for
- * {@code StringBuffer} in places where the string buffer was being
- * used by a single thread (as is generally the case).   Where possible,
- * it is recommended that this class be used in preference to
- * {@code StringBuffer} as it will be faster under most implementations.
- *
- * <p>The principal operations on a {@code StringBuilder} are the
- * {@code append} and {@code insert} methods, which are
- * overloaded so as to accept data of any type. Each effectively
- * converts a given datum to a string and then appends or inserts the
- * characters of that string to the string builder. The
- * {@code append} method always adds these characters at the end
- * of the builder; the {@code insert} method adds the characters at
- * a specified point.
- * <p>
- * For example, if {@code z} refers to a string builder object
- * whose current contents are "{@code start}", then
- * the method call {@code z.append("le")} would cause the string
- * builder to contain "{@code startle}", whereas
- * {@code z.insert(4, "le")} would alter the string builder to
- * contain "{@code starlet}".
- * <p>
- * In general, if sb refers to an instance of a {@code StringBuilder},
- * then {@code sb.append(x)} has the same effect as
- * {@code sb.insert(sb.length(), x)}.
- * <p>
- * Every string builder has a capacity. As long as the length of the
- * character sequence contained in the string builder does not exceed
- * the capacity, it is not necessary to allocate a new internal
- * buffer. If the internal buffer overflows, it is automatically made larger.
- *
- * <p>Instances of {@code StringBuilder} are not safe for
- * use by multiple threads. If such synchronization is required then it is
- * recommended that {@link java.lang.StringBuffer} be used.
- *
- * <p>Unless otherwise noted, passing a {@code null} argument to a constructor
- * or method in this class will cause a {@link NullPointerException} to be
- * thrown.
- *
  * @author      Michael McCloskey
  * @see         java.lang.StringBuffer
  * @see         java.lang.String
  * @since       1.5
+ * @date 20200324
  */
 public final class StringBuilder
     extends AbstractStringBuilder
@@ -137,25 +72,6 @@ public final class StringBuilder
         return this;
     }
 
-    /**
-     * Appends the specified {@code StringBuffer} to this sequence.
-     * <p>
-     * The characters of the {@code StringBuffer} argument are appended,
-     * in order, to this sequence, increasing the
-     * length of this sequence by the length of the argument.
-     * If {@code sb} is {@code null}, then the four characters
-     * {@code "null"} are appended to this sequence.
-     * <p>
-     * Let <i>n</i> be the length of this character sequence just prior to
-     * execution of the {@code append} method. Then the character at index
-     * <i>k</i> in the new character sequence is equal to the character at
-     * index <i>k</i> in the old character sequence, if <i>k</i> is less than
-     * <i>n</i>; otherwise, it is equal to the character at index <i>k-n</i>
-     * in the argument {@code sb}.
-     *
-     * @param   sb   the {@code StringBuffer} to append.
-     * @return  a reference to this object.
-     */
     public StringBuilder append(StringBuffer sb) {
         super.append(sb);
         return this;

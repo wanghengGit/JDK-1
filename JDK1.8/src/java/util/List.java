@@ -30,8 +30,6 @@ import java.util.function.UnaryOperator;
 /**
  * @param <E> the type of elements in this list
  *
- * @author  wangheng
- * @date 2019/08/13
  * @see Collection
  * @see Set
  * @see ArrayList
@@ -43,8 +41,8 @@ import java.util.function.UnaryOperator;
  * @see AbstractList
  * @see AbstractSequentialList
  * @since 1.2
+ * @date 20200325
  */
-
 public interface List<E> extends Collection<E> {
     // Query Operations
 

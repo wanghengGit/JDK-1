@@ -1,0 +1,3 @@
+Instrument包提供了提供允许Java编程语言代理检测运行在JVM上的程序的服务，
+利用它提供的Instrumentation类和ClassFileTrasformation类，利用这两个类加上-javaagent命令，
+可以在程序运行之前，完成对字节码的修改，利用这个方法可以有效的对程序进行监控

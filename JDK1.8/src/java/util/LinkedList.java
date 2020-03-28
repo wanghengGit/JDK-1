@@ -3,12 +3,12 @@ package java.util;
 import java.util.function.Consumer;
 
 /**
- * @author  wangheng
- * @date 2019/08/13
  * @see     List
  * @see     ArrayList
  * @since 1.2
  * @param <E> the type of elements held in this collection
+ * @author  wangheng
+ * @date 2019/08/13
  */
 
 public class LinkedList<E>

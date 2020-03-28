@@ -1,28 +1,3 @@
-/*
- * Copyright (c) 1997, 2014, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
-
 package java.lang.reflect;
 
 import java.security.AccessController;
@@ -53,6 +28,8 @@ import java.lang.annotation.Annotation;
  * @see ReflectPermission
  *
  * @since 1.2
+ * @date 20200325
+ * java.lang.reflect.AccessibleObject类是Field，Method和Constructor类对象的基类。
  */
 public class AccessibleObject implements AnnotatedElement {
 

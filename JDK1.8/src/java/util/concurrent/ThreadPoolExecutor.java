@@ -77,7 +77,7 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
     private volatile int corePoolSize;
 
     private volatile int maximumPoolSize;
-
+    // 默认拒绝策略
     private static final RejectedExecutionHandler defaultHandler =
         new AbortPolicy();
 
@@ -477,6 +477,16 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
              Executors.defaultThreadFactory(), handler);
     }
 
+    /**
+     *
+     * @param corePoolSize       线程池核心线程大小
+     * @param maximumPoolSize    线程池最大线程数量
+     * @param keepAliveTime      空闲线程存活时间
+     * @param unit               空间线程存活时间单位
+     * @param workQueue          工作队列
+     * @param threadFactory      线程工厂
+     * @param handler            拒绝策略
+     */
     public ThreadPoolExecutor(int corePoolSize,
                               int maximumPoolSize,
                               long keepAliveTime,
@@ -828,6 +838,10 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
     protected void terminated() { }
 
     /* Predefined RejectedExecutionHandlers */
+
+    /**
+     * 该策略下，在调用者线程中直接执行被拒绝任务的run方法，除非线程池已经shutdown，则直接抛弃任务。
+     */
     public static class CallerRunsPolicy implements RejectedExecutionHandler {
         /**
          * Creates a {@code CallerRunsPolicy}.
@@ -841,6 +855,9 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
+    /**
+     * 该策略下，直接丢弃任务，并抛出RejectedExecutionException异常。
+     */
     public static class AbortPolicy implements RejectedExecutionHandler {
         /**
          * Creates an {@code AbortPolicy}.
@@ -854,6 +871,9 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
+    /**
+     * 该策略下，直接丢弃任务，什么都不做
+     */
     public static class DiscardPolicy implements RejectedExecutionHandler {
         /**
          * Creates a {@code DiscardPolicy}.
@@ -864,6 +884,9 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
         }
     }
 
+    /**
+     * 该策略下，抛弃进入队列最早的那个任务，然后尝试把这次拒绝的任务放入队列
+     */
     public static class DiscardOldestPolicy implements RejectedExecutionHandler {
         /**
          * Creates a {@code DiscardOldestPolicy} for the given executor.

@@ -1,0 +1,31 @@
+Java 核心包 (Java Core Package)
+
+常用的 Java 核心包 (Java Core Package)
+
+java.lang Java 编程语言的基本类库
+
+java.applet 创建 applet 需要的所有类
+
+java.awt 创建用户界面以及绘制和管理图形、图像的类
+
+java.io 通过数据流、对象序列以及文件系统实现的系统输入、输出
+
+java.net 用于实现网络通讯应用的所有类
+
+java.util 集合类、时间处理模式、日期时间工具等各类常用工具包
+
+其它还有
+
+java.sql 访问和处理来自于 Java 标准数据源数据的类
+
+java.test 以一种独立于自然语言的方式处理文本、日期、数字和消息的类和接口
+
+java.security 设计网络安全方案需要的一些类
+
+java.beans 开发 Java Beans 需要的所有类
+
+java.math简明的整数算术以及十进制算术的基本函数
+
+java.rmi 与远程方法调用相关的所有类
+
+注 ：在使用 Java 时，除了 java.lang 外，其他的包都需要 import 语句引入之后才能使用。
