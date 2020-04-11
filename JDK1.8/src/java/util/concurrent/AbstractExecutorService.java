@@ -7,6 +7,7 @@ import java.util.*;
  *
  * @author wangheng
  * @date 2019/08/15
+ * ExecutorService执行方法的默认实现
  */
 public abstract class AbstractExecutorService implements ExecutorService {
 

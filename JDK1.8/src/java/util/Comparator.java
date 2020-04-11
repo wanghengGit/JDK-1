@@ -104,6 +104,7 @@ import java.util.Comparators;
  * @see Comparable
  * @see java.io.Serializable
  * @since 1.2
+ * @date 20200409
  */
 @FunctionalInterface
 public interface Comparator<T> {

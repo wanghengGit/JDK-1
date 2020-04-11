@@ -36,6 +36,7 @@ import java.time.LocalTime;
  * values.
  * <p>The date components should be set to the "zero epoch"
  * value of January 1, 1970 and should not be accessed.
+ * @date 20200328
  */
 public class Time extends java.util.Date {
 

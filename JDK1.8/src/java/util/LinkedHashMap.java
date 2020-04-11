@@ -159,6 +159,9 @@ import java.io.IOException;
  * @see     TreeMap
  * @see     Hashtable
  * @since   1.4
+ * @date 20200407
+ * 总的来说 LinkedHashMap 其实就是对 HashMap 进行了拓展，使用了双向链表来保证了顺序性。
+ * 因为是继承于 HashMap 的，所以一些 HashMap 存在的问题 LinkedHashMap 也会存在，比如不支持并发等
  */
 public class LinkedHashMap<K,V>
     extends HashMap<K,V>
@@ -458,6 +461,7 @@ public class LinkedHashMap<K,V>
 
     /**
      * {@inheritDoc}
+     * 只需要把指针都指向自己即可，原本那些 Entry 没有引用之后就会被 JVM 自动回收
      */
     public void clear() {
         super.clear();

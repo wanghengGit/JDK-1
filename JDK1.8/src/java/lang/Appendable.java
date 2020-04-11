@@ -47,6 +47,8 @@ import java.io.IOException;
  * errors will be propagated to the invoker.
  *
  * @since 1.5
+ * @date 20200328
+ * 实现了该接口的类的对象实例具有可向其追加字符或字符序列的能力
  */
 public interface Appendable {
 

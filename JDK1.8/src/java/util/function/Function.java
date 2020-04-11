@@ -36,6 +36,7 @@ import java.util.Objects;
  * @param <R> the type of the result of the function
  *
  * @since 1.8
+ * @date 20200409
  */
 @FunctionalInterface
 public interface Function<T, R> {

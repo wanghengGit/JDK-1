@@ -143,6 +143,8 @@ import java.io.InputStream;
  * @see Statement#executeQuery
  * @see Statement#getResultSet
  * @see ResultSetMetaData
+ * @date 20200403
+ * 结果集
  */
 
 public interface ResultSet extends Wrapper, AutoCloseable {

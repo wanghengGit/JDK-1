@@ -64,6 +64,8 @@ package java.util.concurrent;
  *
  * @since 1.7
  * @author Doug Lea
+ * @date 20200328
+ * RecursiveTask是有返回结果而RecursiveAction是没有返回结果
  */
 public abstract class RecursiveTask<V> extends ForkJoinTask<V> {
     private static final long serialVersionUID = 5232453952276485270L;

@@ -12,6 +12,7 @@ package java.io;
  *
  * @author wangheng
  * @date 2019/08/14
+ * OutputStream是所有的输出字节流的父类，它是一个抽象类
  */
 public abstract class OutputStream implements Closeable, Flushable {
     public abstract void write(int b) throws IOException;

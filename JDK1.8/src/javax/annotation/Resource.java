@@ -49,6 +49,10 @@ import static java.lang.annotation.RetentionPolicy.*;
  * is required to perform injection in these cases as well.
  *
  * @since Common Annotations 1.0
+ * @date 20200403
+ * @Resource的作用相当于@Autowired
+ * 只不过@Autowired按byType自动注入，
+ * 而@Resource默认按 byName自动注入罢了
  */
 @Target({TYPE, FIELD, METHOD})
 @Retention(RUNTIME)

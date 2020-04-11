@@ -560,6 +560,7 @@ public class ArrayList<E> extends AbstractList<E>
         s.writeInt(size);
 
         // Write out all elements in the proper order.
+        //只序列化了被使用的数据
         for (int i=0; i<size; i++) {
             s.writeObject(elementData[i]);
         }

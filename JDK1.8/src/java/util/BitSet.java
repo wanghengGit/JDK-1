@@ -61,6 +61,7 @@ import java.util.stream.StreamSupport;
  * @author  Michael McCloskey
  * @author  Martin Buchholz
  * @since   JDK1.0
+ * @date 20200328
  */
 public class BitSet implements Cloneable, java.io.Serializable {
     /*

@@ -6,7 +6,6 @@ package java.util.concurrent;
  * @author Doug Lea
  * @param <V> the result type of method {@code call}
  *
- * @author wangheng
  * @date 2019/08/14
  */
 @FunctionalInterface

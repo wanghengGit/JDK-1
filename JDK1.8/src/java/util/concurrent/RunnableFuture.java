@@ -10,7 +10,6 @@ package java.util.concurrent;
  * @author Doug Lea
  * @param <V> The result type returned by this Future's {@code get} method
  *
- * @author wangheng
  * @date 2019/08/14
  */
 public interface RunnableFuture<V> extends Runnable, Future<V> {

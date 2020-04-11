@@ -73,6 +73,8 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @see javax.annotation.PostConstruct
  * @see javax.annotation.Resource
  * @since Common Annotations 1.0
+ * @date 20200403
+ * 用于指定销毁方法（用在方法上）
  */
 
 @Documented

@@ -13,6 +13,7 @@ import java.lang.annotation.*;
  * @since 1.8
  * @date 20200325
  * 一个接口如果使用了这个注解，则表示了具有lambda特性的接口
+ * JDK 1.8 API包含了很多内建的函数式接口
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

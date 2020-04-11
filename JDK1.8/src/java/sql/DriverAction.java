@@ -39,6 +39,7 @@ package java.sql;
  * to inform {@code DriverManager} which {@code DriverAction} implementation to
  * call when the JDBC driver is de-registered.
  * @since 1.8
+ * @date 20200403
  */
 public interface DriverAction {
     /**

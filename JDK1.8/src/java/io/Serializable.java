@@ -165,6 +165,7 @@ package java.io;
  * @see java.io.ObjectInput
  * @see java.io.Externalizable
  * @since   JDK1.1
+ * @date 20200328
  */
 public interface Serializable {
 }

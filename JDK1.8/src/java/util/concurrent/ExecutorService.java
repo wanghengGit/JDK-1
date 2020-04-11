@@ -6,8 +6,8 @@ import java.util.Collection;
  * @since 1.5
  * @author Doug Lea
  *
- * @author wangheng
  * @date 2019/08/15
+ * 是一个比Executor使用更广泛的子类接口，其提供了生命周期管理的方法，以及可跟踪一个或多个异步任务执行状况返回Future的方法
  */
 public interface ExecutorService extends Executor {
 

@@ -66,6 +66,7 @@ import java.security.*;
  * &quot;Algorithms for Creating a Time-Based UUID&quot;.
  *
  * @since   1.5
+ * @date 20200328
  */
 public final class UUID implements java.io.Serializable, Comparable<UUID> {
 

@@ -21,8 +21,8 @@ import java.lang.reflect.Constructor;
  * @since 1.7
  * @author Doug Lea
  *
- * @author wangheng
  * @date 2019/08/14
+ * 模板模式进行设计
  */
 public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
 

@@ -72,6 +72,8 @@ import sun.misc.Unsafe;
  *
  * @author  Frank Yellin
  * @since   1.0
+ * @date 20200328
+ * 提供了产生各种类型随机数的方法
  */
 public
 class Random implements java.io.Serializable {

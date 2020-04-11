@@ -9,8 +9,8 @@ import java.util.*;
  * @since 1.5
  * @author Doug Lea
  *
- * @author wangheng
  * @date 2019/08/15
+ * ScheduledExecutorService的实现，一个可定时调度任务的线程池
  */
 public class ScheduledThreadPoolExecutor
         extends ThreadPoolExecutor

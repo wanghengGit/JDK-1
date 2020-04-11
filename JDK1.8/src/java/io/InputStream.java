@@ -13,13 +13,18 @@ package java.io;
  *
  * @author wangheng
  * @date 2019/08/14
+ * InputStream是抽象类，是所有字节输入流的超类
  */
 public abstract class InputStream implements Closeable {
 
     // MAX_SKIP_BUFFER_SIZE is used to determine the maximum buffer size to
     // use when skipping.
     private static final int MAX_SKIP_BUFFER_SIZE = 2048;
-
+    //从输入流中读取下一个字节，
+    //正常返回0-255，到达文件的末尾返回-1
+    //在流中还有数据，但是没有读到时该方法会阻塞（block）
+    //Java IO和New IO的区别就是阻塞流和非阻塞流
+    //抽象方法！不同的子类不同的实现
     public abstract int read() throws IOException;
 
     public int read(byte b[]) throws IOException {

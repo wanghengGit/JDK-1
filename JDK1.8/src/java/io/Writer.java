@@ -18,6 +18,7 @@ package java.io;
  *
  * @author wangheng
  * @date 2019/08/14
+ * Writer是所有的输出字符流的父类，它是一个抽象类
  */
 
 public abstract class Writer implements Appendable, Closeable, Flushable {

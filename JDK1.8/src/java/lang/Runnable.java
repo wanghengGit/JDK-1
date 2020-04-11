@@ -5,7 +5,6 @@ package java.lang;
  * @see     java.lang.Thread
  * @see     java.util.concurrent.Callable
  * @since   JDK1.0
- *
  * @date 2019/08/14
  */
 @FunctionalInterface

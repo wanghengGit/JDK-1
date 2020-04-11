@@ -13,7 +13,6 @@ import sun.security.util.SecurityConstants;
  * @since 1.5
  * @author Doug Lea
  *
- * @author wangheng
  * @date 2019/08/15
  */
 public class Executors {
@@ -207,7 +206,7 @@ public class Executors {
             SecurityManager sm = System.getSecurityManager();
             if (sm != null) {
                 // Calls to getContextClassLoader from this class
-                // never trigger a security check, but we check
+                // never trigger a security check, but we heck
                 // whether our callers have this permission anyways.
                 sm.checkPermission(SecurityConstants.GET_CLASSLOADER_PERMISSION);
 

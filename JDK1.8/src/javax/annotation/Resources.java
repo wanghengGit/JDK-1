@@ -33,6 +33,7 @@ import static java.lang.annotation.RetentionPolicy.*;
  *
  * @see javax.annotation.Resource
  * @since Common Annotations 1.0
+ * @date 20200403
  */
 
 @Documented

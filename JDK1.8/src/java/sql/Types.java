@@ -30,6 +30,8 @@ package java.sql;
  * SQL types, called JDBC types.
  * <p>
  * This class is never instantiated.
+ * @date 20200328
+ * 提供了每一个数据类型代表的int值
  */
 public class Types {
 

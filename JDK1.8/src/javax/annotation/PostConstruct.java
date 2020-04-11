@@ -73,6 +73,8 @@ import static java.lang.annotation.RetentionPolicy.*;
  * @since Common Annotations 1.0
  * @see javax.annotation.PreDestroy
  * @see javax.annotation.Resource
+ * @date 20200403
+ * 用于指定初始化方法（用在方法上）
  */
 @Documented
 @Retention (RUNTIME)

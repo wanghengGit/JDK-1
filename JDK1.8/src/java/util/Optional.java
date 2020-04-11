@@ -46,6 +46,9 @@ import java.util.function.Supplier;
  * {@code Optional} may have unpredictable results and should be avoided.
  *
  * @since 1.8
+ * @date 20200409
+ * Optional是一个容器对象，它可能包含空值，也可能包含非空值。当属性value被设置时，
+ * isPesent()方法将返回true，并且get()方法将返回这个值
  */
 public final class Optional<T> {
     /**

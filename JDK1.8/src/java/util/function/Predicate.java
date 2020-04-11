@@ -35,6 +35,8 @@ import java.util.Objects;
  * @param <T> the type of the input to the predicate
  *
  * @since 1.8
+ * @date 20200409
+ * 该接口包含多种默认方法来将Predicate组合成其他复杂的逻辑（比如：与，或，非）
  */
 @FunctionalInterface
 public interface Predicate<T> {

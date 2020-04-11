@@ -18,6 +18,11 @@ import java.util.function.Function;
  * @see     Hashtable
  * @since   1.2
  * @date 2019/08/14
+ * HashMap 底层是基于数组和链表实现的
+ * 两个重要的参数：容量、负载因子
+ * 容量的默认大小是 16，负载因子是 0.75，当 HashMap 的 size > 16*0.75 时就会发生扩容(容量和负载因子都可以自由调整)
+ * 在 JDK1.8 中对 HashMap 进行了优化： 当 hash 碰撞之后写入链表的长度超过了阈值(默认为8)
+ * 并且 table 的长度不小于64(否则扩容一次)时，链表将会转换为红黑树
  */
 public class HashMap<K,V> extends AbstractMap<K,V>
     implements Map<K,V>, Cloneable, Serializable {
@@ -48,10 +53,17 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
     static final int MIN_TREEIFY_CAPACITY = 64;
 
+    /**
+     * 基础元素Node
+     * @param <K>
+     * @param <V>
+     */
     static class Node<K,V> implements Map.Entry<K,V> {
+        //key的hash值
         final int hash;
         final K key;
         V value;
+        //通过next属性将多个hash值相同的元素关联起来，形成单向链表
         Node<K,V> next;
 
         Node(int hash, K key, V value, Node<K,V> next) {
@@ -90,6 +102,11 @@ public class HashMap<K,V> extends AbstractMap<K,V>
 
     /* ---------------- Static utilities -------------- */
 
+    /**
+     * 将传入的 Key 做 hash 运算计算出 hashcode,然后根据数组长度取模计算出在数组中的 index 下标
+     * @param key
+     * @return
+     */
     static final int hash(Object key) {
         int h;
         return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
@@ -288,6 +305,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         return getNode(hash(key), key) != null;
     }
 
+    //首先会将传入的 Key 做 hash 运算计算出 hashcode,然后根据数组长度取模计算出在数组中的 index 下标
     public V put(K key, V value) {
         return putVal(hash(key), key, value, false, true);
     }
@@ -335,6 +353,11 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         return null;
     }
 
+    /**
+     * 并发场景发生扩容，调用 resize() 方法里的 rehash() 时，容易出现环形链表。
+     * 这样当获取一个不存在的 key 时，计算出的 index 正好是环形链表的下标时就会出现死循环
+     * @return
+     */
     final Node<K,V>[] resize() {
         Node<K,V>[] oldTab = table;
         //在执行第一次put操作时,我们的table还是null,所以oldcap会是0

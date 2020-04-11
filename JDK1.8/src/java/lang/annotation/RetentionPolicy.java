@@ -33,6 +33,7 @@ package java.lang.annotation;
  *
  * @author  Joshua Bloch
  * @since 1.5
+ * @date 20200403
  */
 public enum RetentionPolicy {
     /**

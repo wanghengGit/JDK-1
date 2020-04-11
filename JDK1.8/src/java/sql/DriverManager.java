@@ -77,6 +77,9 @@ import sun.reflect.Reflection;
  * java.sql.SQLPermission "setLog"</code>.
  * @see Driver
  * @see Connection
+ * @date 20200328
+ * // 通过驱动管理类获取数据库链接
+ * connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mybatis?characterEncoding=utf-8", "root", "123");
  */
 public class DriverManager {
 
@@ -564,6 +567,9 @@ public class DriverManager {
         return result;
     }
 
+    /**
+     * 加载原始的驱动器
+     */
     private static void loadInitialDrivers() {
         String drivers;
         try {
@@ -696,6 +702,10 @@ public class DriverManager {
  * Wrapper class for registered Drivers in order to not expose Driver.equals()
  * to avoid the capture of the Driver it being compared to as it might not
  * normally have access.
+ */
+
+/**
+ * 装饰器模式
  */
 class DriverInfo {
 

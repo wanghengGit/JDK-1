@@ -15,7 +15,7 @@ import java.io.Serializable;
  * @since 1.2
  * @date 2019/08/14
  */
-public interface Map<K,V> {
+public interface Map<K, V> {
     // Query Operations
 
     int size();
@@ -50,7 +50,7 @@ public interface Map<K,V> {
 
     Set<Map.Entry<K, V>> entrySet();
 
-    interface Entry<K,V> {
+    interface Entry<K, V> {
 
         K getKey();
 
@@ -62,26 +62,26 @@ public interface Map<K,V> {
 
         int hashCode();
 
-        public static <K extends Comparable<? super K>, V> Comparator<Map.Entry<K,V>> comparingByKey() {
+        public static <K extends Comparable<? super K>, V> Comparator<Map.Entry<K, V>> comparingByKey() {
             return (Comparator<Map.Entry<K, V>> & Serializable)
-                (c1, c2) -> c1.getKey().compareTo(c2.getKey());
+                    (c1, c2) -> c1.getKey().compareTo(c2.getKey());
         }
 
-        public static <K, V extends Comparable<? super V>> Comparator<Map.Entry<K,V>> comparingByValue() {
+        public static <K, V extends Comparable<? super V>> Comparator<Map.Entry<K, V>> comparingByValue() {
             return (Comparator<Map.Entry<K, V>> & Serializable)
-                (c1, c2) -> c1.getValue().compareTo(c2.getValue());
+                    (c1, c2) -> c1.getValue().compareTo(c2.getValue());
         }
 
         public static <K, V> Comparator<Map.Entry<K, V>> comparingByKey(Comparator<? super K> cmp) {
             Objects.requireNonNull(cmp);
             return (Comparator<Map.Entry<K, V>> & Serializable)
-                (c1, c2) -> cmp.compare(c1.getKey(), c2.getKey());
+                    (c1, c2) -> cmp.compare(c1.getKey(), c2.getKey());
         }
 
         public static <K, V> Comparator<Map.Entry<K, V>> comparingByValue(Comparator<? super V> cmp) {
             Objects.requireNonNull(cmp);
             return (Comparator<Map.Entry<K, V>> & Serializable)
-                (c1, c2) -> cmp.compare(c1.getValue(), c2.getValue());
+                    (c1, c2) -> cmp.compare(c1.getValue(), c2.getValue());
         }
     }
 
@@ -96,10 +96,33 @@ public interface Map<K,V> {
     default V getOrDefault(Object key, V defaultValue) {
         V v;
         return (((v = get(key)) != null) || containsKey(key))
-            ? v
-            : defaultValue;
+                ? v
+                : defaultValue;
     }
 
+    /**
+     * Performs the given action for each entry in this map until all entries
+     * have been processed or the action throws an exception.   Unless
+     * otherwise specified by the implementing class, actions are performed in
+     * the order of entry set iteration (if an iteration order is specified.)
+     * Exceptions thrown by the action are relayed to the caller.
+     *
+     * @param action The action to be performed for each entry
+     * @throws NullPointerException            if the specified action is null
+     * @throws ConcurrentModificationException if an entry is found to be
+     *                                         removed during iteration
+     * @implSpec The default implementation is equivalent to, for this {@code map}:
+     * <pre> {@code
+     * for (Map.Entry<K, V> entry : map.entrySet())
+     *     action.accept(entry.getKey(), entry.getValue());
+     * }</pre>
+     * <p>
+     * The default implementation makes no guarantees about synchronization
+     * or atomicity properties of this method. Any implementation providing
+     * atomicity guarantees must override this method and document its
+     * concurrency properties.
+     * @since 1.8
+     */
     default void forEach(BiConsumer<? super K, ? super V> action) {
         Objects.requireNonNull(action);
         for (Map.Entry<K, V> entry : entrySet()) {
@@ -108,7 +131,7 @@ public interface Map<K,V> {
             try {
                 k = entry.getKey();
                 v = entry.getValue();
-            } catch(IllegalStateException ise) {
+            } catch (IllegalStateException ise) {
                 // this usually means the entry is no longer in the map.
                 throw new ConcurrentModificationException(ise);
             }
@@ -124,7 +147,7 @@ public interface Map<K,V> {
             try {
                 k = entry.getKey();
                 v = entry.getValue();
-            } catch(IllegalStateException ise) {
+            } catch (IllegalStateException ise) {
                 // this usually means the entry is no longer in the map.
                 throw new ConcurrentModificationException(ise);
             }
@@ -134,7 +157,7 @@ public interface Map<K,V> {
 
             try {
                 entry.setValue(v);
-            } catch(IllegalStateException ise) {
+            } catch (IllegalStateException ise) {
                 // this usually means the entry is no longer in the map.
                 throw new ConcurrentModificationException(ise);
             }
@@ -153,7 +176,7 @@ public interface Map<K,V> {
     default boolean remove(Object key, Object value) {
         Object curValue = get(key);
         if (!Objects.equals(curValue, value) ||
-            (curValue == null && !containsKey(key))) {
+                (curValue == null && !containsKey(key))) {
             return false;
         }
         remove(key);
@@ -163,7 +186,7 @@ public interface Map<K,V> {
     default boolean replace(K key, V oldValue, V newValue) {
         Object curValue = get(key);
         if (!Objects.equals(curValue, oldValue) ||
-            (curValue == null && !containsKey(key))) {
+                (curValue == null && !containsKey(key))) {
             return false;
         }
         put(key, newValue);
@@ -179,7 +202,7 @@ public interface Map<K,V> {
     }
 
     default V computeIfAbsent(K key,
-            Function<? super K, ? extends V> mappingFunction) {
+                              Function<? super K, ? extends V> mappingFunction) {
         Objects.requireNonNull(mappingFunction);
         V v;
         if ((v = get(key)) == null) {
@@ -194,7 +217,7 @@ public interface Map<K,V> {
     }
 
     default V computeIfPresent(K key,
-            BiFunction<? super K, ? super V, ? extends V> remappingFunction) {
+                               BiFunction<? super K, ? super V, ? extends V> remappingFunction) {
         Objects.requireNonNull(remappingFunction);
         V oldValue;
         if ((oldValue = get(key)) != null) {
@@ -212,7 +235,7 @@ public interface Map<K,V> {
     }
 
     default V compute(K key,
-            BiFunction<? super K, ? super V, ? extends V> remappingFunction) {
+                      BiFunction<? super K, ? super V, ? extends V> remappingFunction) {
         Objects.requireNonNull(remappingFunction);
         V oldValue = get(key);
 
@@ -235,13 +258,13 @@ public interface Map<K,V> {
     }
 
     default V merge(K key, V value,
-            BiFunction<? super V, ? super V, ? extends V> remappingFunction) {
+                    BiFunction<? super V, ? super V, ? extends V> remappingFunction) {
         Objects.requireNonNull(remappingFunction);
         Objects.requireNonNull(value);
         V oldValue = get(key);
         V newValue = (oldValue == null) ? value :
-                   remappingFunction.apply(oldValue, value);
-        if(newValue == null) {
+                remappingFunction.apply(oldValue, value);
+        if (newValue == null) {
             remove(key);
         } else {
             put(key, newValue);

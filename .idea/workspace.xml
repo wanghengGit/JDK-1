@@ -13,6 +13,7 @@
       <change afterPath="$PROJECT_DIR$/JDK1.8/src/javax/note_javax" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/JDK1.8/src/note" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/AbstractStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/AbstractStringBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/AutoCloseable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/AutoCloseable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Class.java" afterDir="false" />
@@ -66,6 +67,56 @@
       <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/stream/ReferencePipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/stream/ReferencePipeline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/stream/Stream.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/stream/Stream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/stream/StreamSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/stream/StreamSupport.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/io/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/io/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/io/InputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/io/InputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/io/OutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/io/OutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/io/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/io/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/io/Serializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/io/Serializable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/io/Writer.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/io/Writer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/AbstractStringBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/AbstractStringBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Appendable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Appendable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/ArithmeticException.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/ArithmeticException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/CharSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/CharSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Cloneable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Cloneable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Comparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Comparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Deprecated.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Deprecated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Iterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Iterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Override.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Override.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Runnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Runnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/SuppressWarnings.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/SuppressWarnings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/Thread.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/Thread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/AccessibleObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/AccessibleObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/Array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/Constructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/Constructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/sql/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/sql/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/sql/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/sql/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/sql/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/sql/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/time/ZoneId.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/time/ZoneId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/BitSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/BitSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Random.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/TimeZone.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/TimeZone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/UUID.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/UUID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/AbstractExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/AbstractExecutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Callable.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Callable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ExecutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executors.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ForkJoinTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ForkJoinTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Future.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Future.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RunnableFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RunnableFuture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledExecutorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledExecutorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledThreadPoolExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledThreadPoolExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ThreadPoolExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ThreadPoolExecutor.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +126,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="FavoritesManager">
     <favorites_list name="JDK-1" />
   </component>
@@ -96,11 +148,111 @@
       <find>getClassLoader</find>
       <find>parallel()</find>
       <find>modCount</find>
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/sql/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/sql/DriverManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="570" column="47" selection-start-line="570" selection-start-column="47" selection-end-line="570" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/sql/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>newFixedThreadPool</find>
+      <find>@O</find>
+      <find>@Override</find>
+      <find>Override</find>
+      <find>Supp</find>
+>>>>>>> Stashed changes
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< Updated upstream
+=======
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/String.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/StringBuffer.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/atomic/AtomicInteger.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/LinkedList.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Deprecated.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/AccessibleObject.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/Array.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/reflect/Constructor.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/ArrayList.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/io/File.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/io/OutputStream.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/io/Reader.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/io/Writer.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/io/InputStream.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executors.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executor.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/AbstractExecutorService.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledExecutorService.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ThreadPoolExecutor.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Callable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RunnableFuture.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Future.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Runnable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ExecutorService.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledThreadPoolExecutor.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/io/Serializable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveAction.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveTask.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ForkJoinTask.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Date.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Calendar.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/TimeZone.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/time/ZoneId.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/UUID.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Random.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Vector.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/BitSet.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Appendable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/AbstractStringBuilder.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/CharSequence.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Cloneable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Comparable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Iterable.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Thread.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/ArithmeticException.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/Override.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/lang/SuppressWarnings.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/sql/Driver.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/sql/DriverManager.java" />
+        <option value="$PROJECT_DIR$/JDK1.8/src/java/sql/Connection.java" />
+      </list>
+    </option>
+  </component>
+>>>>>>> Stashed changes
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -125,6 +277,7 @@
       </list>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectId" id="1YVgC0qME8LFrcB9GxLCP1sdVyT" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -133,6 +286,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="170" />
+    <option name="y" value="91" />
+    <option name="width" value="1026" />
+    <option name="height" value="546" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
+              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
+              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
+              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
+              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JDK-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JDK-1" type="462c0819:PsiDirectoryNode" />
+              <item name="JDK1.8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="DriverManager.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+>>>>>>> Stashed changes
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -146,7 +361,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+<<<<<<< Updated upstream
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+=======
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+>>>>>>> Stashed changes
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -181,6 +400,7 @@
       <workItem from="1569569875087" duration="2039000" />
       <workItem from="1569573735258" duration="586000" />
       <workItem from="1569720507626" duration="356000" />
+<<<<<<< Updated upstream
       <workItem from="1569812361001" duration="2182000" />
       <workItem from="1583033045321" duration="164000" />
       <workItem from="1583647267999" duration="261000" />
@@ -226,6 +446,427 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+      <workItem from="1569812361001" duration="4063000" />
+      <workItem from="1570678594294" duration="101000" />
+      <workItem from="1571020479047" duration="1065000" />
+      <workItem from="1585382818313" duration="12325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="46122000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.33224222" visible="true" weight="0.25340393" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="12" />
+      <window_info anchor="right" id="BPMNPalette" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.66775775" visible="true" weight="0.25340393" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/AbstractExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ScheduledThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="294" column="16" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="16" />
+          <folding>
+            <element signature="e#10422#10423#0" expanded="true" />
+            <element signature="e#10471#10472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/concurrent/Future.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/Future.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="166" column="18" lean-forward="true" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="155" column="34" lean-forward="true" selection-start-line="155" selection-start-column="34" selection-end-line="155" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="163" column="3" selection-start-line="163" selection-start-column="3" selection-end-line="163" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/RecursiveTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/concurrent/ForkJoinTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10530">
+          <caret line="616" column="16" selection-start-line="616" selection-start-column="16" selection-end-line="616" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="129" column="17" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/TimeZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="130" column="23" lean-forward="true" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/time/ZoneId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="174" column="13" lean-forward="true" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/time/ZoneRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1425">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/time/ZoneId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5223">
+          <caret line="175" column="17" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/TimeZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="528" column="41" lean-forward="true" selection-start-line="528" selection-start-column="41" selection-end-line="528" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22075">
+          <caret line="1623" column="26" lean-forward="true" selection-start-line="1623" selection-start-column="26" selection-end-line="1623" selection-end-column="26" />
+          <folding>
+            <element signature="e#66340#66341#0" expanded="true" />
+            <element signature="e#66409#66410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="199" column="18" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
+          <folding>
+            <element signature="e#11985#11986#0" expanded="true" />
+            <element signature="e#12016#12017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/UUID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="141" column="23" selection-start-line="141" selection-start-column="23" selection-end-line="141" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/BitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/ArraysParallelSortHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/StringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Appendable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/CharSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="64" column="52" lean-forward="true" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Cloneable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="138" column="3" selection-start-line="138" selection-start-column="3" selection-end-line="138" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/ArithmeticException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/lang/SuppressWarnings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/sql/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/security/AccessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="297" column="31" selection-start-line="297" selection-start-column="31" selection-end-line="297" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="570" column="47" selection-start-line="570" selection-start-column="47" selection-end-line="570" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JDK1.8/src/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> Stashed changes
   </component>
   <component name="masterDetails">
     <states>
@@ -288,6 +929,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

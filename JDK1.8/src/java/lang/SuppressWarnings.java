@@ -48,6 +48,8 @@ import static java.lang.annotation.ElementType.*;
  * @jls 5.1.9 Unchecked Conversion
  * @jls 5.5.2 Checked Casts and Unchecked Casts
  * @jls 9.6.3.5 @SuppressWarnings
+ * @date 20200328
+ * 用于指示在被注解的程序元素中消除某些特定的命名警告
  */
 @Target({TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE})
 @Retention(RetentionPolicy.SOURCE)

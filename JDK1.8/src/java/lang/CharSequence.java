@@ -54,6 +54,8 @@ import java.util.stream.StreamSupport;
  * @author Mike McCloskey
  * @since 1.4
  * @spec JSR-51
+ * @date 20200328
+ * 该接口为只读访问各种类型的字符序列提供了统一的方法
  */
 
 public interface CharSequence {

@@ -37,6 +37,7 @@ import java.util.Objects;
  * @param <T> the type of the input to the operation
  *
  * @since 1.8
+ * @date 20200409
  */
 @FunctionalInterface
 public interface Consumer<T> {

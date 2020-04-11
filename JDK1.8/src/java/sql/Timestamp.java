@@ -68,6 +68,7 @@ import java.util.StringTokenizer;
  * inheritance relationship between <code>Timestamp</code>
  * and <code>java.util.Date</code> really
  * denotes implementation inheritance, and not type inheritance.
+ * @date 20200328
  */
 public class Timestamp extends java.util.Date {
 
