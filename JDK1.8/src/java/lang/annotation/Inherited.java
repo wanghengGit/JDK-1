@@ -45,6 +45,7 @@ package java.lang.annotation;
  * @author  Joshua Bloch
  * @since 1.5
  * @jls 9.6.3.3 @Inherited
+ * @date 20200628
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

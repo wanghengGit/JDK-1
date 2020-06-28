@@ -118,6 +118,7 @@ import java.util.Locale;
  * @author  Martin Buchholz
  * @author  Ulf Zibis
  * @since   1.0
+ * @date 20200628
  */
 public final
 class Character implements java.io.Serializable, Comparable<Character> {

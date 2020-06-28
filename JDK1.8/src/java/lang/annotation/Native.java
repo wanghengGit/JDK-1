@@ -35,6 +35,7 @@ package java.lang.annotation;
  * if so, what declarations it should contain.
  *
  * @since 1.8
+ * @date 20200628
  */
 @Documented
 @Target(ElementType.FIELD)

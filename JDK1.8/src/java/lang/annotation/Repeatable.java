@@ -27,7 +27,7 @@ package java.lang.annotation;
 
 /**
  * The annotation type {@code java.lang.annotation.Repeatable} is
- * used to indicate that the annotation type whose declaration it
+ * used to indicate(表明) that the annotation type whose declaration it
  * (meta-)annotates is <em>repeatable</em>. The value of
  * {@code @Repeatable} indicates the <em>containing annotation
  * type</em> for the repeatable annotation type.
@@ -35,6 +35,7 @@ package java.lang.annotation;
  * @since 1.8
  * @jls 9.6 Annotation Types
  * @jls 9.7 Annotations
+ * @date 20200628
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

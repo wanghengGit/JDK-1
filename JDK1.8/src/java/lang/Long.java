@@ -50,6 +50,7 @@ import java.math.*;
  * @author  Josh Bloch
  * @author  Joseph D. Darcy
  * @since   JDK1.0
+ * @date 20200628
  */
 public final class Long extends Number implements Comparable<Long> {
     /**

@@ -21,6 +21,7 @@ import java.util.regex.PatternSyntaxException;
  * @author Ulf Zibis
  * @date 2019/08/28
  * @since JDK1.0
+ * @date 20200628
  */
 
 public final class String

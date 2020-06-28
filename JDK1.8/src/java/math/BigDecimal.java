@@ -216,6 +216,7 @@ import static java.math.BigInteger.LONG_MASK;
  * @author  Mike Cowlishaw
  * @author  Joseph D. Darcy
  * @author  Sergey V. Kuksenko
+ * @date 20200628
  */
 public class BigDecimal extends Number implements Comparable<BigDecimal> {
     /**
