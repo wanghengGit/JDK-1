@@ -1,0 +1,150 @@
+
+P
+java:S1199© "-Extract this nested code block into a method.(¶ ¨÷ûÿÿÿÿ8•Ã™¡.
+N
+java:S1068Ç"0Remove this unused "MAX_FD_CHARS" private field.(ÕŒ¥ú8•Ã™¡.
+P
+java:S1199ò"-Extract this nested code block into a method.( áÊşúÿÿÿÿ8•Ã™¡.
+J
+java:S1199ë"-Extract this nested code block into a method.(¬“¸8•Ã™¡.
+J
+java:S1199‘!"-Extract this nested code block into a method.(÷îé,8•Ã™¡.
+Š
+java:S1130¹"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ÃĞü8•Ã™¡.
+P
+java:S1199ğ"-Extract this nested code block into a method.(áöîáûÿÿÿÿ8•Ã™¡.
+K
+java:S1199Ÿ"-Extract this nested code block into a method.(«ïÆœ8•Ã™¡.
+P
+java:S1199½"-Extract this nested code block into a method.(˜ç˜»şÿÿÿÿ8•Ã™¡.
+K
+java:S1199õ"-Extract this nested code block into a method.(ÓƒÕƒ8•Ã™¡.
+K
+java:S1199Ç"-Extract this nested code block into a method.(¿¦ìÉ8•Ã™¡.
+P
+java:S1199È"-Extract this nested code block into a method.(¶ ¨÷ûÿÿÿÿ8•Ã™¡.
+K
+java:S1199ç "-Extract this nested code block into a method.(¡©¤ò8•Ã™¡.
+D
+java:S1168ˆ"&Return an empty array instead of null.(¥¹ï8•Ã™¡.
+]
+java:S1117ê!":Rename "zero" which hides the field declared at line 1858.(ÌìÑõıÿÿÿÿ8•Ã™¡.
+K
+java:S1199™"-Extract this nested code block into a method.(ôÊ‚Ê8•Ã™¡.
+D	java:S131""Add a default case to this switch.(îÇËúÿÿÿÿ8•Ã™¡.
+J
+java:S1199ˆ!"-Extract this nested code block into a method.(Ğ¼Şp8•Ã™¡.
+K
+java:S1199Â"-Extract this nested code block into a method.(²óÚï8•Ã™¡.
+U
+java:S1117˜""7Rename "c" which hides the field declared at line 2621.(‰÷ğˆ8•Ã™¡.
+K
+java:S1199·"-Extract this nested code block into a method.(Öæ—8•Ã™¡.
+i
+java:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ËËÉÒ
+K
+java:S1199”"-Extract this nested code block into a method.(ğÛòÜ8•Ã™¡.
+p
+java:S3776ß"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ëçÉ˜8•Ã™¡.
+P
+java:S1199¥"-Extract this nested code block into a method.(ö‹âäüÿÿÿÿ8•Ã™¡.
+Y
+java:S2696€"6Make the enclosing method "static" or remove this set.(·Ôıøÿÿÿÿ8•Ã™¡.
+]
+java:S1117‰"?Rename "precision" which hides the field declared at line 2619.(èÑÂû8•Ã™¡.
+P
+java:S1199ú "-Extract this nested code block into a method.(µë£Ãÿÿÿÿÿ8•Ã™¡.
+P
+java:S1199Û "-Extract this nested code block into a method.( áÊşúÿÿÿÿ8•Ã™¡.
+R
+java:S2200Ã"/Only the sign of the result should be examined.(èç«ƒûÿÿÿÿ8•Ã™¡.
+K
+java:S1199ş"-Extract this nested code block into a method.(¡©¤ò8•Ã™¡.
+u
+java:S3776ã!"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Õ§§Òøÿÿÿÿ8•Ã™¡.
+P
+java:S1199‘"-Extract this nested code block into a method.(µë£Ãÿÿÿÿÿ8•Ã™¡.
+P
+java:S1199›!"-Extract this nested code block into a method.(Ìï³™øÿÿÿÿ8•Ã™¡.
+K
+java:S1199˜ "-Extract this nested code block into a method.(Öæ—8•Ã™¡.
+V
+java:S1197¨"8Move the array designator from the variable to the type.(±æœÅ8•Ã™¡.
+p
+java:S3776å"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(Š¾Ôò8•Ã™¡.
+R
+java:S1144"/Remove this unused private "conversion" method.(ãõÜ°ûÿÿÿÿ8•Ã™¡.
+P
+java:S1199¦!"-Extract this nested code block into a method.(˜ç˜»şÿÿÿÿ8•Ã™¡.
+K
+java:S1199‚!"-Extract this nested code block into a method.(ôÊ‚Ê8•Ã™¡.
+K
+java:S1199‘ "-Extract this nested code block into a method.(æĞ½¿8•Ã™¡.
+K
+java:S1199£ "-Extract this nested code block into a method.(²óÚï8•Ã™¡.
+K
+java:S1199Ü"-Extract this nested code block into a method.(š¸ÊĞ8•Ã™¡.
+K
+java:S1199°!"-Extract this nested code block into a method.(¿¦ìÉ8•Ã™¡.
+K
+java:S1199±"-Extract this nested code block into a method.(æĞ½¿8•Ã™¡.
+J
+java:S1199Ÿ"-Extract this nested code block into a method.(Ğ¼Şp8•Ã™¡.
+^	java:S125¡#"<This block of commented-out lines of code should be removed.(ÍêÒîÿÿÿÿÿ8•Ã™¡.
+K
+java:S1199æ"-Extract this nested code block into a method.(¯Ôí¶8•Ã™¡.
+D	java:S131ê ""Add a default case to this switch.(îÇËúÿÿÿÿ8•Ã™¡.
+p
+java:S3776×"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ºÚÈñ8•Ã™¡.
+F	java:S108»")Either remove or fill this block of code.(£ò¨ø8•Ã™¡.
+J
+java:S1199¨"-Extract this nested code block into a method.(÷îé,8•Ã™¡.
+U
+java:S1854é"7Remove this useless assignment to local variable "tmp".(ëåÌå8•Ã™¡.
+K
+java:S1199«"-Extract this nested code block into a method.(õÍÃÅ8•Ã™¡.
+P
+java:S1199Î"-Extract this nested code block into a method.(¸¨ÍÖøÿÿÿÿ8•Ã™¡.
+u
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(œåÕşÿÿÿÿ8•Ã™¡.
+p
+java:S3776ñ"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ÒíÉ’8•Ã™¡.
+K
+java:S1199¼ "-Extract this nested code block into a method.(š¸ÊĞ8•Ã™¡.
+[
+java:S1197"8Move the array designator from the variable to the type.(òàúÉúÿÿÿÿ8•Ã™¡.
+K
+java:S1199ú"-Extract this nested code block into a method.(ğÛòÜ8•Ã™¡.
+P
+java:S1199… "-Extract this nested code block into a method.(ö‹âäüÿÿÿÿ8•Ã™¡.
+K
+java:S1199‹ "-Extract this nested code block into a method.(õÍÃÅ8•Ã™¡.
+K
+java:S1199Ï "-Extract this nested code block into a method.(¯Ôí¶8•Ã™¡.
+Y	java:S125¥#"<This block of commented-out lines of code should be removed.(Ø›üí8•Ã™¡.
+P
+java:S1199·!"-Extract this nested code block into a method.(¸¨ÍÖøÿÿÿÿ8•Ã™¡.
+P
+java:S1199²"-Extract this nested code block into a method.(Ìï³™øÿÿÿÿ8•Ã™¡.
+w	java:S115ê"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯®°8•Ã™¡.
+7
+java:S1700©""Rename field "flags"(¯Æ˜ùÿÿÿÿ8•Ã™¡.
+K
+java:S1199ÿ"-Extract this nested code block into a method.(«ïÆœ8•Ã™¡.
+J
+java:S1199Î"-Extract this nested code block into a method.(•ŒÊ#8•Ã™¡.
+u	java:S127‚"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ú‰°÷8•Ã™¡.
+R
+java:S2200Â"/Only the sign of the result should be examined.(¬”ÃÊøÿÿÿÿ8•Ã™¡.
+u
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(éôÁ€ùÿÿÿÿ8•Ã™¡.
+u
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ˆ¨Šóÿÿÿÿÿ8•Ã™¡.
+u
+java:S3776·"RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(şòÆÂıÿÿÿÿ8•Ã™¡.
+J
+java:S1199¯ "-Extract this nested code block into a method.(•ŒÊ#8•Ã™¡.
+?
+java:S1116µ"Remove this empty statement.(ôŸìúÿÿÿÿ8•Ã™¡.
+K
+java:S1191="5Use classes from the Java API instead of Sun classes.(ÚŸÈš

@@ -6,7 +6,6 @@ import java.util.Collection;
  * @since 1.5
  * @author Doug Lea
  *
- * @author wangheng
  * @date 2019/08/14
  */
 public class ReentrantLock implements Lock, java.io.Serializable {
@@ -18,9 +17,10 @@ public class ReentrantLock implements Lock, java.io.Serializable {
      * Base of synchronization control for this lock. Subclassed
      * into fair and nonfair versions below. Uses AQS state to
      * represent the number of holds on the lock.
+     * FairSync 与 NonfairSync的区别在于，是不是保证获取锁的公平性，因为默认是NonfairSync，我们以这个为例了解其背后的原理
      */
     abstract static class Sync extends AbstractQueuedSynchronizer {
-        private static final long serialVersionUID = -5179523762034025860L;
+        private static final long/. serialVersionUID = -5179523762034025860L;
 
         /**
          * Performs {@link Lock#lock}. The main reason for subclassing
@@ -51,6 +51,11 @@ public class ReentrantLock implements Lock, java.io.Serializable {
             return false;
         }
 
+        /**
+         * 释放锁就是对AQS中的状态值State进行修改。同时更新下一个链表中的线程等待节点。
+         * @param releases
+         * @return
+         */
         protected final boolean tryRelease(int releases) {
             int c = getState() - releases;
             if (Thread.currentThread() != getExclusiveOwnerThread())
@@ -107,6 +112,8 @@ public class ReentrantLock implements Lock, java.io.Serializable {
         /**
          * Performs lock.  Try immediate barge, backing up to normal
          * acquire on failure.
+         * 还记得之前AQS中的int类型的state值，这里就是通过CAS（乐观锁）去修改state的值。
+         * lock的基本操作还是通过乐观锁来实现的
          */
         final void lock() {
             if (compareAndSetState(0, 1))

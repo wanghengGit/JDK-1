@@ -1,0 +1,14 @@
+
+K
+java:S1191'"5Use classes from the Java API instead of Sun classes.(éª‚€
+[	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(­§äç
+t	java:S1154"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ú†áæıÿÿÿÿ
+t	java:S1155"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÉæúŞøÿÿÿÿ
+>
+java:S1659†""Declare "next" on a separate line.(Ä±‚Îøÿÿÿÿ
+>
+java:S1659›""Declare "next" on a separate line.(Ä±‚Îøÿÿÿÿ
+>
+java:S1659µ""Declare "next" on a separate line.(Ä±‚Îøÿÿÿÿ
+>
+java:S1659Ï""Declare "next" on a separate line.(Ä±‚Îøÿÿÿÿ

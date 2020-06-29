@@ -1,0 +1,32 @@
+
+L
+java:S1191ë"5Use classes from the Java API instead of Sun classes.(¾¯Œ÷
+r
+java:S1192w"\Define a constant instead of duplicating this literal "Maximum lock count exceeded" 4 times.(‡Êà–
+f
+java:S1192É"JDefine a constant instead of duplicating this literal "not owner" 3 times.(¶¼‰õûÿÿÿÿ
+[	java:S112w"FDefine and throw a dedicated exception instead of using a generic one.(‡Êà–
+\	java:S112â"FDefine and throw a dedicated exception instead of using a generic one.(‡Êà–
+\	java:S112…"FDefine and throw a dedicated exception instead of using a generic one.(‡Êà–
+\	java:S112›"FDefine and throw a dedicated exception instead of using a generic one.(‡Êà–
+\	java:S112ô"FDefine and throw a dedicated exception instead of using a generic one.(Âğğ
+P
+java:S1161N":Add the "@Override" annotation above this method signature(š´™ù
+U
+java:S1161c":Add the "@Override" annotation above this method signature(ÊÇ¼…üÿÿÿÿ
+O
+java:S1161n":Add the "@Override" annotation above this method signature(•Ü)
+Q
+java:S1161ƒ":Add the "@Override" annotation above this method signature(Ÿ‘ê»
+i
+java:S3776ƒ"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ÿ‘ê»
+V
+java:S1161§":Add the "@Override" annotation above this method signature(®ñ›úıÿÿÿÿ
+i
+java:S3776Ç"RRefactor this method to reduce its Cognitive Complexity from 50 to the 15 allowed.(Èßù¯
+i
+java:S3776’"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(«¿¿ø
+Q
+java:S1161¯":Add the "@Override" annotation above this method signature(¯şš×
+R	java:S125†"<This block of commented-out lines of code should be removed.(æ´®´
+R	java:S125Ó"<This block of commented-out lines of code should be removed.(æ´®´

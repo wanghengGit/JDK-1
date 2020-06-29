@@ -14,6 +14,8 @@ import sun.security.util.SecurityConstants;
  * @author Doug Lea
  *
  * @date 2019/08/15
+ * Executors 提供的4种线程池
+ * 线程池工具类
  */
 public class Executors {
 

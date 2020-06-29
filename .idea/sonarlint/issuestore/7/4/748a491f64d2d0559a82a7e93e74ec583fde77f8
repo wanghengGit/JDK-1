@@ -1,0 +1,56 @@
+
+K
+java:S1191("5Use classes from the Java API instead of Sun classes.(à„Ü
+{	java:S135ê"YReduce the total number of break and continue statements in this loop to use at most one.(ƒ²Í¯ÿÿÿÿÿ8‰ŞÎ£.
+{	java:S135±"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8‰ŞÎ£.
+{	java:S135à"YReduce the total number of break and continue statements in this loop to use at most one.(Àÿ•óÿÿÿÿÿ8‰ŞÎ£.
+K
+java:S1604 	"(Make this anonymous inner class a lambda(£åï£øÿÿÿÿ8‰ŞÎ£.
+M
+java:S2160{"+Override the "equals" method in this class.(û•¶éüÿÿÿÿ8‰ŞÎ£.
+C
+java:S1948‡"%Make "defaults" private or transient.(Áéè8‰ŞÎ£.
+x
+java:S1149{"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(û•¶éüÿÿÿÿ8‰ŞÎ£.
+‚
+java:S1149Ş"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ê‹¦¨şÿÿÿÿ8‰ŞÎ£.
+t
+java:S1149ğ"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ËÃŠ³8‰ŞÎ£.
+t
+java:S1149ˆ"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(—½8‰ŞÎ£.
+t
+java:S1149—"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ËÃŠ³8‰ŞÎ£.
+t
+java:S1149³"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(ËÃŠ³8‰ŞÎ£.
+t
+java:S1149Å"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(©¡®À8‰ŞÎ£.
+y
+java:S1149Ô"VReplace the synchronized class "Hashtable" by an unsynchronized one such as "HashMap".(î¾ƒÕûÿÿÿÿ8‰ŞÎ£.
+S
+java:S1854ã"5Remove this useless assignment to local variable "c".(ò‹÷Ó8‰ŞÎ£.
+u
+java:S3776Ù"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÏÁ›Êıÿÿÿÿ8‰ŞÎ£.
+u
+java:S3776¦"RRefactor this method to reduce its Cognitive Complexity from 86 to the 15 allowed.(™‡Ïèüÿÿÿÿ8‰ŞÎ£.
+u
+java:S3776›"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(ï¶Æñşÿÿÿÿ8‰ŞÎ£.
+p
+java:S3776Ö"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ö×ù²8‰ŞÎ£.
+<
+java:S2178"Correct this "&" to "&&".(Á´¼¨ÿÿÿÿÿ8‰ŞÎ£.
+u
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(«ÙŸ¸ùÿÿÿÿ8‰ŞÎ£.
+X
+java:S1133Ê"5Do not forget to remove this deprecated code someday.(«óçøÿÿÿÿÿ8‰ŞÎ£.
+f
+java:S1123É"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš8‰ŞÎ£.
+F	java:S108Í")Either remove or fill this block of code.(ï­£Ä8‰ŞÎ£.
+\
+java:S4719³">Replace charset name argument with StandardCharsets.ISO_8859_1(½ŒßÚ8‰ŞÎ£.
+¤
+java:S1130ğ"…Remove the declaration of thrown exception 'java.util.InvalidPropertiesFormatException' which is a subclass of 'java.io.IOException'.(ÎÌĞÁ8‰ŞÎ£.
+D
+java:S1452ï"&Remove usage of generic wildcard type.(§²¸ø8‰ŞÎ£.
+¤
+java:S1130°	"…Remove the declaration of thrown exception 'java.util.InvalidPropertiesFormatException' which is a subclass of 'java.io.IOException'.(ÎÌĞÁ8‰ŞÎ£.
+^	java:S125è"<This block of commented-out lines of code should be removed.(ˆò€–ûÿÿÿÿ8‰ŞÎ£.

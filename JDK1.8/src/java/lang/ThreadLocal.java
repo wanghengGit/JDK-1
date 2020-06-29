@@ -101,6 +101,15 @@ public class ThreadLocal<T> {
      *
      * @return the current thread's value of this thread-local
      */
+    /**
+     * 下面的 getMap()方法 传入当前线程，获得一个ThreadLocalMap对象，说明每一个线程维护了
+     * 自己的一个 map，保证读取出来的value是自己线程的。
+     *
+     * ThreadLocalMap 是ThreadLocal静态内部类，存储value的键值就是ThreadLocal本身。
+     *
+     * 因此可以断定，每个线程维护一个ThreadLocalMap的键值对映射Map。不同线程的Map的 key值 是一样的，
+     * 都是ThreadLocal，但 value 是不同的。
+     */
     public T get() {
         Thread t = Thread.currentThread();
         ThreadLocalMap map = getMap(t);

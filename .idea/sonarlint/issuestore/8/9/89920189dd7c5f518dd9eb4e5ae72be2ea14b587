@@ -1,0 +1,139 @@
+
+E
+java:S1659ã")Declare "gotNegative" on a separate line.(ÿŸµ‹ùÿÿÿÿ
+`
+java:S3358á"DExtract this nested ternary operation into an independent statement.(İ¯éÛıÿÿÿÿ
+N
+java:S1481à"2Remove this unused "phaseOneStart" local variable.(€ğÙ†ÿÿÿÿÿ
+W	java:S125Í"<This block of commented-out lines of code should be removed.(ş¸¥áıÿÿÿÿ
+o	java:S135›"YReduce the total number of break and continue statements in this loop to use at most one.(çÉòÕ
+b
+java:S1854ü"FRemove this useless assignment to local variable "fastTwoSumRoundOff".(û¤¬îúÿÿÿÿ
+i
+java:S3776ª"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(İØØÑ
+^
+java:S3518­"BMake sure "doubleResult" can't be zero before doing this division.(îİ³üÿÿÿÿ
+K
+java:S1854Î"5Remove this useless assignment to local variable "c".(‰½©.
+n	java:S127°"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÁŞó¢
+Q
+java:S1854Ó"5Remove this useless assignment to local variable "c".(ü‚Šöÿÿÿÿÿ
+s	java:S127Ÿ"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì’Øäúÿÿÿÿ
+W	java:S125‚"<This block of commented-out lines of code should be removed.(Üµ‰íøÿÿÿÿ
+n
+java:S3776­"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¼ÂÌŞüÿÿÿÿ
+s	java:S127¸"XRefactor the code in order to not assign to this loop counter from within the loop body.(°ñÆõşÿÿÿÿ
+=	java:S131³""Add a default case to this switch.(îÇËúÿÿÿÿ
+g
+java:S3776ù"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ŠË2
+<
+java:S2129²" Remove this "Double" constructor(öêğŒüÿÿÿÿ
+]
+java:S1854–"ARemove this useless assignment to local variable "phaseOneStart".(Ä÷¬ùşÿÿÿÿ
+R	java:S125	"<This block of commented-out lines of code should be removed.(“†ú«
+R
+java:S3518Â"<Make sure "number" can't be zero before doing this division.(ÃÌÃy
+W	java:S125•	"<This block of commented-out lines of code should be removed.(‚Ó¤ÿÿÿÿÿ
+n
+java:S3776”"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.( õ¨Ìûÿÿÿÿ
+W
+java:S1117é"@Rename "multiplier" which hides the field declared at line 3851.(Š•»
+t	java:S135ù"YReduce the total number of break and continue statements in this loop to use at most one.(È»€úÿÿÿÿ
+`
+java:S3358û"DExtract this nested ternary operation into an independent statement.(™©ºüÿÿÿÿ
+E
+java:S1066ı"/Merge this if statement with the enclosing one.(ÇàÏ 
+m	java:S127ş"XRefactor the code in order to not assign to this loop counter from within the loop body.(æÎÓc
+`
+java:S3358à"DExtract this nested ternary operation into an independent statement.(éî¤úÿÿÿÿ
+Z
+java:S11285"?Remove this unused import 'java.util.concurrent.ConcurrentMap'.(˜ˆ¶úÿÿÿÿ
+A
+java:S1659«"*Declare "minIntDigits" on a separate line.(ÆŞŞ
+K
+java:S11918"5Use classes from the Java API instead of Sun classes.(§ª›‰
+n	java:S127š"XRefactor the code in order to not assign to this loop counter from within the loop body.(Äî•˜
+7
+java:S2129Û" Remove this "Double" constructor(Ø†ã
+Q
+java:S1854É"5Remove this useless assignment to local variable "c".(º¯êÖûÿÿÿÿ
+s	java:S127†"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì’Øäúÿÿÿÿ
+s	java:S127…"XRefactor the code in order to not assign to this loop counter from within the loop body.(°ñÆõşÿÿÿÿ
+n
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(–Âƒäúÿÿÿÿ
+W	java:S107À"<Method has 8 parameters, which is greater than 7 authorized.(ó¬’›úÿÿÿÿ
+W	java:S125€"<This block of commented-out lines of code should be removed.(õË ÿÿÿÿÿ
+j
+java:S2975ô"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(²ÈŞ
+8	java:S131û""Add a default case to this switch.(¹ÌÓÏ
+i
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 47 to the 15 allowed.(‘Üí¨
+<
+java:S2129ã" Remove this "Double" constructor(Ñ†şÙøÿÿÿÿ
+A
+java:S1659«"*Declare "maxFraDigits" on a separate line.(ÆŞŞ
+<
+java:S2129İ" Remove this "Double" constructor(±òÆáûÿÿÿÿ
+:
+java:S2129²"Remove this "Long" constructor(öêğŒüÿÿÿÿ
+C
+java:S1659ê",Declare "zeroDigitCount" on a separate line.(‰„³è
+y
+java:S3008Ó "bRename this field "EmptyFieldPositionArray" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î’¼ª
+f
+java:S1117ı"JRename "minimumIntegerDigits" which hides the field declared at line 3969.(‚ä²ìøÿÿÿÿ
+U
+java:S4973ÿ"9Use the "equals" method if value comparison was intended.(³ªªÇşÿÿÿÿ
+O
+java:S1197ß"8Move the array designator from the variable to the type.(ô¿Àø
+m	java:S127®"XRefactor the code in order to not assign to this loop counter from within the loop body.(æÎÓc
+<
+java:S2129Ğ" Remove this "Double" constructor(Ñ†şÙøÿÿÿÿ
+n	java:S127˜"XRefactor the code in order to not assign to this loop counter from within the loop body.(´ÍÍ
+[
+java:S1854è"?Remove this useless assignment to local variable "sawExponent".(÷Äşìÿÿÿÿÿ
+n	java:S127€"XRefactor the code in order to not assign to this loop counter from within the loop body.(³÷µœ
+Q
+java:S1161•":Add the "@Override" annotation above this method signature(‰ÿ†
+o
+java:S3776Â"SRefactor this method to reduce its Cognitive Complexity from 190 to the 15 allowed.(½„µïûÿÿÿÿ
+2
+java:S3626¬"Remove this redundant jump.(ÉŠ©ƒ
+^
+java:S11284"CRemove this unused import 'java.util.concurrent.ConcurrentHashMap'.(ÓŠÓøúÿÿÿÿ
+n	java:S127«"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÁŞó¢
+g
+java:S1854û"KRemove this useless assignment to local variable "fastTwoSumApproximation".(ùÇ’ÿÿÿÿÿ
+<
+java:S2129ç" Remove this "Double" constructor(±òÆáûÿÿÿÿ
+s	java:S127­"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì’Øäúÿÿÿÿ
+i
+java:S3776Ü"RRefactor this method to reduce its Cognitive Complexity from 85 to the 15 allowed.(œî–
+2
+java:S3626²"Remove this redundant jump.(ÉŠ©ƒ
+n	java:S127½"XRefactor the code in order to not assign to this loop counter from within the loop body.(£™œ
+o	java:S135Â"YReduce the total number of break and continue statements in this loop to use at most one.(ÏÇÓØ
+7
+java:S2129å" Remove this "Double" constructor(Ø†ã
+R	java:S125º"<This block of commented-out lines of code should be removed.(ÿ¯Œ–
+n
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 93 to the 15 allowed.(ó¬’›úÿÿÿÿ
+=	java:S131""Add a default case to this switch.(îÇËúÿÿÿÿ
+P
+java:S4973ù"9Use the "equals" method if value comparison was intended.(ÏøªÁ
+s	java:S127 "XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì’Øäúÿÿÿÿ
+=	java:S131”""Add a default case to this switch.(îÇËúÿÿÿÿ
+A
+java:S1659«"*Declare "minFraDigits" on a separate line.(ÆŞŞ
+X
+java:S1854ı"<Remove this useless assignment to local variable "bVirtual".(«ĞŠŸşÿÿÿÿ
+p	java:S115ì"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¬Æ™˜
+i
+java:S3776Ï"RRefactor this method to reduce its Cognitive Complexity from 78 to the 15 allowed.(·¡´£
+W	java:S125©
+"<This block of commented-out lines of code should be removed.(†À×£úÿÿÿÿ
+B
+java:S1659«"+Declare "maximumDigits" on a separate line.(ÆŞŞ
+D
+java:S1659ê"-Declare "digitRightCount" on a separate line.(‰„³è
+n	java:S127²"XRefactor the code in order to not assign to this loop counter from within the loop body.(³÷µœ

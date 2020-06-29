@@ -1,0 +1,120 @@
+
+V
+java:S1068Ý":Remove this unused "serialPersistentFields" private field.(òÌ‡‹øÿÿÿÿ
+\
+java:S1124ë"EReorder the modifiers to comply with the Java Language Specification.(ßÏ–¸
+k
+java:S1128A"PRemove this unused import 'sun.util.locale.provider.ResourceBundleBasedAdapter'.(ó›Ýžüÿÿÿÿ
+a
+java:S1124×"EReorder the modifiers to comply with the Java Language Specification.(ðÿÐáüÿÿÿÿ
+d
+java:S1192à"HDefine a constant instead of duplicating this literal "variant" 3 times.(™é™õøÿÿÿÿ
+P
+java:S4973±"9Use the "equals" method if value comparison was intended.(ÀÍæ¤
+a
+java:S1124ó"EReorder the modifiers to comply with the Java Language Specification.(ç×¢êûÿÿÿÿ
+;
+java:S1659ß"$Declare "script" on a separate line.(–‚Öý
+[
+java:S1124ç"EReorder the modifiers to comply with the Java Language Specification.(Â»Á<
+\
+java:S1124ï"EReorder the modifiers to comply with the Java Language Specification.(ô§Œ˜
+=
+java:S2129‰"!Remove this "Integer" constructor( •Ÿ±ûÿÿÿÿ
+=
+java:S3077©"&Use an "AtomicReferenceArray" instead.(¯ÒÊð
+n
+java:S3776Ï"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(àïÔÃüÿÿÿÿ
+n
+java:S3776é"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ãŸƒÄøÿÿÿÿ
+a
+java:S2886®"ESynchronize this method to match the synchronization on "setDefault".(ÁÄô†ýÿÿÿÿ
+;
+java:S1659ß"$Declare "region" on a separate line.(–‚Öý
+<
+java:S1659ß"%Declare "country" on a separate line.(–‚Öý
+\
+java:S1124û"EReorder the modifiers to comply with the Java Language Specification.(Ž‹ßƒ
+B
+java:S3077§"&Use an "AtomicReferenceArray" instead.(«ë¹‡úÿÿÿÿ
+^
+java:S1192â"GDefine a constant instead of duplicating this literal "script" 3 times.(€ÖÏò
+a
+java:S1124§"EReorder the modifiers to comply with the Java Language Specification.(”ý×Ÿþÿÿÿÿ
+a
+java:S1124÷"EReorder the modifiers to comply with the Java Language Specification.(ýž·¾øÿÿÿÿ
+=
+java:S2129£"!Remove this "Integer" constructor(ÏþÐýÿÿÿÿ
+d
+java:S1192ß"HDefine a constant instead of duplicating this literal "country" 3 times.(ì”Ù©üÿÿÿÿ
+E
+java:S2786Ñ")Remove this redundant "static" qualifier.(ºœœ øÿÿÿÿ
+a
+java:S1124«"EReorder the modifiers to comply with the Java Language Specification.(‰öËÆÿÿÿÿÿ
+a
+java:S1124é"EReorder the modifiers to comply with the Java Language Specification.(ÜÞ²Ýúÿÿÿÿ
+U
+java:S4973¯"9Use the "equals" method if value comparison was intended.(»¤ð‹þÿÿÿÿ
+\
+java:S1124»"EReorder the modifiers to comply with the Java Language Specification.(üŒÎ˜
+P
+java:S4973³"9Use the "equals" method if value comparison was intended.(ðôà
+a
+java:S1124ÿ"EReorder the modifiers to comply with the Java Language Specification.(Áê¸ÿÿÿÿÿ
+a
+java:S1124£"EReorder the modifiers to comply with the Java Language Specification.(©‹š½ýÿÿÿÿ
+O
+java:S1197™"8Move the array designator from the variable to the type.(›íŸ
+o
+java:S2975¨"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(¯ÔÚ“ùÿÿÿÿ
+a
+java:S1124‡"EReorder the modifiers to comply with the Java Language Specification.(·¸¶…ÿÿÿÿÿ
+8
+java:S1116ö"Remove this empty statement.(ôŸŽìúÿÿÿÿ
+P
+java:S11914"5Use classes from the Java API instead of Sun classes.(°¿”Œúÿÿÿÿ
+a
+java:S1124“"EReorder the modifiers to comply with the Java Language Specification.(¾ˆ‡Ýûÿÿÿÿ
+\
+java:S1124—"EReorder the modifiers to comply with the Java Language Specification.(³àÆß
+e
+java:S1192Þ"IDefine a constant instead of duplicating this literal "language" 3 times.(¯™ÀÑþÿÿÿÿ
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‹Ÿ…üøÿÿÿÿ
+a
+java:S1124ç"EReorder the modifiers to comply with the Java Language Specification.(©ËßÑøÿÿÿÿ
+„
+java:S1130Ö"mRemove the declaration of thrown exception 'java.util.MissingResourceException' which is a runtime exception.(âô÷ü
+„
+java:S1130»"mRemove the declaration of thrown exception 'java.util.MissingResourceException' which is a runtime exception.(ÔÈã‘
+[
+java:S1124³"EReorder the modifiers to comply with the Java Language Specification.(„‰Ñ
+\
+java:S1124¯"EReorder the modifiers to comply with the Java Language Specification.(­œ™
+\
+java:S1124ƒ"EReorder the modifiers to comply with the Java Language Specification.(õîžß
+a
+java:S1124›"EReorder the modifiers to comply with the Java Language Specification.(Ô¦Ãìþÿÿÿÿ
+\
+java:S1124Å"EReorder the modifiers to comply with the Java Language Specification.(ö­ÿÏ
+s
+java:S1488«"\Immediately return this expression instead of assigning it to the temporary variable "that".(î‹¼Ó
+n
+java:S3776‹
+"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Îê‚‡úÿÿÿÿ
+\
+java:S1124è"EReorder the modifiers to comply with the Java Language Specification.(öð™ë
+b
+java:S1192ã"KDefine a constant instead of duplicating this literal "extensions" 3 times.(çðú
+a
+java:S1124‹"EReorder the modifiers to comply with the Java Language Specification.(ë ¡›ùÿÿÿÿ
+<
+java:S1659ß"%Declare "variant" on a separate line.(–‚Öý
+?
+java:S4274Ý"(Replace this assert with a proper check.(óò¿œ
+\
+java:S1124Ÿ"EReorder the modifiers to comply with the Java Language Specification.(ÄµŽ·
+a
+java:S1124·"EReorder the modifiers to comply with the Java Language Specification.(Ä£ðïÿÿÿÿÿ
+\
+java:S1124Î"EReorder the modifiers to comply with the Java Language Specification.(§Þ•»

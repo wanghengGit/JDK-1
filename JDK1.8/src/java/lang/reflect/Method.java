@@ -480,6 +480,7 @@ public final class Method extends Executable {
      *              and the method is an instance method.
      * @exception ExceptionInInitializerError if the initialization
      * provoked by this method fails.
+     * 用来执行某个的对象的目标方法
      */
     @CallerSensitive
     public Object invoke(Object obj, Object... args)

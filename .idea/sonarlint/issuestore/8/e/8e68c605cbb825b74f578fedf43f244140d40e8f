@@ -1,0 +1,17 @@
+
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(Š²÷ùÿÿÿÿ
+f	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢âÌ§
+k	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’±ï’úÿÿÿÿ
+k	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’±ï’úÿÿÿÿ
+k	java:S117i"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’±ï’úÿÿÿÿ
+k	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äø»Şúÿÿÿÿ
+g	java:S117Ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑØÈÙ
+v
+java:S1149²"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(´™÷¶
+¦
+java:S1130]"ŠRemove the declaration of thrown exception 'com.sun.org.apache.bcel.internal.classfile.ClassFormatException' which is a runtime exception.(éõÕ—ıÿÿÿÿ
+C
+java:S1659±"'Declare "signature" on a separate line.(ÎÁĞÁÿÿÿÿÿ
+@
+java:S1659±"$Declare "access" on a separate line.(ÎÁĞÁÿÿÿÿÿ

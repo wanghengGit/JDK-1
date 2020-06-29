@@ -34,6 +34,8 @@ package java.util;
  * initially occurred upon.
  *
  * @since JDK1.1
+ * @date 20200412
+ * 描述事件
  */
 
 public class EventObject implements java.io.Serializable {

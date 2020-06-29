@@ -1,0 +1,203 @@
+
+K
+java:S11919"5Use classes from the Java API instead of Sun classes.(™æªÓ
+e
+java:S1192Ù"IDefine a constant instead of duplicating this literal "japanese" 3 times.(Ûäƒ–şÿÿÿÿ
+`
+java:S1192Ä"IDefine a constant instead of duplicating this literal "buddhist" 4 times.(Ã©•…
+_
+java:S1192Ì
+"HDefine a constant instead of duplicating this literal "gregory" 5 times.(›Íœü
+K
+java:S1066Â"/Merge this if statement with the enclosing one.(šÌßÎÿÿÿÿÿ
+a	java:S112‘"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+s	java:S127¸	"XRefactor the code in order to not assign to this loop counter from within the loop body.(ãôøƒşÿÿÿÿ
+n	java:S127½	"XRefactor the code in order to not assign to this loop counter from within the loop body.(Èâ–
+n	java:S127Â"XRefactor the code in order to not assign to this loop counter from within the loop body.(÷©Û§
+o	java:S135Ş"YReduce the total number of break and continue statements in this loop to use at most one.(´ÿÕ™
+l	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊƒÈŠşÿÿÿÿ
+l	java:S117ª"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊƒÈŠşÿÿÿÿ
+U
+java:S4973Â"9Use the "equals" method if value comparison was intended.(ÅÌ×ˆùÿÿÿÿ
+U
+java:S4973Ã"9Use the "equals" method if value comparison was intended.(öòÚûÿÿÿÿ
+U
+java:S4973¢"9Use the "equals" method if value comparison was intended.(›±Õ£üÿÿÿÿ
+U
+java:S4973¢"9Use the "equals" method if value comparison was intended.(›±Õ£üÿÿÿÿ
+O
+java:S4973¤"9Use the "equals" method if value comparison was intended.(ƒ³ñL
+O
+java:S4973¤"9Use the "equals" method if value comparison was intended.(ƒ³ñL
+U
+java:S4973¥"9Use the "equals" method if value comparison was intended.(çô«øÿÿÿÿ
+u	java:S115Ò"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ï™¶üıÿÿÿÿ
+a
+java:S1124ö"EReorder the modifiers to comply with the Java Language Specification.(ôá¦‰şÿÿÿÿ
+\
+java:S1124ü"EReorder the modifiers to comply with the Java Language Specification.(¿Óá
+a
+java:S1124“"EReorder the modifiers to comply with the Java Language Specification.(şò¥¬ùÿÿÿÿ
+a
+java:S1124 "EReorder the modifiers to comply with the Java Language Specification.(‹ºæ‡úÿÿÿÿ
+a
+java:S1124­"EReorder the modifiers to comply with the Java Language Specification.(êò³üÿÿÿÿ
+a
+java:S1124¶"EReorder the modifiers to comply with the Java Language Specification.(Å®Ô„úÿÿÿÿ
+a
+java:S1124¿"EReorder the modifiers to comply with the Java Language Specification.(äá³İÿÿÿÿÿ
+\
+java:S1124Å"EReorder the modifiers to comply with the Java Language Specification.(üÀ“›
+\
+java:S1124Õ"EReorder the modifiers to comply with the Java Language Specification.(å“ÉÇ
+\
+java:S1124î"EReorder the modifiers to comply with the Java Language Specification.(¨É©
+a
+java:S1124ù"EReorder the modifiers to comply with the Java Language Specification.(–Ñ˜şÿÿÿÿ
+a
+java:S1124„"EReorder the modifiers to comply with the Java Language Specification.(İ“¾«úÿÿÿÿ
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ò„ÿ üÿÿÿÿ
+\
+java:S1124”"EReorder the modifiers to comply with the Java Language Specification.(ƒğáº
+\
+java:S1124›"EReorder the modifiers to comply with the Java Language Specification.(õÙ¡‰
+[
+java:S1124¢"EReorder the modifiers to comply with the Java Language Specification.(ÀêÊs
+\
+java:S1124­"EReorder the modifiers to comply with the Java Language Specification.(‚î‘
+\
+java:S1124¸"EReorder the modifiers to comply with the Java Language Specification.(¹™—¿
+[
+java:S1124¾"EReorder the modifiers to comply with the Java Language Specification.(–‰Ç	
+a
+java:S1124Ä"EReorder the modifiers to comply with the Java Language Specification.(Ö©îŠùÿÿÿÿ
+\
+java:S1124Ê"EReorder the modifiers to comply with the Java Language Specification.(—Š¢İ
+[
+java:S1124Ğ"EReorder the modifiers to comply with the Java Language Specification.(‹§Ñe
+a
+java:S1124Ö"EReorder the modifiers to comply with the Java Language Specification.(ï¬“Îÿÿÿÿÿ
+\
+java:S1124Ü"EReorder the modifiers to comply with the Java Language Specification.(Í¦ôÆ
+a
+java:S1124â"EReorder the modifiers to comply with the Java Language Specification.(„şÍÅüÿÿÿÿ
+\
+java:S1124è"EReorder the modifiers to comply with the Java Language Specification.(îş±Ä
+a
+java:S1124î"EReorder the modifiers to comply with the Java Language Specification.(ş­ú¤ıÿÿÿÿ
+a
+java:S1124ô"EReorder the modifiers to comply with the Java Language Specification.(“Õ…ûÿÿÿÿ
+a
+java:S1124ú"EReorder the modifiers to comply with the Java Language Specification.(¬ôÉ‰úÿÿÿÿ
+\
+java:S1124€"EReorder the modifiers to comply with the Java Language Specification.(€èõ¬
+\
+java:S1124†"EReorder the modifiers to comply with the Java Language Specification.(–şŠ
+\
+java:S1124Œ"EReorder the modifiers to comply with the Java Language Specification.(é®‹†
+\
+java:S1124’"EReorder the modifiers to comply with the Java Language Specification.(Ç½ì™
+a
+java:S1124˜"EReorder the modifiers to comply with the Java Language Specification.(Ñª˜¿ûÿÿÿÿ
+\
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(š¥Ûü
+a
+java:S1124¤"EReorder the modifiers to comply with the Java Language Specification.(†š©©ûÿÿÿÿ
+a
+java:S1124ª"EReorder the modifiers to comply with the Java Language Specification.(‚‘¡œüÿÿÿÿ
+\
+java:S1124°"EReorder the modifiers to comply with the Java Language Specification.(‰¦—¨
+\
+java:S1124·"EReorder the modifiers to comply with the Java Language Specification.(ª¨â­
+a
+java:S1124½"EReorder the modifiers to comply with the Java Language Specification.(£¯ä½üÿÿÿÿ
+\
+java:S1124Ã"EReorder the modifiers to comply with the Java Language Specification.(•â¹¶
+T
+java:S1197Ê"8Move the array designator from the variable to the type.(’İ¼Îúÿÿÿÿ
+O
+java:S1197Õ"8Move the array designator from the variable to the type.(İ·ÉÏ
+O
+java:S1197Ü"8Move the array designator from the variable to the type.(º‰‘
+\
+java:S1124Ü"EReorder the modifiers to comply with the Java Language Specification.(º‰‘
+\
+java:S1124“"EReorder the modifiers to comply with the Java Language Specification.(¥€‹¹
+\
+java:S1124ï"EReorder the modifiers to comply with the Java Language Specification.(®‡×«
+a
+java:S1124ğ"EReorder the modifiers to comply with the Java Language Specification.(ˆ± °ûÿÿÿÿ
+a
+java:S1124ñ"EReorder the modifiers to comply with the Java Language Specification.(¢ñŸúÿÿÿÿ
+a
+java:S1124ò"EReorder the modifiers to comply with the Java Language Specification.(¤†Ğ¡ûÿÿÿÿ
+\
+java:S1124ó"EReorder the modifiers to comply with the Java Language Specification.(û±­á
+a
+java:S1124ô"EReorder the modifiers to comply with the Java Language Specification.(æéğÈüÿÿÿÿ
+\
+java:S1124õ"EReorder the modifiers to comply with the Java Language Specification.(ÖÅ¥
+a
+java:S1124ö"EReorder the modifiers to comply with the Java Language Specification.(ÜôÆìùÿÿÿÿ
+a
+java:S1124÷"EReorder the modifiers to comply with the Java Language Specification.(÷«ÜÛûÿÿÿÿ
+a
+java:S1124ø"EReorder the modifiers to comply with the Java Language Specification.(ªÄê¿øÿÿÿÿ
+\
+java:S1124ù"EReorder the modifiers to comply with the Java Language Specification.(éòõö
+\
+java:S1124ú"EReorder the modifiers to comply with the Java Language Specification.(Ú‚ìş
+a
+java:S1124û"EReorder the modifiers to comply with the Java Language Specification.(å¹—äüÿÿÿÿ
+a
+java:S1124ü"EReorder the modifiers to comply with the Java Language Specification.(ı¾êüûÿÿÿÿ
+a
+java:S1124ı"EReorder the modifiers to comply with the Java Language Specification.(ç˜Ù¯ùÿÿÿÿ
+a
+java:S1124ş"EReorder the modifiers to comply with the Java Language Specification.(Ïˆ‘™şÿÿÿÿ
+a
+java:S1124ÿ"EReorder the modifiers to comply with the Java Language Specification.(Ú¬¢°ÿÿÿÿÿ
+a
+java:S1124€"EReorder the modifiers to comply with the Java Language Specification.(òüõüÿÿÿÿ
+
+java:S1186É"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Àê°üÿÿÿÿ
+P
+java:S1659Ä"4Declare "minimalDaysInFirstWeek" on a separate line.(ˆš®÷ÿÿÿÿÿ
+n
+java:S3776¶"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ø ½Ôüÿÿÿÿ
+n
+java:S3776û"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(„š·Óıÿÿÿÿ
+=	java:S131""Add a default case to this switch.(¹ÁÕàøÿÿÿÿ
+=
+java:S1168¸"&Return an empty array instead of null.(¥¹ï
+=	java:S131¼""Add a default case to this switch.(ÕÄªâşÿÿÿÿ
+i
+java:S3776ù"RRefactor this method to reduce its Cognitive Complexity from 61 to the 15 allowed.(Û¯ËÛ
+6
+java:S2097ş"Add a type test to this method.(ÜÑã
+\
+java:S1124ï"EReorder the modifiers to comply with the Java Language Specification.(ßÊ‹
+\
+java:S1124…"EReorder the modifiers to comply with the Java Language Specification.(ºÃÒš
+a
+java:S1124¤"EReorder the modifiers to comply with the Java Language Specification.(Óã¨üÿÿÿÿ
+\
+java:S1124µ"EReorder the modifiers to comply with the Java Language Specification.(åùñù
+\
+java:S1124Ç"EReorder the modifiers to comply with the Java Language Specification.(Ï›’ã
+\
+java:S1124İ"EReorder the modifiers to comply with the Java Language Specification.(ÿŠ†±
+o
+java:S2975Õ"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(¯ÔÚ“ùÿÿÿÿ
+W
+java:S4351È"@Refactor this method so that its argument is of type 'Calendar'.(ßÉõÆ
+[
+java:S3358Ê"DExtract this nested ternary operation into an independent statement.(Ó ˜¹
+h
+java:S3776Ú"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ùëÂ
+D	java:S108±")Either remove or fill this block of code.(¿ ı³ùÿÿÿÿ
+n
+java:S3776Ş"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ËâÜùøÿÿÿÿ
+I
+java:S1144œ"2Remove this unused private "isNarrowStyle" method.(®øÿ

@@ -1,0 +1,36 @@
+
+D
+java:S1185›"(Remove this method to simply inherit it.(ñĞÓ¾ıÿÿÿÿ
+`
+java:S4201º"IRemove this unnecessary null check; "instanceof" returns false for nulls.(á²Êê
+K
+java:S2065J"0Remove the "transient" modifier from this field.(‡³Å¾úÿÿÿÿ
+?
+java:S1185’"(Remove this method to simply inherit it.(ê–…˜
+ƒ
+java:S1130ç"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(ø³ëm
+W	java:S107s"BConstructor has 11 parameters, which is greater than 7 authorized.(•ü¤û
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(«ª§Ûüÿÿÿÿ
+K
+java:S2065L"0Remove the "transient" modifier from this field.(¼£¥ÿıÿÿÿÿ
+K
+java:S1066ë"/Merge this if statement with the enclosing one.( ûşÿÿÿÿ
+M
+java:S1905Ú"1Remove this unnecessary cast to "TypeVariable[]".(”­™ƒùÿÿÿÿ
+m
+java:S3077P"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(í©²‡
+Q
+java:S1161":Add the "@Override" annotation above this method signature(²É
+?
+java:S1185ˆ"(Remove this method to simply inherit it.(Î¬Û
+Q
+java:S1161ï":Add the "@Override" annotation above this method signature(Ì÷Ê¼
+V
+java:S1161÷":Add the "@Override" annotation above this method signature(°²®‘ûÿÿÿÿ
+D
+java:S1185¯"(Remove this method to simply inherit it.(×œš£üÿÿÿÿ
+D
+java:S1185÷"(Remove this method to simply inherit it.(°²®‘ûÿÿÿÿ
+?
+java:S1185ï"(Remove this method to simply inherit it.(Ì÷Ê¼

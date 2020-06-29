@@ -1,0 +1,21 @@
+
+P
+java:S1191,"5Use classes from the Java API instead of Sun classes.( Ø‚Ïÿÿÿÿÿ
+v
+java:S1192º"_Define a constant instead of duplicating this literal "currency.properties entry for " 5 times.(”àµ…
+>
+java:S1604Ö"(Make this anonymous inner class a lambda(ÆŞÖ
+`
+java:S1124p"EReorder the modifiers to comply with the Java Language Specification.(İ¤Šøÿÿÿÿ
+`
+java:S1124v"EReorder the modifiers to comply with the Java Language Specification.(ªÂ¢Ìşÿÿÿÿ
+?
+java:S4274ı"(Replace this assert with a proper check.(ÒËİ³
+[
+java:S3398–"?Move this method into the anonymous class declared at line 214.(ñÜº¸şÿÿÿÿ
+[
+java:S3398Ÿ"?Move this method into the anonymous class declared at line 214.(¼ÊÜ¦úÿÿÿÿ
+[
+java:S3398"?Move this method into the anonymous class declared at line 214.(­åÔìúÿÿÿÿ
+[
+java:S3398¶"?Move this method into the anonymous class declared at line 214.(Ä–ŞÄûÿÿÿÿ

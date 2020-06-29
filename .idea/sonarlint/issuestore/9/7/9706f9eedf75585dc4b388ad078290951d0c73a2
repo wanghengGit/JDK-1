@@ -1,0 +1,59 @@
+
+€
+java:S1319•"iThe type of the "m" object should be an interface such as "Map" rather than the implementation "EnumMap".(ÉÙš
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(Àãé
+E
+java:S1121‚".Extract the assignment out of this expression.(œ¡äî
+E
+java:S1121¨".Extract the assignment out of this expression.(üÏÑê
+E
+java:S1121Ô".Extract the assignment out of this expression.(›Œ‡á
+f
+java:S1206n"PThis class overrides "hashCode()" and should therefore also override "equals()".(ğÜşŠ
+Q
+java:S1161À":Add the "@Override" annotation above this method signature(‚¨—£
+Q
+java:S1161Ë":Add the "@Override" annotation above this method signature( ©ş™
+V
+java:S1161İ":Add the "@Override" annotation above this method signature(ô·ŒÛøÿÿÿÿ
+V
+java:S1161õ":Add the "@Override" annotation above this method signature(É±»ûÿÿÿÿ
+Q
+java:S1161Š":Add the "@Override" annotation above this method signature(µ„Ô›
+V
+java:S1161":Add the "@Override" annotation above this method signature(›¹Şáıÿÿÿÿ
+V
+java:S1161Í":Add the "@Override" annotation above this method signature(ÏÇêºúÿÿÿÿ
+n
+java:S3776Í"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÏÇêºúÿÿÿÿ
+V
+java:S1161æ":Add the "@Override" annotation above this method signature(Ş‚ÄÔıÿÿÿÿ
+Q
+java:S1161ı":Add the "@Override" annotation above this method signature(æËÊ
+Q
+java:S1161£":Add the "@Override" annotation above this method signature(±ì½Ş
+V
+java:S1161²":Add the "@Override" annotation above this method signature(­­¬Îùÿÿÿÿ
+V
+java:S1161µ":Add the "@Override" annotation above this method signature(İî‹âùÿÿÿÿ
+V
+java:S1161Á":Add the "@Override" annotation above this method signature(Ş‚ÄÔıÿÿÿÿ
+P
+java:S1117ó"9Rename "size" which hides the field declared at line 104.(´Á
+V
+java:S1161’":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+V
+java:S1161¾":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(İ¢êÍıÿÿÿÿ
+j
+java:S2975Õ"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(È€úŸ
+U
+java:S1117¡"9Rename "size" which hides the field declared at line 104.(Ó•š•øÿÿÿÿ
+V
+java:S1068€":Remove this unused "ZERO_LENGTH_ENUM_ARRAY" private field.(ú€½àùÿÿÿÿ
+=
+java:S3398©"!Move this method into "EntrySet".(½…±‚øÿÿÿÿ
+=
+java:S3398á"!Move this method into "EntrySet".(†º’Øøÿÿÿÿ

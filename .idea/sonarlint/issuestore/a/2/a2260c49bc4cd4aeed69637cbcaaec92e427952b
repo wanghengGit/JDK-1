@@ -1,0 +1,23 @@
+
+U
+java:S1118 ":Add a private constructor to hide the implicit public one.(š²ïùÿÿÿÿ
+G
+java:S1874G",Remove this use of "Date"; it is deprecated.(Öâ°Øûÿÿÿÿ
+J
+java:S1874b"/Remove this use of "getYear"; it is deprecated.(÷÷Â…ûÿÿÿÿ
+K
+java:S1874f"0Remove this use of "getMonth"; it is deprecated.(Ÿç¼Öşÿÿÿÿ
+J
+java:S1874g"/Remove this use of "getDate"; it is deprecated.(›ğ®úÿÿÿÿ
+K
+java:S1874g"0Remove this use of "getHours"; it is deprecated.(›ğ®úÿÿÿÿ
+M
+java:S1874g"2Remove this use of "getMinutes"; it is deprecated.(›ğ®úÿÿÿÿ
+M
+java:S1874h"2Remove this use of "getSeconds"; it is deprecated.(¿ÑÔ÷ÿÿÿÿÿ
+N
+java:S1197€"8Move the array designator from the variable to the type.(’»M
+T
+java:S1197ˆ"8Move the array designator from the variable to the type.(£¢§èüÿÿÿÿ
+T
+java:S1197"8Move the array designator from the variable to the type.(âëÊªùÿÿÿÿ

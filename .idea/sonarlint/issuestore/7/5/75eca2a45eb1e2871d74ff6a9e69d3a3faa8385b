@@ -1,0 +1,163 @@
+
+Q
+java:S1191È"5Use classes from the Java API instead of Sun classes.(´ è¸ÿÿÿÿÿ
+a	java:S112¢"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+\	java:S112Õ"FDefine and throw a dedicated exception instead of using a generic one.(Âğğ
+m	java:S127)"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ş–•¦
+n	java:S127Ä"XRefactor the code in order to not assign to this loop counter from within the loop body.(¹…ìÉ
+s	java:S127Ì"XRefactor the code in order to not assign to this loop counter from within the loop body.(Í˜Ë»üÿÿÿÿ
+t	java:S135É"YReduce the total number of break and continue statements in this loop to use at most one.(»éòşÿÿÿÿ
+o
+java:S1128	"TRemove this unnecessary import: same package classes are always implicitly imported.(¾×¶îûÿÿÿÿ
+j
+java:S1128
+"TRemove this unnecessary import: same package classes are always implicitly imported.(œôŒ®
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¡£ØÍ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(á¬øíıÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(É‘Äııÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(§·¶ùÿÿÿÿ
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Æ™ş
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(£‡Ì
+J
+java:S1121Œ".Extract the assignment out of this expression.(‰÷ÁÊøÿÿÿÿ
+J
+java:S1121".Extract the assignment out of this expression.(Äİ˜°üÿÿÿÿ
+J
+java:S1121".Extract the assignment out of this expression.(Äİ˜°üÿÿÿÿ
+J
+java:S1121›".Extract the assignment out of this expression.(‰÷ÁÊøÿÿÿÿ
+E
+java:S1121œ".Extract the assignment out of this expression.(ÂÕ©İ
+J
+java:S1121Œ".Extract the assignment out of this expression.(ß¦Ú·ıÿÿÿÿ
+J
+java:S1121 ".Extract the assignment out of this expression.(œœóşÿÿÿÿÿ
+D
+java:S1121Ë".Extract the assignment out of this expression.(¥¸“I
+J
+java:S1121á".Extract the assignment out of this expression.(å¦Ÿİøÿÿÿÿ
+E
+java:S1121‹".Extract the assignment out of this expression.(œ®¥´
+J
+java:S1121’".Extract the assignment out of this expression.(ß¦Ú·ıÿÿÿÿ
+J
+java:S1121§".Extract the assignment out of this expression.(ß¦Ú·ıÿÿÿÿ
+E
+java:S1121°".Extract the assignment out of this expression.(ÆŞ“‘
+E
+java:S1121·".Extract the assignment out of this expression.(ÆŞ“‘
+E
+java:S1121¸".Extract the assignment out of this expression.(ÀûŒ
+E
+java:S1121Ä".Extract the assignment out of this expression.(¹…ìÉ
+J
+java:S1121Ì".Extract the assignment out of this expression.(Í˜Ë»üÿÿÿÿ
+
+java:S1845É"cRename field "STATUS" to prevent any misunderstanding/clash with field "status" defined on line 31.(’ìıüÿÿÿÿ
+B
+java:S16594"'Declare "completed" on a separate line.(Õ•ø¥ÿÿÿÿÿ
+;
+java:S11818"%Catch Exception instead of Throwable.( Œã
+\
+java:S2142G"FEither re-interrupt this method or rethrow the "InterruptedException".(úÙÆê
+P
+java:S2274G":Remove this call to "wait" or move it into a "while" loop.(úÙÆê
+>	java:S108G")Either remove or fill this block of code.(úÙÆê
+g
+java:S3776R"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(œŞ¹\
+Z
+java:S3358V"DExtract this nested ternary operation into an independent statement.( à•‘
+a
+java:S2142_"FEither re-interrupt this method or rethrow the "InterruptedException".(øôÔ×ûÿÿÿÿ
+h
+java:S3776q"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(âäı­
+_
+java:S3358y"DExtract this nested ternary operation into an independent statement.(Ê©ÇÁÿÿÿÿÿ
+;
+java:S1659Š"Declare "t" on a separate line.(‘ãŠûÿÿÿÿ
+<
+java:S1659Š" Declare "wt" on a separate line.(‘ãŠûÿÿÿÿ
+;
+java:S1659Š"Declare "w" on a separate line.(‘ãŠûÿÿÿÿ
+`
+java:S3358Œ"DExtract this nested ternary operation into an independent statement.(‰÷ÁÊøÿÿÿÿ
+`
+java:S3358"DExtract this nested ternary operation into an independent statement.(Äİ˜°üÿÿÿÿ
+6
+java:S1659™"Declare "t" on a separate line.(»©¦“
+7
+java:S1659™" Declare "wt" on a separate line.(»©¦“
+`
+java:S3358›"DExtract this nested ternary operation into an independent statement.(‰÷ÁÊøÿÿÿÿ
+D
+java:S2387®"-"next" is the name of a field in "Reference".(ËŞÉ‚
+<
+java:S1181ï"%Catch Exception instead of Throwable.(Æ·™‹
+?	java:S108ï")Either remove or fill this block of code.(Æ·™‹
+i
+java:S3776“"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(•€êô
+?	java:S108¼")Either remove or fill this block of code.(ìŠÈ
+i
+java:S3776Å"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(”‰Œ
+7
+java:S1659¢" Declare "s2" on a separate line.(Æ˜Œ©
+h
+java:S3776ª"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ü¤y
+i
+java:S3776Å"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(úôë²
+[
+java:S3358„"DExtract this nested ternary operation into an independent statement.(ƒûÉÎ
+<
+java:S1181‘"%Catch Exception instead of Throwable.( Œã
+n
+java:S3776§"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(³¨èøıÿÿÿÿ
+[
+java:S3358¸"DExtract this nested ternary operation into an independent statement.(‡»ùÄ
+7
+java:S1659º" Declare "ms" on a separate line.(êÇÜ 
+;
+java:S1659‘"Declare "q" on a separate line.(ÇúóÃÿÿÿÿÿ
+B
+java:S1452¥"&Remove usage of generic wildcard type.(°ÀÂøÿÿÿÿ
+;
+java:S1659¦"Declare "q" on a separate line.(ÇúóÃÿÿÿÿÿ
+B
+java:S1452®"&Remove usage of generic wildcard type.(çğ”‡ıÿÿÿÿ
+B
+java:S1452µ"&Remove usage of generic wildcard type.(¨“›ıÿÿÿÿ
+<
+java:S1659¶" Declare "wt" on a separate line.(ì€Âÿùÿÿÿÿ
+F
+java:S1948Û"*Make "runnable" transient or serializable.(¿Ì©ùÿÿÿÿ
+D
+java:S1948Ü"(Make "result" transient or serializable.(½Òû£øÿÿÿÿ
+
+java:S1186ô"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦ÚÉ¹üÿÿÿÿ
+F
+java:S1948î"*Make "runnable" transient or serializable.(¿Ì©ùÿÿÿÿ
+
+java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¦ÚÉ¹üÿÿÿÿ
+F
+java:S1948ş"*Make "runnable" transient or serializable.(¿Ì©ùÿÿÿÿ
+Q
+java:S1161†":Add the "@Override" annotation above this method signature(«ÜÑ–
+A
+java:S1948‘"*Make "callable" transient or serializable.(ø¢÷‘
+D
+java:S1948’"(Make "result" transient or serializable.(½Òû£øÿÿÿÿ
+=
+java:S1181"!Catch Exception instead of Error.(Â¯¸êûÿÿÿÿ
+B
+java:S1452©"&Remove usage of generic wildcard type.(ò¹š¾ÿÿÿÿÿ
+p
+java:S2293®"YReplace the type specification in this constructor call with the diamond operator ("<>").(ãÒÃá
+u
+java:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(°ØÚæÿÿÿÿÿ
+p
+java:S2293Í"YReplace the type specification in this constructor call with the diamond operator ("<>").(µÍ‘œ

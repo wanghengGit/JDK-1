@@ -1,0 +1,112 @@
+
+[
+java:S1124ƒ"EReorder the modifiers to comply with the Java Language Specification.(èÜ¼
+\
+java:S1124¹"EReorder the modifiers to comply with the Java Language Specification.(úØ¡™
+a
+java:S1124Ù"EReorder the modifiers to comply with the Java Language Specification.(—“ëùÿÿÿÿ
+\
+java:S1124–"EReorder the modifiers to comply with the Java Language Specification.(ß¨‰²
+\
+java:S1124‰"EReorder the modifiers to comply with the Java Language Specification.(ËºéÑ
+a
+java:S1124®"EReorder the modifiers to comply with the Java Language Specification.(ÀŞ…Àÿÿÿÿÿ
+\
+java:S1124î"EReorder the modifiers to comply with the Java Language Specification.(ô‡¡÷
+\
+java:S1124¦"EReorder the modifiers to comply with the Java Language Specification.(”³¼ª
+P
+java:S11282"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ
+\
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÇêŠ¹
+\
+java:S1124Ç"EReorder the modifiers to comply with the Java Language Specification.(…€–Í
+\
+java:S1124‚"EReorder the modifiers to comply with the Java Language Specification.(Ôšàı
+V
+java:S1161ù":Add the "@Override" annotation above this method signature(¯ÔÚ“ùÿÿÿÿ
+\
+java:S1124á"EReorder the modifiers to comply with the Java Language Specification.(À˜äş
+[
+java:S11284"@Remove this unused import 'java.util.spi.LocaleServiceProvider'.(É‰Á¿ÿÿÿÿÿ
+\
+java:S1124³"EReorder the modifiers to comply with the Java Language Specification.(Àà“Ñ
+a
+java:S1124ˆ"EReorder the modifiers to comply with the Java Language Specification.(óÑÏ‡øÿÿÿÿ
+\
+java:S1124Ş"EReorder the modifiers to comply with the Java Language Specification.(‡Ç¿ü
+\
+java:S1124Å"EReorder the modifiers to comply with the Java Language Specification.(÷Ç·¦
+{
+java:S1149Ï"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ùƒ°ÿÿÿÿÿ
+{
+java:S1149Ï"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ùƒ°ÿÿÿÿÿ
+\
+java:S1124Á"EReorder the modifiers to comply with the Java Language Specification.(²†§”
+\
+java:S1124²"EReorder the modifiers to comply with the Java Language Specification.(ÛúŞ
+a
+java:S1124ô"EReorder the modifiers to comply with the Java Language Specification.(ÿ·¶úÿÿÿÿ
+\
+java:S1124¼"EReorder the modifiers to comply with the Java Language Specification.(‘ã˜
+a
+java:S1124Ê"EReorder the modifiers to comply with the Java Language Specification.(«ûé«ıÿÿÿÿ
+\
+java:S1124ã"EReorder the modifiers to comply with the Java Language Specification.(Á—Óß
+a
+java:S1124í"EReorder the modifiers to comply with the Java Language Specification.(½Ä¸½úÿÿÿÿ
+a
+java:S1124ò"EReorder the modifiers to comply with the Java Language Specification.(…€×Ÿùÿÿÿÿ
+\
+java:S1124¸"EReorder the modifiers to comply with the Java Language Specification.(‹èİè
+\
+java:S1124È"EReorder the modifiers to comply with the Java Language Specification.(ïøËÔ
+a
+java:S1124Û"EReorder the modifiers to comply with the Java Language Specification.(Å§ø±øÿÿÿÿ
+a
+java:S1124·"EReorder the modifiers to comply with the Java Language Specification.(é†ş×ùÿÿÿÿ
+\
+java:S1124©"EReorder the modifiers to comply with the Java Language Specification.(ãŸÂ
+\
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(‘×¨ö
+a
+java:S1124Ï"EReorder the modifiers to comply with the Java Language Specification.(Ôšäøúÿÿÿÿ
+a
+java:S1124÷"EReorder the modifiers to comply with the Java Language Specification.(©ê–ôúÿÿÿÿ
+[
+java:S1124Û"EReorder the modifiers to comply with the Java Language Specification.(²û».
+R	java:S125ù"<This block of commented-out lines of code should be removed.(Ş¿¿ô
+[
+java:S1124Õ"EReorder the modifiers to comply with the Java Language Specification.(ÿëõ
+[
+java:S1124¿"EReorder the modifiers to comply with the Java Language Specification.(–?
+\
+java:S1124Ğ"EReorder the modifiers to comply with the Java Language Specification.(«·Óé
+Z
+java:S11281"?Remove this unused import 'java.util.MissingResourceException'.(å—¡Şşÿÿÿÿ
+a
+java:S1124è"EReorder the modifiers to comply with the Java Language Specification.(¸…Ÿ¿üÿÿÿÿ
+\
+java:S1124ç"EReorder the modifiers to comply with the Java Language Specification.(¹¡Û¼
+J
+java:S3010ú"3Remove this assignment of "calendarToFieldMapping".(ŸïĞÖ
+K
+java:S11915"5Use classes from the Java API instead of Sun classes.(§ª›‰
+a
+java:S1124ø"EReorder the modifiers to comply with the Java Language Specification.(æ„˜üÿÿÿÿ
+\
+java:S1124Ô"EReorder the modifiers to comply with the Java Language Specification.(¦„«¢
+a
+java:S1124Š"EReorder the modifiers to comply with the Java Language Specification.(í°µøÿÿÿÿ
+o
+java:S2975ù"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(¯ÔÚ“ùÿÿÿÿ
+[
+java:S1124Ó"EReorder the modifiers to comply with the Java Language Specification.(ë«ÏC
+\
+java:S1124è"EReorder the modifiers to comply with the Java Language Specification.(üŒ­ß
+\
+java:S1124Ë"EReorder the modifiers to comply with the Java Language Specification.(¥¥©¸
+a
+java:S1124û"EReorder the modifiers to comply with the Java Language Specification.(Ş¿ã‰üÿÿÿÿ
+a
+java:S1124ü"EReorder the modifiers to comply with the Java Language Specification.(ÃÉÂ¤ûÿÿÿÿ

@@ -39,6 +39,7 @@ package java.lang;
  * @author  Frank Yellin
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since   JDK1.0
+ * @date 20200514
  */
 public class RuntimeException extends Exception {
     static final long serialVersionUID = -7034897190745766939L;

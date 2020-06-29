@@ -139,6 +139,7 @@ public class Thread implements Runnable {
 
     /**
      * The minimum priority that a thread can have.
+     * 线程优先级
      */
     public final static int MIN_PRIORITY = 1;
 
@@ -552,17 +553,21 @@ public class Thread implements Runnable {
          *
          * A zero status value corresponds to state "NEW".
          */
+        // 如果线程不是"就绪状态"，则抛出异常！
         if (threadStatus != 0)
             throw new IllegalThreadStateException();
 
         /* Notify the group that this thread is about to be started
          * so that it can be added to the group's list of threads
          * and the group's unstarted count can be decremented. */
+        // 将线程添加到ThreadGroup中
         group.add(this);
 
         boolean started = false;
         try {
+            // 通过start0()启动线程
             start0();
+            // 设置started标记
             started = true;
         } finally {
             try {

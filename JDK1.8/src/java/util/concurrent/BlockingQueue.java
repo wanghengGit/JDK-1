@@ -176,6 +176,8 @@ import java.util.Queue;
  * @since 1.5
  * @author Doug Lea
  * @param <E> the type of elements held in this collection
+ * @date 20200411
+ * 主要实现类:ArrayBlockingQueue,LinkedBlockingQueue,PriorityBlockingQueue
  */
 public interface BlockingQueue<E> extends Queue<E> {
     /**

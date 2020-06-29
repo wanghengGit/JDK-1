@@ -285,6 +285,10 @@ import sun.misc.Unsafe;
  *
  * @since 1.5
  * @author Doug Lea
+ * @date 20200411
+ * AQS是AbstractQueuedSynchronizer的简称。AQS提供了一种实现阻塞锁和一系列依赖FIFO等待队列的同步器的框架
+ * 设计模式是模板模式
+ * AQS定义两种资源共享方式：Exclusive（独占，只有一个线程能执行，如ReentrantLock）和Share（共享，多个线程可同时执行，如Semaphore/CountDownLatch）
  */
 public abstract class AbstractQueuedSynchronizer
     extends AbstractOwnableSynchronizer
@@ -376,6 +380,7 @@ public abstract class AbstractQueuedSynchronizer
      * Scherer and Michael Scott, along with members of JSR-166
      * expert group, for helpful ideas, discussions, and critiques
      * on the design of this class.
+     * 锁的存储结构就两个东西:"双向链表" + "int类型状态"
      */
     static final class Node {
         /** Marker to indicate a node is waiting in shared mode */
@@ -560,6 +565,7 @@ public abstract class AbstractQueuedSynchronizer
      * @param update the new value
      * @return {@code true} if successful. False return indicates that the actual
      *         value was not equal to the expected value.
+     *  compareAndSetState的实现依赖于Unsafe的compareAndSwapInt()方法
      */
     protected final boolean compareAndSetState(int expect, int update) {
         // See below for intrinsics setup to support this
@@ -579,6 +585,7 @@ public abstract class AbstractQueuedSynchronizer
      * Inserts node into queue, initializing if necessary. See picture above.
      * @param node the node to insert
      * @return node's predecessor
+     * 用于将当前节点插入等待队列，如果队列为空，则初始化当前队列。整个过程以CAS自旋的方式进行，直到成功加入队尾为止
      */
     private Node enq(final Node node) {
         for (;;) {
@@ -601,6 +608,8 @@ public abstract class AbstractQueuedSynchronizer
      *
      * @param mode Node.EXCLUSIVE for exclusive, Node.SHARED for shared
      * @return the new node
+     * 该方法用于将当前线程根据不同的模式（Node.EXCLUSIVE互斥模式、Node.SHARED共享模式）加入到等待队列的队尾，
+     * 并返回当前线程所在的结点
      */
     private Node addWaiter(Node mode) {
         Node node = new Node(Thread.currentThread(), mode);
@@ -791,6 +800,7 @@ public abstract class AbstractQueuedSynchronizer
      * @param pred node's predecessor holding status
      * @param node the node
      * @return {@code true} if thread should block
+     * 通过对当前节点的前一个节点的状态进行判断，对当前节点做出不同的操作，至于每个Node的状态表示，可以参考接口文档。
      */
     private static boolean shouldParkAfterFailedAcquire(Node pred, Node node) {
         int ws = pred.waitStatus;
@@ -831,6 +841,9 @@ public abstract class AbstractQueuedSynchronizer
      * Convenience method to park and then check if interrupted
      *
      * @return {@code true} if interrupted
+     * 该方法让线程去休息，真正进入等待状态。park()会让当前线程进入waiting状态。
+     * 在此状态下，有两种途径可以唤醒该线程：1）被unpark()；2）被interrupt()。
+     * 需要注意的是，Thread.interrupted()会清除当前线程的中断标记位
      */
     private final boolean parkAndCheckInterrupt() {
         LockSupport.park(this);
@@ -853,10 +866,13 @@ public abstract class AbstractQueuedSynchronizer
      * @param node the node
      * @param arg the acquire argument
      * @return {@code true} if interrupted while waiting
+     * 用于队列中的线程自旋地以独占且不可中断的方式获取同步状态（acquire），直到拿到锁之后再返回
      */
     final boolean acquireQueued(final Node node, int arg) {
+        //标记是否成功拿到资源，默认false
         boolean failed = true;
         try {
+            //标记等待过程中是否被中断过
             boolean interrupted = false;
             for (;;) {
                 final Node p = node.predecessor();
@@ -1071,6 +1087,8 @@ public abstract class AbstractQueuedSynchronizer
      *         thrown in a consistent fashion for synchronization to work
      *         correctly.
      * @throws UnsupportedOperationException if exclusive mode is not supported
+     *  tryAcquire尝试以独占的方式获取资源，如果获取成功，则直接返回true，否则直接返回false。
+     *  该方法可以用于实现Lock中的tryLock()方法。
      */
     protected boolean tryAcquire(int arg) {
         throw new UnsupportedOperationException();
@@ -1193,6 +1211,10 @@ public abstract class AbstractQueuedSynchronizer
      * @param arg the acquire argument.  This value is conveyed to
      *        {@link #tryAcquire} but is otherwise uninterpreted and
      *        can represent anything you like.
+     *  这里干了三件事情：
+     * tryAcquire：会尝试再次通过CAS获取一次锁。
+     * addWaiter：将当前线程加入上面锁的双向链表（等待队列）中
+     * acquireQueued：通过自旋，判断当前队列节点是否可以获取锁。
      */
     public final void acquire(int arg) {
         if (!tryAcquire(arg) &&

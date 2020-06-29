@@ -1,0 +1,39 @@
+
+_
+java:S1192Ú"HDefine a constant instead of duplicating this literal " class=" 3 times.(âŒÇä
+j
+java:S3824Ï"NReplace this "Map.get()" and condition with a call to "Map.computeIfAbsent()".(€­†‘ÿÿÿÿÿ
+j
+java:S3824¡"NReplace this "Map.get()" and condition with a call to "Map.computeIfAbsent()".(ÍåØÖøÿÿÿÿ
+Z
+java:S1155Š">Use isEmpty() to check whether the collection is empty or not.(–€øÿÿÿÿ
+g
+java:S1104ß"PMake refs a static final constant or non-public and provide accessors if needed.(îˆé¨
+n
+java:S1104à"RMake marked a static final constant or non-public and provide accessors if needed.(¨Ìƒœøÿÿÿÿ
+l
+java:S1104á"PMake name a static final constant or non-public and provide accessors if needed.(“¤ÙØøÿÿÿÿ
+k
+java:S1104â"OMake exp a static final constant or non-public and provide accessors if needed.(¸’½ûÿÿÿÿ
+V
+java:S1161Å":Add the "@Override" annotation above this method signature(Øå†¼üÿÿÿÿ
+V
+java:S1161‹":Add the "@Override" annotation above this method signature(ßîû©ıÿÿÿÿ
+Y
+java:S1117"=Rename "internal" which hides the field declared at line 216.(øŒ…şÿÿÿÿ
+D	java:S108")Either remove or fill this block of code.(Ûâ™ƒÿÿÿÿÿ
+V
+java:S1161À":Add the "@Override" annotation above this method signature(üøúÿÿÿÿ
+Y
+java:S1117Á"=Rename "internal" which hides the field declared at line 216.(øŒ…şÿÿÿÿ
+V
+java:S1161ù":Add the "@Override" annotation above this method signature(“„Õåÿÿÿÿÿ
+?
+java:S5413„")Verify that "remove()" is used correctly.(•‘ê.
+n
+java:S3776Ô"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ÿàÔªøÿÿÿÿ
+i
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ÿÇì
+D	java:S108Ò")Either remove or fill this block of code.(Û®‹ôşÿÿÿÿ
+R	java:S125Œ"<This block of commented-out lines of code should be removed.(×ñ”‹
+R	java:S125–"<This block of commented-out lines of code should be removed.(Èø­Ï

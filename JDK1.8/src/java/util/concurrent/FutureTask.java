@@ -41,7 +41,6 @@ import java.util.concurrent.locks.LockSupport;
  * @author Doug Lea
  * @param <V> The result type returned by this FutureTask's {@code get} methods
  *
- * @author wangheng
  * @date 2019/08/14
  */
 public class FutureTask<V> implements RunnableFuture<V> {

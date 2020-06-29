@@ -117,6 +117,7 @@ import sun.util.spi.XmlPropertiesProvider;
  * @author  Michael McCloskey
  * @author  Xueming Shen
  * @since   JDK1.0
+ * @date 20200520
  */
 public
 class Properties extends Hashtable<Object,Object> {

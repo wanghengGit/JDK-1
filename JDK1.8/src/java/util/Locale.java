@@ -480,6 +480,7 @@ import sun.util.locale.provider.ResourceBundleBasedAdapter;
  * @see java.text.Collator
  * @author Mark Davis
  * @since 1.1
+ * @date 2020514
  */
 public final class Locale implements Cloneable, Serializable {
 

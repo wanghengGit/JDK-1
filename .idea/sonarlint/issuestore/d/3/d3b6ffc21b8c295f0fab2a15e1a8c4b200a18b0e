@@ -1,0 +1,14 @@
+
+g
+java:S1301¾"KReplace this "switch" statement by "if" statements to increase readability.(¶Ô‡´ÿÿÿÿÿ
+E
+java:S1125")Remove the literal "false" boolean value.(†ï’úÿÿÿÿ
+t	java:S131¾"YComplete cases by adding the missing enum constants or add a default case to this switch.(¶Ô‡´ÿÿÿÿÿ
+?
+java:S1125ı")Remove the literal "false" boolean value.(‚ÜÃo
+?
+java:S1125ı")Remove the literal "false" boolean value.(‚ÜÃo
+T
+java:S1117£"8Rename "day" which hides the field declared at line 151.(†‚Ò¿ıÿÿÿÿ
+E
+java:S1125ô")Remove the literal "false" boolean value.(í—ÿûÿÿÿÿ

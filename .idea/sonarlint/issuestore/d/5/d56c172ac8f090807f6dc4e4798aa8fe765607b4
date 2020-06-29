@@ -1,0 +1,138 @@
+
+_
+java:S1123Æ"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ
+_
+java:S1123é"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123Š"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+[
+java:S3358Ô"DExtract this nested ternary operation into an independent statement.(Œİå
+M
+java:S1128'"2Remove this unused import 'sun.util.calendar.Era'.(‰…Òùÿÿÿÿ
+L
+java:S1133ß"5Do not forget to remove this deprecated code someday.(’ÅĞø
+Q
+java:S1133º"5Do not forget to remove this deprecated code someday.(ˆñ»‹ùÿÿÿÿ
+_
+java:S1123Á"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1133Ü"5Do not forget to remove this deprecated code someday.(ü‘’åøÿÿÿÿ
+Q
+java:S1133ô"5Do not forget to remove this deprecated code someday.(Œ‘º²ÿÿÿÿÿ
+_
+java:S1123½"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+L
+java:S1133¸"5Do not forget to remove this deprecated code someday.(ìÒê†
+Q
+java:S1133É"5Do not forget to remove this deprecated code someday.(Îš¢èøÿÿÿÿ
+_
+java:S1123ó"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+t	java:S135­"YReduce the total number of break and continue statements in this loop to use at most one.(ÿ™á¯ÿÿÿÿÿ
+T
+java:S1197õ"8Move the array designator from the variable to the type.(õÖ¥Çÿÿÿÿÿ
+K
+java:S1066æ"/Merge this if statement with the enclosing one.(æ›·Ôûÿÿÿÿ
+O
+java:S1197ì"8Move the array designator from the variable to the type.(¤ŞËÓ
+Q
+java:S1133‘	"5Do not forget to remove this deprecated code someday.(õ„Íìúÿÿÿÿ
+L
+java:S1133ô"5Do not forget to remove this deprecated code someday.(¶€Õ›
+P
+java:S1191#"5Use classes from the Java API instead of Sun classes.(ú¸ÿşÿÿÿÿ
+t	java:S135Ú"YReduce the total number of break and continue statements in this loop to use at most one.(ÑÀêâùÿÿÿÿ
+Q
+java:S1133©"5Do not forget to remove this deprecated code someday.(†üÇÀûÿÿÿÿ
+L
+java:S1133Ÿ"5Do not forget to remove this deprecated code someday.(¾Æòä
+Q
+java:S1133¾"5Do not forget to remove this deprecated code someday.(Ú‹Äˆûÿÿÿÿ
+_
+java:S1123®"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1119Õ";Refactor the code to remove this label and the need for it.(Ä¬]
+L
+java:S1133Ç"5Do not forget to remove this deprecated code someday.(ëŸù¤
+_
+java:S1123†"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+W	java:S125€"<This block of commented-out lines of code should be removed.(Ãîó¾ÿÿÿÿÿ
+_
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123È"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+i	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú‹Äˆûÿÿÿÿ
+_
+java:S1123·"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+j
+java:S3776Ç"SRefactor this method to reduce its Cognitive Complexity from 169 to the 15 allowed.(ëŸù¤
+a
+java:S1124õ"EReorder the modifiers to comply with the Java Language Specification.(õÖ¥Çÿÿÿÿÿ
+R	java:S125†"<This block of commented-out lines of code should be removed.(Ûõ­ú
+_
+java:S1123‘"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Z
+java:S3252Ü	">Use static access with "java.util.Calendar" for "MILLISECOND".(‘ê¢Œùÿÿÿÿ
+\
+java:S1124›
+"EReorder the modifiers to comply with the Java Language Specification.(ÉÄ”
+_
+java:S1123ó"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1128!"8Remove this unused import 'java.lang.ref.SoftReference'.(ïÇø½
+Q
+java:S1133‡"5Do not forget to remove this deprecated code someday.(Ôö¾œûÿÿÿÿ
+_
+java:S1123	"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+M
+java:S5261‡"1Add explicit curly braces to avoid dangling else.(”²¶úÿÿÿÿ
+\
+java:S1124ì"EReorder the modifiers to comply with the Java Language Specification.(¤ŞËÓ
+>
+java:S1481Ò"(Remove this unused "wst" local variable.(¢Ñ«Y
+_
+java:S1123Û"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+L
+java:S1133Å"5Do not forget to remove this deprecated code someday.(Àà´Æ
+Q
+java:S1133Â"5Do not forget to remove this deprecated code someday.(Äú÷„üÿÿÿÿ
+Q
+java:S1133‹"5Do not forget to remove this deprecated code someday.(±»—Áùÿÿÿÿ
+Q
+java:S1128$";Remove this unused import 'sun.util.calendar.CalendarDate'.(ó•ã¦
+_
+java:S1123Ä"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1133¯"5Do not forget to remove this deprecated code someday.(³Éİûÿÿÿÿ
+B
+java:S1481Î"+Remove this unused "millis" local variable.(±¨­
+_
+java:S1123¨"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123Ş"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+H
+java:S5261ÿ"1Add explicit curly braces to avoid dangling else.(Óºã¶
+_
+java:S1123—"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+L
+java:S1133ê"5Do not forget to remove this deprecated code someday.(é»Ÿ
+Q
+java:S1133Ù"5Do not forget to remove this deprecated code someday.(Ğ™»ßÿÿÿÿÿ
+L
+java:S1133’"5Do not forget to remove this deprecated code someday.(ªÆù›
+j
+java:S2975™"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(²ÈŞ
+?	java:S108 ")Either remove or fill this block of code.(Á²ıú
+_
+java:S1123¹"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+M
+java:S5261"1Add explicit curly braces to avoid dangling else.(Ä¥²°ıÿÿÿÿ
+L
+java:S1133˜"5Do not forget to remove this deprecated code someday.(ùÅ˜‰
+_
+java:S1123ß"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1133à"5Do not forget to remove this deprecated code someday.(¤Œó¤úÿÿÿÿ
+_
+java:S1123Ø"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
