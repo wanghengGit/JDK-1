@@ -1,0 +1,42 @@
+
+d	java:S119Ì"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ò¸²Öúÿÿÿÿ
+K
+java:S3740 "/Provide the parametrized type for this generic.(¡ëÄÔùÿÿÿÿ
+_	java:S119Ó"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(çîÏÚ
+K
+java:S3740†"/Provide the parametrized type for this generic.(•ÂĞ«üÿÿÿÿ
+c	java:S119J"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(Ãï²Ëøÿÿÿÿ
+_	java:S119Ø"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(›º‹Œ
+d	java:S119Ş"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(›…©°şÿÿÿÿ
+V
+java:S1117Ÿ":Rename "depth" which hides the field declared at line 110.(»ÙÁµûÿÿÿÿ
+d	java:S119ƒ"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¬´ø´øÿÿÿÿ
+E
+java:S3740Z"/Provide the parametrized type for this generic.(õğŞï
+J
+java:S1905ß".Remove this unnecessary cast to "Spliterator".(ÇÎ…Ôıÿÿÿÿ
+d	java:S119"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ú‰üÿÿÿÿ
+E
+java:S3740T"/Provide the parametrized type for this generic.(„±îĞ
+G
+java:S1905å"+Remove this unnecessary cast to "Supplier".(ö¾ûºùÿÿÿÿ
+W	java:S125½"<This block of commented-out lines of code should be removed.(µàĞÃüÿÿÿÿ
+F
+java:S3740Ë"/Provide the parametrized type for this generic.(¿ä„‰
+d	java:S119í"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ÎÃŒĞÿÿÿÿÿ
+K
+java:S3740 "/Provide the parametrized type for this generic.(¡ëÄÔùÿÿÿÿ
+d	java:S119™"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ŸÅçüÿÿÿÿ
+J
+java:S3740g"/Provide the parametrized type for this generic.(ùÄäıÿÿÿÿ
+_	java:S119¥"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(çáŠª
+_	java:S119¾"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(²Û…İ
+K
+java:S3740 "/Provide the parametrized type for this generic.(¡ëÄÔùÿÿÿÿ
+W	java:S125¨"<This block of commented-out lines of code should be removed.(µàĞÃüÿÿÿÿ
+F
+java:S3740ï"/Provide the parametrized type for this generic.(¿ä„‰
+c	java:S119J"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(Ãï²Ëøÿÿÿÿ
+_	java:S119À"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¥Ü·À
+i
+java:S3776Œ"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(İ©şÜ

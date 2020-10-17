@@ -1,146 +1,146 @@
 
-L
-java:S1191…"5Use classes from the Java API instead of Sun classes.(Ú¥ú·
-n
-java:S1192Û"RDefine a constant instead of duplicating this literal "Invalid operation" 3 times.(ÇşÌ¯ùÿÿÿÿ
-`
-java:S1192‹"IDefine a constant instead of duplicating this literal "Overflow" 9 times.(ÖÄÊ—
+8
+java:S1110Å""!Remove these useless parentheses.(ñÌ¢Ù
+W	java:S125¨&"<This block of commented-out lines of code should be removed.(ô Äûÿÿÿÿ
+R
+java:S1117ı";Rename "intVal" which hides the field declared at line 229.(‘õÕ§
+W	java:S125ú"<This block of commented-out lines of code should be removed.(’‘Ñøÿÿÿÿ
 a
-java:S1192‚"JDefine a constant instead of duplicating this literal "Underflow" 4 times.(Ä›Ì
-]
-java:S1192Ê"FDefine a constant instead of duplicating this literal "audit" 4 times.(ıÓÌú
+java:S1124Ë"EReorder the modifiers to comply with the Java Language Specification.(ñÕ¸Ãùÿÿÿÿ
+t	java:S135©""YReduce the total number of break and continue statements in this loop to use at most one.(£õ«êÿÿÿÿÿ
+v
+java:S2259©"_"NullPointerException" will be thrown when invoking method "createAndStripZerosToMatchScale()".(ûàê
+u	java:S115†"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(·ÚÍ¦ûÿÿÿÿ
+l	java:S117Ò%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß§ûÿÿÿÿ
+l	java:S117Î'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âï Şùÿÿÿÿ
+a
+java:S1124›"EReorder the modifiers to comply with the Java Language Specification.(µÑ‚•üÿÿÿÿ
 I
 java:S1199¬
 "-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+a
+java:S1192‚"JDefine a constant instead of duplicating this literal "Underflow" 4 times.(Ä›Ì
+n
+java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ëÈÅÑùÿÿÿÿ
+W	java:S125—%"<This block of commented-out lines of code should be removed.(”ÙÙüıÿÿÿÿ
+a
+java:S1124ô"EReorder the modifiers to comply with the Java Language Specification.(—¶„·şÿÿÿÿ
+\
+java:S1124â"EReorder the modifiers to comply with the Java Language Specification.(Õ¢¹Ù
+g	java:S117£%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íò‚
+[
+java:S3358¥"DExtract this nested ternary operation into an independent statement.(’²Îí
+Q
+java:S1117ü":Rename "scale" which hides the field declared at line 237.(ˆõ
+O
+java:S1197«"8Move the array designator from the variable to the type.(æÇ
+u	java:S115‡"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‰Œ½íüÿÿÿÿ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(•ä«øÿÿÿÿ
+R	java:S125ñ"<This block of commented-out lines of code should be removed.(–£‡¬
+\
+java:S1124ë"EReorder the modifiers to comply with the Java Language Specification.(ÖôÇ³
+T
+java:S1197Ÿ"8Move the array designator from the variable to the type.(Õ§›Ûşÿÿÿÿ
+A
+java:S1144Ç"*Remove this unused private "audit" method.(µÚß€
+n
+java:S1192Û"RDefine a constant instead of duplicating this literal "Invalid operation" 3 times.(ÇşÌ¯ùÿÿÿÿ
+O
+java:S1197ß"8Move the array designator from the variable to the type.(èÙæÌ
+h
+java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ôÀãx
+O
+java:S1197Ê
+"8Move the array designator from the variable to the type.(ûúºª
+i
+java:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ñëë‘
+i
+java:S3776ø"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ö¤¤
+o	java:S135†"YReduce the total number of break and continue statements in this loop to use at most one.(‰Èø×
+l	java:S117Ğ'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í‹Àıÿÿÿÿ
+z
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(«óê…ùÿÿÿÿ
+g	java:S117Í'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıà”ë
+O
+java:S1197…"8Move the array designator from the variable to the type.(˜¦éØ
+i
+java:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¤î¸÷
+F
+java:S1066Œ'"/Merge this if statement with the enclosing one.(³¬œ…
+L
+java:S1191…"5Use classes from the Java API instead of Sun classes.(Ú¥ú·
+i
+java:S3776¥
+"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¦íÂÙ
+\
+java:S1124¾"EReorder the modifiers to comply with the Java Language Specification.(…€“è
+T
+java:S1197‘""8Move the array designator from the variable to the type.(¥¾À¬ıÿÿÿÿ
+l	java:S117¡%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ƒªŞúÿÿÿÿ
+?
+java:S1659Ò%"#Declare "r_tmp" on a separate line.(ß§ûÿÿÿÿ
+W	java:S125É"<This block of commented-out lines of code should be removed.(æÈŸÎıÿÿÿÿ
+Q
+java:S1117œ":Rename "scale" which hides the field declared at line 237.(ˆõ
+i
+java:S3776â"RRefactor this method to reduce its Cognitive Complexity from 44 to the 15 allowed.(À‘ó
+[
+java:S1124“"EReorder the modifiers to comply with the Java Language Specification.(Şíÿ	
+Q
+java:S1117Î":Rename "scale" which hides the field declared at line 237.(ˆõ
+o
+java:S3776š"SRefactor this method to reduce its Cognitive Complexity from 150 to the 15 allowed.(¸ºÛæüÿÿÿÿ
+O
+java:S1197ã"8Move the array designator from the variable to the type.(„Ã¢õ
+[
+java:S3358Æ"DExtract this nested ternary operation into an independent statement.(Ï‡ÌÆ
+T
+java:S1197"8Move the array designator from the variable to the type.(òÑëïûÿÿÿÿ
+2
+java:S3626ü"Remove this redundant jump.(ûÁİ…
+{
+java:S3008"_Rename this field "BIG_TEN_POWERS_TABLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÑëïûÿÿÿÿ
+\
+java:S1124‡"EReorder the modifiers to comply with the Java Language Specification.(ûˆÂš
+P
+java:S5164—"4Call "remove()" on "threadLocalStringBuilderHelper".(¹½ë¿ıÿÿÿÿ
+n
+java:S3776Õ"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ìº¾Îıÿÿÿÿ
 F
 java:S1066€!"/Merge this if statement with the enclosing one.(¢²‡
 K
 java:S1066Ï!"/Merge this if statement with the enclosing one.(ÆÚëşÿÿÿÿÿ
-F
-java:S1066Œ'"/Merge this if statement with the enclosing one.(³¬œ…
-o	java:S135†"YReduce the total number of break and continue statements in this loop to use at most one.(‰Èø×
-o	java:S135’""YReduce the total number of break and continue statements in this loop to use at most one.(÷Ïİ™
-t	java:S135©""YReduce the total number of break and continue statements in this loop to use at most one.(£õ«êÿÿÿÿÿ
-l	java:S117¡%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ƒªŞúÿÿÿÿ
-g	java:S117¢%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ü·¼
-g	java:S117£%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íò‚
-l	java:S117¤%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øµ”‡üÿÿÿÿ
-l	java:S117Ò%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß§ûÿÿÿÿ
-g	java:S117Í'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıà”ë
-l	java:S117Î'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âï Şùÿÿÿÿ
-g	java:S117Ï'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è·ˆ’
-l	java:S117Ğ'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í‹Àıÿÿÿÿ
-v
-java:S2259©"_"NullPointerException" will be thrown when invoking method "createAndStripZerosToMatchScale()".(ûàê
-z
-java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(«óê…ùÿÿÿÿ
-B
-java:S3077"&Use an "AtomicReferenceArray" instead.(òÑëïûÿÿÿÿ
-{
-java:S3008"_Rename this field "BIG_TEN_POWERS_TABLE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÑëïûÿÿÿÿ
-P
-java:S5164—"4Call "remove()" on "threadLocalStringBuilderHelper".(¹½ë¿ıÿÿÿÿ
-b
-java:S4065—"FReplace this anonymous class with a call to "ThreadLocal.withInitial".(¹½ë¿ıÿÿÿÿ
-T
-java:S1197Ÿ"8Move the array designator from the variable to the type.(Õ§›Ûşÿÿÿÿ
-o
-java:S3776š"SRefactor this method to reduce its Cognitive Complexity from 150 to the 15 allowed.(¸ºÛæüÿÿÿÿ
-\
-java:S2147Ö"ECombine this catch with the one at line 596, which has the same body.(æ®Ş©
-O
-java:S1197…"8Move the array designator from the variable to the type.(˜¦éØ
-h
-java:S3776ê"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ôÀãx
-i
-java:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ñëë‘
-Q
-java:S1117œ":Rename "scale" which hides the field declared at line 237.(ˆõ
-W
-java:S1117";Rename "intVal" which hides the field declared at line 229.(ã†î±üÿÿÿÿ
-Q
-java:S1117Î":Rename "scale" which hides the field declared at line 237.(ˆõ
-i
-java:S3776ø"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ö¤¤
-Q
-java:S1117ü":Rename "scale" which hides the field declared at line 237.(ˆõ
-R
-java:S1117ı";Rename "intVal" which hides the field declared at line 229.(‘õÕ§
-i
-java:S3776¥
-"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¦íÂÙ
-O
-java:S1197Ê
-"8Move the array designator from the variable to the type.(ûúºª
-O
-java:S1197ã"8Move the array designator from the variable to the type.(„Ã¢õ
-O
-java:S1197"8Move the array designator from the variable to the type.(¡¢Çœ
-a
-java:S1124Û"EReorder the modifiers to comply with the Java Language Specification.(‚šëÆúÿÿÿÿ
-\
-java:S1124â"EReorder the modifiers to comply with the Java Language Specification.(Õ¢¹Ù
-\
-java:S1124ë"EReorder the modifiers to comply with the Java Language Specification.(ÖôÇ³
-a
-java:S1124ô"EReorder the modifiers to comply with the Java Language Specification.(—¶„·şÿÿÿÿ
-a
-java:S1124ş"EReorder the modifiers to comply with the Java Language Specification.(ºÏ€Éıÿÿÿÿ
-\
-java:S1124‡"EReorder the modifiers to comply with the Java Language Specification.(ûˆÂš
-[
-java:S1124“"EReorder the modifiers to comply with the Java Language Specification.(Şíÿ	
-a
-java:S1124›"EReorder the modifiers to comply with the Java Language Specification.(µÑ‚•üÿÿÿÿ
-i
-java:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¤î¸÷
-n
-java:S3776À"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ëÈÅÑùÿÿÿÿ
-[
-java:S3358Æ"DExtract this nested ternary operation into an independent statement.(Ï‡ÌÆ
-n
-java:S3776Õ"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ìº¾Îıÿÿÿÿ
-N
-java:S1197Ô"8Move the array designator from the variable to the type.(¶Û}
-O
-java:S1197ß"8Move the array designator from the variable to the type.(èÙæÌ
-\
-java:S1124¾"EReorder the modifiers to comply with the Java Language Specification.(…€“è
-a
-java:S1124Ë"EReorder the modifiers to comply with the Java Language Specification.(ñÕ¸Ãùÿÿÿÿ
-i
-java:S3776â"RRefactor this method to reduce its Cognitive Complexity from 44 to the 15 allowed.(À‘ó
-T
-java:S1197"8Move the array designator from the variable to the type.(òÑëïûÿÿÿÿ
-O
-java:S1197«"8Move the array designator from the variable to the type.(æÇ
-2
-java:S3626ü"Remove this redundant jump.(ûÁİ…
-u	java:S115†"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(·ÚÍ¦ûÿÿÿÿ
-u	java:S115‡"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‰Œ½íüÿÿÿÿ
-[
-java:S3358 "DExtract this nested ternary operation into an independent statement.(©¾±±
-[
-java:S3358¥"DExtract this nested ternary operation into an independent statement.(’²Îí
-T	java:S106¬"9Replace this use of System.out or System.err by a logger.(•ä«øÿÿÿÿ
 n
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ßâ…àûÿÿÿÿ
-T
-java:S1197‘""8Move the array designator from the variable to the type.(¥¾À¬ıÿÿÿÿ
-8
-java:S1110Å""!Remove these useless parentheses.(ñÌ¢Ù
+o	java:S135’""YReduce the total number of break and continue statements in this loop to use at most one.(÷Ïİ™
+g	java:S117¢%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Ü·¼
+a
+java:S1124ş"EReorder the modifiers to comply with the Java Language Specification.(ºÏ€Éıÿÿÿÿ
 i
 java:S3776°#"RRefactor this method to reduce its Cognitive Complexity from 47 to the 15 allowed.(úãˆ—
 i
 java:S3776À%"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(ø¸çÒ
-?
-java:S1659Ò%"#Declare "r_tmp" on a separate line.(ß§ûÿÿÿÿ
-W	java:S125ú"<This block of commented-out lines of code should be removed.(’‘Ñøÿÿÿÿ
-W	java:S125É"<This block of commented-out lines of code should be removed.(æÈŸÎıÿÿÿÿ
-R	java:S125ñ"<This block of commented-out lines of code should be removed.(–£‡¬
-W	java:S125ı""<This block of commented-out lines of code should be removed.(Ô¡ÿÍÿÿÿÿÿ
-W	java:S125—%"<This block of commented-out lines of code should be removed.(”ÙÙüıÿÿÿÿ
+B
+java:S3077"&Use an "AtomicReferenceArray" instead.(òÑëïûÿÿÿÿ
+N
+java:S1197Ô"8Move the array designator from the variable to the type.(¶Û}
+a
+java:S1124Û"EReorder the modifiers to comply with the Java Language Specification.(‚šëÆúÿÿÿÿ
+l	java:S117¤%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øµ”‡üÿÿÿÿ
+]
+java:S1192Ê"FDefine a constant instead of duplicating this literal "audit" 4 times.(ıÓÌú
+W
+java:S1117";Rename "intVal" which hides the field declared at line 229.(ã†î±üÿÿÿÿ
+\
+java:S2147Ö"ECombine this catch with the one at line 596, which has the same body.(æ®Ş©
+O
+java:S1197"8Move the array designator from the variable to the type.(¡¢Çœ
+`
+java:S1192‹"IDefine a constant instead of duplicating this literal "Overflow" 9 times.(ÖÄÊ—
 W	java:S125½%"<This block of commented-out lines of code should be removed.(”âëüÿÿÿÿ
-W	java:S125¨&"<This block of commented-out lines of code should be removed.(ô Äûÿÿÿÿ
-A
-java:S1144Ç"*Remove this unused private "audit" method.(µÚß€
+b
+java:S4065—"FReplace this anonymous class with a call to "ThreadLocal.withInitial".(¹½ë¿ıÿÿÿÿ
+g	java:S117Ï'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è·ˆ’
+[
+java:S3358 "DExtract this nested ternary operation into an independent statement.(©¾±±
+W	java:S125ı""<This block of commented-out lines of code should be removed.(Ô¡ÿÍÿÿÿÿÿ

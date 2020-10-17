@@ -1,0 +1,65 @@
+
+K
+java:S1066«"/Merge this if statement with the enclosing one.(Ìÿ¯Àûÿÿÿÿ
+S
+java:S2589è"7Remove this expression which always evaluates to "true"( ³Ÿıÿÿÿÿ
+S
+java:S2589¾"7Remove this expression which always evaluates to "true"( ³Ÿıÿÿÿÿ
+J
+java:S1121‰".Extract the assignment out of this expression.(ÓÄ’·ûÿÿÿÿ
+Z
+java:S3358V"DExtract this nested ternary operation into an independent statement.(Œ¨…Å
+i
+java:S3776—"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(éáÌÑ
+F
+java:S1172µ"/Remove this unused method parameter "runnable".(ò†Šñ
+F
+java:S1172º"/Remove this unused method parameter "callable".(Öí”ÿ
+u
+java:S2293Š"YReplace the type specification in this constructor call with the diamond operator ("<>").(Õ¸¤±ıÿÿÿÿ
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Õ¸¤±ıÿÿÿÿ
+?
+java:S1185Õ"(Remove this method to simply inherit it.(®”ğ©
+?
+java:S1185Ù"(Remove this method to simply inherit it.(Á˜ââ
+?
+java:S1185İ"(Remove this method to simply inherit it.(ŸÜÆ’
+Q
+java:S1161İ":Add the "@Override" annotation above this method signature(ŸÜÆ’
+P
+java:S1117®"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117¸"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117Ï"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117á"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117î"9Rename "lock" which hides the field declared at line 360.(º·úã
+U	java:S899†":Do something with the "boolean" value returned by "offer".(çÆßêúÿÿÿÿ
+P
+java:S1117œ"9Rename "lock" which hides the field declared at line 360.(º·úã
+n
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(½µğ˜ûÿÿÿÿ
+P
+java:S1117ª"9Rename "lock" which hides the field declared at line 360.(º·úã
+R	java:S899¼"<Do something with the "long" value returned by "awaitNanos".(İ«ø
+i
+java:S3776Ë"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(¨†
+P
+java:S1117Î"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117ö"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117’"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117©"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117º"9Rename "lock" which hides the field declared at line 360.(º·úã
+P
+java:S1117Å"9Rename "lock" which hides the field declared at line 360.(º·úã
+V
+java:S1161ë":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+P	java:S899î";Do something with the "boolean" value returned by "remove".(Ø˜äk
+W	java:S125‡"<This block of commented-out lines of code should be removed.(·†ÁÈıÿÿÿÿ

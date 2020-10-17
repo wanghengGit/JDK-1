@@ -1,188 +1,189 @@
 
-}
-java:S1130Ô"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(°’ðœ
->
-java:S1604«"(Make this anonymous inner class a lambda(ÆÞÖ
-<
-java:S3077—"&Use an "AtomicReferenceArray" instead.(ÇÞÍK
-‚
-java:S1130Ä	"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¯‰šŒüÿÿÿÿ
-n
-java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÐÆûÛüÿÿÿÿ
-C
-java:S1872õ
-"'Use an "instanceof" comparison instead.(¹ÿÜÔùÿÿÿÿ
-s
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ñþé‚üÿÿÿÿ
-=
-java:S3077“"&Use an "AtomicReferenceArray" instead.(ÔÏø¤
-}
-java:S1130§"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(Õ‡®ß
-\
-java:S1124Ô"EReorder the modifiers to comply with the Java Language Specification.(ú  Ý
-U
-java:S4973°"9Use the "equals" method if value comparison was intended.(Ã¯Ìüÿÿÿÿ
-K
-java:S1066"/Merge this if statement with the enclosing one.(÷»ž†øÿÿÿÿ
-e
-java:S1117¯"IRename "classRedefinedCount" which hides the field declared at line 2474.(”°¾Åýÿÿÿÿ
-n
-java:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(û«»‰þÿÿÿÿ
-|
-java:S1130	"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(é®Ï
-s
-java:S3077¦"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ï¹ëÿÿÿÿÿ
-n
-java:S3776è"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(ññìŸúÿÿÿÿ
-}
-java:S1130ã"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(…£ç¦
-`
-java:S3358†"DExtract this nested ternary operation into an independent statement.(Æ¤ˆ•ÿÿÿÿÿ
-F
-java:S1066ä"/Merge this if statement with the enclosing one.(Êêå¢
-U
-java:S4973õ"9Use the "equals" method if value comparison was intended.(ŽÍ®Ðÿÿÿÿÿ
-B
-java:S1168ß"&Return an empty array instead of null.(ûÃýöûÿÿÿÿ
-K
-java:S1066Ý"/Merge this if statement with the enclosing one.(Ñ¨†ßûÿÿÿÿ
-n
-java:S3077­"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(´ÕÊÜ
-`
-java:S1117®"DRename "reflectionData" which hides the field declared at line 2470.(Òæ±çúÿÿÿÿ
-?
-java:S1604ã"(Make this anonymous inner class a lambda(’­Ûü
-}
-java:S1130„"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÄØûÏ
-<
-java:S1452	"&Remove usage of generic wildcard type.(é®Ï
-}
-java:S1130À"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼
-n
-java:S3077Š"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(‡ ’Õ
-}
-java:S1130•"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÄØûÏ
-}
-java:S1130‘"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼
-B
-java:S3077”"&Use an "AtomicReferenceArray" instead.(„ËÎüÿÿÿÿ
-]
-java:S1117à"ARename "genericInfo" which hides the field declared at line 2517.(£ó¾ýÿÿÿÿ
-\
-java:S1124¬"EReorder the modifiers to comply with the Java Language Specification.(â˜ó‡
-s
-java:S3077Õ"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¨ý‹œûÿÿÿÿ
-\
-java:S1124­"EReorder the modifiers to comply with the Java Language Specification.(´ÕÊÜ
-Q
-java:S1161²
-":Add the "@Override" annotation above this method signature(ÒÅ™Þ
-f
-java:S3027’
-"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ºøøéýÿÿÿÿ
-a
-java:S1124ª"EReorder the modifiers to comply with the Java Language Specification.(šˆ°âÿÿÿÿÿ
-8
-java:S2326ý"T is not used in the method.(·ç­™ûÿÿÿÿ
-}
-java:S1130»"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(æÊ÷ï
-U
-java:S1117°"9Rename "name" which hides the field declared at line 626.(ÚÖÃÖùÿÿÿÿ
-T	java:S106¶"9Replace this use of System.out or System.err by a logger.(éÃë¡úÿÿÿÿ
-}
-java:S1130…"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(½ä«ˆ
-p	java:S115â"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®Œ ¨
-Z
-java:S1117Þ"DRename "annotationData" which hides the field declared at line 3484.(´äÓ4
-‚
-java:S1130ì"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ŸøŽ‰ûÿÿÿÿ
-p	java:S115æ"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÞÂ°
-K
-java:S11919"5Use classes from the Java API instead of Sun classes.(éª‚€
-P
-java:S4973€"9Use the "equals" method if value comparison was intended.(ö¹îÐ
-B
-java:S3077–"&Use an "AtomicReferenceArray" instead.(‡¬ÔÍýÿÿÿÿ
-J
-java:S1144t"/Remove this unused private "Class" constructor.(’×à™þÿÿÿÿ
-=
-java:S1452Ô"&Remove usage of generic wildcard type.(°’ðœ
-a
-java:S1124Õ"EReorder the modifiers to comply with the Java Language Specification.(¨ý‹œûÿÿÿÿ
-P
-java:S1117ë"9Rename "name" which hides the field declared at line 626.(„ÆÕÁ
-}
-java:S1130Þ	"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(Â‚âÚ
-h
-java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(é®Ï
-<
-java:S1181Á
-"%Catch Exception instead of Throwable.(ž¦ÆÏ
-a
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ñþé‚üÿÿÿÿ
-e
-java:S1117¢"IRename "classRedefinedCount" which hides the field declared at line 2474.(”°¾Åýÿÿÿÿ
-}
-java:S1130è"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼
-o
-java:S3012Å"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÄÆÎM
-B
-java:S3077›"&Use an "AtomicReferenceArray" instead.(ù“ž¬úÿÿÿÿ
-\
-java:S1124Š"EReorder the modifiers to comply with the Java Language Specification.(‡ ’Õ
-n
-java:S3077Ô"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ú  Ý
-B
-java:S3077ô"&Use an "AtomicReferenceArray" instead.(¿’¯‚øÿÿÿÿ
-u	java:S115ä"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(£ÊÖûûÿÿÿÿ
-n
-java:S3077¬"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(â˜ó‡
-I
-java:S1199Ç"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
-a	java:S112ò"FDefine and throw a dedicated exception instead of using a generic one.(çÕ­øÿÿÿÿ
-=
-java:S3077œ"&Use an "AtomicReferenceArray" instead.(‰§¤š
-\
-java:S1124ª"EReorder the modifiers to comply with the Java Language Specification.(°ô‹ä
-a
-java:S1124ô"EReorder the modifiers to comply with the Java Language Specification.(¿’¯‚øÿÿÿÿ
-[
-java:S1117¡"DRename "annotationData" which hides the field declared at line 3484.(›¡µ·
-?
-java:S1604Í"(Make this anonymous inner class a lambda(¥¬ê
-B
-java:S3077˜"&Use an "AtomicReferenceArray" instead.(½×€‹ûÿÿÿÿ
-a
-java:S1124¦"EReorder the modifiers to comply with the Java Language Specification.(ï¹ëÿÿÿÿÿ
-I
-java:S1948¨"-Make "classLoader" transient or serializable.(ÃÎçšùÿÿÿÿ
-F
-java:S1066 "/Merge this if statement with the enclosing one.(ÂØœ„
-3
-java:S2326ƒ"T is not used in the method.(ðÅëã
-;
-java:S3077•"&Use an "AtomicReferenceArray" instead.(Æ†
-o	java:S135š"YReduce the total number of break and continue statements in this loop to use at most one.(®™­Ø
-}
-java:S1130ò"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼
-=
-java:S3077š"&Use an "AtomicReferenceArray" instead.(´¹£ê
-=
-java:S1168ð"&Return an empty array instead of null.(ÁóšÚ
-P
-java:S4973À"9Use the "equals" method if value comparison was intended.(å›î¬
-‚
-java:S1130è"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ññìŸúÿÿÿÿ
-=
-java:S1452ã"&Remove usage of generic wildcard type.(…£ç¦
-W	java:S125Ý"<This block of commented-out lines of code should be removed.(“½ýÿÿÿÿ
-K
-java:S1066”"/Merge this if statement with the enclosing one.(ý›©úÿÿÿÿ
-‚
-java:S1130¿"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¾…‡Àýÿÿÿÿ
-?
-java:S1604"(Make this anonymous inner class a lambda(’­Ûü
+W
+java:S1117é"9Rename "name" which hides the field declared at line 624.(„ÆÕÁ8£©Ù¨À.
+‰
+java:S1130À"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¾…‡Àýÿÿÿÿ8£©Ù¨À.
+l
+java:S1117—"IRename "classRedefinedCount" which hides the field declared at line 2450.(”°¾Åýÿÿÿÿ8£©Ù¨À.
+D
+java:S1168à"&Return an empty array instead of null.(¥¹ï8£©Ù¨À.
 R
-java:S2696õ"6Make the enclosing method "static" or remove this set.(©—áñøÿÿÿÿ
+java:S1191:"5Use classes from the Java API instead of Sun classes.(éª‚€8ø×Ù¨À.
+P
+java:S1199±"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8ø×Ù¨À.
+R
+java:S1066’"/Merge this if statement with the enclosing one.(ý›©úÿÿÿÿ8ø×Ù¨À.
+R
+java:S1066…"/Merge this if statement with the enclosing one.(÷»ž†øÿÿÿÿ8ø×Ù¨À.
+M
+java:S1066Š"/Merge this if statement with the enclosing one.(ÂØœ„8ø×Ù¨À.
+R
+java:S1066Æ"/Merge this if statement with the enclosing one.(Ñ¨†ßûÿÿÿÿ8ø×Ù¨À.
+M
+java:S1066Í"/Merge this if statement with the enclosing one.(Êêå¢8ø×Ù¨À.
+h	java:S112Ú"FDefine and throw a dedicated exception instead of using a generic one.(çÕ­øÿÿÿÿ8ø×Ù¨À.
+v	java:S135„"YReduce the total number of break and continue statements in this loop to use at most one.(®™­Ø8ø×Ù¨À.
+F
+java:S1604‹"(Make this anonymous inner class a lambda(’­Ûü8ø×Ù¨À.
+F
+java:S1604Ò"(Make this anonymous inner class a lambda(¥¬ê8ø×Ù¨À.
+E
+java:S1604š"(Make this anonymous inner class a lambda(ÆÞÖ8ø×Ù¨À.
+F
+java:S1604Ò"(Make this anonymous inner class a lambda(’­Ûü8ø×Ù¨À.
+W
+java:S4973¾"9Use the "equals" method if value comparison was intended.(å›î¬8ø×Ù¨À.
+\
+java:S4973ß"9Use the "equals" method if value comparison was intended.(ŽÍ®Ðÿÿÿÿÿ8ø×Ù¨À.
+W
+java:S4973ê"9Use the "equals" method if value comparison was intended.(ö¹îÐ8ø×Ù¨À.
+\
+java:S4973™"9Use the "equals" method if value comparison was intended.(Ã¯Ìüÿÿÿÿ8ø×Ù¨À.
+u
+java:S3077«"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(â˜ó‡8ø×Ù¨À.
+u
+java:S3077¬"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(´ÕÊÜ8ø×Ù¨À.
+z
+java:S3077Ž"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ï¹ëÿÿÿÿÿ8ø×Ù¨À.
+z
+java:S3077½"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¨ý‹œûÿÿÿÿ8ø×Ù¨À.
+I
+java:S3077æ"&Use an "AtomicReferenceArray" instead.(¿’¯‚øÿÿÿÿ8ø×Ù¨À.
+u
+java:S3077ý"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(‡ ’Õ8ø×Ù¨À.
+z
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ñþé‚üÿÿÿÿ8ø×Ù¨À.
+u
+java:S3077Æ"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ú  Ý8ø×Ù¨À.
+P
+java:S1948ª"-Make "classLoader" transient or serializable.(ÃÎçšùÿÿÿÿ8ø×Ù¨À.
+g
+java:S3358‰"DExtract this nested ternary operation into an independent statement.(Æ¤ˆ•ÿÿÿÿÿ8ø×Ù¨À.
+u
+java:S3776¦"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(û«»‰þÿÿÿÿ8ø×Ù¨À.
+O
+java:S3011",This accessibility update should be removed.(¸Ò†’üÿÿÿÿ8ø×Ù¨À.
+c
+java:S1124«"EReorder the modifiers to comply with the Java Language Specification.(â˜ó‡8ø×Ù¨À.
+c
+java:S1124¬"EReorder the modifiers to comply with the Java Language Specification.(´ÕÊÜ8ø×Ù¨À.
+u
+java:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(ññìŸúÿÿÿÿ8ø×Ù¨À.
+‰
+java:S1130æ"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ññìŸúÿÿÿÿ8ø×Ù¨À.
 h
-java:S3776»"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(›Š
+java:S1124¨"EReorder the modifiers to comply with the Java Language Specification.(šˆ°âÿÿÿÿÿ8ø×Ù¨À.
+C
+java:S1452ˆ	"&Remove usage of generic wildcard type.(é®Ï8ø×Ù¨À.
+o
+java:S3776ˆ	"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(é®Ï8ø×Ù¨À.
+ƒ
+java:S1130ˆ	"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(é®Ï8ø×Ù¨À.
+‰
+java:S1130Ê	"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¯‰šŒüÿÿÿÿ8ø×Ù¨À.
+„
+java:S1130ä	"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(Â‚âÚ8ø×Ù¨À.
+X
+java:S1161¸
+":Add the "@Override" annotation above this method signature(ÒÅ™Þ8ø×Ù¨À.
+C
+java:S1181Ç
+"%Catch Exception instead of Throwable.(ž¦ÆÏ8ø×Ù¨À.
+J
+java:S1872ü
+"'Use an "instanceof" comparison instead.(¹ÿÜÔùÿÿÿÿ8ø×Ù¨À.
+„
+java:S1130ˆ"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(½ä«ˆ8ø×Ù¨À.
+D
+java:S1452â"&Remove usage of generic wildcard type.(…£ç¦8ø×Ù¨À.
+„
+java:S1130â"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(…£ç¦8ø×Ù¨À.
+„
+java:S1130’"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÄØûÏ8ø×Ù¨À.
+„
+java:S1130ã"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼8ø×Ù¨À.
+„
+java:S1130Š"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼8ø×Ù¨À.
+„
+java:S1130²"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(æÊ÷ï8ø×Ù¨À.
+‰
+java:S1130á"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ŸøŽ‰ûÿÿÿÿ8ø×Ù¨À.
+„
+java:S1130™"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(Õ‡®ß8ø×Ù¨À.
+D
+java:S1452Ä"&Remove usage of generic wildcard type.(°’ðœ8ø×Ù¨À.
+„
+java:S1130Ä"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(°’ðœ8ø×Ù¨À.
+„
+java:S1130ò"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÄØûÏ8ø×Ù¨À.
+„
+java:S1130¬"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼8ø×Ù¨À.
+„
+java:S1130Ü"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¥í­¼8ø×Ù¨À.
+Y
+java:S2696Ý"6Make the enclosing method "static" or remove this set.(©—áñøÿÿÿÿ8ø×Ù¨À.
+\
+java:S1117˜"9Rename "name" which hides the field declared at line 624.(ÚÖÃÖùÿÿÿÿ8ø×Ù¨À.
+w	java:S115Ê"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®Œ ¨8ø×Ù¨À.
+|	java:S115Ì"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(£ÊÖûûÿÿÿÿ8ø×Ù¨À.
+w	java:S115Î"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÞÂ°8ø×Ù¨À.
+?
+java:S2326å"T is not used in the method.(·ç­™ûÿÿÿÿ8ø×Ù¨À.
+:
+java:S2326ë"T is not used in the method.(ðÅëã8ø×Ù¨À.
+D
+java:S3077û"&Use an "AtomicReferenceArray" instead.(ÔÏø¤8ø×Ù¨À.
+I
+java:S3077ü"&Use an "AtomicReferenceArray" instead.(„ËÎüÿÿÿÿ8ø×Ù¨À.
+B
+java:S3077ý"&Use an "AtomicReferenceArray" instead.(Æ†8ø×Ù¨À.
+I
+java:S3077þ"&Use an "AtomicReferenceArray" instead.(‡¬ÔÍýÿÿÿÿ8ø×Ù¨À.
+C
+java:S3077ÿ"&Use an "AtomicReferenceArray" instead.(ÇÞÍK8ø×Ù¨À.
+I
+java:S3077€"&Use an "AtomicReferenceArray" instead.(½×€‹ûÿÿÿÿ8ø×Ù¨À.
+D
+java:S3077‚"&Use an "AtomicReferenceArray" instead.(´¹£ê8ø×Ù¨À.
+I
+java:S3077ƒ"&Use an "AtomicReferenceArray" instead.(ù“ž¬úÿÿÿÿ8ø×Ù¨À.
+D
+java:S3077„"&Use an "AtomicReferenceArray" instead.(‰§¤š8ø×Ù¨À.
+h
+java:S1124Ž"EReorder the modifiers to comply with the Java Language Specification.(ï¹ëÿÿÿÿÿ8ø×Ù¨À.
+c
+java:S1124’"EReorder the modifiers to comply with the Java Language Specification.(°ô‹ä8ø×Ù¨À.
+g
+java:S1117–"DRename "reflectionData" which hides the field declared at line 2446.(Òæ±çúÿÿÿÿ8ø×Ù¨À.
+h
+java:S1124½"EReorder the modifiers to comply with the Java Language Specification.(¨ý‹œûÿÿÿÿ8ø×Ù¨À.
+d
+java:S1117È"ARename "genericInfo" which hides the field declared at line 2493.(£ó¾ýÿÿÿÿ8ø×Ù¨À.
+v
+java:S3012¯"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÄÆÎM8ø×Ù¨À.
+u
+java:S3776û"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÐÆûÛüÿÿÿÿ8ø×Ù¨À.
+o
+java:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(›Š8ø×Ù¨À.
+[	java:S106¥"9Replace this use of System.out or System.err by a logger.(éÃë¡úÿÿÿÿ8ø×Ù¨À.
+I
+java:S1168Î"&Return an empty array instead of null.(ûÃýöûÿÿÿÿ8ø×Ù¨À.
+J
+java:S3011Ô",This accessibility update should be removed.(ì…´Á8ø×Ù¨À.
+h
+java:S1124æ"EReorder the modifiers to comply with the Java Language Specification.(¿’¯‚øÿÿÿÿ8ø×Ù¨À.
+c
+java:S1124ý"EReorder the modifiers to comply with the Java Language Specification.(‡ ’Õ8ø×Ù¨À.
+a
+java:S1117Ð"DRename "annotationData" which hides the field declared at line 3470.(´äÓ48ø×Ù¨À.
+h
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ñþé‚üÿÿÿÿ8ø×Ù¨À.
+b
+java:S1117“"DRename "annotationData" which hides the field declared at line 3470.(›¡µ·8ø×Ù¨À.
+l
+java:S1117”"IRename "classRedefinedCount" which hides the field declared at line 2450.(”°¾Åýÿÿÿÿ8ø×Ù¨À.
+c
+java:S1124Æ"EReorder the modifiers to comply with the Java Language Specification.(ú  Ý8ø×Ù¨À.
+^	java:S125Å"<This block of commented-out lines of code should be removed.(“½ýÿÿÿÿ8ø×Ù¨À.
+Q
+java:S1144w"/Remove this unused private "Class" constructor.(’×à™þÿÿÿÿ8ø×Ù¨À.

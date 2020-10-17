@@ -1,0 +1,9 @@
+
+o	java:S135ω"YReduce the total number of break and continue statements in this loop to use at most one.(όμÿό
+n	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(φούT
+l
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(γψ©Ζώÿÿÿÿ
+F
+java:S1150g"+Implement Iterator rather than Enumeration.(‹†‡όÿÿÿÿ
+i
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Ε©·Ϊ

@@ -1,0 +1,23 @@
+
+2
+java:S2326H"T is not used in the method.(øÏœ¹
+7
+java:S2326R"T is not used in the method.(Óû¼ãÿÿÿÿÿ
+7
+java:S2326\"T is not used in the method.(¼ òöýÿÿÿÿ
+_	java:S119“"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ÂŸ¾Þ
+d	java:S119º"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(¯…„êùÿÿÿÿ
+d	java:S119á"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ö—…Õøÿÿÿÿ
+d	java:S119ˆ"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(®Ù«˜ùÿÿÿÿ
+\
+java:S1124°"EReorder the modifiers to comply with the Java Language Specification.(éŠùÚ
+u
+java:S2293þ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏŠò”üÿÿÿÿ
+u
+java:S2293þ"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏŠò”üÿÿÿÿ
+a
+java:S1124›"EReorder the modifiers to comply with the Java Language Specification.(ê àÒþÿÿÿÿ
+[
+java:S1124ý"EReorder the modifiers to comply with the Java Language Specification.(âØÂ-
+a
+java:S1124ß"EReorder the modifiers to comply with the Java Language Specification.(ù·Ï¾øÿÿÿÿ

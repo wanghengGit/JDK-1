@@ -51,6 +51,8 @@ package java.sql;
  * in its implementation for reading the
  * attributes from the input stream.
  * @since 1.2
+ * @author kit
+ * @date 20200816
  */
 
 public interface SQLInput {

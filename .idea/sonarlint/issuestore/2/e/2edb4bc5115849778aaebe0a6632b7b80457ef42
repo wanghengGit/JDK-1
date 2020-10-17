@@ -1,0 +1,130 @@
+
+;
+java:S1659θ"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+6
+java:S1659„"Declare "g" on a separate line.(Σ›ηγ
+O
+java:S1197"8Move the array designator from the variable to the type.(ΟΐΤΡ
+;
+java:S1659θ"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+s	java:S127ΰ
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(ΩςμΔϋÿÿÿÿ
+6
+java:S1659¦"Declare "p" on a separate line.(Σ›ηγ
+;
+java:S1659Χ"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+S
+java:S1117°"7Rename "a" which hides the field declared at line 3811.(Λ°πώÿÿÿÿ
+6
+java:S1659Κ"Declare "p" on a separate line.(Σ›ηγ
+H
+java:S1602ο$",Remove useless curly braces around statement(Ο‹ƒώÿÿÿÿ
+C
+java:S1602•%",Remove useless curly braces around statement(§Αδ
+;
+java:S1659ά"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+;
+java:S1659Ά"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+;
+java:S1659Π"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+6
+java:S1659„"Declare "p" on a separate line.(Σ›ηγ
+;
+java:S1659–"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+6
+java:S1659Κ"Declare "g" on a separate line.(Σ›ηγ
+O
+java:S1197Μ"8Move the array designator from the variable to the type.(«π“
+;
+java:S1659¶"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+6
+java:S1659ψ"Declare "p" on a separate line.(Σ›ηγ
+G
+java:S2160ί"+Override the "equals" method in this class.(©λ‘ψÿÿÿÿ
+;
+java:S1659"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+6
+java:S1659”	"Declare "p" on a separate line.(Σ›ηγ
+C
+java:S1602»%",Remove useless curly braces around statement(Ωχ²ι
+6
+java:S1659ζ"Declare "p" on a separate line.(Σ›ηγ
+;
+java:S1659Χ"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+T
+java:S1197Ί"8Move the array designator from the variable to the type.(ή®πωÿÿÿÿ
+6
+java:S1659Ό"Declare "g" on a separate line.(Σ›ηγ
+6
+java:S1659"Declare "p" on a separate line.(Σ›ηγ
+T
+java:S1197Υ "8Move the array designator from the variable to the type.(™‡†ύÿÿÿÿ
+;
+java:S1659Ά"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+:
+java:S1948γ"#Make "a" transient or serializable.(ΎΚβ‚
+S
+java:S1117"7Rename "a" which hides the field declared at line 3811.(Λ°πώÿÿÿÿ
+u	java:S115«	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‡ίψÿÿÿÿ
+6
+java:S1659Ύ"Declare "g" on a separate line.(Σ›ηγ
+6
+java:S1659Ύ"Declare "p" on a separate line.(Σ›ηγ
+6
+java:S1659"Declare "g" on a separate line.(Σ›ηγ
+6
+java:S1659¦"Declare "g" on a separate line.(Σ›ηγ
+F
+java:S3740ƒ"/Provide the parametrized type for this generic.(Ό°•Θ
+s	java:S127£"XRefactor the code in order to not assign to this loop counter from within the loop body.(ΩςμΔϋÿÿÿÿ
+O
+java:S1197ι"8Move the array designator from the variable to the type.(Ηª•Ψ
+n
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(Ν€ωÿÿÿÿ
+s	java:S127΅"XRefactor the code in order to not assign to this loop counter from within the loop body.(ΏέΉ―όÿÿÿÿ
+T
+java:S1197π"8Move the array designator from the variable to the type.(Θ™†°ώÿÿÿÿ
+H
+java:S1602α%",Remove useless curly braces around statement(γ…Ξώÿÿÿÿ
+T
+java:S1197Υ"8Move the array designator from the variable to the type.(ΊθΝΑϋÿÿÿÿ
+;
+java:S1659–"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+;
+java:S1659λ"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+6
+java:S1659Ό"Declare "p" on a separate line.(Σ›ηγ
+i
+java:S3776¶!"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(δΉΎ
+T
+java:S1197Ε"8Move the array designator from the variable to the type.(…γ΅ÿÿÿÿÿ
+6
+java:S1659ζ"Declare "g" on a separate line.(Σ›ηγ
+6
+java:S1659”	"Declare "g" on a separate line.(Σ›ηγ
+6
+java:S1659ψ"Declare "g" on a separate line.(Σ›ηγ
+;
+java:S1659¶"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+O
+java:S1197¬ "8Move the array designator from the variable to the type.(ΤΫι
+;
+java:S1659λ"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+V
+java:S1118ª	":Add a private constructor to hide the implicit public one.(ΥΟ‚ύÿÿÿÿ
+p
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(Τ§›Ν
+s	java:S127ή
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(ΏέΉ―όÿÿÿÿ
+;
+java:S1659"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+O
+java:S1197‹ "8Move the array designator from the variable to the type.(ΊΖµΆ
+;
+java:S1659Π"Declare "p" on a separate line.(πε®¬ÿÿÿÿÿ
+;
+java:S1659ά"Declare "g" on a separate line.(πε®¬ÿÿÿÿÿ
+F
+java:S3740†"/Provide the parametrized type for this generic.(µόΖΘ
+T
+java:S1197„"8Move the array designator from the variable to the type.(ΏψΎαϊÿÿÿÿ

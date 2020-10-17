@@ -1,0 +1,80 @@
+
+K
+java:S1191%"5Use classes from the Java API instead of Sun classes.(éª‚€
+k
+java:S1192˜	"UDefine a constant instead of duplicating this literal "haveNextNextGaussian" 3 times.(ÕËäo
+m
+java:S1192—	"QDefine a constant instead of duplicating this literal "nextNextGaussian" 3 times.(‹ÒÙ‚üÿÿÿÿ
+a	java:S112È	"FDefine and throw a dedicated exception instead of using a generic one.(¨ßÕÂùÿÿÿÿ
+s	java:S127ê"XRefactor the code in order to not assign to this loop counter from within the loop body.(–«ä°ûÿÿÿÿ
+E
+java:S1121ş".Extract the assignment out of this expression.(·Ñ…
+E
+java:S1121".Extract the assignment out of this expression.(”ùˆõ
+J
+java:S1121÷".Extract the assignment out of this expression.(¡¬¦µşÿÿÿÿ
+D
+java:S1121®".Extract the assignment out of this expression.(‡š
+E
+java:S1121æ".Extract the assignment out of this expression.(±­Ğ 
+t	java:S115Z"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(”Šûÿÿÿÿ
+t	java:S115["ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Õğöàùÿÿÿÿ
+o	java:S115\"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(è¾°×
+o	java:S115a"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(“Ãã“
+o	java:S115b"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÀÄèî
+t	java:S115c"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ŠÜ‘ôüÿÿÿÿ
+p	java:S115Ã	"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÓèÒ
+\
+java:S1124ª"EReorder the modifiers to comply with the Java Language Specification.(…šØ”
+=
+java:S1659É"&Declare "nextseed" on a separate line.(Š€Õ
+T
+java:S1117Ê"8Rename "seed" which hides the field declared at line 88.(¨–Œ×øÿÿÿÿ
+;
+java:S1659ù"Declare "m" on a separate line.(ğşÉ§ûÿÿÿÿ
+\
+java:S1124É"EReorder the modifiers to comply with the Java Language Specification.(°¨Ï†
+<
+java:S1659Ï" Declare "v2" on a separate line.(ŞıèÅùÿÿÿÿ
+;
+java:S1659Ï"Declare "s" on a separate line.(ŞıèÅùÿÿÿÿ
+Z
+java:S1117Õ">Rename "multiplier" which hides the field declared at line 90.(»„ïµüÿÿÿÿ
+E
+java:S1940´")Use the opposite operator (">=") instead.(–á«ôùÿÿÿÿ
+E
+java:S1940Ø")Use the opposite operator (">=") instead.(–á«ôùÿÿÿÿ
+6
+java:S1659õ"Declare "m" on a separate line.(õÙùÇ
+5
+java:S1659…"Declare "f" on a separate line.(Ç™àe
+Q
+java:S1161":Add the "@Override" annotation above this method signature(ñ‰ì¶
+5
+java:S1659"Declare "f" on a separate line.(Ç™àe
+6
+java:S1659”"Declare "b" on a separate line.(‰«êà
+6
+java:S1659¬"Declare "m" on a separate line.(õÙùÇ
+5
+java:S1659¼"Declare "f" on a separate line.(Ç™àe
+V
+java:S1161Å":Add the "@Override" annotation above this method signature(ÖËàúÿÿÿÿ
+5
+java:S1659Ç"Declare "f" on a separate line.(Ç™àe
+6
+java:S1659Ë"Declare "b" on a separate line.(¹¶
+6
+java:S1659ä"Declare "m" on a separate line.(õÙùÇ
+5
+java:S1659ô"Declare "f" on a separate line.(Ç™àe
+V
+java:S1161ı":Add the "@Override" annotation above this method signature(ß¿½ûÿÿÿÿ
+5
+java:S1659ÿ"Declare "f" on a separate line.(Ç™àe
+;
+java:S1659ƒ	"Declare "b" on a separate line.(ÏÚËÛıÿÿÿÿ
+a
+java:S1124²	"EReorder the modifiers to comply with the Java Language Specification.(—›Æ¥üÿÿÿÿ
+V
+java:S1068•	":Remove this unused "serialPersistentFields" private field.(òÌ‡‹øÿÿÿÿ

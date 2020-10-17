@@ -37,6 +37,8 @@ import java.util.function.LongConsumer;
  *
  * @see Spliterator
  * @since 1.8
+ * @author kit
+ * @date 20200825
  */
 public final class Spliterators {
 

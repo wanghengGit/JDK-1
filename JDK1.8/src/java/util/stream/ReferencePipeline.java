@@ -54,6 +54,8 @@ import java.util.function.ToLongFunction;
  *
  * @since 1.8
  * @date 20200325
+ * @author kit
+ * @date 20200825
  */
 abstract class ReferencePipeline<P_IN, P_OUT>
         extends AbstractPipeline<P_IN, P_OUT, Stream<P_OUT>>

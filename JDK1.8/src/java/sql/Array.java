@@ -65,6 +65,8 @@ package java.sql;
  * JDBC driver supports the data type.
  *
  * @since 1.2
+ * @author kit
+ * @date 20200815
  */
 
 public interface Array {

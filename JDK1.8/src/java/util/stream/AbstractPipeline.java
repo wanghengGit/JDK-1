@@ -69,6 +69,7 @@ import java.util.function.Supplier;
  * @param <S> type of the subclass implementing {@code BaseStream}
  * @since 1.8
  * @date 20200325
+ * @author kit
  */
 abstract class AbstractPipeline<E_IN, E_OUT, S extends BaseStream<E_OUT, S>>
         extends PipelineHelper<E_OUT> implements BaseStream<E_OUT, S> {

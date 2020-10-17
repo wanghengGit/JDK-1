@@ -41,6 +41,8 @@ import java.util.function.Supplier;
  * encounter order.)
  *
  * @since 1.8
+ * @date 20200825
+ * @author kit
  */
 final class FindOps {
 

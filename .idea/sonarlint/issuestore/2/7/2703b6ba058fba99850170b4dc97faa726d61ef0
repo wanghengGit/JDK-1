@@ -1,0 +1,43 @@
+
+t	java:S135Ë"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ
+t	java:S135á"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ
+t	java:S135Ã"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ
+t	java:S135Ù"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ
+`
+java:S3358·"DExtract this nested ternary operation into an independent statement.(ú™Ûüÿÿÿÿ
+[
+java:S3358¸"DExtract this nested ternary operation into an independent statement.(½…Ø
+i
+java:S3776™"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(‰Èõ
+n
+java:S3776ß"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(ôáÛÙúÿÿÿÿ
+i
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 54 to the 15 allowed.(ÎŸÆ
+L
+java:S1117­"5Rename "a" which hides the field declared at line 85.(ÙöÑ‘
+O
+java:S1117®"8Rename "tmp" which hides the field declared at line 119.(ñº‚÷
+L
+java:S1117À"5Rename "c" which hides the field declared at line 90.(ö£àÌ
+T
+java:S1117Á">Rename "minGallop" which hides the field declared at line 103.(–­k
+Q
+java:S1119Â";Refactor the code to remove this label and the need for it.(àÏÅ)
+5
+java:S2178ı"Correct this "|" to "||".(ïãÓŞûÿÿÿÿ
+i
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 54 to the 15 allowed.(‚½åß
+L
+java:S1117¡"5Rename "a" which hides the field declared at line 85.(ÙöÑ‘
+O
+java:S1117¢"8Rename "tmp" which hides the field declared at line 119.(§¤ÿü
+S
+java:S1117£"<Rename "tmpBase" which hides the field declared at line 120.(™¨÷Î
+L
+java:S1117¸"5Rename "c" which hides the field declared at line 90.(ö£àÌ
+T
+java:S1117¹">Rename "minGallop" which hides the field declared at line 103.(–­k
+Q
+java:S1119º";Refactor the code to remove this label and the need for it.(àÏÅ)
+5
+java:S2178õ"Correct this "|" to "||".(ïãÓŞûÿÿÿÿ

@@ -1,0 +1,34 @@
+
+„
+java:S1130í"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(À“õÄ
+„
+java:S1130­"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(À“õÄ
+?	java:S108Ä")Either remove or fill this block of code.(ıàÑÎ
+o
+java:S2293×"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÌúÀ-
+>
+java:S1481İ"'Remove this unused "ih" local variable.(ÈÍ½è
+K
+java:S1066ø"/Merge this if statement with the enclosing one.(¥€‘Ÿúÿÿÿÿ
+:
+java:S1948ø"#Make "h" transient or serializable.(ú‰Ñ‰
+a
+java:S2147ğ"ECombine this catch with the one at line 743, which has the same body.(¼¯•¶ùÿÿÿÿ
+>
+java:S1604ß"(Make this anonymous inner class a lambda(ÆŞÖ
+P
+java:S1191%"5Use classes from the Java API instead of Sun classes.(òÀ½şÿÿÿÿ
+T
+java:S3878æ"8Remove this array creation and simply pass the elements.(½¼’Äúÿÿÿÿ
+F
+java:S3398Å"*Move this method into "ProxyClassFactory".(óŒè×şÿÿÿÿ
+u	java:S115³"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¹Ê±òıÿÿÿÿ
+?
+java:S1659á"#Declare "intf2" on a separate line.(µ˜ëĞüÿÿÿÿ
+n
+java:S3776¹"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(À¹í§úÿÿÿÿ
+„
+java:S1130Ä"mRemove the declaration of thrown exception 'java.lang.IllegalArgumentException' which is a runtime exception.(À“õÄ
+W	java:S125£"<This block of commented-out lines of code should be removed.(ËÉÔ øÿÿÿÿ
+M
+java:S1854İ"6Remove this useless assignment to local variable "ih".(ÈÍ½è

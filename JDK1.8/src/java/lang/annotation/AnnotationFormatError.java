@@ -36,6 +36,7 @@ package java.lang.annotation;
  * @see     java.lang.reflect.AnnotatedElement
  * @since   1.5
  * @date 20200628
+ * @author kit
  */
 public class AnnotationFormatError extends Error {
     private static final long serialVersionUID = -4256701562333669892L;

@@ -1,68 +1,68 @@
 
-§
-java:S1192ü"Define a constant instead of duplicating this literal "\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0" 4 times.(ü¨ÔÈ
-§
-java:S1192ô"Define a constant instead of duplicating this literal "\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC" 3 times.(¦çÀ¤
+x
+java:S1488O"]Immediately return this expression instead of assigning it to the temporary variable "props".(ğĞª¦şÿÿÿÿ
 §
 java:S1192‰"Define a constant instead of duplicating this literal "\u1440\u1440\u1440\u1440\u1440\u1440\u1440\u1440\u1440\u1440\u1440\u1440\u1440" 4 times.(„×Ë
-­
-java:S1192"Define a constant instead of duplicating this literal "\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0" 29 times.(œû–ÿÿÿÿÿ
-¬
-java:S1192Í"Define a constant instead of duplicating this literal "\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170" 5 times.(¯Çß÷øÿÿÿÿ
-­
-java:S1192"Define a constant instead of duplicating this literal "\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450" 14 times.(Ã¯Îìÿÿÿÿÿ
+P
+java:S1161g":Add the "@Override" annotation above this method signature(ÿ®ºŞ
+^
+java:S1479›"BReduce the number of non-empty switch cases from 52 to at most 30.(Œ¹ÿÿÿÿÿ
+N
+java:S1197ƒ"8Move the array designator from the variable to the type.(×ªÊ
+§
+java:S1192ô"Define a constant instead of duplicating this literal "\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC\u02DC" 3 times.(¦çÀ¤
+@
+java:S1659ê"$Declare "bottom" on a separate line.(òô‚ôüÿÿÿÿ
+¨
+java:S1192¤"Define a constant instead of duplicating this literal "\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0" 64 times.(øöö€
+T
+java:S1197¤"8Move the array designator from the variable to the type.(ø¡ºíúÿÿÿÿ
+W	java:S125ğ"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ
+^
+java:S1479ù"BReduce the number of non-empty switch cases from 84 to at most 30.(Œ¹ÿÿÿÿÿ
+;
+java:S1659Ç"Declare "j" on a separate line.(á”æåşÿÿÿÿ
+R	java:S125Õ"<This block of commented-out lines of code should be removed.(—™§ª
 ¦
 java:S1192¦
 "Define a constant instead of duplicating this literal "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000" 24 times.(Â‚¹ú
-¨
-java:S1192¤"Define a constant instead of duplicating this literal "\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0\u11B0" 64 times.(øöö€
-D
-java:S1199Ä"-Extract this nested code block into a method.(æ£ÑÒ
-s
-java:S1488I"]Immediately return this expression instead of assigning it to the temporary variable "props".(…èò¶
-x
-java:S1488O"]Immediately return this expression instead of assigning it to the temporary variable "props".(ğĞª¦şÿÿÿÿ
-U
-java:S1161X":Add the "@Override" annotation above this method signature(âØ‰şÿÿÿÿ
-P
-java:S1161]":Add the "@Override" annotation above this method signature(ı…¯í
-U
-java:S1161b":Add the "@Override" annotation above this method signature(œ‚óîúÿÿÿÿ
-P
-java:S1161g":Add the "@Override" annotation above this method signature(ÿ®ºŞ
-=	java:S131‹""Add a default case to this switch.(Œ¹ÿÿÿÿÿ
-^
-java:S1479‹"BReduce the number of non-empty switch cases from 86 to at most 30.(Œ¹ÿÿÿÿÿ
-=	java:S131ù""Add a default case to this switch.(Œ¹ÿÿÿÿÿ
-^
-java:S1479ù"BReduce the number of non-empty switch cases from 84 to at most 30.(Œ¹ÿÿÿÿÿ
-^
-java:S1479›"BReduce the number of non-empty switch cases from 52 to at most 30.(Œ¹ÿÿÿÿÿ
-Q
-java:S1161ˆ":Add the "@Override" annotation above this method signature(œµÕ
 ^
 java:S1479’"BReduce the number of non-empty switch cases from 58 to at most 30.(Œ¹ÿÿÿÿÿ
+R	java:S125è"<This block of commented-out lines of code should be removed.(—™§ª
+=	java:S131‹""Add a default case to this switch.(Œ¹ÿÿÿÿÿ
+¬
+java:S1192Í"Define a constant instead of duplicating this literal "\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170\u0170" 5 times.(¯Çß÷øÿÿÿÿ
+U
+java:S1161X":Add the "@Override" annotation above this method signature(âØ‰şÿÿÿÿ
+­
+java:S1192"Define a constant instead of duplicating this literal "\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0\u06F0" 29 times.(œû–ÿÿÿÿÿ
+^
+java:S1479‹"BReduce the number of non-empty switch cases from 86 to at most 30.(Œ¹ÿÿÿÿÿ
 Q
 java:S1161Õ":Add the "@Override" annotation above this method signature( ËÁß
-@
-java:S1659ê"$Declare "bottom" on a separate line.(òô‚ôüÿÿÿÿ
-A
-java:S1659ê"%Declare "current" on a separate line.(òô‚ôüÿÿÿÿ
-3
-java:S1116ü"Remove this empty statement.(£‡‹ã
-N
-java:S1197ƒ"8Move the array designator from the variable to the type.(×ªÊ
-T
-java:S1197¤"8Move the array designator from the variable to the type.(ø¡ºíúÿÿÿÿ
-O
-java:S1197	"8Move the array designator from the variable to the type.(ŠÓñ
+Q	java:S125/"<This block of commented-out lines of code should be removed.(Ôµ¶
 T
 java:S1197¥
 "8Move the array designator from the variable to the type.(¢¡ñèıÿÿÿÿ
-;
-java:S1659Ç"Declare "j" on a separate line.(á”æåşÿÿÿÿ
-Q	java:S125/"<This block of commented-out lines of code should be removed.(Ôµ¶
-R	java:S125è"<This block of commented-out lines of code should be removed.(—™§ª
-R	java:S125Õ"<This block of commented-out lines of code should be removed.(—™§ª
-W	java:S125ğ"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ
+O
+java:S1197	"8Move the array designator from the variable to the type.(ŠÓñ
+D
+java:S1199Ä"-Extract this nested code block into a method.(æ£ÑÒ
+P
+java:S1161]":Add the "@Override" annotation above this method signature(ı…¯í
+Q
+java:S1161ˆ":Add the "@Override" annotation above this method signature(œµÕ
+s
+java:S1488I"]Immediately return this expression instead of assigning it to the temporary variable "props".(…èò¶
+­
+java:S1192"Define a constant instead of duplicating this literal "\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450\u1450" 14 times.(Ã¯Îìÿÿÿÿÿ
+=	java:S131ù""Add a default case to this switch.(Œ¹ÿÿÿÿÿ
+3
+java:S1116ü"Remove this empty statement.(£‡‹ã
+A
+java:S1659ê"%Declare "current" on a separate line.(òô‚ôüÿÿÿÿ
+§
+java:S1192ü"Define a constant instead of duplicating this literal "\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0\u01F0" 4 times.(ü¨ÔÈ
+U
+java:S1161b":Add the "@Override" annotation above this method signature(œ‚óîúÿÿÿÿ
 R	java:S125ó"<This block of commented-out lines of code should be removed.(Ç˜ÁÔ

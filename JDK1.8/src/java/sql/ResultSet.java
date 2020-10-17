@@ -41,7 +41,7 @@ import java.io.InputStream;
  * when there are no more rows in the <code>ResultSet</code> object,
  * it can be used in a <code>while</code> loop to iterate through
  * the result set.
- * <P>
+ * <p>
  * A default <code>ResultSet</code> object is not updatable and
  * has a cursor that moves forward only.  Thus, you can
  * iterate through it only once and only from the first row to the
@@ -53,13 +53,13 @@ import java.io.InputStream;
  * that is updatable. See <code>ResultSet</code> fields for other
  * options.
  * <PRE>
- *
- *       Statement stmt = con.createStatement(
- *                                      ResultSet.TYPE_SCROLL_INSENSITIVE,
- *                                      ResultSet.CONCUR_UPDATABLE);
- *       ResultSet rs = stmt.executeQuery("SELECT a, b FROM TABLE2");
- *       // rs will be scrollable, will not show changes made by others,
- *       // and will be updatable
+ * <p>
+ * Statement stmt = con.createStatement(
+ * ResultSet.TYPE_SCROLL_INSENSITIVE,
+ * ResultSet.CONCUR_UPDATABLE);
+ * ResultSet rs = stmt.executeQuery("SELECT a, b FROM TABLE2");
+ * // rs will be scrollable, will not show changes made by others,
+ * // and will be updatable
  *
  * </PRE>
  * The <code>ResultSet</code> interface provides
@@ -88,46 +88,46 @@ import java.io.InputStream;
  * is best to use column numbers. If column names are used, the
  * programmer should take care to guarantee that they uniquely refer to
  * the intended columns, which can be assured with the SQL <i>AS</i> clause.
- * <P>
+ * <p>
  * A set of updater methods were added to this interface
  * in the JDBC 2.0 API (Java&trade; 2 SDK,
  * Standard Edition, version 1.2). The comments regarding parameters
  * to the getter methods also apply to parameters to the
  * updater methods.
- *<P>
+ * <p>
  * The updater methods may be used in two ways:
  * <ol>
  * <LI>to update a column value in the current row.  In a scrollable
- *     <code>ResultSet</code> object, the cursor can be moved backwards
- *     and forwards, to an absolute position, or to a position
- *     relative to the current row.
- *     The following code fragment updates the <code>NAME</code> column
- *     in the fifth row of the <code>ResultSet</code> object
- *     <code>rs</code> and then uses the method <code>updateRow</code>
- *     to update the data source table from which <code>rs</code> was derived.
+ * <code>ResultSet</code> object, the cursor can be moved backwards
+ * and forwards, to an absolute position, or to a position
+ * relative to the current row.
+ * The following code fragment updates the <code>NAME</code> column
+ * in the fifth row of the <code>ResultSet</code> object
+ * <code>rs</code> and then uses the method <code>updateRow</code>
+ * to update the data source table from which <code>rs</code> was derived.
  * <PRE>
- *
- *       rs.absolute(5); // moves the cursor to the fifth row of rs
- *       rs.updateString("NAME", "AINSWORTH"); // updates the
- *          // <code>NAME</code> column of row 5 to be <code>AINSWORTH</code>
- *       rs.updateRow(); // updates the row in the data source
+ * <p>
+ * rs.absolute(5); // moves the cursor to the fifth row of rs
+ * rs.updateString("NAME", "AINSWORTH"); // updates the
+ * // <code>NAME</code> column of row 5 to be <code>AINSWORTH</code>
+ * rs.updateRow(); // updates the row in the data source
  *
  * </PRE>
  * <LI>to insert column values into the insert row.  An updatable
- *     <code>ResultSet</code> object has a special row associated with
- *     it that serves as a staging area for building a row to be inserted.
- *     The following code fragment moves the cursor to the insert row, builds
- *     a three-column row, and inserts it into <code>rs</code> and into
- *     the data source table using the method <code>insertRow</code>.
+ * <code>ResultSet</code> object has a special row associated with
+ * it that serves as a staging area for building a row to be inserted.
+ * The following code fragment moves the cursor to the insert row, builds
+ * a three-column row, and inserts it into <code>rs</code> and into
+ * the data source table using the method <code>insertRow</code>.
  * <PRE>
- *
- *       rs.moveToInsertRow(); // moves cursor to the insert row
- *       rs.updateString(1, "AINSWORTH"); // updates the
- *          // first column of the insert row to be <code>AINSWORTH</code>
- *       rs.updateInt(2,35); // updates the second column to be <code>35</code>
- *       rs.updateBoolean(3, true); // updates the third column to <code>true</code>
- *       rs.insertRow();
- *       rs.moveToCurrentRow();
+ * <p>
+ * rs.moveToInsertRow(); // moves cursor to the insert row
+ * rs.updateString(1, "AINSWORTH"); // updates the
+ * // first column of the insert row to be <code>AINSWORTH</code>
+ * rs.updateInt(2,35); // updates the second column to be <code>35</code>
+ * rs.updateBoolean(3, true); // updates the third column to <code>true</code>
+ * rs.insertRow();
+ * rs.moveToCurrentRow();
  *
  * </PRE>
  * </ol>
@@ -140,11 +140,12 @@ import java.io.InputStream;
  * object's columns are provided by the <code>ResultSetMetaData</code>
  * object returned by the <code>ResultSet.getMetaData</code> method.
  *
+ * @author kit
+ * 结果集
+ * @date 20200403
  * @see Statement#executeQuery
  * @see Statement#getResultSet
  * @see ResultSetMetaData
- * @date 20200403
- * 结果集
  */
 
 public interface ResultSet extends Wrapper, AutoCloseable {
@@ -160,9 +161,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * the cursor is positioned after the last row. Any
      * invocation of a <code>ResultSet</code> method which requires a
      * current row will result in a <code>SQLException</code> being thrown.
-     *  If the result set type is <code>TYPE_FORWARD_ONLY</code>, it is vendor specified
+     * If the result set type is <code>TYPE_FORWARD_ONLY</code>, it is vendor specified
      * whether their JDBC driver implementation will return <code>false</code> or
-     *  throw an <code>SQLException</code> on a
+     * throw an <code>SQLException</code> on a
      * subsequent call to <code>next</code>.
      *
      * <P>If an input stream is open for the current row, a call
@@ -172,8 +173,8 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @return <code>true</code> if the new current row is valid;
      * <code>false</code> if there are no more rows
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     boolean next() throws SQLException;
 
@@ -187,7 +188,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>Clob</code> or <code>NClob</code> objects created by the <code>ResultSet</code>. <code>Blob</code>,
      * <code>Clob</code> or <code>NClob</code> objects remain valid for at least the duration of the
      * transaction in which they are created, unless their <code>free</code> method is invoked.
-     *<p>
+     * <p>
      * When a <code>ResultSet</code> is closed, any <code>ResultSetMetaData</code>
      * instances that were created by calling the  <code>getMetaData</code>
      * method remain accessible.
@@ -198,12 +199,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * that <code>Statement</code> object is closed,
      * re-executed, or is used to retrieve the next result from a
      * sequence of multiple results.
-     *<p>
+     * <p>
      * Calling the method <code>close</code> on a <code>ResultSet</code>
      * object that is already closed is a no-op.
      *
-     *
-     * @exception SQLException if a database access error occurs
+     * @throws SQLException if a database access error occurs
      */
     void close() throws SQLException;
 
@@ -216,9 +216,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * SQL <code>NULL</code>.
      *
      * @return <code>true</code> if the last column value read was SQL
-     *         <code>NULL</code> and <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
+     * <code>NULL</code> and <code>false</code> otherwise
+     * @throws SQLException if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     boolean wasNull() throws SQLException;
 
@@ -232,9 +232,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     String getString(int columnIndex) throws SQLException;
 
@@ -253,9 +253,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>false</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     boolean getBoolean(int columnIndex) throws SQLException;
 
@@ -267,9 +267,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     byte getByte(int columnIndex) throws SQLException;
 
@@ -281,9 +281,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     short getShort(int columnIndex) throws SQLException;
 
@@ -295,9 +295,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     int getInt(int columnIndex) throws SQLException;
 
@@ -309,9 +309,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     long getLong(int columnIndex) throws SQLException;
 
@@ -323,9 +323,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     float getFloat(int columnIndex) throws SQLException;
 
@@ -337,9 +337,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     double getDouble(int columnIndex) throws SQLException;
 
@@ -349,16 +349,16 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * a <code>java.sql.BigDecimal</code> in the Java programming language.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param scale the number of digits to the right of the decimal point
+     * @param scale       the number of digits to the right of the decimal point
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @deprecated Use {@code getBigDecimal(int columnIndex)}
-     *             or {@code getBigDecimal(String columnLabel)}
+     * or {@code getBigDecimal(String columnLabel)}
      */
     @Deprecated
     BigDecimal getBigDecimal(int columnIndex, int scale) throws SQLException;
@@ -372,9 +372,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     byte[] getBytes(int columnIndex) throws SQLException;
 
@@ -386,9 +386,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.sql.Date getDate(int columnIndex) throws SQLException;
 
@@ -400,9 +400,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.sql.Time getTime(int columnIndex) throws SQLException;
 
@@ -414,9 +414,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.sql.Timestamp getTimestamp(int columnIndex) throws SQLException;
 
@@ -441,9 +441,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * as a stream of one-byte ASCII characters;
      * if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.io.InputStream getAsciiStream(int columnIndex) throws SQLException;
 
@@ -452,7 +452,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * of this <code>ResultSet</code> object as
      * as a stream of two-byte 3 characters. The first byte is
      * the high byte; the second byte is the low byte.
-     *
+     * <p>
      * The value can then be read in chunks from the
      * stream. This method is particularly
      * suitable for retrieving large <code>LONGVARCHAR</code>values.  The
@@ -468,17 +468,16 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a Java input stream that delivers the database column value
-     *         as a stream of two-byte Unicode characters;
-     *         if the value is SQL <code>NULL</code>, the value returned is
-     *         <code>null</code>
-     *
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * as a stream of two-byte Unicode characters;
+     * if the value is SQL <code>NULL</code>, the value returned is
+     * <code>null</code>
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @deprecated use <code>getCharacterStream</code> in place of
-     *              <code>getUnicodeStream</code>
+     * <code>getUnicodeStream</code>
      */
     @Deprecated
     java.io.InputStream getUnicodeStream(int columnIndex) throws SQLException;
@@ -499,15 +498,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a Java input stream that delivers the database column value
-     *         as a stream of uninterpreted bytes;
-     *         if the value is SQL <code>NULL</code>, the value returned is
-     *         <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * as a stream of uninterpreted bytes;
+     * if the value is SQL <code>NULL</code>, the value returned is
+     * <code>null</code>
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.io.InputStream getBinaryStream(int columnIndex)
-        throws SQLException;
+            throws SQLException;
 
 
     // Methods for accessing results by column label
@@ -520,9 +519,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     String getString(String columnLabel) throws SQLException;
 
@@ -541,9 +540,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>false</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     boolean getBoolean(String columnLabel) throws SQLException;
 
@@ -555,9 +554,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     byte getByte(String columnLabel) throws SQLException;
 
@@ -569,9 +568,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     short getShort(String columnLabel) throws SQLException;
 
@@ -583,9 +582,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     int getInt(String columnLabel) throws SQLException;
 
@@ -597,9 +596,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     long getLong(String columnLabel) throws SQLException;
 
@@ -611,9 +610,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     float getFloat(String columnLabel) throws SQLException;
 
@@ -625,9 +624,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>0</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     double getDouble(String columnLabel) throws SQLException;
 
@@ -637,16 +636,16 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * a <code>java.math.BigDecimal</code> in the Java programming language.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param scale the number of digits to the right of the decimal point
+     * @param scale       the number of digits to the right of the decimal point
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @deprecated Use {@code getBigDecimal(int columnIndex)}
-     *             or {@code getBigDecimal(String columnLabel)}
+     * or {@code getBigDecimal(String columnLabel)}
      */
     @Deprecated
     BigDecimal getBigDecimal(String columnLabel, int scale) throws SQLException;
@@ -660,9 +659,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     byte[] getBytes(String columnLabel) throws SQLException;
 
@@ -674,9 +673,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.sql.Date getDate(String columnLabel) throws SQLException;
 
@@ -689,9 +688,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return the column value;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.sql.Time getTime(String columnLabel) throws SQLException;
 
@@ -703,9 +702,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.sql.Timestamp getTimestamp(String columnLabel) throws SQLException;
 
@@ -729,9 +728,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * as a stream of one-byte ASCII characters.
      * If the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code>.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.io.InputStream getAsciiStream(String columnLabel) throws SQLException;
 
@@ -740,7 +739,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * of this <code>ResultSet</code> object as a stream of two-byte
      * Unicode characters. The first byte is the high byte; the second
      * byte is the low byte.
-     *
+     * <p>
      * The value can then be read in chunks from the
      * stream. This method is particularly
      * suitable for retrieving large <code>LONGVARCHAR</code> values.
@@ -756,14 +755,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a Java input stream that delivers the database column value
-     *         as a stream of two-byte Unicode characters.
-     *         If the value is SQL <code>NULL</code>, the value returned
-     *         is <code>null</code>.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * as a stream of two-byte Unicode characters.
+     * If the value is SQL <code>NULL</code>, the value returned
+     * is <code>null</code>.
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @deprecated use <code>getCharacterStream</code> instead
      */
     @Deprecated
@@ -788,12 +787,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return a Java input stream that delivers the database column value
      * as a stream of uninterpreted bytes;
      * if the value is SQL <code>NULL</code>, the result is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     java.io.InputStream getBinaryStream(String columnLabel)
-        throws SQLException;
+            throws SQLException;
 
 
     // Advanced features:
@@ -809,7 +808,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * row is read.  This method may not be called on a <code>ResultSet</code>
      * object that has been closed; doing so will cause an
      * <code>SQLException</code> to be thrown.
-     * <P>
+     * <p>
      * <B>Note:</B> This warning chain only covers warnings caused
      * by <code>ResultSet</code> methods.  Any warning caused by
      * <code>Statement</code> methods
@@ -817,9 +816,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>Statement</code> object.
      *
      * @return the first <code>SQLWarning</code> object reported or
-     *         <code>null</code> if there are none
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
+     * <code>null</code> if there are none
+     * @throws SQLException if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     SQLWarning getWarnings() throws SQLException;
 
@@ -829,8 +828,8 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * returns <code>null</code> until a new warning is
      * reported for this <code>ResultSet</code> object.
      *
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     void clearWarnings() throws SQLException;
 
@@ -852,9 +851,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * is also the current row of this SQL cursor.
      *
      * @return the SQL name for this <code>ResultSet</code> object's cursor
-     * @exception SQLException if a database access error occurs or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      */
     String getCursorName() throws SQLException;
 
@@ -863,8 +862,8 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this <code>ResultSet</code> object's columns.
      *
      * @return the description of this <code>ResultSet</code> object's columns
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     ResultSetMetaData getMetaData() throws SQLException;
 
@@ -882,7 +881,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * <p>This method may also be used to read database-specific
      * abstract data types.
-     *
+     * <p>
      * In the JDBC 2.0 API, the behavior of method
      * <code>getObject</code> is extended to materialize
      * data of SQL user-defined types.
@@ -893,7 +892,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * the behavior of this method is as
      * if it were a call to: <code>getObject(columnIndex,
      * this.getStatement().getConnection().getTypeMap())</code>.
-     *
+     * <p>
      * If <code>Connection.getTypeMap</code> does throw a
      * <code>SQLFeatureNotSupportedException</code>,
      * then structured values are not supported, and distinct values
@@ -902,9 +901,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>java.lang.Object</code> holding the column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     Object getObject(int columnIndex) throws SQLException;
 
@@ -919,10 +918,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * following the mapping for built-in types specified in the JDBC
      * specification. If the value is an SQL <code>NULL</code>,
      * the driver returns a Java <code>null</code>.
-     * <P>
+     * <p>
      * This method may also be used to read database-specific
      * abstract data types.
-     * <P>
+     * <p>
      * In the JDBC 2.0 API, the behavior of the method
      * <code>getObject</code> is extended to materialize
      * data of SQL user-defined types.  When a column contains
@@ -932,9 +931,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>java.lang.Object</code> holding the column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      */
     Object getObject(String columnLabel) throws SQLException;
 
@@ -946,9 +945,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column index of the given column name
-     * @exception SQLException if the <code>ResultSet</code> object
-     * does not contain a column labeled <code>columnLabel</code>, a database access error occurs
-     *  or this method is called on a closed result set
+     * @throws SQLException if the <code>ResultSet</code> object
+     *                      does not contain a column labeled <code>columnLabel</code>, a database access error occurs
+     *                      or this method is called on a closed result set
      */
     int findColumn(String columnLabel) throws SQLException;
 
@@ -963,13 +962,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a
      * <code>java.io.Reader</code> object.
+     *
+     * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
-     * @param columnIndex the first column is 1, the second is 2, ...
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      * @since 1.2
      */
     java.io.Reader getCharacterStream(int columnIndex) throws SQLException;
@@ -983,9 +983,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return a <code>java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      * @since 1.2
      */
     java.io.Reader getCharacterStream(String columnLabel) throws SQLException;
@@ -999,9 +999,9 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return the column value (full precision);
      * if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      * @since 1.2
      */
     BigDecimal getBigDecimal(int columnIndex) throws SQLException;
@@ -1015,11 +1015,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return the column value (full precision);
      * if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs or this method is
-     *            called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs or this method is
+     *                      called on a closed result set
      * @since 1.2
-     *
      */
     BigDecimal getBigDecimal(String columnLabel) throws SQLException;
 
@@ -1038,10 +1037,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return <code>true</code> if the cursor is before the first row;
      * <code>false</code> if the cursor is at any other position or the
      * result set contains no rows
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean isBeforeFirst() throws SQLException;
@@ -1057,10 +1056,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return <code>true</code> if the cursor is after the last row;
      * <code>false</code> if the cursor is at any other position or the
      * result set contains no rows
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean isAfterLast() throws SQLException;
@@ -1075,10 +1074,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @return <code>true</code> if the cursor is on the first row;
      * <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean isFirst() throws SQLException;
@@ -1086,7 +1085,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Retrieves whether the cursor is on the last row of
      * this <code>ResultSet</code> object.
-     *  <strong>Note:</strong> Calling the method <code>isLast</code> may be expensive
+     * <strong>Note:</strong> Calling the method <code>isLast</code> may be expensive
      * because the JDBC driver
      * might need to fetch ahead one row in order to determine
      * whether the current row is the last row in the result set.
@@ -1094,12 +1093,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <strong>Note:</strong> Support for the <code>isLast</code> method
      * is optional for <code>ResultSet</code>s with a result
      * set type of <code>TYPE_FORWARD_ONLY</code>
+     *
      * @return <code>true</code> if the cursor is on the last row;
      * <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs or this method is
-     *            called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs or this method is
+     *                                         called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean isLast() throws SQLException;
@@ -1109,11 +1109,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * this <code>ResultSet</code> object, just before the
      * first row. This method has no effect if the result set contains no rows.
      *
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set or the
-     * result set type is <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set or the
+     *                                         result set type is <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void beforeFirst() throws SQLException;
@@ -1122,11 +1122,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * Moves the cursor to the end of
      * this <code>ResultSet</code> object, just after the
      * last row. This method has no effect if the result set contains no rows.
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set
-     * or the result set type is <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set
+     *                                         or the result set type is <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void afterLast() throws SQLException;
@@ -1137,11 +1138,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @return <code>true</code> if the cursor is on a valid row;
      * <code>false</code> if there are no rows in the result set
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set
-     * or the result set type is <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set
+     *                                         or the result set type is <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean first() throws SQLException;
@@ -1152,11 +1153,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @return <code>true</code> if the cursor is on a valid row;
      * <code>false</code> if there are no rows in the result set
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set
-     * or the result set type is <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set
+     *                                         or the result set type is <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean last() throws SQLException;
@@ -1170,10 +1171,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * set type of <code>TYPE_FORWARD_ONLY</code>
      *
      * @return the current row number; <code>0</code> if there is no current row
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     int getRow() throws SQLException;
@@ -1206,22 +1207,22 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * is the same as calling <code>last()</code>.
      *
      * @param row the number of the row to which the cursor should move.
-     *        A value of zero indicates that the cursor will be positioned
-     *        before the first row; a positive number indicates the row number
-     *        counting from the beginning of the result set; a negative number
-     *        indicates the row number counting from the end of the result set
+     *            A value of zero indicates that the cursor will be positioned
+     *            before the first row; a positive number indicates the row number
+     *            counting from the beginning of the result set; a negative number
+     *            indicates the row number counting from the end of the result set
      * @return <code>true</code> if the cursor is moved to a position in this
      * <code>ResultSet</code> object;
      * <code>false</code> if the cursor is before the first row or after the
      * last row
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set
-     * or the result set type is <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set
+     *                                         or the result set type is <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
-    boolean absolute( int row ) throws SQLException;
+    boolean absolute(int row) throws SQLException;
 
     /**
      * Moves the cursor a relative number of rows, either positive or negative.
@@ -1236,40 +1237,40 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * to calling the method <code>previous()</code>.
      *
      * @param rows an <code>int</code> specifying the number of rows to
-     *        move from the current row; a positive number moves the cursor
-     *        forward; a negative number moves the cursor backward
+     *             move from the current row; a positive number moves the cursor
+     *             forward; a negative number moves the cursor backward
      * @return <code>true</code> if the cursor is on a row;
-     *         <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs;  this method
-     * is called on a closed result set or the result set type is
-     *            <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * <code>false</code> otherwise
+     * @throws SQLException                    if a database access error occurs;  this method
+     *                                         is called on a closed result set or the result set type is
+     *                                         <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
-    boolean relative( int rows ) throws SQLException;
+    boolean relative(int rows) throws SQLException;
 
     /**
      * Moves the cursor to the previous row in this
      * <code>ResultSet</code> object.
-     *<p>
+     * <p>
      * When a call to the <code>previous</code> method returns <code>false</code>,
      * the cursor is positioned before the first row.  Any invocation of a
      * <code>ResultSet</code> method which requires a current row will result in a
      * <code>SQLException</code> being thrown.
-     *<p>
+     * <p>
      * If an input stream is open for the current row, a call to the method
      * <code>previous</code> will implicitly close it.  A <code>ResultSet</code>
-     *  object's warning change is cleared when a new row is read.
-     *<p>
+     * object's warning change is cleared when a new row is read.
+     * <p>
      *
      * @return <code>true</code> if the cursor is now positioned on a valid row;
      * <code>false</code> if the cursor is positioned before the first row
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set
-     * or the result set type is <code>TYPE_FORWARD_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set
+     *                                         or the result set type is <code>TYPE_FORWARD_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     boolean previous() throws SQLException;
@@ -1283,6 +1284,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * processed in a forward direction; first-to-last.
      * This constant is used by the method <code>setFetchDirection</code>
      * as a hint to the driver, which the driver may ignore.
+     *
      * @since 1.2
      */
     int FETCH_FORWARD = 1000;
@@ -1292,6 +1294,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * processed in a reverse direction; last-to-first.
      * This constant is used by the method <code>setFetchDirection</code>
      * as a hint to the driver, which the driver may ignore.
+     *
      * @since 1.2
      */
     int FETCH_REVERSE = 1001;
@@ -1313,16 +1316,16 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * The fetch direction may be changed at any time.
      *
      * @param direction an <code>int</code> specifying the suggested
-     *        fetch direction; one of <code>ResultSet.FETCH_FORWARD</code>,
-     *        <code>ResultSet.FETCH_REVERSE</code>, or
-     *        <code>ResultSet.FETCH_UNKNOWN</code>
-     * @exception SQLException if a database access error occurs; this
-     * method is called on a closed result set or
-     * the result set type is <code>TYPE_FORWARD_ONLY</code> and the fetch
-     * direction is not <code>FETCH_FORWARD</code>
-     * @since 1.2
+     *                  fetch direction; one of <code>ResultSet.FETCH_FORWARD</code>,
+     *                  <code>ResultSet.FETCH_REVERSE</code>, or
+     *                  <code>ResultSet.FETCH_UNKNOWN</code>
+     * @throws SQLException if a database access error occurs; this
+     *                      method is called on a closed result set or
+     *                      the result set type is <code>TYPE_FORWARD_ONLY</code> and the fetch
+     *                      direction is not <code>FETCH_FORWARD</code>
      * @see Statement#setFetchDirection
      * @see #getFetchDirection
+     * @since 1.2
      */
     void setFetchDirection(int direction) throws SQLException;
 
@@ -1331,10 +1334,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>ResultSet</code> object.
      *
      * @return the current fetch direction for this <code>ResultSet</code> object
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
-     * @since 1.2
+     * @throws SQLException if a database access error occurs
+     *                      or this method is called on a closed result set
      * @see #setFetchDirection
+     * @since 1.2
      */
     int getFetchDirection() throws SQLException;
 
@@ -1349,11 +1352,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * that created the result set.  The fetch size may be changed at any time.
      *
      * @param rows the number of rows to fetch
-     * @exception SQLException if a database access error occurs; this method
-     * is called on a closed result set or the
-     * condition {@code rows >= 0} is not satisfied
-     * @since 1.2
+     * @throws SQLException if a database access error occurs; this method
+     *                      is called on a closed result set or the
+     *                      condition {@code rows >= 0} is not satisfied
      * @see #getFetchSize
+     * @since 1.2
      */
     void setFetchSize(int rows) throws SQLException;
 
@@ -1362,16 +1365,17 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>ResultSet</code> object.
      *
      * @return the current fetch size for this <code>ResultSet</code> object
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
-     * @since 1.2
+     * @throws SQLException if a database access error occurs
+     *                      or this method is called on a closed result set
      * @see #setFetchSize
+     * @since 1.2
      */
     int getFetchSize() throws SQLException;
 
     /**
      * The constant indicating the type for a <code>ResultSet</code> object
      * whose cursor may move only forward.
+     *
      * @since 1.2
      */
     int TYPE_FORWARD_ONLY = 1003;
@@ -1380,6 +1384,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * The constant indicating the type for a <code>ResultSet</code> object
      * that is scrollable but generally not sensitive to changes to the data
      * that underlies the <code>ResultSet</code>.
+     *
      * @since 1.2
      */
     int TYPE_SCROLL_INSENSITIVE = 1004;
@@ -1388,6 +1393,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * The constant indicating the type for a <code>ResultSet</code> object
      * that is scrollable and generally sensitive to changes to the data
      * that underlies the <code>ResultSet</code>.
+     *
      * @since 1.2
      */
     int TYPE_SCROLL_SENSITIVE = 1005;
@@ -1398,10 +1404,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * that created the result set.
      *
      * @return <code>ResultSet.TYPE_FORWARD_ONLY</code>,
-     *         <code>ResultSet.TYPE_SCROLL_INSENSITIVE</code>,
-     *         or <code>ResultSet.TYPE_SCROLL_SENSITIVE</code>
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
+     * <code>ResultSet.TYPE_SCROLL_INSENSITIVE</code>,
+     * or <code>ResultSet.TYPE_SCROLL_SENSITIVE</code>
+     * @throws SQLException if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     int getType() throws SQLException;
@@ -1409,6 +1415,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * The constant indicating the concurrency mode for a
      * <code>ResultSet</code> object that may NOT be updated.
+     *
      * @since 1.2
      */
     int CONCUR_READ_ONLY = 1007;
@@ -1416,6 +1423,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * The constant indicating the concurrency mode for a
      * <code>ResultSet</code> object that may be updated.
+     *
      * @since 1.2
      */
     int CONCUR_UPDATABLE = 1008;
@@ -1426,10 +1434,10 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>Statement</code> object that created the result set.
      *
      * @return the concurrency type, either
-     *         <code>ResultSet.CONCUR_READ_ONLY</code>
-     *         or <code>ResultSet.CONCUR_UPDATABLE</code>
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
+     * <code>ResultSet.CONCUR_READ_ONLY</code>
+     * or <code>ResultSet.CONCUR_UPDATABLE</code>
+     * @throws SQLException if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     int getConcurrency() throws SQLException;
@@ -1444,12 +1452,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <p>
      * <strong>Note:</strong> Support for the <code>rowUpdated</code> method is optional with a result set
      * concurrency of <code>CONCUR_READ_ONLY</code>
+     *
      * @return <code>true</code> if the current row is detected to
      * have been visibly updated by the owner or another; <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @see DatabaseMetaData#updatesAreDetected
      * @since 1.2
      */
@@ -1462,13 +1471,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <p>
      * <strong>Note:</strong> Support for the <code>rowInserted</code> method is optional with a result set
      * concurrency of <code>CONCUR_READ_ONLY</code>
+     *
      * @return <code>true</code> if the current row is detected to
      * have been inserted; <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
-     *
+     * @throws SQLException                    if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @see DatabaseMetaData#insertsAreDetected
      * @since 1.2
      */
@@ -1482,13 +1491,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <p>
      * <strong>Note:</strong> Support for the <code>rowDeleted</code> method is optional with a result set
      * concurrency of <code>CONCUR_READ_ONLY</code>
+     *
      * @return <code>true</code> if the current row is detected to
      * have been deleted by the owner or another; <code>false</code> otherwise
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
-     *
+     * @throws SQLException                    if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @see DatabaseMetaData#deletesAreDetected
      * @since 1.2
      */
@@ -1496,19 +1505,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
 
     /**
      * Updates the designated column with a <code>null</code> value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code>
      * or <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateNull(int columnIndex) throws SQLException;
@@ -1521,13 +1530,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBoolean(int columnIndex, boolean x) throws SQLException;
@@ -1539,15 +1548,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
      *
-     *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateByte(int columnIndex, byte x) throws SQLException;
@@ -1560,13 +1568,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateShort(int columnIndex, short x) throws SQLException;
@@ -1579,13 +1587,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateInt(int columnIndex, int x) throws SQLException;
@@ -1598,13 +1606,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateLong(int columnIndex, long x) throws SQLException;
@@ -1617,13 +1625,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateFloat(int columnIndex, float x) throws SQLException;
@@ -1636,13 +1644,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateDouble(int columnIndex, double x) throws SQLException;
@@ -1656,13 +1664,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBigDecimal(int columnIndex, BigDecimal x) throws SQLException;
@@ -1675,13 +1683,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateString(int columnIndex, String x) throws SQLException;
@@ -1694,13 +1702,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBytes(int columnIndex, byte x[]) throws SQLException;
@@ -1713,13 +1721,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateDate(int columnIndex, java.sql.Date x) throws SQLException;
@@ -1732,13 +1740,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateTime(int columnIndex, java.sql.Time x) throws SQLException;
@@ -1752,17 +1760,17 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateTimestamp(int columnIndex, java.sql.Timestamp x)
-      throws SQLException;
+            throws SQLException;
 
     /**
      * Updates the designated column with an ascii stream value, which will have
@@ -1773,14 +1781,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateAsciiStream(int columnIndex,
@@ -1796,14 +1804,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBinaryStream(int columnIndex,
@@ -1819,69 +1827,69 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateCharacterStream(int columnIndex,
-                             java.io.Reader x,
-                             int length) throws SQLException;
+                               java.io.Reader x,
+                               int length) throws SQLException;
 
     /**
      * Updates the designated column with an <code>Object</code> value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
-     *<p>
+     * <p>
      * If the second argument is an <code>InputStream</code> then the stream must contain
      * the number of bytes specified by scaleOrLength.  If the second argument is a
      * <code>Reader</code> then the reader must contain the number of characters specified
      * by scaleOrLength. If these conditions are not true the driver will generate a
      * <code>SQLException</code> when the statement is executed.
      *
-     * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
+     * @param columnIndex   the first column is 1, the second is 2, ...
+     * @param x             the new column value
      * @param scaleOrLength for an object of <code>java.math.BigDecimal</code> ,
-     *          this is the number of digits after the decimal point. For
-     *          Java Object types <code>InputStream</code> and <code>Reader</code>,
-     *          this is the length
-     *          of the data in the stream or reader.  For all other types,
-     *          this value will be ignored.
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                      this is the number of digits after the decimal point. For
+     *                      Java Object types <code>InputStream</code> and <code>Reader</code>,
+     *                      this is the length
+     *                      of the data in the stream or reader.  For all other types,
+     *                      this value will be ignored.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateObject(int columnIndex, Object x, int scaleOrLength)
-      throws SQLException;
+            throws SQLException;
 
     /**
      * Updates the designated column with an <code>Object</code> value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateObject(int columnIndex, Object x) throws SQLException;
@@ -1894,12 +1902,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateNull(String columnLabel) throws SQLException;
@@ -1912,13 +1920,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBoolean(String columnLabel, boolean x) throws SQLException;
@@ -1931,13 +1939,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateByte(String columnLabel, byte x) throws SQLException;
@@ -1950,13 +1958,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateShort(String columnLabel, short x) throws SQLException;
@@ -1969,13 +1977,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateInt(String columnLabel, int x) throws SQLException;
@@ -1988,13 +1996,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateLong(String columnLabel, long x) throws SQLException;
@@ -2007,13 +2015,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateFloat(String columnLabel, float x) throws SQLException;
@@ -2026,13 +2034,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateDouble(String columnLabel, double x) throws SQLException;
@@ -2046,13 +2054,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBigDecimal(String columnLabel, BigDecimal x) throws SQLException;
@@ -2065,33 +2073,33 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateString(String columnLabel, String x) throws SQLException;
 
     /**
      * Updates the designated column with a byte array value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code>
      * or <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBytes(String columnLabel, byte x[]) throws SQLException;
@@ -2104,13 +2112,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateDate(String columnLabel, java.sql.Date x) throws SQLException;
@@ -2123,13 +2131,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateTime(String columnLabel, java.sql.Time x) throws SQLException;
@@ -2143,17 +2151,17 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateTimestamp(String columnLabel, java.sql.Timestamp x)
-      throws SQLException;
+            throws SQLException;
 
     /**
      * Updates the designated column with an ascii stream value, which will have
@@ -2164,14 +2172,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateAsciiStream(String columnLabel,
@@ -2187,14 +2195,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateBinaryStream(String columnLabel,
@@ -2210,70 +2218,70 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
-     *        the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      the <code>java.io.Reader</code> object containing
+     *                    the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader,
-                             int length) throws SQLException;
+                               java.io.Reader reader,
+                               int length) throws SQLException;
 
     /**
      * Updates the designated column with an <code>Object</code> value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
-     *<p>
+     * <p>
      * If the second argument is an <code>InputStream</code> then the stream must contain
      * the number of bytes specified by scaleOrLength.  If the second argument is a
      * <code>Reader</code> then the reader must contain the number of characters specified
      * by scaleOrLength. If these conditions are not true the driver will generate a
      * <code>SQLException</code> when the statement is executed.
      *
-     * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
+     * @param columnLabel   the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
+     * @param x             the new column value
      * @param scaleOrLength for an object of <code>java.math.BigDecimal</code> ,
-     *          this is the number of digits after the decimal point. For
-     *          Java Object types <code>InputStream</code> and <code>Reader</code>,
-     *          this is the length
-     *          of the data in the stream or reader.  For all other types,
-     *          this value will be ignored.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                      this is the number of digits after the decimal point. For
+     *                      Java Object types <code>InputStream</code> and <code>Reader</code>,
+     *                      this is the length
+     *                      of the data in the stream or reader.  For all other types,
+     *                      this value will be ignored.
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateObject(String columnLabel, Object x, int scaleOrLength)
-      throws SQLException;
+            throws SQLException;
 
     /**
      * Updates the designated column with an <code>Object</code> value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateObject(String columnLabel, Object x) throws SQLException;
@@ -2283,14 +2291,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>ResultSet</code> object and into the database.
      * The cursor must be on the insert row when this method is called.
      *
-     * @exception SQLException if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>,
-     * this method is called on a closed result set,
-     * if this method is called when the cursor is not on the insert row,
-     * or if not all of non-nullable columns in
-     * the insert row have been given a non-null value
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>,
+     *                                         this method is called on a closed result set,
+     *                                         if this method is called when the cursor is not on the insert row,
+     *                                         or if not all of non-nullable columns in
+     *                                         the insert row have been given a non-null value
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void insertRow() throws SQLException;
@@ -2300,12 +2308,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * current row of this <code>ResultSet</code> object.
      * This method cannot be called when the cursor is on the insert row.
      *
-     * @exception SQLException if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>;
-     *  this method is called on a closed result set or
-     * if this method is called when the cursor is on the insert row
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>;
+     *                                         this method is called on a closed result set or
+     *                                         if this method is called when the cursor is on the insert row
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void updateRow() throws SQLException;
@@ -2315,12 +2323,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * and from the underlying database.  This method cannot be called when
      * the cursor is on the insert row.
      *
-     * @exception SQLException if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>;
-     * this method is called on a closed result set
-     * or if this method is called when the cursor is on the insert row
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>;
+     *                                         this method is called on a closed result set
+     *                                         or if this method is called when the cursor is on the insert row
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void deleteRow() throws SQLException;
@@ -2346,13 +2354,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * updates made to the row are lost.  Calling the method
      * <code>refreshRow</code> frequently will likely slow performance.
      *
-     * @exception SQLException if a database access error
-     * occurs; this method is called on a closed result set;
-     * the result set type is <code>TYPE_FORWARD_ONLY</code> or if this
-     * method is called when the cursor is on the insert row
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method or this method is not supported for the specified result
-     * set type and result set concurrency.
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set;
+     *                                         the result set type is <code>TYPE_FORWARD_ONLY</code> or if this
+     *                                         method is called when the cursor is on the insert row
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method or this method is not supported for the specified result
+     *                                         set type and result set concurrency.
      * @since 1.2
      */
     void refreshRow() throws SQLException;
@@ -2367,13 +2375,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateRow</code> has already been called, this method has no
      * effect.
      *
-     * @exception SQLException if a database access error
-     *            occurs; this method is called on a closed result set;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or if this method is called when the cursor is
-     *            on the insert row
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error
+     *                                         occurs; this method is called on a closed result set;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or if this method is called when the cursor is
+     *                                         on the insert row
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void cancelRowUpdates() throws SQLException;
@@ -2381,12 +2389,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Moves the cursor to the insert row.  The current cursor position is
      * remembered while the cursor is positioned on the insert row.
-     *
+     * <p>
      * The insert row is a special row associated with an updatable
      * result set.  It is essentially a buffer where a new row may
      * be constructed by calling the updater methods prior to
      * inserting the row into the result set.
-     *
+     * <p>
      * Only the updater, getter,
      * and <code>insertRow</code> methods may be
      * called when the cursor is on the insert row.  All of the columns in
@@ -2395,11 +2403,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * An updater method must be called before a
      * getter method can be called on a column value.
      *
-     * @exception SQLException if a database access error occurs; this
-     * method is called on a closed result set
-     * or the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs; this
+     *                                         method is called on a closed result set
+     *                                         or the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void moveToInsertRow() throws SQLException;
@@ -2409,11 +2417,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * current row.  This method has no effect if the cursor is not on
      * the insert row.
      *
-     * @exception SQLException if a database access error occurs; this
-     * method is called on a closed result set
-     *  or the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if a database access error occurs; this
+     *                                         method is called on a closed result set
+     *                                         or the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     void moveToCurrentRow() throws SQLException;
@@ -2428,8 +2436,8 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return the <code>Statement</code> object that produced
      * this <code>ResultSet</code> object or <code>null</code>
      * if the result set was produced some other way
-     * @exception SQLException if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     Statement getStatement() throws SQLException;
@@ -2445,19 +2453,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * SQL structured or distinct type that is being retrieved.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param map a <code>java.util.Map</code> object that contains the mapping
-     * from SQL type names to classes in the Java programming language
+     * @param map         a <code>java.util.Map</code> object that contains the mapping
+     *                    from SQL type names to classes in the Java programming language
      * @return an <code>Object</code> in the Java programming language
      * representing the SQL value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
-    Object getObject(int columnIndex, java.util.Map<String,Class<?>> map)
-        throws SQLException;
+    Object getObject(int columnIndex, java.util.Map<String, Class<?>> map)
+            throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -2466,12 +2474,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>Ref</code> object representing an SQL <code>REF</code>
-     *         value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Ref getRef(int columnIndex) throws SQLException;
@@ -2483,12 +2491,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>Blob</code> object representing the SQL
-     *         <code>BLOB</code> value in the specified column
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * <code>BLOB</code> value in the specified column
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Blob getBlob(int columnIndex) throws SQLException;
@@ -2500,12 +2508,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>Clob</code> object representing the SQL
-     *         <code>CLOB</code> value in the specified column
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * <code>CLOB</code> value in the specified column
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Clob getClob(int columnIndex) throws SQLException;
@@ -2517,12 +2525,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return an <code>Array</code> object representing the SQL
-     *         <code>ARRAY</code> value in the specified column
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * <code>ARRAY</code> value in the specified column
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Array getArray(int columnIndex) throws SQLException;
@@ -2537,19 +2545,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * custom mapping if appropriate.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param map a <code>java.util.Map</code> object that contains the mapping
-     * from SQL type names to classes in the Java programming language
+     * @param map         a <code>java.util.Map</code> object that contains the mapping
+     *                    from SQL type names to classes in the Java programming language
      * @return an <code>Object</code> representing the SQL value in the
-     *         specified column
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * specified column
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
-    Object getObject(String columnLabel, java.util.Map<String,Class<?>> map)
-      throws SQLException;
+    Object getObject(String columnLabel, java.util.Map<String, Class<?>> map)
+            throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -2558,12 +2566,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>Ref</code> object representing the SQL <code>REF</code>
-     *         value in the specified column
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * value in the specified column
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Ref getRef(String columnLabel) throws SQLException;
@@ -2575,12 +2583,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>Blob</code> object representing the SQL <code>BLOB</code>
-     *         value in the specified column
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * value in the specified column
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Blob getBlob(String columnLabel) throws SQLException;
@@ -2593,11 +2601,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>Clob</code> object representing the SQL <code>CLOB</code>
      * value in the specified column
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Clob getClob(String columnLabel) throws SQLException;
@@ -2609,12 +2617,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return an <code>Array</code> object representing the SQL <code>ARRAY</code> value in
-     *         the specified column
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * the specified column
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.2
      */
     Array getArray(String columnLabel) throws SQLException;
@@ -2628,14 +2636,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param cal the <code>java.util.Calendar</code> object
-     * to use in constructing the date
+     * @param cal         the <code>java.util.Calendar</code> object
+     *                    to use in constructing the date
      * @return the column value as a <code>java.sql.Date</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     java.sql.Date getDate(int columnIndex, Calendar cal) throws SQLException;
@@ -2649,14 +2657,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * timezone information.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param cal the <code>java.util.Calendar</code> object
-     * to use in constructing the date
+     * @param cal         the <code>java.util.Calendar</code> object
+     *                    to use in constructing the date
      * @return the column value as a <code>java.sql.Date</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     java.sql.Date getDate(String columnLabel, Calendar cal) throws SQLException;
@@ -2670,14 +2678,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param cal the <code>java.util.Calendar</code> object
-     * to use in constructing the time
+     * @param cal         the <code>java.util.Calendar</code> object
+     *                    to use in constructing the time
      * @return the column value as a <code>java.sql.Time</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     java.sql.Time getTime(int columnIndex, Calendar cal) throws SQLException;
@@ -2691,14 +2699,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * timezone information.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param cal the <code>java.util.Calendar</code> object
-     * to use in constructing the time
+     * @param cal         the <code>java.util.Calendar</code> object
+     *                    to use in constructing the time
      * @return the column value as a <code>java.sql.Time</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if the columnLabel is not valid;
+     *                      if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     java.sql.Time getTime(String columnLabel, Calendar cal) throws SQLException;
@@ -2712,18 +2720,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * timezone information.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param cal the <code>java.util.Calendar</code> object
-     * to use in constructing the timestamp
+     * @param cal         the <code>java.util.Calendar</code> object
+     *                    to use in constructing the timestamp
      * @return the column value as a <code>java.sql.Timestamp</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if the columnIndex is not valid;
+     *                      if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     java.sql.Timestamp getTimestamp(int columnIndex, Calendar cal)
-      throws SQLException;
+            throws SQLException;
 
     /**
      * Retrieves the value of the designated column in the current row
@@ -2734,18 +2742,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * timezone information.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param cal the <code>java.util.Calendar</code> object
-     * to use in constructing the date
+     * @param cal         the <code>java.util.Calendar</code> object
+     *                    to use in constructing the date
      * @return the column value as a <code>java.sql.Timestamp</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnLabel is not valid or
-     * if a database access error occurs
-     * or this method is called on a closed result set
+     * @throws SQLException if the columnLabel is not valid or
+     *                      if a database access error occurs
+     *                      or this method is called on a closed result set
      * @since 1.2
      */
     java.sql.Timestamp getTimestamp(String columnLabel, Calendar cal)
-      throws SQLException;
+            throws SQLException;
 
     //-------------------------- JDBC 3.0 ----------------------------------------
 
@@ -2774,11 +2782,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return the column value as a <code>java.net.URL</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs; this method
-     * is called on a closed result set or if a URL is malformed
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs; this method
+     *                                         is called on a closed result set or if a URL is malformed
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     java.net.URL getURL(int columnIndex) throws SQLException;
@@ -2792,11 +2800,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return the column value as a <code>java.net.URL</code> object;
      * if the value is SQL <code>NULL</code>,
      * the value returned is <code>null</code> in the Java programming language
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs; this method
-     * is called on a closed result set or if a URL is malformed
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs; this method
+     *                                         is called on a closed result set or if a URL is malformed
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     java.net.URL getURL(String columnLabel) throws SQLException;
@@ -2809,13 +2817,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateRef(int columnIndex, java.sql.Ref x) throws SQLException;
@@ -2828,13 +2836,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateRef(String columnLabel, java.sql.Ref x) throws SQLException;
@@ -2847,13 +2855,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateBlob(int columnIndex, java.sql.Blob x) throws SQLException;
@@ -2866,13 +2874,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateBlob(String columnLabel, java.sql.Blob x) throws SQLException;
@@ -2885,13 +2893,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateClob(int columnIndex, java.sql.Clob x) throws SQLException;
@@ -2904,13 +2912,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateClob(String columnLabel, java.sql.Clob x) throws SQLException;
@@ -2923,13 +2931,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateArray(int columnIndex, java.sql.Array x) throws SQLException;
@@ -2942,13 +2950,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.4
      */
     void updateArray(String columnLabel, java.sql.Array x) throws SQLException;
@@ -2962,12 +2970,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second 2, ...
      * @return the column value; if the value is a SQL <code>NULL</code> the
-     *     value returned is <code>null</code>
-     * @throws SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * value returned is <code>null</code>
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     RowId getRowId(int columnIndex) throws SQLException;
@@ -2979,12 +2987,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value ; if the value is a SQL <code>NULL</code> the
-     *     value returned is <code>null</code>
-     * @throws SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * value returned is <code>null</code>
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     RowId getRowId(String columnLabel) throws SQLException;
@@ -2997,13 +3005,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * to update the database.
      *
      * @param columnIndex the first column is 1, the second 2, ...
-     * @param x the column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateRowId(int columnIndex, RowId x) throws SQLException;
@@ -3016,22 +3024,23 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateRowId(String columnLabel, RowId x) throws SQLException;
 
     /**
      * Retrieves the holdability of this <code>ResultSet</code> object
-     * @return  either <code>ResultSet.HOLD_CURSORS_OVER_COMMIT</code> or <code>ResultSet.CLOSE_CURSORS_AT_COMMIT</code>
+     *
+     * @return either <code>ResultSet.HOLD_CURSORS_OVER_COMMIT</code> or <code>ResultSet.CLOSE_CURSORS_AT_COMMIT</code>
      * @throws SQLException if a database access error occurs
-     * or this method is called on a closed result set
+     *                      or this method is called on a closed result set
      * @since 1.6
      */
     int getHoldability() throws SQLException;
@@ -3056,15 +3065,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second 2, ...
-     * @param nString the value for the column to be updated
-     * @throws SQLException if the columnIndex is not valid;
-     * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or if a database access error occurs
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param nString     the value for the column to be updated
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or if a database access error occurs
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNString(int columnIndex, String nString) throws SQLException;
@@ -3079,15 +3088,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param nString the value for the column to be updated
-     * @throws SQLException if the columnLabel is not valid;
-     * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set;
-     * the result set concurrency is <CODE>CONCUR_READ_ONLY</code>
-     *  or if a database access error occurs
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param nString     the value for the column to be updated
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set;
+     *                                         the result set concurrency is <CODE>CONCUR_READ_ONLY</code>
+     *                                         or if a database access error occurs
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNString(String columnLabel, String nString) throws SQLException;
@@ -3100,15 +3109,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second 2, ...
-     * @param nClob the value for the column to be updated
-     * @throws SQLException if the columnIndex is not valid;
-     * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set;
-     * if a database access error occurs or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param nClob       the value for the column to be updated
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set;
+     *                                         if a database access error occurs or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNClob(int columnIndex, NClob nClob) throws SQLException;
@@ -3121,15 +3130,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param nClob the value for the column to be updated
-     * @throws SQLException if the columnLabel is not valid;
-     * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set;
-     *  if a database access error occurs or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param nClob       the value for the column to be updated
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set;
+     *                                         if a database access error occurs or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNClob(String columnLabel, NClob nClob) throws SQLException;
@@ -3141,19 +3150,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>NClob</code> object representing the SQL
-     *         <code>NCLOB</code> value in the specified column
-     * @exception SQLException if the columnIndex is not valid;
-     * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set
-     * or if a database access error occurs
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * <code>NCLOB</code> value in the specified column
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set
+     *                                         or if a database access error occurs
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     NClob getNClob(int columnIndex) throws SQLException;
 
-  /**
+    /**
      * Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object as a <code>NClob</code> object
      * in the Java programming language.
@@ -3161,46 +3170,49 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>NClob</code> object representing the SQL <code>NCLOB</code>
      * value in the specified column
-     * @exception SQLException if the columnLabel is not valid;
-   * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set
-     * or if a database access error occurs
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set
+     *                                         or if a database access error occurs
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     NClob getNClob(String columnLabel) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in  the current row of
-     *  this <code>ResultSet</code> as a
+     * this <code>ResultSet</code> as a
      * <code>java.sql.SQLXML</code> object in the Java programming language.
+     *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>SQLXML</code> object that maps an <code>SQL XML</code> value
-     * @throws SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     SQLXML getSQLXML(int columnIndex) throws SQLException;
 
     /**
      * Retrieves the value of the designated column in  the current row of
-     *  this <code>ResultSet</code> as a
+     * this <code>ResultSet</code> as a
      * <code>java.sql.SQLXML</code> object in the Java programming language.
+     *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return a <code>SQLXML</code> object that maps an <code>SQL XML</code> value
-     * @throws SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     SQLXML getSQLXML(String columnLabel) throws SQLException;
+
     /**
      * Updates the designated column with a <code>java.sql.SQLXML</code> value.
      * The updater
@@ -3211,22 +3223,23 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <p>
      *
      * @param columnIndex the first column is 1, the second 2, ...
-     * @param xmlObject the value for the column to be updated
-     * @throws SQLException if the columnIndex is not valid;
-     * if a database access error occurs; this method
-     *  is called on a closed result set;
-     * the <code>java.xml.transform.Result</code>,
-     *  <code>Writer</code> or <code>OutputStream</code> has not been closed
-     * for the <code>SQLXML</code> object;
-     *  if there is an error processing the XML value or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>.  The <code>getCause</code> method
-     *  of the exception may provide a more detailed exception, for example, if the
-     *  stream does not contain valid XML.
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param xmlObject   the value for the column to be updated
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs; this method
+     *                                         is called on a closed result set;
+     *                                         the <code>java.xml.transform.Result</code>,
+     *                                         <code>Writer</code> or <code>OutputStream</code> has not been closed
+     *                                         for the <code>SQLXML</code> object;
+     *                                         if there is an error processing the XML value or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>.  The <code>getCause</code> method
+     *                                         of the exception may provide a more detailed exception, for example, if the
+     *                                         stream does not contain valid XML.
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateSQLXML(int columnIndex, SQLXML xmlObject) throws SQLException;
+
     /**
      * Updates the designated column with a <code>java.sql.SQLXML</code> value.
      * The updater
@@ -3237,19 +3250,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <p>
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param xmlObject the column value
-     * @throws SQLException if the columnLabel is not valid;
-     * if a database access error occurs; this method
-     *  is called on a closed result set;
-     * the <code>java.xml.transform.Result</code>,
-     *  <code>Writer</code> or <code>OutputStream</code> has not been closed
-     * for the <code>SQLXML</code> object;
-     *  if there is an error processing the XML value or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>.  The <code>getCause</code> method
-     *  of the exception may provide a more detailed exception, for example, if the
-     *  stream does not contain valid XML.
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param xmlObject   the column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs; this method
+     *                                         is called on a closed result set;
+     *                                         the <code>java.xml.transform.Result</code>,
+     *                                         <code>Writer</code> or <code>OutputStream</code> has not been closed
+     *                                         for the <code>SQLXML</code> object;
+     *                                         if there is an error processing the XML value or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>.  The <code>getCause</code> method
+     *                                         of the exception may provide a more detailed exception, for example, if the
+     *                                         stream does not contain valid XML.
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateSQLXML(String columnLabel, SQLXML xmlObject) throws SQLException;
@@ -3265,11 +3278,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnIndex the first column is 1, the second is 2, ...
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     String getNString(int columnIndex) throws SQLException;
@@ -3286,11 +3299,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @return the column value; if the value is SQL <code>NULL</code>, the
      * value returned is <code>null</code>
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     String getNString(String columnLabel) throws SQLException;
@@ -3304,15 +3317,15 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * accessing  <code>NCHAR</code>,<code>NVARCHAR</code>
      * and <code>LONGNVARCHAR</code> columns.
      *
+     * @param columnIndex the first column is 1, the second is 2, ...
      * @return a <code>java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language.
-     * @param columnIndex the first column is 1, the second is 2, ...
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     java.io.Reader getNCharacterStream(int columnIndex) throws SQLException;
@@ -3329,11 +3342,11 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * @return a <code>java.io.Reader</code> object that contains the column
      * value; if the value is SQL <code>NULL</code>, the value returned is
      * <code>null</code> in the Java programming language
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     java.io.Reader getNCharacterStream(String columnLabel) throws SQLException;
@@ -3353,18 +3366,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNCharacterStream(int columnIndex,
-                             java.io.Reader x,
-                             long length) throws SQLException;
+                                java.io.Reader x,
+                                long length) throws SQLException;
 
     /**
      * Updates the designated column with a character stream value, which will have
@@ -3381,19 +3394,20 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
-     *        the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      the <code>java.io.Reader</code> object containing
+     *                    the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNCharacterStream(String columnLabel,
-                             java.io.Reader reader,
-                             long length) throws SQLException;
+                                java.io.Reader reader,
+                                long length) throws SQLException;
+
     /**
      * Updates the designated column with an ascii stream value, which will have
      * the specified number of bytes.
@@ -3404,14 +3418,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateAsciiStream(int columnIndex,
@@ -3428,14 +3442,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBinaryStream(int columnIndex,
@@ -3452,19 +3466,20 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateCharacterStream(int columnIndex,
-                             java.io.Reader x,
-                             long length) throws SQLException;
+                               java.io.Reader x,
+                               long length) throws SQLException;
+
     /**
      * Updates the designated column with an ascii stream value, which will have
      * the specified number of bytes.
@@ -3475,14 +3490,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateAsciiStream(String columnLabel,
@@ -3499,14 +3514,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBinaryStream(String columnLabel,
@@ -3523,20 +3538,21 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
-     *        the new column value
-     * @param length the length of the stream
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      the <code>java.io.Reader</code> object containing
+     *                    the new column value
+     * @param length      the length of the stream
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader,
-                             long length) throws SQLException;
+                               java.io.Reader reader,
+                               long length) throws SQLException;
+
     /**
      * Updates the designated column using the given input stream, which
      * will have the specified number of bytes.
@@ -3549,14 +3565,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @param inputStream An object that contains the data to set the parameter
-     * value to.
-     * @param length the number of bytes in the parameter data.
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                    value to.
+     * @param length      the number of bytes in the parameter data.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBlob(int columnIndex, InputStream inputStream, long length) throws SQLException;
@@ -3573,14 +3589,14 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @param inputStream An object that contains the data to set the parameter
-     * value to.
-     * @param length the number of bytes in the parameter data.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                    value to.
+     * @param length      the number of bytes in the parameter data.
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBlob(String columnLabel, InputStream inputStream, long length) throws SQLException;
@@ -3600,17 +3616,17 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param reader An object that contains the data to set the parameter value to.
-     * @param length the number of characters in the parameter data.
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @param length      the number of characters in the parameter data.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateClob(int columnIndex,  Reader reader, long length) throws SQLException;
+    void updateClob(int columnIndex, Reader reader, long length) throws SQLException;
 
     /**
      * Updates the designated column using the given <code>Reader</code>
@@ -3627,18 +3643,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader An object that contains the data to set the parameter value to.
-     * @param length the number of characters in the parameter data.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @param length      the number of characters in the parameter data.
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateClob(String columnLabel,  Reader reader, long length) throws SQLException;
-   /**
+    void updateClob(String columnLabel, Reader reader, long length) throws SQLException;
+
+    /**
      * Updates the designated column using the given <code>Reader</code>
      * object, which is the given number of characters long.
      * When a very large UNICODE value is input to a <code>LONGVARCHAR</code>
@@ -3653,19 +3670,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnIndex the first column is 1, the second 2, ...
-     * @param reader An object that contains the data to set the parameter value to.
-     * @param length the number of characters in the parameter data.
-     * @throws SQLException if the columnIndex is not valid;
-    * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set,
-     * if a database access error occurs or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @param length      the number of characters in the parameter data.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set,
+     *                                         if a database access error occurs or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateNClob(int columnIndex,  Reader reader, long length) throws SQLException;
+    void updateNClob(int columnIndex, Reader reader, long length) throws SQLException;
 
     /**
      * Updates the designated column using the given <code>Reader</code>
@@ -3682,19 +3699,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>insertRow</code> methods are called to update the database.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader An object that contains the data to set the parameter value to.
-     * @param length the number of characters in the parameter data.
-     * @throws SQLException if the columnLabel is not valid;
-     * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set;
-     *  if a database access error occurs or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @param length      the number of characters in the parameter data.
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set;
+     *                                         if a database access error occurs or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateNClob(String columnLabel,  Reader reader, long length) throws SQLException;
+    void updateNClob(String columnLabel, Reader reader, long length) throws SQLException;
 
     //---
 
@@ -3718,16 +3735,16 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateNCharacterStream</code> which takes a length parameter.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNCharacterStream(int columnIndex,
-                             java.io.Reader x) throws SQLException;
+                                java.io.Reader x) throws SQLException;
 
     /**
      * Updates the designated column with a character stream value.
@@ -3749,17 +3766,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateNCharacterStream</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
-     *        the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
-      * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      the <code>java.io.Reader</code> object containing
+     *                    the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code> or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateNCharacterStream(String columnLabel,
-                             java.io.Reader reader) throws SQLException;
+                                java.io.Reader reader) throws SQLException;
+
     /**
      * Updates the designated column with an ascii stream value.
      * The data will be read from the stream
@@ -3775,13 +3793,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateAsciiStream</code> which takes a length parameter.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateAsciiStream(int columnIndex,
@@ -3802,13 +3820,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateBinaryStream</code> which takes a length parameter.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBinaryStream(int columnIndex,
@@ -3829,17 +3847,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateCharacterStream</code> which takes a length parameter.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateCharacterStream(int columnIndex,
-                             java.io.Reader x) throws SQLException;
+                               java.io.Reader x) throws SQLException;
+
     /**
      * Updates the designated column with an ascii stream value.
      * The data will be read from the stream
@@ -3855,13 +3874,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateAsciiStream</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateAsciiStream(String columnLabel,
@@ -3882,13 +3901,13 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateBinaryStream</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param x the new column value
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param x           the new column value
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBinaryStream(String columnLabel,
@@ -3909,17 +3928,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateCharacterStream</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader the <code>java.io.Reader</code> object containing
-     *        the new column value
-     * @exception SQLException if the columnLabel is not valid; if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      the <code>java.io.Reader</code> object containing
+     *                    the new column value
+     * @throws SQLException                    if the columnLabel is not valid; if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateCharacterStream(String columnLabel,
-                             java.io.Reader reader) throws SQLException;
+                               java.io.Reader reader) throws SQLException;
+
     /**
      * Updates the designated column using the given input stream. The data will be read from the stream
      * as needed until end-of-stream is reached.
@@ -3935,12 +3955,12 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      *
      * @param columnIndex the first column is 1, the second is 2, ...
      * @param inputStream An object that contains the data to set the parameter
-     * value to.
-     * @exception SQLException if the columnIndex is not valid; if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                    value to.
+     * @throws SQLException                    if the columnIndex is not valid; if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBlob(int columnIndex, InputStream inputStream) throws SQLException;
@@ -3954,18 +3974,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
      *
-     *   <P><B>Note:</B> Consult your JDBC driver documentation to determine if
+     * <P><B>Note:</B> Consult your JDBC driver documentation to determine if
      * it might be more efficient to use a version of
      * <code>updateBlob</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
      * @param inputStream An object that contains the data to set the parameter
-     * value to.
-     * @exception SQLException if the columnLabel is not valid; if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                    value to.
+     * @throws SQLException                    if the columnLabel is not valid; if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
     void updateBlob(String columnLabel, InputStream inputStream) throws SQLException;
@@ -3973,7 +3993,7 @@ public interface ResultSet extends Wrapper, AutoCloseable {
     /**
      * Updates the designated column using the given <code>Reader</code>
      * object.
-     *  The data will be read from the stream
+     * The data will be read from the stream
      * as needed until end-of-stream is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -3983,26 +4003,26 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * update the underlying database; instead the <code>updateRow</code> or
      * <code>insertRow</code> methods are called to update the database.
      *
-     *   <P><B>Note:</B> Consult your JDBC driver documentation to determine if
+     * <P><B>Note:</B> Consult your JDBC driver documentation to determine if
      * it might be more efficient to use a version of
      * <code>updateClob</code> which takes a length parameter.
      *
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param reader An object that contains the data to set the parameter value to.
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateClob(int columnIndex,  Reader reader) throws SQLException;
+    void updateClob(int columnIndex, Reader reader) throws SQLException;
 
     /**
      * Updates the designated column using the given <code>Reader</code>
      * object.
-     *  The data will be read from the stream
+     * The data will be read from the stream
      * as needed until end-of-stream is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
      *
@@ -4017,18 +4037,19 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateClob</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader An object that contains the data to set the parameter value to.
-     * @exception SQLException if the columnLabel is not valid; if a database access error occurs;
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @throws SQLException                    if the columnLabel is not valid; if a database access error occurs;
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateClob(String columnLabel,  Reader reader) throws SQLException;
-   /**
+    void updateClob(String columnLabel, Reader reader) throws SQLException;
+
+    /**
      * Updates the designated column using the given <code>Reader</code>
-     *
+     * <p>
      * The data will be read from the stream
      * as needed until end-of-stream is reached.  The JDBC driver will
      * do any necessary conversion from UNICODE to the database char format.
@@ -4044,18 +4065,18 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateNClob</code> which takes a length parameter.
      *
      * @param columnIndex the first column is 1, the second 2, ...
-     * @param reader An object that contains the data to set the parameter value to.
-     * @throws SQLException if the columnIndex is not valid;
-    * if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set,
-     * if a database access error occurs or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set,
+     *                                         if a database access error occurs or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateNClob(int columnIndex,  Reader reader) throws SQLException;
+    void updateNClob(int columnIndex, Reader reader) throws SQLException;
 
     /**
      * Updates the designated column using the given <code>Reader</code>
@@ -4075,183 +4096,184 @@ public interface ResultSet extends Wrapper, AutoCloseable {
      * <code>updateNClob</code> which takes a length parameter.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.  If the SQL AS clause was not specified, then the label is the name of the column
-     * @param reader An object that contains the data to set the parameter value to.
-     * @throws SQLException if the columnLabel is not valid; if the driver does not support national
-     *         character sets;  if the driver can detect that a data conversion
-     *  error could occur; this method is called on a closed result set;
-     *  if a database access error occurs or
-     * the result set concurrency is <code>CONCUR_READ_ONLY</code>
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     * @param reader      An object that contains the data to set the parameter value to.
+     * @throws SQLException                    if the columnLabel is not valid; if the driver does not support national
+     *                                         character sets;  if the driver can detect that a data conversion
+     *                                         error could occur; this method is called on a closed result set;
+     *                                         if a database access error occurs or
+     *                                         the result set concurrency is <code>CONCUR_READ_ONLY</code>
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
+     *                                         this method
      * @since 1.6
      */
-    void updateNClob(String columnLabel,  Reader reader) throws SQLException;
+    void updateNClob(String columnLabel, Reader reader) throws SQLException;
 
     //------------------------- JDBC 4.1 -----------------------------------
 
 
     /**
-     *<p>Retrieves the value of the designated column in the current row
+     * <p>Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object and will convert from the
      * SQL type of the column to the requested Java data type, if the
      * conversion is supported. If the conversion is not
      * supported  or null is specified for the type, a
      * <code>SQLException</code> is thrown.
-     *<p>
+     * <p>
      * At a minimum, an implementation must support the conversions defined in
      * Appendix B, Table B-3 and conversion of appropriate user defined SQL
      * types to a Java type which implements {@code SQLData}, or {@code Struct}.
      * Additional conversions may be supported and are vendor defined.
-     * @param <T> the type of the class modeled by this Class object
+     *
+     * @param <T>         the type of the class modeled by this Class object
      * @param columnIndex the first column is 1, the second is 2, ...
-     * @param type Class representing the Java data type to convert the designated
-     * column to.
+     * @param type        Class representing the Java data type to convert the designated
+     *                    column to.
      * @return an instance of {@code type} holding the column value
-     * @throws SQLException if conversion is not supported, type is null or
-     *         another error occurs. The getCause() method of the
-     * exception may provide a more detailed exception, for example, if
-     * a conversion error occurs
+     * @throws SQLException                    if conversion is not supported, type is null or
+     *                                         another error occurs. The getCause() method of the
+     *                                         exception may provide a more detailed exception, for example, if
+     *                                         a conversion error occurs
      * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                                         this method
      * @since 1.7
      */
-     public <T> T getObject(int columnIndex, Class<T> type) throws SQLException;
+    public <T> T getObject(int columnIndex, Class<T> type) throws SQLException;
 
 
     /**
-     *<p>Retrieves the value of the designated column in the current row
+     * <p>Retrieves the value of the designated column in the current row
      * of this <code>ResultSet</code> object and will convert from the
      * SQL type of the column to the requested Java data type, if the
      * conversion is supported. If the conversion is not
      * supported  or null is specified for the type, a
      * <code>SQLException</code> is thrown.
-     *<p>
+     * <p>
      * At a minimum, an implementation must support the conversions defined in
      * Appendix B, Table B-3 and conversion of appropriate user defined SQL
      * types to a Java type which implements {@code SQLData}, or {@code Struct}.
      * Additional conversions may be supported and are vendor defined.
      *
      * @param columnLabel the label for the column specified with the SQL AS clause.
-     * If the SQL AS clause was not specified, then the label is the name
-     * of the column
-     * @param type Class representing the Java data type to convert the designated
-     * column to.
-     * @param <T> the type of the class modeled by this Class object
+     *                    If the SQL AS clause was not specified, then the label is the name
+     *                    of the column
+     * @param type        Class representing the Java data type to convert the designated
+     *                    column to.
+     * @param <T>         the type of the class modeled by this Class object
      * @return an instance of {@code type} holding the column value
-     * @throws SQLException if conversion is not supported, type is null or
-     *         another error occurs. The getCause() method of the
-     * exception may provide a more detailed exception, for example, if
-     * a conversion error occurs
+     * @throws SQLException                    if conversion is not supported, type is null or
+     *                                         another error occurs. The getCause() method of the
+     *                                         exception may provide a more detailed exception, for example, if
+     *                                         a conversion error occurs
      * @throws SQLFeatureNotSupportedException if the JDBC driver does not support
-     * this method
+     *                                         this method
      * @since 1.7
      */
-     public <T> T getObject(String columnLabel, Class<T> type) throws SQLException;
+    public <T> T getObject(String columnLabel, Class<T> type) throws SQLException;
 
     //------------------------- JDBC 4.2 -----------------------------------
 
     /**
      * Updates the designated column with an {@code Object} value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the {@code updateRow} or
      * {@code insertRow} methods are called to update the database.
-     *<p>
+     * <p>
      * If the second argument is an {@code InputStream} then the stream must contain
      * the number of bytes specified by scaleOrLength.  If the second argument is a
      * {@code Reader} then the reader must contain the number of characters specified
      * by scaleOrLength. If these conditions are not true the driver will generate a
      * {@code SQLException} when the statement is executed.
-     *<p>
+     * <p>
      * The default implementation will throw {@code SQLFeatureNotSupportedException}
      *
-     * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
+     * @param columnIndex   the first column is 1, the second is 2, ...
+     * @param x             the new column value
      * @param targetSqlType the SQL type to be sent to the database
      * @param scaleOrLength for an object of {@code java.math.BigDecimal} ,
-     *          this is the number of digits after the decimal point. For
-     *          Java Object types {@code InputStream} and {@code Reader},
-     *          this is the length
-     *          of the data in the stream or reader.  For all other types,
-     *          this value will be ignored.
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is {@code CONCUR_READ_ONLY}
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not
-     * support this method; if the JDBC driver does not support the specified targetSqlType
+     *                      this is the number of digits after the decimal point. For
+     *                      Java Object types {@code InputStream} and {@code Reader},
+     *                      this is the length
+     *                      of the data in the stream or reader.  For all other types,
+     *                      this value will be ignored.
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is {@code CONCUR_READ_ONLY}
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not
+     *                                         support this method; if the JDBC driver does not support the specified targetSqlType
      * @see JDBCType
      * @see SQLType
      * @since 1.8
      */
-     default void updateObject(int columnIndex, Object x,
-             SQLType targetSqlType, int scaleOrLength)  throws SQLException {
+    default void updateObject(int columnIndex, Object x,
+                              SQLType targetSqlType, int scaleOrLength) throws SQLException {
         throw new SQLFeatureNotSupportedException("updateObject not implemented");
     }
 
     /**
      * Updates the designated column with an {@code Object} value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the {@code updateRow} or
      * {@code insertRow} methods are called to update the database.
-     *<p>
+     * <p>
      * If the second argument is an {@code InputStream} then the stream must
      * contain number of bytes specified by scaleOrLength.  If the second
      * argument is a {@code Reader} then the reader must contain the number
      * of characters specified by scaleOrLength. If these conditions are not
      * true the driver will generate a
      * {@code SQLException} when the statement is executed.
-     *<p>
+     * <p>
      * The default implementation will throw {@code SQLFeatureNotSupportedException}
      *
-     * @param columnLabel the label for the column specified with the SQL AS
-     * clause.  If the SQL AS clause was not specified, then the label is
-     * the name of the column
-     * @param x the new column value
+     * @param columnLabel   the label for the column specified with the SQL AS
+     *                      clause.  If the SQL AS clause was not specified, then the label is
+     *                      the name of the column
+     * @param x             the new column value
      * @param targetSqlType the SQL type to be sent to the database
      * @param scaleOrLength for an object of {@code java.math.BigDecimal} ,
-     *          this is the number of digits after the decimal point. For
-     *          Java Object types {@code InputStream} and {@code Reader},
-     *          this is the length
-     *          of the data in the stream or reader.  For all other types,
-     *          this value will be ignored.
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is {@code CONCUR_READ_ONLY}
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not
-     * support this method; if the JDBC driver does not support the specified targetSqlType
+     *                      this is the number of digits after the decimal point. For
+     *                      Java Object types {@code InputStream} and {@code Reader},
+     *                      this is the length
+     *                      of the data in the stream or reader.  For all other types,
+     *                      this value will be ignored.
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is {@code CONCUR_READ_ONLY}
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not
+     *                                         support this method; if the JDBC driver does not support the specified targetSqlType
      * @see JDBCType
      * @see SQLType
      * @since 1.8
      */
     default void updateObject(String columnLabel, Object x,
-            SQLType targetSqlType, int scaleOrLength) throws SQLException {
+                              SQLType targetSqlType, int scaleOrLength) throws SQLException {
         throw new SQLFeatureNotSupportedException("updateObject not implemented");
     }
 
     /**
      * Updates the designated column with an {@code Object} value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the {@code updateRow} or
      * {@code insertRow} methods are called to update the database.
-     *<p>
+     * <p>
      * The default implementation will throw {@code SQLFeatureNotSupportedException}
      *
-     * @param columnIndex the first column is 1, the second is 2, ...
-     * @param x the new column value
+     * @param columnIndex   the first column is 1, the second is 2, ...
+     * @param x             the new column value
      * @param targetSqlType the SQL type to be sent to the database
-     * @exception SQLException if the columnIndex is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is {@code CONCUR_READ_ONLY}
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not
-     * support this method; if the JDBC driver does not support the specified targetSqlType
+     * @throws SQLException                    if the columnIndex is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is {@code CONCUR_READ_ONLY}
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not
+     *                                         support this method; if the JDBC driver does not support the specified targetSqlType
      * @see JDBCType
      * @see SQLType
      * @since 1.8
@@ -4263,31 +4285,31 @@ public interface ResultSet extends Wrapper, AutoCloseable {
 
     /**
      * Updates the designated column with an {@code Object} value.
-     *
+     * <p>
      * The updater methods are used to update column values in the
      * current row or the insert row.  The updater methods do not
      * update the underlying database; instead the {@code updateRow} or
      * {@code insertRow} methods are called to update the database.
-     *<p>
+     * <p>
      * The default implementation will throw {@code SQLFeatureNotSupportedException}
      *
-     * @param columnLabel the label for the column specified with the SQL AS
-     * clause.  If the SQL AS clause was not specified, then the label is
-     * the name of the column
-     * @param x the new column value
+     * @param columnLabel   the label for the column specified with the SQL AS
+     *                      clause.  If the SQL AS clause was not specified, then the label is
+     *                      the name of the column
+     * @param x             the new column value
      * @param targetSqlType the SQL type to be sent to the database
-     * @exception SQLException if the columnLabel is not valid;
-     * if a database access error occurs;
-     * the result set concurrency is {@code CONCUR_READ_ONLY}
-     * or this method is called on a closed result set
-     * @exception SQLFeatureNotSupportedException if the JDBC driver does not
-     * support this method; if the JDBC driver does not support the specified targetSqlType
+     * @throws SQLException                    if the columnLabel is not valid;
+     *                                         if a database access error occurs;
+     *                                         the result set concurrency is {@code CONCUR_READ_ONLY}
+     *                                         or this method is called on a closed result set
+     * @throws SQLFeatureNotSupportedException if the JDBC driver does not
+     *                                         support this method; if the JDBC driver does not support the specified targetSqlType
      * @see JDBCType
      * @see SQLType
      * @since 1.8
      */
     default void updateObject(String columnLabel, Object x,
-            SQLType targetSqlType) throws SQLException {
+                              SQLType targetSqlType) throws SQLException {
         throw new SQLFeatureNotSupportedException("updateObject not implemented");
     }
 }

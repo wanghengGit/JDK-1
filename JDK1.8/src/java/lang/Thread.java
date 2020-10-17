@@ -31,6 +31,7 @@ import sun.security.util.SecurityConstants;
  * @see #run()
  * @see #stop()
  * @since JDK1.0
+ * @author kit
  */
 public class Thread implements Runnable {
     /* Make sure registerNatives is the first thing <clinit> does. */

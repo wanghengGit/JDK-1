@@ -1,0 +1,579 @@
+
+n	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Åİ·
+J
+java:S1121Ë".Extract the assignment out of this expression.(İ×Øëüÿÿÿÿ
+6
+java:S1659‘"Declare "m" on a separate line.(¦ë÷¾
+?	java:S108‹")Either remove or fill this block of code.(¼á™ù
+s	java:S127•"XRefactor the code in order to not assign to this loop counter from within the loop body.(üªÕäúÿÿÿÿ
+s	java:S127µ"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ë¾èÊşÿÿÿÿ
+s	java:S127…"XRefactor the code in order to not assign to this loop counter from within the loop body.(å÷Ê¶úÿÿÿÿ
+=
+java:S1659Á"&Declare "parkTime" on a separate line.(“¢ğå
+V
+java:S2184é"@Cast one of the operands of this addition operation to a "long".(üíq
+t	java:S135™"YReduce the total number of break and continue statements in this loop to use at most one.(–äÙºøÿÿÿÿ
+J
+java:S1121÷	".Extract the assignment out of this expression.(Ãàˆÿÿÿÿÿ
+;
+java:S1659¦"Declare "w" on a separate line.(ô¯…¬ûÿÿÿÿ
+W
+java:S2184É"@Cast one of the operands of this addition operation to a "long".(İ·¶™
+J
+java:S1121ò".Extract the assignment out of this expression.(›™Êƒùÿÿÿÿ
+n	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Åİ·
+[
+java:S3358ı	"DExtract this nested ternary operation into an independent statement.(ëÄ»
+J
+java:S1121ó".Extract the assignment out of this expression.(ÙÖ­»ıÿÿÿÿ
+n	java:S127‹"XRefactor the code in order to not assign to this loop counter from within the loop body.(ò¦òó
+D
+java:S1604à"(Make this anonymous inner class a lambda(‚²ùùÿÿÿÿ
+s
+java:S3077ë"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ø­Ğıÿÿÿÿ
+;
+java:S1659û"Declare "b" on a separate line.(üŸ½Ôşÿÿÿÿ
+i
+java:S3776
+"RRefactor this method to reduce its Cognitive Complexity from 97 to the 15 allowed.(´úœÇ
+J
+java:S1121ü	".Extract the assignment out of this expression.(éÒêÍúÿÿÿÿ
+=
+java:S1452¬"&Remove usage of generic wildcard type.(½ş÷ñ
+E
+java:S1121û	".Extract the assignment out of this expression.(§Ö¸
+;
+java:S1659ä"Declare "s" on a separate line.(ÁÒ¹ğùÿÿÿÿ
+E
+java:S1121".Extract the assignment out of this expression.(î‰Ÿ
+7
+java:S1659õ	" Declare "wt" on a separate line.(Èéı¼
+[
+java:S2583»"DChange this condition so that it does not always evaluate to "false"(ôë‰ö
+E
+java:S1121ı	".Extract the assignment out of this expression.(ëÄ»
+;
+java:S1659—"Declare "s" on a separate line.(¿›’ƒıÿÿÿÿ
+;
+java:S1659Â"Declare "n" on a separate line.(Ì®Êıÿÿÿÿ
+p
+java:S2293„"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡Íâ§
+5
+java:S1659˜"Declare "p" on a separate line.(ü¶ı
+t	java:S135Æ"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ
+J
+java:S1121ÿ".Extract the assignment out of this expression.(øÎ‚Ïşÿÿÿÿ
+n
+java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(²íë—ÿÿÿÿÿ
+E
+java:S1121‘".Extract the assignment out of this expression.(ñèÇ¶
+p
+java:S2293Ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(æÛ‹Ò
+E
+java:S1121‰".Extract the assignment out of this expression.(›êĞ 
+\	java:S112×"FDefine and throw a dedicated exception instead of using a generic one.(Âğğ
+>
+java:S1604¨"(Make this anonymous inner class a lambda(úİ
+=
+java:S3077ç"&Use an "AtomicReferenceArray" instead.(««Éñ
+>
+java:S1659Ê""Declare "stop" on a separate line.(À éßúÿÿÿÿ
+;
+java:S1659ú"Declare "n" on a separate line.(É·úäûÿÿÿÿ
+W
+java:S2184œ"@Cast one of the operands of this addition operation to a "long".(ŞÚ§â
+;
+java:S1659ß
+"Declare "j" on a separate line.(Îò¹úÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(æ÷–£ùÿÿÿÿ
+n	java:S127±"XRefactor the code in order to not assign to this loop counter from within the loop body.(úÅ©ù
+6
+java:S1659™"Declare "n" on a separate line.(î­Àó
+B
+java:S1452ì"&Remove usage of generic wildcard type.(ÓÍ«ıÿÿÿÿ
+i
+java:S3776Ä	"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(á½íÒ
+J
+java:S1121Í".Extract the assignment out of this expression.(í‚ßËşÿÿÿÿ
+;
+java:S1659æ"Declare "s" on a separate line.(¼‰Ë‚ÿÿÿÿÿ
+7
+java:S1659º
+" Declare "wt" on a separate line.(ò¨Ÿ•
+J
+java:S1121Ö	".Extract the assignment out of this expression.(‚ƒñæúÿÿÿÿ
+6
+java:S1659Â"Declare "m" on a separate line.(ˆÏğ·
+;
+java:S1659È"Declare "m" on a separate line.(¹ıÔ¹úÿÿÿÿ
+;
+java:S1659ù"Declare "t" on a separate line.(ÄÚ°ùÿÿÿÿÿ
+i
+java:S3776Ù"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(Á»›ê
+i
+java:S3776©	"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(öåêŠ
+6
+java:S1659¦"Declare "a" on a separate line.(ö³Ÿ
+n	java:S127™"XRefactor the code in order to not assign to this loop counter from within the loop body.(ê•ùÛ
+J
+java:S1121Ü".Extract the assignment out of this expression.(â÷Ô¥øÿÿÿÿ
+;
+java:S1659¹"Declare "i" on a separate line.(¨ˆıÿÿÿÿ
+;
+java:S1659ª	"Declare "m" on a separate line.(ÅËÿÿÿÿÿ
+;
+java:S1659œ
+"Declare "c" on a separate line.(ªİÇ¡ùÿÿÿÿ
+s	java:S127‡"XRefactor the code in order to not assign to this loop counter from within the loop body.(É²Çúÿÿÿÿ
+V
+java:S1161ø":Add the "@Override" annotation above this method signature(¨èï®üÿÿÿÿ
+i
+java:S3776û"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(«Èù‘
+i
+java:S3776ú"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ÿï’¤
+C
+java:S1481¶"'Remove this unused "sc" local variable.(ŸÔÓ”ÿÿÿÿÿ
+;
+java:S1659ğ
+"Declare "k" on a separate line.(ü¿ÂÓşÿÿÿÿ
+u
+java:S2293ù"YReplace the type specification in this constructor call with the diamond operator ("<>").(†Çí†ùÿÿÿÿ
+D	java:S108")Either remove or fill this block of code.(„®‘îûÿÿÿÿ
+<
+java:S1659¶" Declare "ws" on a separate line.(ŸÔÓ”ÿÿÿÿÿ
+s	java:S127Ú	"XRefactor the code in order to not assign to this loop counter from within the loop body.(Â€üÂşÿÿÿÿ
+<
+java:S1181Ï
+"%Catch Exception instead of Throwable.(Æ·™‹
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(§·¶ùÿÿÿÿ
+Q
+java:S1161":Add the "@Override" annotation above this method signature(‘®Ş
+;
+java:S1659ı"Declare "w" on a separate line.(ô¯…¬ûÿÿÿÿ
+o	java:S135ÿ"YReduce the total number of break and continue statements in this loop to use at most one.(°—¬
+6
+java:S1659™"Declare "s" on a separate line.(î­Àó
+J
+java:S1121÷	".Extract the assignment out of this expression.(Ãàˆÿÿÿÿÿ
+6
+java:S1659Š"Declare "m" on a separate line.(öó‚
+E
+java:S1121É".Extract the assignment out of this expression.(óç³«
+n	java:S127’"XRefactor the code in order to not assign to this loop counter from within the loop body.(”¢éŒ
+œ
+java:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÇÂÖÿıÿÿÿÿ
+;
+java:S1659±"Declare "b" on a separate line.(¤×á™ÿÿÿÿÿ
+n	java:S127ö"XRefactor the code in order to not assign to this loop counter from within the loop body.(”¢éŒ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(Ü„ÃÚşÿÿÿÿ
+n	java:S127‚"XRefactor the code in order to not assign to this loop counter from within the loop body.(”¢éŒ
+s	java:S127‘"XRefactor the code in order to not assign to this loop counter from within the loop body.(×ŸÃÍıÿÿÿÿ
+t	java:S135¬"YReduce the total number of break and continue statements in this loop to use at most one.(Ì£æÅıÿÿÿÿ
+i
+java:S3776…"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¡„®·
+n	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Åİ·
+p	java:S115£"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ƒùœ’
+J
+java:S1121ó".Extract the assignment out of this expression.(ÄîŸ‹ÿÿÿÿÿ
+m
+java:S3077h"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(… ƒ³
+s	java:S127®
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(å÷Ê¶úÿÿÿÿ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 86 to the 15 allowed.(ÖÊ¥ÿÿÿÿÿ
+E
+java:S1121Ú".Extract the assignment out of this expression.(ÏõÙ‚
+9
+java:S1659õ	""Declare "pool" on a separate line.(Èéı¼
+;
+java:S1659ğ
+"Declare "m" on a separate line.(ü¿ÂÓşÿÿÿÿ
+Q
+java:S1161ƒ":Add the "@Override" annotation above this method signature(âÒ¼ª
+7
+java:S1659Û" Declare "qs" on a separate line.(ª¼Ó¦
+;
+java:S1659Î"Declare "c" on a separate line.(ÎÂ÷½şÿÿÿÿ
+V
+java:S2184¨"@Cast one of the operands of this addition operation to a "long".(üíq
+i
+java:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ÄØá«
+;
+java:S1659ä"Declare "a" on a separate line.(ÁÒ¹ğùÿÿÿÿ
+t	java:S135¹
+"YReduce the total number of break and continue statements in this loop to use at most one.(‹‘Í—úÿÿÿÿ
+E
+java:S1121§".Extract the assignment out of this expression.(Ûë­
+Œ
+java:S1845¬"pRename field "STEALCOUNTER" to prevent any misunderstanding/clash with field "stealCounter" defined on line 619.(éÂ®‰úÿÿÿÿ
+=
+java:S1452¥"&Remove usage of generic wildcard type.(ÄØá«
+6
+java:S1659º
+"Declare "w" on a separate line.(ò¨Ÿ•
+6
+java:S1659Ä"Declare "t" on a separate line.(ØŠöÅ
+<
+java:S1659Î" Declare "pc" on a separate line.(ÎÂ÷½şÿÿÿÿ
+;
+java:S1659È"Declare "t" on a separate line.(¹ıÔ¹úÿÿÿÿ
+7
+java:S1659Û" Declare "rc" on a separate line.(ª¼Ó¦
+;
+java:S1659Ø"Declare "q" on a separate line.(üÇ¬³úÿÿÿÿ
+?	java:S108•")Either remove or fill this block of code.(¼á™ù
+6
+java:S1659Õ"Declare "p" on a separate line.(Ì÷õõ
+\
+java:S3398ê"@Move this method into the anonymous class declared at line 2144.(‰Œ¾«ûÿÿÿÿ
+s	java:S127²	"XRefactor the code in order to not assign to this loop counter from within the loop body.(üªÕäúÿÿÿÿ
+<
+java:S1659¹" Declare "sp" on a separate line.(¨ˆıÿÿÿÿ
+\
+java:S2184Ë"@Cast one of the operands of this addition operation to a "long".(Ã±ìüÿÿÿÿ
+;
+java:S1659¹"Declare "p" on a separate line.(¨ˆıÿÿÿÿ
+=
+java:S1659‘"&Declare "checkSum" on a separate line.(¦ë÷¾
+o
+java:S1128
+"TRemove this unnecessary import: same package classes are always implicitly imported.(¾×¶îûÿÿÿÿ
+E
+java:S1121Ä".Extract the assignment out of this expression.(ş¼·ğ
+J
+java:S1121°	".Extract the assignment out of this expression.(îÇŠÍÿÿÿÿÿ
+6
+java:S1659Â"Declare "s" on a separate line.(ˆÏğ·
+6
+java:S1659İ"Declare "a" on a separate line.(“àÀˆ
+;
+java:S1659ü"Declare "n" on a separate line.(©ƒşÿûÿÿÿÿ
+6
+java:S1659õ	"Declare "q" on a separate line.(Èéı¼
+R
+java:S1119˜";Refactor the code to remove this label and the need for it.(·•ÀÆ
+7
+java:S1659š" Declare "sp" on a separate line.( ‚˜
+[
+java:S3358ö"DExtract this nested ternary operation into an independent statement.(£Ñ¹Â
+s	java:S127´	"XRefactor the code in order to not assign to this loop counter from within the loop body.(“Ï£¯ÿÿÿÿÿ
+o	java:S135™"YReduce the total number of break and continue statements in this loop to use at most one.(ÒÖ­
+E
+java:S1121´".Extract the assignment out of this expression.(ï‹íó
+s	java:S127µ	"XRefactor the code in order to not assign to this loop counter from within the loop body.(å÷Ê¶úÿÿÿÿ
+i
+java:S3776é
+"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(èì
+J
+java:S1121Â".Extract the assignment out of this expression.(Ë£×ıÿÿÿÿ
+6
+java:S1659Ø"Declare "m" on a separate line.(şÔµ
+;
+java:S1659Ø"Declare "k" on a separate line.(üÇ¬³úÿÿÿÿ
+7
+java:S1659‘	" Declare "ns" on a separate line.(•Öß½
+;
+java:S1659¥"Declare "b" on a separate line.(âÍŸùÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(É‘Äııÿÿÿÿ
+J
+java:S1121ğ".Extract the assignment out of this expression.(°ÖÕ½ıÿÿÿÿ
+=
+java:S1452Ü"&Remove usage of generic wildcard type.(™‘é·
+n	java:S127’"XRefactor the code in order to not assign to this loop counter from within the loop body.(”¢éŒ
+J
+java:S1121¡".Extract the assignment out of this expression.(éœç™úÿÿÿÿ
+;
+java:S1659ù"Declare "a" on a separate line.(ÄÚ°ùÿÿÿÿÿ
+;
+java:S1659Î"Declare "m" on a separate line.(ÎÂ÷½şÿÿÿÿ
+<
+java:S1659ğ
+" Declare "rs" on a separate line.(ü¿ÂÓşÿÿÿÿ
+V
+java:S2184š"@Cast one of the operands of this addition operation to a "long".(Ÿ–÷I
+W
+java:S2184€"@Cast one of the operands of this addition operation to a "long".(ÌÓÚú
+n	java:S127€"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÇÍüü
+;
+java:S1659ß"Declare "w" on a separate line.(ô¯…¬ûÿÿÿÿ
+7
+java:S1659Õ" Declare "vs" on a separate line.(Ì÷õõ
+J
+java:S1121†".Extract the assignment out of this expression.(™Ëİ“ÿÿÿÿÿ
+;
+java:S1659í"Declare "s" on a separate line.(Ã¹‰¹şÿÿÿÿ
+n	java:S127»"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ã¡’
+b
+java:S2142˜"FEither re-interrupt this method or rethrow the "InterruptedException".(øôÔ×ûÿÿÿÿ
+;
+java:S1659ú"Declare "c" on a separate line.(É·úäûÿÿÿÿ
+n
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(‹·ãªûÿÿÿÿ
+s	java:S127„"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÚúÒÉøÿÿÿÿ
+n	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(åÅ–
+s	java:S127¦"XRefactor the code in order to not assign to this loop counter from within the loop body.(É²Çúÿÿÿÿ
+s	java:S127¿"XRefactor the code in order to not assign to this loop counter from within the loop body.(Î¦Æøÿÿÿÿ
+<
+java:S1452‚"&Remove usage of generic wildcard type.(­ÑÁ&
+E
+java:S1121€".Extract the assignment out of this expression.(ÇÍüü
+r
+java:S3077i"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(×‰Î—úÿÿÿÿ
+]
+java:S3078â"AUse an "AtomicInteger" for this field; its operations are atomic.(¦¸¹éÿÿÿÿÿ
+6
+java:S1659®	"Declare "b" on a separate line.(›Ğùì
+=
+java:S1659Á"&Declare "deadline" on a separate line.(“¢ğå
+6
+java:S1659¸"Declare "t" on a separate line.(ØŠöÅ
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Æ™ş
+E
+java:S1121Ê".Extract the assignment out of this expression.(ä·¤µ
+s	java:S127‘"XRefactor the code in order to not assign to this loop counter from within the loop body.(×ŸÃÍıÿÿÿÿ
+o	java:S135ø"YReduce the total number of break and continue statements in this loop to use at most one.(¼ºü
+<
+java:S1659¶" Declare "sc" on a separate line.(ŸÔÓ”ÿÿÿÿÿ
+n	java:S127ö"XRefactor the code in order to not assign to this loop counter from within the loop body.(”¢éŒ
+m
+java:S3077j"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(âÔÅ¾
+<
+java:S1659Á"%Declare "prevctl" on a separate line.(“¢ğå
+=
+java:S1452·"&Remove usage of generic wildcard type.(¤€ñŠ
+`
+java:S3358÷"DExtract this nested ternary operation into an independent statement.(Ë§¼Õùÿÿÿÿ
+W	java:S125·"<This block of commented-out lines of code should be removed.(„ÛùÕùÿÿÿÿ
+6
+java:S1659õ"Declare "m" on a separate line.(şÔµ
+E
+java:S1121Ÿ".Extract the assignment out of this expression.(…şÖ™
+\	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Âğğ
+o	java:S135ˆ	"YReduce the total number of break and continue statements in this loop to use at most one.(´ÿÕ™
+J
+java:S1121Š".Extract the assignment out of this expression.(È™Øÿıÿÿÿÿ
+;
+java:S1659±"Declare "t" on a separate line.(¤×á™ÿÿÿÿÿ
+n	java:S127ï	"XRefactor the code in order to not assign to this loop counter from within the loop body.(íü´ 
+t	java:S135¤"YReduce the total number of break and continue statements in this loop to use at most one.(·•øÿÿÿÿ
+t	java:S135Ó"YReduce the total number of break and continue statements in this loop to use at most one.(Ì£æÅıÿÿÿÿ
+n
+java:S3776Ì"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(è¹úÿÿÿÿ
+;
+java:S1659•"Declare "w" on a separate line.(ô¯…¬ûÿÿÿÿ
+p
+java:S2293£"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñÒÌ
+;
+java:S1659û"Declare "m" on a separate line.(üŸ½Ôşÿÿÿÿ
+;
+java:S1659œ
+"Declare "m" on a separate line.(ªİÇ¡ùÿÿÿÿ
+;
+java:S1659¶"Declare "s" on a separate line.(ŸÔÓ”ÿÿÿÿÿ
+;
+java:S1659û"Declare "s" on a separate line.(üŸ½Ôşÿÿÿÿ
+;
+java:S1659æ"Declare "m" on a separate line.(¼‰Ë‚ÿÿÿÿÿ
+;
+java:S1659Ç	"Declare "b" on a separate line.(—Ğšâùÿÿÿÿ
+6
+java:S1659¸"Declare "w" on a separate line.(ØŠöÅ
+o	java:S135›
+"YReduce the total number of break and continue statements in this loop to use at most one.(œ½ä«
+7
+java:S1659í" Declare "rs" on a separate line.(ş€ ö
+6
+java:S1659é"Declare "n" on a separate line.(ßëÛ
+E
+java:S1121¦
+".Extract the assignment out of this expression.(¾¾«Ö
+6
+java:S1659ê	"Declare "b" on a separate line.(›Ğùì
+s	java:S127ÿ"XRefactor the code in order to not assign to this loop counter from within the loop body.(øÎ‚Ïşÿÿÿÿ
+6
+java:S1659¦"Declare "o" on a separate line.(ö³Ÿ
+J
+java:S1121Ä".Extract the assignment out of this expression.(ÀÌ¥Ãÿÿÿÿÿ
+n
+java:S3776Â"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(»„±‰şÿÿÿÿ
+n	java:S127ë	"XRefactor the code in order to not assign to this loop counter from within the loop body.(éşá€
+<
+java:S1659Â" Declare "am" on a separate line.(Ì®Êıÿÿÿÿ
+6
+java:S1659š"Declare "m" on a separate line.( ‚˜
+\
+java:S2184ş"@Cast one of the operands of this addition operation to a "long".(º¦¢‘ıÿÿÿÿ
+o
+java:S1128	"TRemove this unnecessary import: same package classes are always implicitly imported.(¿÷îİûÿÿÿÿ
+;
+java:S1659‰"Declare "w" on a separate line.(ô¯…¬ûÿÿÿÿ
+;
+java:S1659ä"Declare "w" on a separate line.(ÁÒ¹ğùÿÿÿÿ
+?	java:S108ı")Either remove or fill this block of code.(ìŠÈ
+6
+java:S1659ˆ"Declare "m" on a separate line.(ğÄññ
+;
+java:S1659ç"Declare "w" on a separate line.(ô¯…¬ûÿÿÿÿ
+m	java:S127Ë	"XRefactor the code in order to not assign to this loop counter from within the loop body.(Âê¨H
+Z
+java:S3358ş	"DExtract this nested ternary operation into an independent statement.(ß‹º
+V
+java:S1161¢":Add the "@Override" annotation above this method signature(—¯ÕËøÿÿÿÿ
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¨ÏÙî
+t	java:S135Æ	"YReduce the total number of break and continue statements in this loop to use at most one.(¼õËáşÿÿÿÿ
+E
+java:S1121Œ".Extract the assignment out of this expression.(¾¾«Ö
+t	java:S135º"YReduce the total number of break and continue statements in this loop to use at most one.(—Âöêÿÿÿÿÿ
+E
+java:S1121ü".Extract the assignment out of this expression.(ûÙ×ş
+i
+java:S3776Á"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(çà¦ñ
+;
+java:S1659û"Declare "n" on a separate line.(üŸ½Ôşÿÿÿÿ
+n	java:S135Ç"YReduce the total number of break and continue statements in this loop to use at most one.(Å´Æ4
+6
+java:S1659È"Declare "h" on a separate line.(ï€éß
+i
+java:S3776ô"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(“Ÿè˜
+n
+java:S3776­"RRefactor this method to reduce its Cognitive Complexity from 48 to the 15 allowed.(ÆÕõ¤ùÿÿÿÿ
+?	java:S108Ï
+")Either remove or fill this block of code.(Æ·™‹
+;
+java:S1659ä"Declare "m" on a separate line.(ÁÒ¹ğùÿÿÿÿ
+u
+java:S2293§"YReplace the type specification in this constructor call with the diamond operator ("<>").(¢ã¶Ñüÿÿÿÿ
+6
+java:S1659Ä"Declare "w" on a separate line.(ØŠöÅ
+E
+java:S1121´".Extract the assignment out of this expression.(ï‹íó
+6
+java:S1659Í"Declare "m" on a separate line.(ûÇôÂ
+E
+java:S1121Ç".Extract the assignment out of this expression.(¶æô 
+W
+java:S1905¦"@Remove this unnecessary cast to "InnocuousForkJoinWorkerThread".(ï¡»©
+E
+java:S1121ï	".Extract the assignment out of this expression.(íü´ 
+n
+java:S3776ä"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(‘†õ€şÿÿÿÿ
+;
+java:S1659Ç	"Declare "q" on a separate line.(—Ğšâùÿÿÿÿ
+\	java:S112Š"FDefine and throw a dedicated exception instead of using a generic one.(­§äç
+6
+java:S1659¼"Declare "m" on a separate line.(úç³
+V
+java:S1161":Add the "@Override" annotation above this method signature(ÿúëêûÿÿÿÿ
+;
+java:S1659—"Declare "v" on a separate line.(Ó½šïúÿÿÿÿ
+\	java:S112Ô"FDefine and throw a dedicated exception instead of using a generic one.(­§äç
+;
+java:S1659Ø"Declare "b" on a separate line.(üÇ¬³úÿÿÿÿ
+;
+java:S1659ğ
+"Declare "q" on a separate line.(ü¿ÂÓşÿÿÿÿ
+6
+java:S1659º
+"Declare "m" on a separate line.(ò¨Ÿ•
+„
+java:S1845«"hRename field "RUNSTATE" to prevent any misunderstanding/clash with field "runState" defined on line 612.(ñ“éÿÿÿÿÿ
+n	java:S127ì"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÒÑ›¹
+;
+java:S1659Â"Declare "s" on a separate line.(Ì®Êıÿÿÿÿ
+J
+java:S1121Î	".Extract the assignment out of this expression.(Ïû×Üüÿÿÿÿ
+<
+java:S1659ß
+" Declare "sp" on a separate line.(Îò¹úÿÿÿÿ
+6
+java:S1659ˆ"Declare "s" on a separate line.(ğÄññ
+E
+java:S1121Ü	".Extract the assignment out of this expression.(úÚÕÀ
+s	java:S127—"XRefactor the code in order to not assign to this loop counter from within the loop body.(åœÆÓùÿÿÿÿ
+B
+java:S1452Ç"&Remove usage of generic wildcard type.(ÁÕÉæùÿÿÿÿ
+B
+java:S1452‰"&Remove usage of generic wildcard type.(ë¬Ñòıÿÿÿÿ
+6
+java:S1659î"Declare "q" on a separate line.(Õ©Š·
+E
+java:S1121Õ".Extract the assignment out of this expression.(Š…ø„
+V
+java:S1161":Add the "@Override" annotation above this method signature(ã÷«“øÿÿÿÿ
+s	java:S127Ù
+"XRefactor the code in order to not assign to this loop counter from within the loop body.(˜‰ÁŠıÿÿÿÿ
+<
+java:S1181½"%Catch Exception instead of Throwable.( Œã
+6
+java:S1659È"Declare "a" on a separate line.(ï€éß
+o	java:S135°"YReduce the total number of break and continue statements in this loop to use at most one.(å—ôƒ
+D
+java:S1121ş	".Extract the assignment out of this expression.(ß‹º
+n	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(¾Ê«¶
+o	java:S135í"YReduce the total number of break and continue statements in this loop to use at most one.(Òƒ”Œ
+s	java:S127œ"XRefactor the code in order to not assign to this loop counter from within the loop body.(ˆÎèüıÿÿÿÿ
+;
+java:S1659Ç	"Declare "t" on a separate line.(—Ğšâùÿÿÿÿ
+m	java:S127ß"XRefactor the code in order to not assign to this loop counter from within the loop body.(àİúl
+s	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ò¨éÛüÿÿÿÿ
+Q
+java:S2274—":Remove this call to "wait" or move it into a "while" loop.(ŒºÙ
+s	java:S127È"XRefactor the code in order to not assign to this loop counter from within the loop body.(¾Ä­üÿÿÿÿ
+;
+java:S1659¶"Declare "j" on a separate line.(ŸÔÓ”ÿÿÿÿÿ
+D	java:S108„")Either remove or fill this block of code.(¦ñ¾›úÿÿÿÿ
+i
+java:S3776Ç"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(’Ü¦Í
+n	java:S127‚"XRefactor the code in order to not assign to this loop counter from within the loop body.(”¢éŒ
+;
+java:S1659œ
+"Declare "w" on a separate line.(ªİÇ¡ùÿÿÿÿ
+J
+java:S1121ö	".Extract the assignment out of this expression.(Ææ©Ìûÿÿÿÿ
+;
+java:S1659œ
+"Declare "b" on a separate line.(ªİÇ¡ùÿÿÿÿ
+o
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(á¬øíıÿÿÿÿ
+;
+java:S1659í"Declare "b" on a separate line.(²”õİúÿÿÿÿ
+B
+java:S1481¶"&Remove this unused "s" local variable.(ŸÔÓ”ÿÿÿÿÿ
+s	java:S127ü"XRefactor the code in order to not assign to this loop counter from within the loop body.(ğº—¯úÿÿÿÿ
+x
+java:S1845ú"aRename field "QLOCK" to prevent any misunderstanding/clash with field "qlock" defined on line 98.(¶öä²
+;
+java:S1659¹"Declare "v" on a separate line.(¨ˆıÿÿÿÿ
+J
+java:S1121œ".Extract the assignment out of this expression.(ˆÎèüıÿÿÿÿ
+6
+java:S1659ˆ"Declare "n" on a separate line.(ğÄññ
+`
+java:S3358ü	"DExtract this nested ternary operation into an independent statement.(éÒêÍúÿÿÿÿ
+<
+java:S1659Î" Declare "sp" on a separate line.(ÎÂ÷½şÿÿÿÿ
+s	java:S127·	"XRefactor the code in order to not assign to this loop counter from within the loop body.(É²Çúÿÿÿÿ
+J
+java:S1121ù	".Extract the assignment out of this expression.(Â­şÿÿÿÿ
+6
+java:S1659È"Declare "o" on a separate line.(ï€éß
+=
+java:S1452è	"&Remove usage of generic wildcard type.(ÌüÿÖ
+6
+java:S1659¼"Declare "q" on a separate line.(úç³
+D
+java:S1121Ó".Extract the assignment out of this expression.(Îî0
+z
+java:S1845ª"^Rename field "CTL" to prevent any misunderstanding/clash with field "ctl" defined on line 611.(ö‹±Ûùÿÿÿÿ
+i
+java:S3776¸"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Îæã±
+;
+java:S1659í"Declare "t" on a separate line.(²”õİúÿÿÿÿ
+\
+java:S2184Ì"@Cast one of the operands of this addition operation to a "long".(û·›Üıÿÿÿÿ

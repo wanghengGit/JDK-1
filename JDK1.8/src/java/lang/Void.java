@@ -32,6 +32,8 @@ package java.lang;
  *
  * @author  unascribed
  * @since   JDK1.1
+ * @author kit
+ * @date 20200819
  */
 public final
 class Void {

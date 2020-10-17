@@ -1,0 +1,50 @@
+
+M
+java:S1874Š"1Remove this use of "Timestamp"; it is deprecated.(›ŠøÕøÿÿÿÿ
+`
+java:S3358â"DExtract this nested ternary operation into an independent statement.(±“Ì†şÿÿÿÿ
+Q
+java:S1128"6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñşÿÿÿÿ
+g	java:S117±"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÁÃ­
+R	java:S125ş"<This block of commented-out lines of code should be removed.( úÍ“
+g	java:S117¯"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ö»
+K
+java:S1133Z"5Do not forget to remove this deprecated code someday.(ùçñ×
+X
+java:S1854Á"ARemove this useless assignment to local variable "delimiterDate".(˜ã™’
+N
+java:S1481Â"2Remove this unused "delimiterTime" local variable.(û÷±¶úÿÿÿÿ
+Q
+java:S1161’":Add the "@Override" annotation above this method signature(…ó¶
+l	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÚÒ¶ùÿÿÿÿ
+g	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖşÌë
+‚
+java:S2178ò"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(óàäËøÿÿÿÿ
+Q
+java:S1161–":Add the "@Override" annotation above this method signature(Á»›ê
+{
+java:S1149§"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(îÖöèúÿÿÿÿ
+}
+java:S2178÷"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(Ê’ìÄ
+V
+java:S1161":Add the "@Override" annotation above this method signature(ãû§Áÿÿÿÿÿ
+^
+java:S1123Y"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+S
+java:S4351ß"<Refactor this method so that its argument is of type 'Date'.(í½ÁÎ
+I
+java:S1481Á"2Remove this unused "delimiterDate" local variable.(˜ã™’
+]
+java:S1854Â"ARemove this useless assignment to local variable "delimiterTime".(û÷±¶úÿÿÿÿ
+X
+java:S1126–"AReplace this if-then-else statement by a single return statement.(ˆØÜú
+i
+java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Á»›ê
+P
+java:S1161û":Add the "@Override" annotation above this method signature(úğôD
+i
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(ÕİÔô
+5
+java:S2178ò"Correct this "&" to "&&".(óàäËøÿÿÿÿ
+V
+java:S1161²":Add the "@Override" annotation above this method signature(óÛ„ôüÿÿÿÿ

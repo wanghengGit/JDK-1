@@ -1,0 +1,83 @@
+
+p
+java:S2293š"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥òËø
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ä³³µıÿÿÿÿ
+;
+java:S1659¡"Declare "b" on a separate line.(âà¨¬şÿÿÿÿ
+Q
+java:S1161­":Add the "@Override" annotation above this method signature(ãáö’
+G
+java:S2160§"+Override the "equals" method in this class.(À¾İ—ùÿÿÿÿ
+Q
+java:S1161Î":Add the "@Override" annotation above this method signature(êÁ•
+E
+java:S1121ù".Extract the assignment out of this expression.(™ï›
+V
+java:S1161§":Add the "@Override" annotation above this method signature(Ë’ñÿÿÿÿÿ
+V
+java:S1161Ğ":Add the "@Override" annotation above this method signature(çÇâØıÿÿÿÿ
+Q
+java:S1161Õ":Add the "@Override" annotation above this method signature(¨”Õı
+j
+java:S2272î"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¡Éº”úÿÿÿÿ
+Q
+java:S1161ş":Add the "@Override" annotation above this method signature(ÍùîÑ
+p
+java:S2293“"YReplace the type specification in this constructor call with the diamond operator ("<>").(Œš¿ı
+`
+java:S2583«"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ
+J
+java:S1121Ë".Extract the assignment out of this expression.(À”¤Öşÿÿÿÿ
+V
+java:S1161¥":Add the "@Override" annotation above this method signature(ÂìÎ‚øÿÿÿÿ
+P
+java:S1161¯":Add the "@Override" annotation above this method signature(‡æ­$
+`
+java:S2583²"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ
+j
+java:S2272ä"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(ûô¦çùÿÿÿÿ
+:
+java:S1659Å"#Declare "after" on a separate line.(ŒÉïá
+J
+java:S1121š".Extract the assignment out of this expression.(¤Ïİ…şÿÿÿÿ
+V
+java:S1161’":Add the "@Override" annotation above this method signature(À÷ÿ¹ıÿÿÿÿ
+`
+java:S2583µ"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ
+Q
+java:S1161Š":Add the "@Override" annotation above this method signature(ºŒ¬Å
+V
+java:S1161¬":Add the "@Override" annotation above this method signature(•î’üÿÿÿÿ
+Q
+java:S1161˜":Add the "@Override" annotation above this method signature(ß™Í
+;
+java:S1659¡"Declare "a" on a separate line.(âà¨¬şÿÿÿÿ
+V
+java:S1161µ":Add the "@Override" annotation above this method signature(Şà¿‚ıÿÿÿÿ
+V
+java:S1161Ÿ":Add the "@Override" annotation above this method signature(Œ‚¤¡ùÿÿÿÿ
+V
+java:S1161Ô":Add the "@Override" annotation above this method signature(àà…åúÿÿÿÿ
+V
+java:S1161Ù":Add the "@Override" annotation above this method signature(Îå®åıÿÿÿÿ
+e
+java:S2272é"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(èçÅø
+V
+java:S1161Ç":Add the "@Override" annotation above this method signature(àœçœıÿÿÿÿ
+`
+java:S2583ß"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ
+;
+java:S1659¹"Declare "b" on a separate line.(âà¨¬şÿÿÿÿ
+u
+java:S2293…"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨ÚúÙüÿÿÿÿ
+;
+java:S1659¹"Declare "a" on a separate line.(âà¨¬şÿÿÿÿ
+`
+java:S2583"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ
+Q
+java:S1161ƒ":Add the "@Override" annotation above this method signature(şê²¦
+Q
+java:S1161˜":Add the "@Override" annotation above this method signature(æ™ƒ
+Q
+java:S1161“":Add the "@Override" annotation above this method signature(ÛÆëô

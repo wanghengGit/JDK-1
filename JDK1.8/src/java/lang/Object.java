@@ -38,6 +38,7 @@ public class Object {
      * @return  a hash code value for this object.
      * @see     java.lang.Object#equals(java.lang.Object)
      * @see     java.lang.System#identityHashCode
+     * hashCode 默认返回对象在JVM中的存储地址
      */
     public native int hashCode();
 

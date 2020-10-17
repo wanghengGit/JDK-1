@@ -1,0 +1,39 @@
+
+E
+java:S1121å".Extract the assignment out of this expression.(£áÃ½
+t
+java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(Å¥¢®ıÿÿÿÿ
+`	java:S112i"FDefine and throw a dedicated exception instead of using a generic one.(úæœùÿÿÿÿ
+a	java:S112ö"FDefine and throw a dedicated exception instead of using a generic one.(úæœùÿÿÿÿ
+D
+java:S1172W")Remove this unused method parameter "cs".(¤ğşÒøÿÿÿÿ
+D
+java:S1172M")Remove this unused method parameter "cs".(Ê„üüÿÿÿÿ
+R	java:S125Ô"<This block of commented-out lines of code should be removed.(É¨Ëİ
+3
+java:S5164;"Call "remove()" on "encoder".(Û±
+g
+java:S1192¶"KDefine a constant instead of duplicating this literal "ISO-8859-1" 4 times.(ôŠÊ‘ÿÿÿÿÿ
+`
+java:S11249"EReorder the modifiers to comply with the Java Language Specification.(Ú¥£¸úÿÿÿÿ
+[
+java:S1124;"EReorder the modifiers to comply with the Java Language Specification.(Û±
+=
+java:S1168“"&Return an empty array instead of null.(¥¹ï
+P
+java:S1191)"5Use classes from the Java API instead of Sun classes.(âÏ¡§ûÿÿÿÿ
+F
+java:S1066Ş"/Merge this if statement with the enclosing one.(£áÃ½
+E
+java:S1121Ş".Extract the assignment out of this expression.(£áÃ½
+=
+java:S1168"&Return an empty array instead of null.(¥¹ï
+?	java:S108Õ")Either remove or fill this block of code.(ˆÿò
+F
+java:S1066å"/Merge this if statement with the enclosing one.(£áÃ½
+a	java:S112Â"FDefine and throw a dedicated exception instead of using a generic one.(úæœùÿÿÿÿ
+a	java:S112«"FDefine and throw a dedicated exception instead of using a generic one.(úæœùÿÿÿÿ
+8
+java:S51649"Call "remove()" on "decoder".(Ú¥£¸úÿÿÿÿ
+?	java:S108¾")Either remove or fill this block of code.(ˆÿò
+a	java:S112û"FDefine and throw a dedicated exception instead of using a generic one.(úæœùÿÿÿÿ

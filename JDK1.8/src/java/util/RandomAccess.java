@@ -63,6 +63,9 @@ package java.util;
  * Java Collections Framework</a>.
  *
  * @since 1.4
+ * @author kit
+ * @date 20200730
+ *用来快速随机存取
  */
 public interface RandomAccess {
 }

@@ -45,6 +45,8 @@ import java.util.function.Supplier;
  * {@code OptionalLong} may have unpredictable results and should be avoided.
  *
  * @since 1.8
+ * @date 20200816
+ * @author kit
  */
 public final class OptionalLong {
     /**

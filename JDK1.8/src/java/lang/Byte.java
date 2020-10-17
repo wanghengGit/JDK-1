@@ -41,6 +41,7 @@ package java.lang;
  * @see     java.lang.Number
  * @since   JDK1.1
  * @date 20200628
+ * @author kit
  */
 public final class Byte extends Number implements Comparable<Byte> {
 

@@ -100,6 +100,8 @@ import java.util.function.ToLongFunction;
  * }</pre>
  *
  * @since 1.8
+ * @author kit
+ * @date 20200825
  */
 public final class Collectors {
 
@@ -799,6 +801,7 @@ public final class Collectors {
      * @see #groupingBy(Function, Collector)
      * @see #groupingBy(Function, Supplier, Collector)
      * @see #groupingByConcurrent(Function)
+     * 集合分组（常用）
      */
     public static <T, K> Collector<T, ?, Map<K, List<T>>>
     groupingBy(Function<? super T, ? extends K> classifier) {

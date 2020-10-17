@@ -103,6 +103,7 @@ abstract class AbstractStringBuilder implements Appendable, CharSequence {
                 throw new OutOfMemoryError();
             newCapacity = Integer.MAX_VALUE;
         }
+        //复制指定的数组，复制具有指定的长度。也就是说 ensureCapacityInternal()方法其实是重新复制了一个新数组，将长度扩大成传入的参数长度，并重新赋值给value
         value = Arrays.copyOf(value, newCapacity);
     }
 

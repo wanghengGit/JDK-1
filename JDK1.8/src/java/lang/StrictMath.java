@@ -75,6 +75,8 @@ import sun.misc.DoubleConsts;
  * @author  unascribed
  * @author  Joseph D. Darcy
  * @since   1.3
+ * @author kit
+ * @date 20200824
  */
 
 public final class StrictMath {

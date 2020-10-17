@@ -81,6 +81,8 @@ import java.util.concurrent.Executor;
  * @see ResultSet
  * @see DatabaseMetaData
  * @date 20200328
+ * @author kit
+ * 数据库连接
  */
 public interface Connection  extends Wrapper, AutoCloseable {
 

@@ -193,6 +193,8 @@ import java.util.function.Supplier;
  *            hidden as an implementation detail)
  * @param <R> the result type of the reduction operation
  * @since 1.8
+ * @author kit
+ * @date 20200825
  */
 public interface Collector<T, A, R> {
     /**

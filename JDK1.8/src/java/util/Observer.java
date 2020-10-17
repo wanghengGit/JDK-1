@@ -31,6 +31,8 @@ package java.util;
  * @author  Chris Warth
  * @see     java.util.Observable
  * @since   JDK1.0
+ * @author kit
+ * @date 20200816
  */
 public interface Observer {
     /**

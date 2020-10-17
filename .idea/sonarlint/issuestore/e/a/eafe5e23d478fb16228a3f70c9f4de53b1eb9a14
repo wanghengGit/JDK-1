@@ -1,0 +1,27 @@
+
+P
+java:S1191-"5Use classes from the Java API instead of Sun classes.(°¿”Œúÿÿÿÿ
+d
+java:S1192ˆ"NDefine a constant instead of duplicating this literal "user.timezone" 3 times.(ÚÂªO
+l	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¶Üöÿÿÿÿÿ
+l	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çâæ×ùÿÿÿÿ
+f	java:S117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÑ×z
+>
+java:S1604ª"(Make this anonymous inner class a lambda(ÆŞÖ
+s
+java:S3077û"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(¨÷Äüÿÿÿÿ
+s
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(‰èã‚ùÿÿÿÿ
+c	java:S116ú"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ŞÒï
+a
+java:S1124†"EReorder the modifiers to comply with the Java Language Specification.(‰Ğ–¥üÿÿÿÿ
+\
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¾Ú‰“
+a
+java:S1124÷"EReorder the modifiers to comply with the Java Language Specification.(Êö–”üÿÿÿÿ
+o
+java:S2975à"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(¯ÔÚ“ùÿÿÿÿ
+n
+java:S3776‹"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(Ö°¨Šÿÿÿÿÿ
+P
+java:S1144£"4Remove this unused private "getDisplayNames" method.(¥‹¸Ìøÿÿÿÿ

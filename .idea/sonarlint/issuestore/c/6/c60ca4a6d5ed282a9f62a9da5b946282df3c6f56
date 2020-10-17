@@ -1,29 +1,29 @@
 
-P
-java:S1191"5Use classes from the Java API instead of Sun classes.(Œé¡¬úÿÿÿÿ
-m
-java:S1192›"QDefine a constant instead of duplicating this literal "integer overflow" 7 times.(ıœĞøÿÿÿÿ
-e
-java:S1192®"NDefine a constant instead of duplicating this literal "long overflow" 6 times.(¢™©
+T
+java:S1854İ"=Remove this useless assignment to local variable "exp_delta".(ş³ïä
+D
+java:S4274‡"(Replace this assert with a proper check.(ëæô™ùÿÿÿÿ
 F
 java:S1066ÿ"/Merge this if statement with the enclosing one.(´È‹«
-l	java:S117Û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Úœ§ûÿÿÿÿ
-g	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±šÙ„
 g	java:S117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş³ïä
+e
+java:S1192®"NDefine a constant instead of duplicating this literal "long overflow" 6 times.(¢™©
 `
 java:S2583"DChange this condition so that it does not always evaluate to "false"(›İúÿÿÿÿÿ
-`
-java:S2583§"DChange this condition so that it does not always evaluate to "false"(›İúÿÿÿÿÿ
-`
-java:S2583İ"DChange this condition so that it does not always evaluate to "false"(›İúÿÿÿÿÿ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(Œé¡¬úÿÿÿÿ
+g	java:S117Ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±šÙ„
+l	java:S117Û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Úœ§ûÿÿÿÿ
 `
 java:S2583÷"DChange this condition so that it does not always evaluate to "false"(›İúÿÿÿÿÿ
+D
+java:S4274ê"(Replace this assert with a proper check.(ëæô™ùÿÿÿÿ
+`
+java:S2583İ"DChange this condition so that it does not always evaluate to "false"(›İúÿÿÿÿÿ
+m
+java:S1192›"QDefine a constant instead of duplicating this literal "integer overflow" 7 times.(ıœĞøÿÿÿÿ
 u
 java:S1488ø"YImmediately return this expression instead of assigning it to the temporary variable "r".(øğÀÒüÿÿÿÿ
 h	java:S100y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥üÉúÿÿÿÿ
-D
-java:S4274‡"(Replace this assert with a proper check.(ëæô™ùÿÿÿÿ
-D
-java:S4274ê"(Replace this assert with a proper check.(ëæô™ùÿÿÿÿ
-T
-java:S1854İ"=Remove this useless assignment to local variable "exp_delta".(ş³ïä
+`
+java:S2583§"DChange this condition so that it does not always evaluate to "false"(›İúÿÿÿÿÿ

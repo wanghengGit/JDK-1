@@ -1,0 +1,369 @@
+
+q
+java:S2272İ"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(¡Éº”úÿÿÿÿ8Ûºßô¹.
+u	java:S127Æ"XRefactor the code in order to not assign to this loop counter from within the loop body.(šåÅ­8Ûºßô¹.
+Q
+java:S1121û".Extract the assignment out of this expression.(áÒî…ùÿÿÿÿ8Ûºßô¹.
+Q
+java:S1121Ä".Extract the assignment out of this expression.(áÒî…ùÿÿÿÿ8Ûºßô¹.
+z	java:S127–"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÕÌŞùÿÿÿÿ8Ûºßô¹.
+z	java:S127¬"XRefactor the code in order to not assign to this loop counter from within the loop body.(òŒöÿÿÿÿÿ8Ûºßô¹.
+B
+java:S1659ô"Declare "n" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+C
+java:S1659–" Declare "ph" on a separate line.(Î’­ùÿÿÿÿ8Ûºßô¹.
+=
+java:S1659ƒ" Declare "rl" on a separate line.(ÇÛîJ8Ûºßô¹.
+u
+java:S3776Å"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(«›ğñÿÿÿÿÿ8Ûºßô¹.
+:
+java:S1659"#Declare "first" on a separate line.(íµÛ
+;
+java:S1659È"Declare "k" on a separate line.(Í¶­øÿÿÿÿ
+X
+java:S1161´":Add the "@Override" annotation above this method signature(ß™Í8Ûºßô¹.
+L
+java:S1121®".Extract the assignment out of this expression.(Ê–á¨8Ûºßô¹.
+I
+java:S1121~".Extract the assignment out of this expression.(£ëÜüÿÿÿÿ
+B
+java:S1659"Declare "e" on a separate line.(ŸİÊ×ıÿÿÿÿ8Ûºßô¹.
+u
+java:S3776¹"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(²‘šÂÿÿÿÿÿ8Ûºßô¹.
+n
+java:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(„ëÊ’úÿÿÿÿ
+B
+java:S1659¾"Declare "i" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+>
+java:S1659—	" Declare "mc" on a separate line.(¯ŸÎ8Ûºßô¹.
+z	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(òæ®úÿÿÿÿ8Ñ‡ô¹.
+A
+java:S1659Ò"#Declare "index" on a separate line.(¬‘œù8Ûºßô¹.
+D
+java:S1659Ø	"!Declare "mid" on a separate line.(Ö£¶ìÿÿÿÿÿ8Ûºßô¹.
+p
+java:S3776Ş	"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ğ¸¯¡8Ûºßô¹.
+u	java:S127¢"XRefactor the code in order to not assign to this loop counter from within the loop body.(§Õîª8Ûºßô¹.
+Q
+java:S1121ú".Extract the assignment out of this expression.(áÒî…ùÿÿÿÿ8Ûºßô¹.
+?
+java:S1659ƒ""Declare "root" on a separate line.(ÇÛîJ8Ûºßô¹.
+>
+java:S1659¦
+" Declare "mc" on a separate line.(¯ŸÎ8Ûºßô¹.
+g
+java:S2583¾"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ8Ûºßô¹.
+6
+java:S1659¼"Declare "n" on a separate line.(œ¶Ö
+u
+java:S3776î"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(ô†úûøÿÿÿÿ8Ûºßô¹.
+C
+java:S1659¶" Declare "tl" on a separate line.(¾Õ”Ìûÿÿÿÿ8Ûºßô¹.
+Q
+java:S1121Ÿ".Extract the assignment out of this expression.(ÌÉÒÃüÿÿÿÿ8Ñ‡ô¹.
+A
+java:S1659"#Declare "index" on a separate line.(¹Ùô8Ûºßô¹.
+u	java:S127Ç"XRefactor the code in order to not assign to this loop counter from within the loop body.(Õ‘‹­8Ñ‡ô¹.
+p
+java:S3776ï"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(í°8Ûºßô¹.
+X
+java:S1161Ş	":Add the "@Override" annotation above this method signature(ğ¸¯¡8Ûºßô¹.
+I
+java:S1121p".Extract the assignment out of this expression.(È½šÍúÿÿÿÿ
+>
+java:S1659Ó" Declare "pk" on a separate line.(Ê¿æ‘8Ûºßô¹.
+u
+java:S3776‹"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(·ÊƒÒüÿÿÿÿ8Ûºßô¹.
+L
+java:S1121".Extract the assignment out of this expression.(ø°¼ˆ8Ûºßô¹.
+L
+java:S1121Ï".Extract the assignment out of this expression.(€¬¡‘8Ûºßô¹.
+=
+java:S1659”" Declare "pl" on a separate line.(·¬óx8Ûºßô¹.
+u	java:S127€"XRefactor the code in order to not assign to this loop counter from within the loop body.(å˜’á8Ûºßô¹.
+C
+java:S1659Ø	" Declare "lo" on a separate line.(Ö£¶ìÿÿÿÿÿ8Ûºßô¹.
+L
+java:S1121—".Extract the assignment out of this expression.(«µêö8Ûºßô¹.
+F
+java:S1659”")Declare "replacement" on a separate line.(·¬óx8Ûºßô¹.
+:
+java:S1659y"Declare "p" on a separate line.(ĞµÃĞüÿÿÿÿ
+Q
+java:S1121".Extract the assignment out of this expression.(˜ö–ğøÿÿÿÿ8Ûºßô¹.
+v
+java:S3776ó"SRefactor this method to reduce its Cognitive Complexity from 128 to the 15 allowed.(Öú“¡ıÿÿÿÿ8Ûºßô¹.
+z	java:S127Ä"XRefactor the code in order to not assign to this loop counter from within the loop body.(‘–Ø‚úÿÿÿÿ8Ûºßô¹.
+g
+java:S2583³"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ8Ûºßô¹.
+¤
+java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿û»Ïÿÿÿÿÿ8Ûºßô¹.
+6
+java:S1659¼"Declare "i" on a separate line.(œ¶Ö
+L
+java:S1121¡
+".Extract the assignment out of this expression.(¸Û‚Ï8Ûºßô¹.
+B
+java:S1659õ"Declare "i" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+L
+java:S1121¾".Extract the assignment out of this expression.(Ñ‡‹à8Ûºßô¹.
+g
+java:S2583Ä"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ8Ûºßô¹.
+L
+java:S1121Ú	".Extract the assignment out of this expression.(ÿà°‡8Ûºßô¹.
+D
+java:S1659	"!Declare "mid" on a separate line.(Ö£¶ìÿÿÿÿÿ8Ûºßô¹.
+X
+java:S1161‚":Add the "@Override" annotation above this method signature(¨”Õı8Ñ‡ô¹.
+=
+java:S1659ÿ"Declare "k" on a separate line.(±Œ÷Ö8Ûºßô¹.
+C
+java:S1659Ó" Declare "tr" on a separate line.(‹ç¯Åûÿÿÿÿ8Ûºßô¹.
+u	java:S127å"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Ê²û8Ûºßô¹.
+G
+java:S1659ª"$Declare "loTail" on a separate line.(œ¸ë•şÿÿÿÿ8Ûºßô¹.
+>
+java:S1659¬" Declare "lr" on a separate line.(Ú»Òâ8Ûºßô¹.
+D
+java:S1659Ÿ
+"!Declare "mid" on a separate line.(Ö£¶ìÿÿÿÿÿ8Ûºßô¹.
+u	java:S127Ğ"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Ê²û8Ûºßô¹.
+z	java:S127…"XRefactor the code in order to not assign to this loop counter from within the loop body.(è„àÿùÿÿÿÿ8Ûºßô¹.
+g
+java:S2583"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ8Ûºßô¹.
+Q
+java:S1121Õ".Extract the assignment out of this expression.(Ñ¸µşÿÿÿÿ8Ñ‡ô¹.
+l
+java:S2272Ø"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(èçÅø8Ûºßô¹.
+L
+java:S1121ú".Extract the assignment out of this expression.(òææÿ8Ûºßô¹.
+L
+java:S1905")Remove this unnecessary cast to "Node[]".(Øª¬ûÿÿÿÿ8Ûºßô¹.
+p
+java:S3776æ"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(‹úíŸ8Ûºßô¹.
+B
+java:S1659õ"Declare "n" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+]
+java:S1161å":Add the "@Override" annotation above this method signature(Ë’ñÿÿÿÿÿ8Ûºßô¹.
+g
+java:S3358‹"DExtract this nested ternary operation into an independent statement.(ûá¤óûÿÿÿÿ8Ûºßô¹.
+C
+java:S1659Ô" Declare "pr" on a separate line.(Ï¨õíıÿÿÿÿ8Ñ‡ô¹.
+Q
+java:S1121’	".Extract the assignment out of this expression.(Æ¹°¼şÿÿÿÿ8Ûºßô¹.
+?
+java:S1659Ó"!Declare "dir" on a separate line.(Ê¿æ‘8Ûºßô¹.
+u	java:S127ø"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÁÆ±Ã8Ûºßô¹.
+z	java:S127…"XRefactor the code in order to not assign to this loop counter from within the loop body.(è„àÿùÿÿÿÿ8Ûºßô¹.
+J
+java:S1121¿".Extract the assignment out of this expression.(áÒî…ùÿÿÿÿ
+g
+java:S2583ò"DChange this condition so that it does not always evaluate to "false"(Í¶¬Ñúÿÿÿÿ8Ûºßô¹.
+=
+java:S1659É"Declare "k" on a separate line.(±Œ÷Ö8Ûºßô¹.
+F
+java:S1659ô"#Declare "first" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+A
+java:S2160"+Override the "equals" method in this class.(Ùß“
+F
+java:S1659õ"#Declare "first" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+q
+java:S2272Ó"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(Ûò‡ùÿÿÿÿ8Ûºßô¹.
+=
+java:S1659Ò"Declare "e" on a separate line.(¬‘œù8Ñ‡ô¹.
+u
+java:S2259á"R"NullPointerException" will be thrown when invoking method "compareComparables()".(ª¥è úÿÿÿÿ8Ûºßô¹.
+u	java:S127«"XRefactor the code in order to not assign to this loop counter from within the loop body.(ŸÃÖÀ8Ûºßô¹.
+z	java:S127¼"XRefactor the code in order to not assign to this loop counter from within the loop body.( ³¢Ìşÿÿÿÿ8Ûºßô¹.
+¤
+java:S1186†"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ö¶’ùÿÿÿÿ8Ñ‡ô¹.
+=
+java:S1659€"Declare "k" on a separate line.(±Œ÷Ö8Ûºßô¹.
+p
+java:S3776–	"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(÷ƒµ—8Ûºßô¹.
+o
+java:S3776Ğ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(®¤Ö38Ûºßô¹.
+;
+java:S1659y" Declare "as" on a separate line.(ĞµÃĞüÿÿÿÿ
+L
+java:S1121ş".Extract the assignment out of this expression.(¡ç…8Ûºßô¹.
+B
+java:S1659Ø"Declare "v" on a separate line.(‚òÇàùÿÿÿÿ8Ûºßô¹.
+_
+java:S1126ã"AReplace this if-then-else statement by a single return statement.(Ï¸ÁÖ8Ûºßô¹.
+]
+java:S1161è":Add the "@Override" annotation above this method signature(•î’üÿÿÿÿ8Ûºßô¹.
+<
+java:S1659Ë"Declare "v" on a separate line.(œúÅ!8Ûºßô¹.
+>
+java:S1659¬" Declare "pp" on a separate line.(Ú»Òâ8Ûºßô¹.
+L
+java:S1121¡
+".Extract the assignment out of this expression.(¸Û‚Ï8Ûºßô¹.
+C
+java:S1659š" Declare "rl" on a separate line.(ê¾ˆùûÿÿÿÿ8Ûºßô¹.
+z	java:S127–"XRefactor the code in order to not assign to this loop counter from within the loop body.(ÕÌŞùÿÿÿÿ8Ûºßô¹.
+˜
+java:S1186…"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¥‰‚š
+;
+java:S1659y" Declare "ts" on a separate line.(ĞµÃĞüÿÿÿÿ
+6
+java:S1659"Declare "p" on a separate line.(¹Ùô
+X
+java:S1161±":Add the "@Override" annotation above this method signature(ÛÆëô8Ûºßô¹.
+Q
+java:S1121û".Extract the assignment out of this expression.(ŒÃÖ²øÿÿÿÿ8Ñ‡ô¹.
+z	java:S127¼"XRefactor the code in order to not assign to this loop counter from within the loop body.( ³¢Ìşÿÿÿÿ8Ûºßô¹.
+u
+java:S3776¥
+"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ˆ¶÷ºşÿÿÿÿ8Ûºßô¹.
+L
+java:S1121ı".Extract the assignment out of this expression.(¡ç…8Ûºßô¹.
+u	java:S127â"XRefactor the code in order to not assign to this loop counter from within the loop body.(§Õîª8Ûºßô¹.
+G
+java:S1905’")Remove this unnecessary cast to "Node[]".(êµ¸Ğ8Ûºßô¹.
+z	java:S127Š"XRefactor the code in order to not assign to this loop counter from within the loop body.(½ÆãÛıÿÿÿÿ8Ûºßô¹.
+G
+java:S1659«"$Declare "hiTail" on a separate line.(¡×üÊûÿÿÿÿ8Ñ‡ô¹.
+B
+java:S1659¾"Declare "n" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+>
+java:S1659Ë" Declare "pk" on a separate line.(Ç€Ñ˜8Ûºßô¹.
+6
+java:S1659"Declare "n" on a separate line.(íµÛ
+z	java:S127®"XRefactor the code in order to not assign to this loop counter from within the loop body.(É„”Ÿüÿÿÿÿ8Ûºßô¹.
+C
+java:S1659Ö" Declare "tl" on a separate line.(Àùù¤üÿÿÿÿ8Ûºßô¹.
+I
+java:S1659¨"&Declare "oldValue" on a separate line.(½öŒìÿÿÿÿÿ8Ûºßô¹.
+u
+java:S3776ı"RRefactor this method to reduce its Cognitive Complexity from 55 to the 15 allowed.(à‡Œİûÿÿÿÿ8Ûºßô¹.
+I
+java:S1121".Extract the assignment out of this expression.(åˆ»·ùÿÿÿÿ
+>
+java:S1659°" Declare "sr" on a separate line.(ã•±û8Ûºßô¹.
+K	java:S108¿")Either remove or fill this block of code.(ÃâÕ—şÿÿÿÿ8Ûºßô¹.
+q
+java:S2975Ô"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(²ÈŞ8Ûºßô¹.
+Q
+java:S1121œ".Extract the assignment out of this expression.(»ëñûÿÿÿÿ8Ûºßô¹.
+>
+java:S1659¦
+" Declare "hi" on a separate line.(¯ŸÎ8Ûºßô¹.
+C
+java:S1659ë" Declare "hc" on a separate line.(…ÃÁüÿÿÿÿ8Ñ‡ô¹.
+L
+java:S1121Ú	".Extract the assignment out of this expression.(ÿà°‡8Ûºßô¹.
+u	java:S127Ğ"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Ê²û8Ûºßô¹.
+G
+java:S1125À")Remove the literal "false" boolean value.(›Ó·Î8Ûºßô¹.
+G
+java:S1125š")Remove the literal "false" boolean value.(°™à8Ûºßô¹.
+Q
+java:S1121Å".Extract the assignment out of this expression.(ŒÃÖ²øÿÿÿÿ8¥‚ßô¹.
+i
+java:S3776º"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(Ó‹ÕÔ
+C
+java:S1659š" Declare "pp" on a separate line.(ê¾ˆùûÿÿÿÿ8Ûºßô¹.
+A
+java:S1659ü"$Declare "newThr" on a separate line.(üñ­8ı–‡ô¹.
+>
+java:S1659ß	" Declare "hi" on a separate line.(¯ŸÎ8Ûºßô¹.
+>
+java:S1659Ë" Declare "ph" on a separate line.(Ç€Ñ˜8Ûºßô¹.
+]
+java:S1161¤":Add the "@Override" annotation above this method signature(Ÿà¯±ûÿÿÿÿ8Ûºßô¹.
+=
+java:S1659"Declare "n" on a separate line.(¹Ùô8Ûºßô¹.
+L
+java:S1121°".Extract the assignment out of this expression.(ğÃÜê8Ûºßô¹.
+C
+java:S1659	" Declare "lo" on a separate line.(Ö£¶ìÿÿÿÿÿ8Ûºßô¹.
+C
+java:S1659Ô" Declare "tn" on a separate line.(ÂİÅ‡úÿÿÿÿ8Ñ‡ô¹.
+Q
+java:S1121ü".Extract the assignment out of this expression.(ŒÃÖ²øÿÿÿÿ8Ñ‡ô¹.
+@
+java:S1659„""Declare "pred" on a separate line.(İÑà½8Ñ‡ô¹.
+o
+java:S3776Ò"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ÉêŸ*8Ûºßô¹.
+J
+java:S1121Ã".Extract the assignment out of this expression.(û›µüÿÿÿÿ
+B
+java:S1659Ô"Declare "q" on a separate line.(Ï¨õíıÿÿÿÿ8Ñ‡ô¹.
+C
+java:S1659Ô" Declare "tb" on a separate line.(ÂİÅ‡úÿÿÿÿ8Ñ‡ô¹.
+p
+java:S3776‡"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(íºı˜8Ûºßô¹.
+u	java:S127å"XRefactor the code in order to not assign to this loop counter from within the loop body.(¿Ê²û8Ûºßô¹.
+B
+java:S1659"Declare "k" on a separate line.(ŸİÊ×ıÿÿÿÿ8Ûºßô¹.
+z	java:S127À"XRefactor the code in order to not assign to this loop counter from within the loop body.(û©¡ÿúÿÿÿÿ8Ûºßô¹.
+6
+java:S1659"Declare "e" on a separate line.(íµÛ
+`
+java:S3358Ÿ"DExtract this nested ternary operation into an independent statement.(†ÁŸüÿÿÿÿ
+:
+java:S1659y"Declare "t" on a separate line.(ĞµÃĞüÿÿÿÿ
+n
+java:S3776õ"RRefactor this method to reduce its Cognitive Complexity from 62 to the 15 allowed.(—âúÿÿÿÿ
+F
+java:S1659¾"#Declare "first" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+B
+java:S1659é"$Declare "loTail" on a separate line.(¶í ³8Ûºßô¹.
+=
+java:S1659”" Declare "pr" on a separate line.(·¬óx8Ûºßô¹.
+;
+java:S1659ê"$Declare "hiTail" on a separate line.(‚™½Ñ
+b
+java:S3358å"DExtract this nested ternary operation into an independent statement.(Œúèë8Ûºßô¹.
+>
+java:S1659ß	" Declare "mc" on a separate line.(¯ŸÎ8Ûºßô¹.
+B
+java:S1659"Declare "v" on a separate line.(ŸİÊ×ıÿÿÿÿ8Ûºßô¹.
+L
+java:S1121Ú".Extract the assignment out of this expression.(Áã‚­8Ûºßô¹.
+]
+java:S1161":Add the "@Override" annotation above this method signature(àà…åúÿÿÿÿ8Ûºßô¹.
+6
+java:S1659¼"Declare "p" on a separate line.(œ¶Ö
+o	java:S135Ô"YReduce the total number of break and continue statements in this loop to use at most one.(ÒŸƒİ
+u	java:S127«"XRefactor the code in order to not assign to this loop counter from within the loop body.(ŸÃÖÀ8Ûºßô¹.
+W
+java:S1161ÿ":Add the "@Override" annotation above this method signature(àÍèt8Ûºßô¹.
+>
+java:S1659—	" Declare "hi" on a separate line.(¯ŸÎ8Ûºßô¹.
+]
+java:S1161…":Add the "@Override" annotation above this method signature(Îå®åıÿÿÿÿ8Ûºßô¹.
+Q
+java:S1121ä".Extract the assignment out of this expression.(ùõ©‡ûÿÿÿÿ8Ûºßô¹.
+K	java:S108¯")Either remove or fill this block of code.(ÃâÕ—şÿÿÿÿ8Ûºßô¹.
+]
+java:S1161¥
+":Add the "@Override" annotation above this method signature(ˆ¶÷ºşÿÿÿÿ8Ûºßô¹.
+C
+java:S1659Ó" Declare "tl" on a separate line.(‹ç¯Åûÿÿÿÿ8Ûºßô¹.
+C
+java:S1659–" Declare "sl" on a separate line.(‰ñÈİúÿÿÿÿ8Ûºßô¹.
+L
+java:S1121Ç".Extract the assignment out of this expression.(¡ç…8Ûºßô¹.
+6
+java:S1659"Declare "k" on a separate line.(íµÛ
+u
+java:S3776¼"RRefactor this method to reduce its Cognitive Complexity from 54 to the 15 allowed.(”Ñ¯Âşÿÿÿÿ8Ûºßô¹.
+>
+java:S1659Š" Declare "sr" on a separate line.(ñÁ™8Ûºßô¹.
+Q
+java:S1121’	".Extract the assignment out of this expression.(Æ¹°¼şÿÿÿÿ8Ûºßô¹.
+Q
+java:S1121±".Extract the assignment out of this expression.(Ùÿ÷°øÿÿÿÿ8Ñ‡ô¹.
+X
+java:S1161–	":Add the "@Override" annotation above this method signature(÷ƒµ—8Ûºßô¹.
+C
+java:S1659Ÿ
+" Declare "lo" on a separate line.(Ö£¶ìÿÿÿÿÿ8Ûºßô¹.
+C
+java:S1659Ö" Declare "ch" on a separate line.(©ß¹‰øÿÿÿÿ8Ûºßô¹.
+B
+java:S1659ô"Declare "i" on a separate line.(ºÏåÒùÿÿÿÿ8Ûºßô¹.
+z	java:S127í"XRefactor the code in order to not assign to this loop counter from within the loop body.(™¦ÀŸøÿÿÿÿ8Ûºßô¹.

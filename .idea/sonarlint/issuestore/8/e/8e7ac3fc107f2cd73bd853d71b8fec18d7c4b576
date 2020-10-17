@@ -1,51 +1,51 @@
 
-n
-java:S3776ä"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(©úïæúÿÿÿÿ
-W
-java:S1117æ"@Rename "implVersion" which hides the field declared at line 640.(Åâ‡Õ
-Q
-java:S1128 "6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñşÿÿÿÿ
-P
-java:S11913"5Use classes from the Java API instead of Sun classes.(Ô¯›øıÿÿÿÿ
-U
-java:S1128#":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
-L
-java:S2065ƒ"0Remove the "transient" modifier from this field.(Ùş´Ûüÿÿÿÿ
-D
-java:S1604»"(Make this anonymous inner class a lambda(˜ëïÿÿÿÿÿ
-6
-java:S2112Ë"Use the URI class instead.( “ÃÍøÿÿÿÿ
-Y
-java:S1117è"=Rename "sealBase" which hides the field declared at line 642.(Ş›«ùÿÿÿÿ
-V
-java:S1117ä"?Rename "specVendor" which hides the field declared at line 638.(©²²ú
 H
 java:S1128"2Remove this unused import 'java.util.Enumeration'.(»îÜ®
+R
+java:S1128."7Remove this unused import 'java.util.jar.JarException'.(®âÏºûÿÿÿÿ
+D
+java:S1604»"(Make this anonymous inner class a lambda(˜ëïÿÿÿÿÿ
+L
+java:S2065ƒ"0Remove the "transient" modifier from this field.(Ùş´Ûüÿÿÿÿ
+Y
+java:S1117è"=Rename "sealBase" which hides the field declared at line 642.(Ş›«ùÿÿÿÿ
+\	java:S107È"AConstructor has 9 parameters, which is greater than 7 authorized.(Şò‘‡øÿÿÿÿ
+P
+java:S11913"5Use classes from the Java API instead of Sun classes.(Ô¯›øıÿÿÿÿ
+6
+java:S2112Ë"Use the URI class instead.( “ÃÍøÿÿÿÿ
+U
+java:S1117â">Rename "specTitle" which hides the field declared at line 636.(£Íœå
+a
+java:S1124ƒ"EReorder the modifiers to comply with the Java Language Specification.(Ùş´Ûüÿÿÿÿ
+
+java:S1130å"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ğéĞ™
+W
+java:S1117æ"@Rename "implVersion" which hides the field declared at line 640.(Åâ‡Õ
+F
+java:S2065„"0Remove the "transient" modifier from this field.(ïÏ
+g
+java:S1206Ü"PThis class overrides "hashCode()" and should therefore also override "equals()".(ğÜşŠ
+n
+java:S3776ä"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(©úïæúÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º
+Z
+java:S1117å">Rename "implTitle" which hides the field declared at line 639.(¤Å¦ôÿÿÿÿÿ
+U
+java:S1128#":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
+V
+java:S1117ä"?Rename "specVendor" which hides the field declared at line 638.(©²²ú
+[
+java:S1117ç"?Rename "implVendor" which hides the field declared at line 641.(ƒê¾Åùÿÿÿÿ
+Y
+java:S2094û"BRemove this empty class, write its code or make it an "interface".(ó‚…Ñ
+W
+java:S1117ã"@Rename "specVersion" which hides the field declared at line 637.(—ÎĞƒ
 ?	java:S108Å")Either remove or fill this block of code.(à®¿­
 E
 java:S11281"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ
-F
-java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º
-
-java:S1130å"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ğéĞ™
-Z
-java:S1117å">Rename "implTitle" which hides the field declared at line 639.(¤Å¦ôÿÿÿÿÿ
-R
-java:S1128."7Remove this unused import 'java.util.jar.JarException'.(®âÏºûÿÿÿÿ
-F
-java:S2065„"0Remove the "transient" modifier from this field.(ïÏ
-[
-java:S1117ç"?Rename "implVendor" which hides the field declared at line 641.(ƒê¾Åùÿÿÿÿ
-\	java:S107È"AConstructor has 9 parameters, which is greater than 7 authorized.(Şò‘‡øÿÿÿÿ
-U
-java:S1117â">Rename "specTitle" which hides the field declared at line 636.(£Íœå
-W
-java:S1117ã"@Rename "specVersion" which hides the field declared at line 637.(—ÎĞƒ
-Y
-java:S2094û"BRemove this empty class, write its code or make it an "interface".(ó‚…Ñ
+Q
+java:S1128 "6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñşÿÿÿÿ
 i
 java:S3776ß"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(‘Ø¬
-g
-java:S1206Ü"PThis class overrides "hashCode()" and should therefore also override "equals()".(ğÜşŠ
-a
-java:S1124ƒ"EReorder the modifiers to comply with the Java Language Specification.(Ùş´Ûüÿÿÿÿ

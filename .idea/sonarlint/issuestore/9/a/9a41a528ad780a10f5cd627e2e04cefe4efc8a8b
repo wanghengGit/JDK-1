@@ -1,13 +1,13 @@
 
+=
+java:S1659Ã"&Declare "newValue" on a separate line.(±Í¨û
+V
+java:S1161µ":Add the "@Override" annotation above this method signature(Òğ£şûÿÿÿÿ
 V
 java:S1161õ":Add the "@Override" annotation above this method signature(ï³Ã´ûÿÿÿÿ
 V
-java:S1161µ":Add the "@Override" annotation above this method signature(Òğ£şûÿÿÿÿ
-Q
-java:S1161—":Add the "@Override" annotation above this method signature(·ãŞ
-V
 java:S1161Ô":Add the "@Override" annotation above this method signature(ó·ê°şÿÿÿÿ
-=
-java:S1659Ã"&Declare "newValue" on a separate line.(±Í¨û
 i
 java:S3776¡"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ìÔ÷
+Q
+java:S1161—":Add the "@Override" annotation above this method signature(·ãŞ

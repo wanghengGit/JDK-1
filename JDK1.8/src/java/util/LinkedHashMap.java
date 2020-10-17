@@ -160,6 +160,7 @@ import java.io.IOException;
  * @see     Hashtable
  * @since   1.4
  * @date 20200407
+ * HashMap+LinkedList，即它既使用HashMap操作数据结构，又使用LinkedList维护插入元素的先后顺序
  * 总的来说 LinkedHashMap 其实就是对 HashMap 进行了拓展，使用了双向链表来保证了顺序性。
  * 因为是继承于 HashMap 的，所以一些 HashMap 存在的问题 LinkedHashMap 也会存在，比如不支持并发等
  */
@@ -346,6 +347,7 @@ public class LinkedHashMap<K,V>
      * @throws IllegalArgumentException if the initial capacity is negative
      *         or the load factor is nonpositive
      */
+    // 构造方法1，构造一个指定初始容量和负载因子的、按照插入顺序的LinkedList
     public LinkedHashMap(int initialCapacity, float loadFactor) {
         super(initialCapacity, loadFactor);
         accessOrder = false;

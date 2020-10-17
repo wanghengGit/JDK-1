@@ -1,4 +1,5 @@
 
+J.U.C核心由5大块组成：atomic包、locks包、collections包、tools包（AQS）、executor包（线程池）。
 
 Executor                  ：具体Runnable任务的执行者。
 ExecutorService           ：一个线程池管理者，其实现类有多种，我会介绍一部分。我们能把Runnable,Callable提交到池中让其调度。

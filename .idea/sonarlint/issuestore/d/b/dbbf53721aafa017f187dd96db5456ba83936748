@@ -1,0 +1,20 @@
+
+p
+java:S1192Ë"TDefine a constant instead of duplicating this literal "Unsupported field: " 3 times.(¦Î¡Éıÿÿÿÿ
+W
+java:S2184Ç"@Cast one of the operands of this addition operation to a "long".(Ù¨æé
+E
+java:S1125¡")Remove the literal "false" boolean value.(Æèšçøÿÿÿÿ
+=	java:S131 ""Add a default case to this switch.(¹Ë”Óùÿÿÿÿ
+=	java:S131¿""Add a default case to this switch.(¹Ë”Óùÿÿÿÿ
+t	java:S131Â"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÍÂŠºøÿÿÿÿ
+E
+java:S1125Å")Remove the literal "false" boolean value.(ı´¢úùÿÿÿÿ
+t	java:S131™"YComplete cases by adding the missing enum constants or add a default case to this switch.(¶Ô‡´ÿÿÿÿÿ
+t	java:S131€"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÍÂŠºøÿÿÿÿ
+t	java:S131Õ	"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÍÂŠºøÿÿÿÿ
+o	java:S131Ä"YComplete cases by adding the missing enum constants or add a default case to this switch.(°åÎğ
+@
+java:S1125˜")Remove the literal "false" boolean value.(áıä
+@
+java:S1125²")Remove the literal "false" boolean value.(ÌİÕ•

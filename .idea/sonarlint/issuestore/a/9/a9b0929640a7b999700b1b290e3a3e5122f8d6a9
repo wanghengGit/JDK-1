@@ -1,0 +1,45 @@
+
+P
+java:S1191!"5Use classes from the Java API instead of Sun classes.(«ª§Ûüÿÿÿÿ
+m
+java:S3077["WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ÆÖ€£
+`
+java:S1124q"EReorder the modifiers to comply with the Java Language Specification.(Š½üíüÿÿÿÿ
+A
+java:S1181ã"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+L
+java:S1133"5Do not forget to remove this deprecated code someday.(Ì–ˆ¢
+
+java:S1149¹"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(£‹áøûÿÿÿÿ
+>
+java:S1604Í"(Make this anonymous inner class a lambda(ÆŞÖ
+D
+java:S1604À"(Make this anonymous inner class a lambda(±¾£šıÿÿÿÿ
+Š
+java:S1130"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(¿‡ïÿÿÿÿÿ
+m
+java:S3077Z"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(®û±Æ
+[
+java:S1124]"EReorder the modifiers to comply with the Java Language Specification.(–áøÉ
+[
+java:S1124y"EReorder the modifiers to comply with the Java Language Specification.(©´Á
+Q
+java:S1854±":Remove this useless assignment to local variable "result".(ˆáŒƒ
+h
+java:S3776ş"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(˜ÁS
+b
+java:S1192¾"FDefine a constant instead of duplicating this literal "08001" 3 times.(ÕµŞéüÿÿÿÿ
+_
+java:S1123õ"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Š
+java:S1130å"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(¿‡ïÿÿÿÿÿ
+?
+java:S1125´"(Remove the literal "true" boolean value.(Ô£Ú
+k
+java:S1192¸"ODefine a constant instead of duplicating this literal "    skipping: " 3 times.(‘şúôúÿÿÿÿ
+[
+java:S1124X"EReorder the modifiers to comply with the Java Language Specification.(“ĞŸ§
+Q
+java:S1133ö"5Do not forget to remove this deprecated code someday.(“–Õùøÿÿÿÿ
+_
+java:S1123Œ"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš

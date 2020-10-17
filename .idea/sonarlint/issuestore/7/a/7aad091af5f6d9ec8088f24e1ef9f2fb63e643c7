@@ -1,0 +1,17 @@
+
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(ÓÈŠøÿÿÿÿÿ
+‡
+java:S1192"kDefine a constant instead of duplicating this literal "All subclasses should override this method" 3 times.(Ï±”‘ıÿÿÿÿ
+s
+java:S3077ì"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(†ö‹âşÿÿÿÿ
+[
+java:S1124)"EReorder the modifiers to comply with the Java Language Specification.(±¦ã¥
+|
+java:S1130F"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(²ßôÊ
+{
+java:S1130g"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ñÌı
+
+java:S1130p"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¤ìÉÖşÿÿÿÿ
+C
+java:S1125r"(Remove the literal "true" boolean value.(ô”òåûÿÿÿÿ

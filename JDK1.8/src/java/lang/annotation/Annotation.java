@@ -41,6 +41,7 @@ package java.lang.annotation;
  * @author  Josh Bloch
  * @since   1.5
  * @date 20200628
+ * @author kit
  */
 public interface Annotation {
     /**

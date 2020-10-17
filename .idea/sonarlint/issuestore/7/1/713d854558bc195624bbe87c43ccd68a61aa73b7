@@ -1,0 +1,10 @@
+
+@
+java:S1948ş"$Make "op" transient or serializable.(™ôù¡úÿÿÿÿ
+d	java:S119Ÿ"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(İ—±¸ıÿÿÿÿ
+\
+java:S1124¬"EReorder the modifiers to comply with the Java Language Specification.(Å¼¯À
+d	java:S119ü"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ºØ¡€ıÿÿÿÿ
+\
+java:S2789Ã"@Methods with an "Optional" return type should never return null.(ÍÒ‘ÿÿÿÿÿ
+d	java:S119ü"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(ºØ¡€ıÿÿÿÿ

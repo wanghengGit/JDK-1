@@ -30,6 +30,8 @@ package java.sql;
  * <p>
  * @see SQLType
  * @since 1.8
+ * @author kit
+ * @date 20200816
  */
 public enum JDBCType implements SQLType {
 

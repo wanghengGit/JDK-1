@@ -41,6 +41,8 @@ import java.util.Spliterator;
  * @param <E_IN> the type of input elements
  * @param <R>    the type of the result
  * @since 1.8
+ * @author kit
+ * @date 20200825
  */
 interface TerminalOp<E_IN, R> {
     /**
