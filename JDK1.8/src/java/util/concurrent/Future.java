@@ -8,6 +8,7 @@ package java.util.concurrent;
  * @param <V> The result type returned by this Future's {@code get} method
  *
  * @date 2019/08/14
+ * @date 20200828
  */
 public interface Future<V> {
 

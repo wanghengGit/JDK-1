@@ -69,6 +69,8 @@ import java.util.function.Supplier;
  * @since 1.8
  * @see Stream
  * @see <a href="package-summary.html">java.util.stream</a>
+ * @author kit
+ * @date 20200825
  */
 public interface IntStream extends BaseStream<Integer, IntStream> {
 

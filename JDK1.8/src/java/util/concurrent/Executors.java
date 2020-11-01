@@ -39,6 +39,12 @@ public class Executors {
              null, true);
     }
 
+    /**
+     * 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。
+     * @param nThreads
+     * @param threadFactory
+     * @return
+     */
     public static ExecutorService newFixedThreadPool(int nThreads, ThreadFactory threadFactory) {
         return new ThreadPoolExecutor(nThreads, nThreads,
                                       0L, TimeUnit.MILLISECONDS,
@@ -46,6 +52,10 @@ public class Executors {
                                       threadFactory);
     }
 
+    /**
+     * 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行
+     * @return
+     */
     public static ExecutorService newSingleThreadExecutor() {
         return new FinalizableDelegatedExecutorService
             (new ThreadPoolExecutor(1, 1,
@@ -61,6 +71,10 @@ public class Executors {
                                     threadFactory));
     }
 
+    /**
+     * 创建一个可缓存线程池，如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。
+     * @return
+     */
     public static ExecutorService newCachedThreadPool() {
         return new ThreadPoolExecutor(0, Integer.MAX_VALUE,
                                       60L, TimeUnit.SECONDS,

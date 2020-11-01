@@ -1,0 +1,8 @@
+java提供了两种方式来加锁，一种是关键字：synchronized，一种是concurrent包下的lock锁。
+synchronized是java底层支持的，而concurrent包则是jdk实现。
+
+synchronized是Java提供的一个并发控制的关键字。
+
+主要有两种用法，分别是同步方法和同步代码块。
+
+synchronized的实现原理

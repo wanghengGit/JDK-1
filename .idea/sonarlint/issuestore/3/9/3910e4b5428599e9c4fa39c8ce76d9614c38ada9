@@ -1,0 +1,60 @@
+
+P
+java:S1133="5Do not forget to remove this deprecated code someday.(×ßëèýÿÿÿÿ
+^
+java:S1123<"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+C
+java:S1185S"(Remove this method to simply inherit it.(ãû§Áÿÿÿÿÿ
+U
+java:S1161S":Add the "@Override" annotation above this method signature(ãû§Áÿÿÿÿÿ
+
+java:S2178h"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(óàäËøÿÿÿÿ
+4
+java:S2178h"Correct this "&" to "&&".(óàäËøÿÿÿÿ
+B
+java:S1874r",Remove this use of "Time"; it is deprecated.(³•¬
+P
+java:S1161{":Add the "@Override" annotation above this method signature(Á»›ê
+V
+java:S1161¡":Add the "@Override" annotation above this method signature(±»—Áùÿÿÿÿ
+Q
+java:S1133¡"5Do not forget to remove this deprecated code someday.(±»—Áùÿÿÿÿ
+_
+java:S1123 "HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+V
+java:S1161¯":Add the "@Override" annotation above this method signature(³ÉÝûÿÿÿÿ
+Q
+java:S1133¯"5Do not forget to remove this deprecated code someday.(³ÉÝûÿÿÿÿ
+_
+java:S1123®"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+V
+java:S1161¼":Add the "@Override" annotation above this method signature(Ôö¾œûÿÿÿÿ
+Q
+java:S1133¼"5Do not forget to remove this deprecated code someday.(Ôö¾œûÿÿÿÿ
+_
+java:S1123»"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+V
+java:S1161Ê":Add the "@Override" annotation above this method signature(¤Œó¤úÿÿÿÿ
+Q
+java:S1133Ê"5Do not forget to remove this deprecated code someday.(¤Œó¤úÿÿÿÿ
+_
+java:S1123É"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+V
+java:S1161Ø":Add the "@Override" annotation above this method signature(Œú®ûÿÿÿÿ
+Q
+java:S1133Ø"5Do not forget to remove this deprecated code someday.(Œú®ûÿÿÿÿ
+_
+java:S1123×"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1161æ":Add the "@Override" annotation above this method signature(Ÿ–¸
+L
+java:S1133æ"5Do not forget to remove this deprecated code someday.(Ÿ–¸
+_
+java:S1123å"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+V
+java:S1161ô":Add the "@Override" annotation above this method signature(ûÜƒÉüÿÿÿÿ
+Q
+java:S1133ô"5Do not forget to remove this deprecated code someday.(ûÜƒÉüÿÿÿÿ
+_
+java:S1123ó"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+R	java:S125•"<This block of commented-out lines of code should be removed.(ÿÝ·É

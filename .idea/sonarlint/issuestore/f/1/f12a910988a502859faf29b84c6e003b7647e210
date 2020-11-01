@@ -1,0 +1,23 @@
+
+L
+java:S1133"5Do not forget to remove this deprecated code someday.(¿ì
+O
+java:S1197²"8Move the array designator from the variable to the type.(´ø‘¯
+Q
+java:S1133ã"5Do not forget to remove this deprecated code someday.(÷¬…öıÿÿÿÿ
+T
+java:S1197¹"8Move the array designator from the variable to the type.(¸šş¡ûÿÿÿÿ
+_
+java:S1214—"CMove constants defined in this interfaces to another class or enum.(”óÜ”ùÿÿÿÿ
+_
+java:S1123â"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123Š"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+L
+java:S1133‹"5Do not forget to remove this deprecated code someday.(ã·à€
+_
+java:S1123ë"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123€"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1133ì"5Do not forget to remove this deprecated code someday.(ÔÏ€²üÿÿÿÿ

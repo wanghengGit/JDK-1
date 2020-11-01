@@ -45,6 +45,8 @@ import sun.nio.cs.ArrayEncoder;
 
 /**
  * Utility class for string encoding and decoding.
+ * @author kit
+ * @date 20200819
  */
 
 class StringCoding {

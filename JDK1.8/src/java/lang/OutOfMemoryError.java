@@ -37,6 +37,8 @@ package java.lang;
  *
  * @author  unascribed
  * @since   JDK1.0
+ * @date 20200819
+ * @author kit
  */
 public class OutOfMemoryError extends VirtualMachineError {
     private static final long serialVersionUID = 8228564086184010517L;

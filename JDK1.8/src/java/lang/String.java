@@ -20,8 +20,8 @@ import java.util.regex.PatternSyntaxException;
  * @author Martin Buchholz
  * @author Ulf Zibis
  * @date 2019/08/28
- * @since JDK1.0
  * @date 20200628
+ * @since JDK1.0
  */
 
 public final class String
@@ -29,6 +29,7 @@ public final class String
     /**
      * The value is used for character storage.
      * final修饰，所以，String对象是不可变的
+     * String本质是个char数组.
      **/
     private final char value[];
 
@@ -262,6 +263,7 @@ public final class String
         if (srcBegin > srcEnd) {
             throw new StringIndexOutOfBoundsException(srcEnd - srcBegin);
         }
+        //最终调用的是System.arraycopy的方法:将指定源数组中的数组从指定位置复制到目标数组的指定位置。
         System.arraycopy(value, srcBegin, dst, dstBegin, srcEnd - srcBegin);
     }
 
@@ -303,6 +305,13 @@ public final class String
         return StringCoding.encode(value, 0, value.length);
     }
 
+    /**
+     * str1 == str2嘛？意思是地址指向的是同一块地方吗
+     * str1.equals(str2)嘛？意思是地址指向的内容一样
+     *
+     * @param anObject
+     * @return
+     */
     public boolean equals(Object anObject) {
         if (this == anObject) {
             return true;
@@ -892,6 +901,7 @@ public final class String
 
     /**
      * 1.8版本里面String类还增加了join静态方法用来结合多个字符串
+     *
      * @param delimiter
      * @param elements
      * @return

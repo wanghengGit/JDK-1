@@ -262,6 +262,7 @@ import java.util.stream.Stream;
  * @param <K> the type of keys maintained by this map
  * @param <V> the type of mapped values
  * @author Doug Lea
+ * @author kit
  * @date 20200521
  * @since 1.5
  */
@@ -627,6 +628,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
      * in bulk tasks.  Subclasses of Node with a negative hash field
      * are special, and contain null keys and values (but are never
      * exported).  Otherwise, keys and vals are never null.
+     * 用于存储具体键值对，其子类有ForwardingNode、ReservationNode、TreeNode和TreeBin四个子类
      */
     static class Node<K, V> implements Map.Entry<K, V> {
         final int hash;
@@ -3320,6 +3322,8 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
      * paranoically cope with potential sharing by users of iterators
      * across threads, iteration terminates if a bounds checks fails
      * for a table read.
+     * 用于遍历操作，其子类有BaseIterator、KeySpliterator、ValueSpliterator、EntrySpliterator四个类，
+     * BaseIterator用于遍历操作。KeySplitertor、ValueSpliterator、EntrySpliterator则用于键、值、键值对的划分
      */
     static class Traverser<K, V> {
         Node<K, V>[] tab;        // current table; updated if resized
@@ -4435,6 +4439,8 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V>
 
     /**
      * Base class for views.
+     * CollectionView抽象类主要定义了视图操作，
+     * 其子类KeySetView、ValueSetView、EntrySetView分别表示键视图、值视图、键值对视图。对视图均可以进行操作
      */
     abstract static class CollectionView<K, V, E>
             implements Collection<E>, java.io.Serializable {

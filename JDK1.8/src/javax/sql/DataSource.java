@@ -72,7 +72,9 @@ import java.sql.Wrapper;
  * constructor.
  *
  * @since 1.4
- * @date 20200716
+ * @author kit
+ * @date 20200819
+ * 数据库连接源
  */
 
 public interface DataSource  extends CommonDataSource, Wrapper {

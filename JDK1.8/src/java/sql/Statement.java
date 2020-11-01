@@ -41,6 +41,7 @@ package java.sql;
  * @see ResultSet
  * @date 20200403
  * sql执行器
+ * @author kit
  */
 public interface Statement extends Wrapper, AutoCloseable {
 

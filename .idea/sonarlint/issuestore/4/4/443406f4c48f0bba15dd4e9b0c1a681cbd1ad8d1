@@ -1,0 +1,35 @@
+
+<
+java:S1948™"%Make "key" transient or serializable.(æàÝÌ
+V
+java:S1161 ":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+n
+java:S3776è"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ý¢êÍýÿÿÿÿ
+C
+java:S1948Â"'Make "value" transient or serializable.(ÖÜÝäøÿÿÿÿ
+Q
+java:S1161Û":Add the "@Override" annotation above this method signature(Û¶¬å
+a
+java:S2147‚"ECombine this catch with the one at line 256, which has the same body.(Ü–›×øÿÿÿÿ
+C
+java:S1948š"'Make "value" transient or serializable.(Š¥²þÿÿÿÿ
+G
+java:S2065"0Remove the "transient" modifier from this field.( ú™
+<
+java:S1948Á"%Make "key" transient or serializable.(æàÝÌ
+Q
+java:S1161Ó":Add the "@Override" annotation above this method signature(ûÄ•
+l
+java:S3038ã"P"entrySet" is defined in the "Map" interface and can be removed from this class.(›íûÉøÿÿÿÿ
+L
+java:S2065Ž"0Remove the "transient" modifier from this field.(âïñãþÿÿÿÿ
+n
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.( ú™
+V
+java:S1161É":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+V
+java:S1161×":Add the "@Override" annotation above this method signature(Þ‚ÄÔýÿÿÿÿ
+s
+java:S3077Ž"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(âïñãþÿÿÿÿ
+i
+java:S2975«"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(™”” 

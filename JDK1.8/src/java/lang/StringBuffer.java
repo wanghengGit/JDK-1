@@ -8,6 +8,7 @@ import java.util.Arrays;
  * @see     java.lang.String
  * @since   JDK1.0
  * @date 2019/08/29
+ * @author kit
  * 对调用的方法加了同步锁，所以是线程安全的
  */
  public final class StringBuffer
@@ -153,6 +154,11 @@ import java.util.Arrays;
         return this;
     }
 
+    /**
+     *  以上可知，append方法其实是创建了一个新的数组，扩大了长度，将需要添加的字符串给复制到这个新的数组中去
+     * @param sb
+     * @return
+     */
     public synchronized StringBuffer append(StringBuffer sb) {
         toStringCache = null;
         super.append(sb);

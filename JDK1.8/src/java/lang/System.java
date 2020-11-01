@@ -475,6 +475,7 @@ public final class System {
      *               because of a type mismatch.
      * @exception  NullPointerException if either <code>src</code> or
      *               <code>dest</code> is <code>null</code>.
+     * 最终调用的是System.arraycopy的方法:将指定源数组中的数组从指定位置复制到目标数组的指定位置。
      */
     public static native void arraycopy(Object src,  int  srcPos,
                                         Object dest, int destPos,

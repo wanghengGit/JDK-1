@@ -1,9 +1,9 @@
 
-K
-java:S1191Q"5Use classes from the Java API instead of Sun classes.(¾¯Œ÷
-`	java:S112b"FDefine and throw a dedicated exception instead of using a generic one.(¨ßÕÂùÿÿÿÿ
-o	java:S115R"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯Ğü
 C
 java:S1068S"(Remove this unused "SEED" private field.(Ğ‚±Äşÿÿÿÿ
+`	java:S112b"FDefine and throw a dedicated exception instead of using a generic one.(¨ßÕÂùÿÿÿÿ
 ?
 java:S1068T")Remove this unused "PROBE" private field.(í¤û¿
+o	java:S115R"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¯Ğü
+K
+java:S1191Q"5Use classes from the Java API instead of Sun classes.(¾¯Œ÷

@@ -34,6 +34,8 @@ package java.lang;
  * @author  unascribed
  * @see     java.lang.String#charAt(int)
  * @since   JDK1.0
+ * @author kit
+ * @date 20200819
  */
 public
 class StringIndexOutOfBoundsException extends IndexOutOfBoundsException {

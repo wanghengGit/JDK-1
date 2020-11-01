@@ -1,0 +1,52 @@
+
+t
+java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(åÄ´ıùÿÿÿÿ
+D
+java:S1604‘"(Make this anonymous inner class a lambda(ÊĞôöüÿÿÿÿ
+D
+java:S1604½"(Make this anonymous inner class a lambda(¯’Àˆşÿÿÿÿ
+V
+java:S1161¼":Add the "@Override" annotation above this method signature(Ï¾ŞËùÿÿÿÿ
+P
+java:S1161Ş":Add the "@Override" annotation above this method signature(·ÓñR
+e
+java:S3014Œ"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(‹©Öıÿÿÿÿ
+t
+java:S2293F"YReplace the type specification in this constructor call with the diamond operator ("<>").(åÄ´ıùÿÿÿÿ
+Q
+java:S1161á":Add the "@Override" annotation above this method signature(§©³Ñ
+\
+java:S1128	"ARemove this unused import 'java.security.AccessControlException'.(¢Ù¸ùÿÿÿÿ
+t
+java:S2293W"YReplace the type specification in this constructor call with the diamond operator ("<>").(øŞàøÿÿÿÿ
+u
+java:S2293‹"YReplace the type specification in this constructor call with the diamond operator ("<>").(µ‹ÿ üÿÿÿÿ
+V
+java:S1161è":Add the "@Override" annotation above this method signature(Òó½™şÿÿÿÿ
+>
+java:S1604¿"(Make this anonymous inner class a lambda(ÆŞÖ
+o
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷ŞèÁ
+Q
+java:S1161Û":Add the "@Override" annotation above this method signature(è¼ãó
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Í­£‰
+I
+java:S1113ı"-Do not override the Object.finalize() method.(œäºÒúÿÿÿÿ
+V
+java:S1161í":Add the "@Override" annotation above this method signature(“À‘úÿÿÿÿ
+u
+java:S2293…"YReplace the type specification in this constructor call with the diamond operator ("<>").(È‘Š ùÿÿÿÿ
+p
+java:S2293¥"YReplace the type specification in this constructor call with the diamond operator ("<>").(™Ğºâ
+Q
+java:S1161ñ":Add the "@Override" annotation above this method signature(¡®¤Ñ
+K
+java:S1191
+"5Use classes from the Java API instead of Sun classes.(¼¸Ñá
+o
+java:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËºØ±
+Q
+java:S1161ä":Add the "@Override" annotation above this method signature(²°ıù
+u
+java:S2293Ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(µÚ«¹şÿÿÿÿ

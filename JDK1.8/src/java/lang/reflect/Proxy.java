@@ -717,6 +717,7 @@ public class Proxy implements java.io.Serializable {
 
         /*
          * Look up or generate the designated proxy class.
+         * 动态生成一个代理类
          */
         Class<?> cl = getProxyClass0(loader, intfs);
 

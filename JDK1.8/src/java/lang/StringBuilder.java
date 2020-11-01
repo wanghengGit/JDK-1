@@ -7,6 +7,7 @@ package java.lang;
  * @see         java.lang.String
  * @since       1.5
  * @date 20200324
+ * @author kit
  */
 public final class StringBuilder
     extends AbstractStringBuilder

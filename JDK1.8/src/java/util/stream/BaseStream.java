@@ -61,6 +61,7 @@ import java.util.function.Predicate;
  * @see DoubleStream
  * @see <a href="package-summary.html">java.util.stream</a>
  * @date 20200325
+ * @author kit
  */
 public interface BaseStream<T, S extends BaseStream<T, S>>
         extends AutoCloseable {

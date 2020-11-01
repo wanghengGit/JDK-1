@@ -1,0 +1,5 @@
+一句话来说，atomic类是通过自旋CAS操作volatile变量实现的。
+
+　　CAS是compare and swap的缩写，即比较后(比较内存中的旧值与预期值)交换(将旧值替换成预期值)。它是sun.misc包下Unsafe类提供的功能，需要底层硬件指令集的支撑。
+
+　　使用volatile变量是为了多个线程间变量的值能及时同步。

@@ -33,6 +33,8 @@ package java.lang;
  *
  * @author  Frank Yellin
  * @since   JDK1.0
+ * @author kit
+ * @date 20200819
  */
 public
 class IndexOutOfBoundsException extends RuntimeException {

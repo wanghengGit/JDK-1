@@ -45,6 +45,8 @@ package java.util;
  * @see     java.lang.Object#hashCode()
  * @see     java.util.Hashtable
  * @since   JDK1.0
+ * @author kit
+ * @date 20200816
  */
 public abstract
 class Dictionary<K,V> {

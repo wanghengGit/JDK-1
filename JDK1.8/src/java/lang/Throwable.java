@@ -15,6 +15,8 @@ import  java.util.*;
  * @jls 11.2 Compile-Time Checking of Exceptions
  * @since JDK1.0
  * @date 20200324
+ * @author kit
+ * @date 20200819
  */
 public class Throwable implements Serializable {
     /** use serialVersionUID from JDK 1.0.2 for interoperability */

@@ -1,0 +1,101 @@
+
+n
+java:S3077‚"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ŞƒÚÓ
+_
+java:S1123Ê"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+^
+java:S1182¿"HUse super.clone() to create and seed the cloned instance to be returned.(™”” 
+L
+java:S1133Ë"5Do not forget to remove this deprecated code someday.(‚“¶î
+p	java:S1162"VRename this field "single_step" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³”íàøÿÿÿÿ
+v
+java:S1192Ö"ZDefine a constant instead of duplicating this literal "timeout value is negative" 3 times.(­¤„õûÿÿÿÿ
+L
+java:S1133‹"5Do not forget to remove this deprecated code someday.(’ıœÀ
+D	java:S108Õ")Either remove or fill this block of code.(ª¤Ùºûÿÿÿÿ
+`
+java:S3014Ë"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(óÕ¥Ì
+X
+java:S2886Ü"BSynchronize this method to match the synchronization on "setName".(ûäc
+7
+java:S3878Ó"Remove this array creation.( ¢ïäÿÿÿÿÿ
+e
+java:S3014ç"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(Ñ›Îëûÿÿÿÿ
+e
+java:S3014Ê	"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(îß²¸üÿÿÿÿ
+d
+java:S3014>"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(¥ßÓıÿÿÿÿ
+`
+java:S3014ú"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(³é‰
+n
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(‹¬˜
+<
+java:S1181Â"%Catch Exception instead of Throwable.(Æ·™‹
+L
+java:S1133¥"5Do not forget to remove this deprecated code someday.(È°Ã‚
+D	java:S108Û")Either remove or fill this block of code.(ª¤Ùºûÿÿÿÿ
+n
+java:S1450\"XRemove the "stackSize" field and declare it as a local variable in the relevant methods.(„Š«á
+m
+java:S3077|"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ÔÙêê
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ¡»ë
+<
+java:S3077,"&Use an "AtomicReferenceArray" instead.(³ë§Ş
+U
+java:S1117Ê	"9Rename "group" which hides the field declared at line 62.(îß²¸üÿÿÿÿ
+`
+java:S3014÷"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(ÍÿåÊ
+e
+java:S3014©"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(ÈìÃ°úÿÿÿÿ
+L
+java:S1133´"5Do not forget to remove this deprecated code someday.(®¦“
+e
+java:S3014•"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(º…ØØûÿÿÿÿ
+_
+java:S1123³"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+O
+java:S1197•"8Move the array designator from the variable to the type.(®ğš½
+N
+java:S1197,"8Move the array designator from the variable to the type.(³ë§Ş
+E
+java:S1121²".Extract the assignment out of this expression.(Ÿü×é
+\
+java:S1124›"EReorder the modifiers to comply with the Java Language Specification.(ŞÁ³¶
+Q
+java:S1133ñ"5Do not forget to remove this deprecated code someday.(Ü¡ó¶øÿÿÿÿ
+_
+java:S1123¤"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123Š"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+a
+java:S1124–"EReorder the modifiers to comply with the Java Language Specification.(÷º÷Úúÿÿÿÿ
+\
+java:S1124ç"EReorder the modifiers to comply with the Java Language Specification.(“Õ–§
+F
+java:S1066œ"/Merge this if statement with the enclosing one.(ªä®â
+e
+java:S3014"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(óã†®ùÿÿÿÿ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(ÉÃ¾åüÿÿÿÿ
+n
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(û²Ğ„
+Z
+java:S1144ò">Remove this unused private "dispatchUncaughtException" method.(İà·¦ıÿÿÿÿ
+Q
+java:S1133Ô"5Do not forget to remove this deprecated code someday.(‘©Ìúÿÿÿÿ
+_
+java:S1123Ó"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+_
+java:S1123ğ"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+d
+java:S1192Ë"HDefine a constant instead of duplicating this literal "Thread-" 4 times.(ì°‰²üÿÿÿÿ
+D
+java:S1604Í"(Make this anonymous inner class a lambda(»Üëùÿÿÿÿ
+`
+java:S3014ê"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(³é‰
+\
+java:S1124‘"EReorder the modifiers to comply with the Java Language Specification.(Ë²‰
+E
+java:S1144â")Remove this unused private "exit" method.(úş‡ şÿÿÿÿ
+a
+java:S1124å"EReorder the modifiers to comply with the Java Language Specification.(Ë®°Ôúÿÿÿÿ

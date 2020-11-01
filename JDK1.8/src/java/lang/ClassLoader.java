@@ -71,6 +71,7 @@ import sun.security.util.SecurityConstants;
  * @see      #resolveClass(Class)
  * @since 1.0
  * @date 20200325
+ * @author kit
  * 类加载器时负责加载类的对象。
  */
 public abstract class ClassLoader {

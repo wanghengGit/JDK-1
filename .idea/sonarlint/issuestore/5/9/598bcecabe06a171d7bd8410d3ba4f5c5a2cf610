@@ -1,0 +1,64 @@
+
+a
+java:S1192"JDefine a constant instead of duplicating this literal "Not owner" 3 times.(‚š€
+m	java:S127¦"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ñ‡T
+o	java:S135Ù"YReduce the total number of break and continue statements in this loop to use at most one.(´ÿÕ™
+t	java:S135Å"YReduce the total number of break and continue statements in this loop to use at most one.(ã˜×Ğúÿÿÿÿ
+t	java:S135ñ"YReduce the total number of break and continue statements in this loop to use at most one.(ã˜×Ğúÿÿÿÿ
+t	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ã˜×Ğúÿÿÿÿ
+J
+java:S1121”".Extract the assignment out of this expression.(ãªŠÆüÿÿÿÿ
+s
+java:S3077¹"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(‘ø‹¯úÿÿÿÿ
+m
+java:S3077¿"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(“£™L
+~
+java:S1845ü"bRename field "STATE" to prevent any misunderstanding/clash with field "state" defined on line 580.(î²Ã·üÿÿÿÿ
+|
+java:S1845ı"`Rename field "HEAD" to prevent any misunderstanding/clash with field "head" defined on line 569.(šåë ÿÿÿÿÿ
+|
+java:S1845ş"`Rename field "TAIL" to prevent any misunderstanding/clash with field "tail" defined on line 575.(´¼Ë€üÿÿÿÿ
+n
+java:S3077Ë"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ïâ¾
+n
+java:S3077Ú"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(–¤Á
+n
+java:S3077à"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(«ùä´
+|
+java:S1845¢"`Rename field "NEXT" to prevent any misunderstanding/clash with field "next" defined on line 474.(›®Ó»ùÿÿÿÿ
+|
+java:S1845£"`Rename field "PREV" to prevent any misunderstanding/clash with field "prev" defined on line 459.(Íì±ûúÿÿÿÿ
+€
+java:S1845¤"dRename field "THREAD" to prevent any misunderstanding/clash with field "thread" defined on line 480.(¼¯²üÿÿÿÿ
+ˆ
+java:S1845¥"lRename field "WAITSTATUS" to prevent any misunderstanding/clash with field "waitStatus" defined on line 446.(¤ŸÑéùÿÿÿÿ
+a
+java:S1764‡"KCorrect one of the identical sub-expressions on both sides of operator "||"(’ŞŒ4
+A
+java:S1181—"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+A
+java:S1181²"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+A
+java:S1181Ø"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+A
+java:S1181ó"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+A
+java:S1181’"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+A
+java:S1181»"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+6
+java:S1659§"Declare "s" on a separate line.(ÍÈ”ğ
+a
+java:S1764«"KCorrect one of the identical sub-expressions on both sides of operator "||"(Œ¢Æp
+6
+java:S1659İ"Declare "s" on a separate line.(ÍÈ”ğ
+6
+java:S1659"Declare "s" on a separate line.(ÍÈ”ğ
+A
+java:S1181è"%Catch Exception instead of Throwable.(•”ø¾øÿÿÿÿ
+
+java:S1186Ö"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÉÃâ…úÿÿÿÿ
+`
+java:S3358ı"DExtract this nested ternary operation into an independent statement.(ÀÕôıÿÿÿÿ
+M
+java:S1481Œ"1Remove this unused "ensureLoaded" local variable.(–Ğ¹ºûÿÿÿÿ

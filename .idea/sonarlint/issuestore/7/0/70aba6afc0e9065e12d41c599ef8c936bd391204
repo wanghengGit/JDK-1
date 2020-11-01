@@ -1,0 +1,38 @@
+
+r
+java:S4276¾"VRefactor this code to use the more specialised Functional Interface 'UnaryOperator<A>'(ƒæªçşÿÿÿÿ
+=
+java:S3398‹"&Move this method into "CollectorImpl".(âØÆ´
+B
+java:S1905è"+Remove this unnecessary cast to "Supplier".(ıÈ¬©
+p
+java:S2293Ö"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÛëÍ‚
+u
+java:S2293Š"YReplace the type specification in this constructor call with the diamond operator ("<>").(µá¬Œùÿÿÿÿ
+H
+java:S1612",Replace this lambda with a method reference.(í¥Ø²şÿÿÿÿ
+’
+java:S2681Ï"{This statement will not be executed conditionally; only the first statement will be. The rest will execute unconditionally.(å¨ÔÀ
+A
+java:S1905ı"+Remove this unnecessary cast to "Supplier".(Èˆî,
+B
+java:S1602Õ",Remove useless curly braces around statement(µÏ…
+d	java:S119ü"IRename this generic name to match the regular expression '^[A-Z][0-9]?$'.(­Ñáıøÿÿÿÿ
+ƒ
+java:S1192"gDefine a constant instead of duplicating this literal "element cannot be mapped to a null key" 3 times.(’¾û¡ıÿÿÿÿ
+C
+java:S1602ç",Remove useless curly braces around statement(ÆŸˆ
+u
+java:S2293Í"YReplace the type specification in this constructor call with the diamond operator ("<>").(„ºï¼ÿÿÿÿÿ
+C
+java:S1602û",Remove useless curly braces around statement(£ªõ«
+H
+java:S1602–",Remove useless curly braces around statement(Åùä°ıÿÿÿÿ
+p
+java:S2293ê"YReplace the type specification in this constructor call with the diamond operator ("<>").(½ˆƒ
+u
+java:S2293ş"YReplace the type specification in this constructor call with the diamond operator ("<>").(õ–­Ÿùÿÿÿÿ
+r
+java:S4276›"VRefactor this code to use the more specialised Functional Interface 'UnaryOperator<A>'(ƒæªçşÿÿÿÿ
+B
+java:S2160‡"+Override the "equals" method in this class.(‚ÿ»¼

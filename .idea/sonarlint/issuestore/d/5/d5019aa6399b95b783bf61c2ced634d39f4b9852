@@ -1,0 +1,11 @@
+
+^
+java:S2118Ô"GMake the "java.util.Comparator" class "Serializable" or don't write it.(•ÃÂ–
+V
+java:S1161õ":Add the "@Override" annotation above this method signature(ª÷‚µøÿÿÿÿ
+@
+java:S2160("+Override the "equals" method in this class.(šÛäw
+t
+java:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(ù‚ñ˜ùÿÿÿÿ
+j
+java:S2975Â"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Ž²ÈÞ

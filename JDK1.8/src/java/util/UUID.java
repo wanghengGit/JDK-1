@@ -67,6 +67,7 @@ import java.security.*;
  *
  * @since   1.5
  * @date 20200328
+ * @author kit
  */
 public final class UUID implements java.io.Serializable, Comparable<UUID> {
 

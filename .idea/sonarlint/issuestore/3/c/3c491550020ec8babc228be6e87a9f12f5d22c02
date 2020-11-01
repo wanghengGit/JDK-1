@@ -1,0 +1,77 @@
+
+J
+java:S1191"5Use classes from the Java API instead of Sun classes.(«‹ú3
+_
+java:S3014:"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(•ğ²‹
+d
+java:S3014t"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(¬¯ˆÖşÿÿÿÿ
+d
+java:S3014x"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(ï¤Õ‹ûÿÿÿÿ
+e
+java:S3014†"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(ıƒ§¿ÿÿÿÿÿ
+e
+java:S3014¥"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(÷Óç üÿÿÿÿ
+_
+java:S3014¢"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(¶Ëô`
+`
+java:S3014§"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(Ö¨Ô£
+`
+java:S3014¾"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(£××Ÿ
+c
+java:S2259Ä"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(Ç—İæ
+c
+java:S2259Å"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(²òôÄ
+c
+java:S2259ã"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(’¨ôï
+c
+java:S2259›"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(Æ°ãÂ
+c
+java:S2259ñ"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(Îµ®ç
+c
+java:S2259é"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(ûõŞŒ
+c
+java:S2259É"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(Ç—İæ
+h
+java:S2259ó"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(è¸Üçıÿÿÿÿ
+h
+java:S2259‰"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(ü‡î–şÿÿÿÿ
+c
+java:S2259”"LA "NullPointerException" could be thrown; "groupsSnapshot" is nullable here.(—ì¼
+N
+java:S1197C"8Move the array designator from the variable to the type.(­“«‚
+S
+java:S1197F"8Move the array designator from the variable to the type.(ÅÆè«úÿÿÿÿ
+H
+java:S1172x"-Remove this unused method parameter "unused".(ï¤Õ‹ûÿÿÿÿ
+O
+java:S1197ş"8Move the array designator from the variable to the type.(íùÑå
+O
+java:S1197¤"8Move the array designator from the variable to the type.(‘ ¤á
+O
+java:S1197©"8Move the array designator from the variable to the type.(äµÿ 
+T
+java:S1197„"8Move the array designator from the variable to the type.(÷åöéùÿÿÿÿ
+O
+java:S1197ª"8Move the array designator from the variable to the type.(áÄÌä
+T
+java:S1197¯"8Move the array designator from the variable to the type.(£±œ´ûÿÿÿÿ
+L
+java:S1133ã"5Do not forget to remove this deprecated code someday.(®¦“
+_
+java:S1123â"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+Q
+java:S1133¢"5Do not forget to remove this deprecated code someday.(Ü¡ó¶øÿÿÿÿ
+_
+java:S1123 "HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+L
+java:S1133á"5Do not forget to remove this deprecated code someday.(’ıœÀ
+_
+java:S1123ß"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+T	java:S106Ú"9Replace this use of System.out or System.err by a logger.(·½¼³øÿÿÿÿ
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(§½ŸĞûÿÿÿÿ
+O	java:S106¥"9Replace this use of System.out or System.err by a logger.(Îã­Ã
+Q
+java:S1133µ"5Do not forget to remove this deprecated code someday.(ø’¯©ıÿÿÿÿ
+_
+java:S1123´"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+W	java:S125‚"<This block of commented-out lines of code should be removed.(„Çèÿÿÿÿÿ

@@ -32,6 +32,8 @@ package java.lang;
  *
  * @author  unascribed
  * @since   JDK1.0
+ * @author kit
+ * @date 20200819
  */
 public
 class ArrayIndexOutOfBoundsException extends IndexOutOfBoundsException {

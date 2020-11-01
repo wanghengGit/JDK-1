@@ -1,0 +1,32 @@
+
+r
+java:S3077r"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ø£ÝŽøÿÿÿÿ
+Q
+java:S1128	"6Remove this unused import 'java.util.StringTokenizer'.(ÈÄ¬ñþÿÿÿÿ
+`
+java:S1124n"EReorder the modifiers to comply with the Java Language Specification.(­ªëùÿÿÿÿÿ
+n
+java:S3077½"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ÿäÓÑ
+_
+java:S1123†"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+[
+java:S1124`"EReorder the modifiers to comply with the Java Language Specification.(¦›Ô±
+?	java:S108î")Either remove or fill this block of code.(Ü–„þ
+?
+java:S1604«"(Make this anonymous inner class a lambda(žËÖñ
+p
+java:S1215Ô"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(‚êÝ§þÿÿÿÿ
+[
+java:S1124E"EReorder the modifiers to comply with the Java Language Specification.(–†µì
+Q
+java:S1144÷":Remove this unused private "initializeSystemClass" method.(®³Å„
+;
+java:S1111ê	"Remove this call to finalize().(àŒœ›øÿÿÿÿ
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(ÉÃ¾åüÿÿÿÿ
+S
+java:S1128"8Remove this unused import 'java.security.AllPermission'.(ÅÝ÷½ùÿÿÿÿ
+K
+java:S1133‡"5Do not forget to remove this deprecated code someday.(æÌ¿Y
+j
+java:S2095š	"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(¹éñÀüÿÿÿÿ

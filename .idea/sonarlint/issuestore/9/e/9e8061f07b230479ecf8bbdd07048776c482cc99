@@ -1,0 +1,33 @@
+
+L
+java:S2065ª"0Remove the "transient" modifier from this field.(·Œ”ûÿÿÿÿ
+g
+java:S30386"L"get" is defined in the "List" interface and can be removed from this class.(ÜãÉÃüÿÿÿÿ
+`
+java:S11246"EReorder the modifiers to comply with the Java Language Specification.(ÜãÉÃüÿÿÿÿ
+V
+java:S1161²":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+G
+java:S2160¶"+Override the "equals" method in this class.(ãâ‰‚ÿÿÿÿÿ
+V
+java:S1161É":Add the "@Override" annotation above this method signature(İìÆíøÿÿÿÿ
+V
+java:S1161Ú":Add the "@Override" annotation above this method signature(İÏç´øÿÿÿÿ
+Q
+java:S1161â":Add the "@Override" annotation above this method signature(‡ğÎ
+Q
+java:S1161ë":Add the "@Override" annotation above this method signature(œ÷¾ÿ
+P
+java:S1161ö":Add the "@Override" annotation above this method signature(µ´ˆ2
+P
+java:S1161ƒ":Add the "@Override" annotation above this method signature(¹æá5
+V
+java:S1161‡":Add the "@Override" annotation above this method signature(ı½øÿÿÿÿ
+Q
+java:S1161¾":Add the "@Override" annotation above this method signature(¾ 
+n
+java:S2177Ç"WRename this method; there is a "private" method in the parent class with the same name.(šÈ¢­
+n
+java:S2177Ì"WRename this method; there is a "private" method in the parent class with the same name.(ÿ§Ú¶
+Q
+java:S1161Û":Add the "@Override" annotation above this method signature(¾ 

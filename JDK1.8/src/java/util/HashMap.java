@@ -305,7 +305,8 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         return getNode(hash(key), key) != null;
     }
 
-    //首先会将传入的 Key 做 hash 运算计算出 hashcode,然后根据数组长度取模计算出在数组中的 index 下标
+    //首先会将传入的 Key 做 hash 运算计算出 hashcode,
+    // 然后根据数组长度取模计算出在数组中的 index 下标
     public V put(K key, V value) {
         return putVal(hash(key), key, value, false, true);
     }
@@ -313,16 +314,27 @@ public class HashMap<K,V> extends AbstractMap<K,V>
     final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
                    boolean evict) {
         Node<K,V>[] tab; Node<K,V> p; int n, i;
+        // 如果map还是空的，则先开始初始化，table是map中用于存放索引的表
         if ((tab = table) == null || (n = tab.length) == 0)
             n = (tab = resize()).length;
+        // 使用hash与数组长度减一的值进行异或得到分散的数组下标，预示着按照计算现在的
+        // key会存放到这个位置上，如果这个位置上没有值，那么直接新建k-v节点存放
+        // 其中长度n是一个2的幂次数
         if ((p = tab[i = (n - 1) & hash]) == null)
             tab[i] = newNode(hash, key, value, null);
+        // 如果走到else这一步，说明key索引到的数组位置上已经存在内容，即出现了碰撞
+        // 这个时候需要更为复杂处理碰撞的方式来处理，如链表和树
         else {
             Node<K,V> e; K k;
+            // 其中p已经在上面通过计算索引找到了，即发生碰撞那一个节点
+            // 比较，如果该节点的hash和当前的hash相等，而且key也相等或者
+            // 在key不等于null的情况下key的内容也相等，则说明两个key是
+            // 一样的，则将当前节点p用临时节点e保存
             if (p.hash == hash &&
                 ((k = p.key) == key || (key != null && key.equals(k))))
                 e = p;
             else if (p instanceof TreeNode)
+                // 其中this表示当前HashMap, tab为map中的数组
                 e = ((TreeNode<K,V>)p).putTreeVal(this, tab, hash, key, value);
             else {
                 for (int binCount = 0; ; ++binCount) {
@@ -360,16 +372,22 @@ public class HashMap<K,V> extends AbstractMap<K,V>
      */
     final Node<K,V>[] resize() {
         Node<K,V>[] oldTab = table;
+        // 获得老的容量,还没分配表的话为0
         //在执行第一次put操作时,我们的table还是null,所以oldcap会是0
         int oldCap = (oldTab == null) ? 0 : oldTab.length;
         //oldThr初始化为之前tableSizeFor(10)求来的16.
         int oldThr = threshold;
         int newCap, newThr = 0;
+        //老的table不是null,就要判断一下要扩容到多大
         if (oldCap > 0) {
+            //太大了,不能扩容了,直接返回老的表继续用
+            // 如果已经到了最大容量了，那么就调整扩容的threshold阈值
             if (oldCap >= MAXIMUM_CAPACITY) {
                 threshold = Integer.MAX_VALUE;
                 return oldTab;
             }
+            //还能扩容,那么将在后面进行扩容操作,这里只是把newCap赋值为oldCap的两倍,
+            // newThr赋值为oldThr的两倍
             else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY &&
                      oldCap >= DEFAULT_INITIAL_CAPACITY)
                 newThr = oldThr << 1; // double threshold
@@ -377,10 +395,13 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         //我们的oldCap=0.thr = 16,进入这个分支,将新的Cap赋值为老的Threshold16
         else if (oldThr > 0) // initial capacity was placed in threshold
             newCap = oldThr;
+            //初始化map的大小为0,用默认值代替
         else {               // zero initial threshold signifies using defaults
             newCap = DEFAULT_INITIAL_CAPACITY;
             newThr = (int)(DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
         }
+        // 第一次的threshold是要扩容到多大.但是之后的threshold是触发resize的阈值.
+        // 所以第一次扩容(即的初始化table)之后,要把threshold设置为阈值而不再是扩容后的大小.
         if (newThr == 0) {
             float ft = (float)newCap * loadFactor;
             newThr = (newCap < MAXIMUM_CAPACITY && ft < (float)MAXIMUM_CAPACITY ?
@@ -391,6 +412,7 @@ public class HashMap<K,V> extends AbstractMap<K,V>
         //新建newCap大小的Node数组,然后就返回了这个新的数组.
             Node<K,V>[] newTab = (Node<K,V>[])new Node[newCap];
         table = newTab;
+        //老table不是null进行扩容的话 要执行rehash操作,把老表的值都放到新表当中
         if (oldTab != null) {
             for (int j = 0; j < oldCap; ++j) {
                 Node<K,V> e;

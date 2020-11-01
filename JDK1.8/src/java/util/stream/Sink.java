@@ -113,6 +113,8 @@ import java.util.function.LongConsumer;
  *
  * @param <T> type of elements for value streams
  * @since 1.8
+ * @author kit
+ * @date 20200825
  */
 interface Sink<T> extends Consumer<T> {
     /**

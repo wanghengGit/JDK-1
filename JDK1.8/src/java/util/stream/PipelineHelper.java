@@ -51,6 +51,8 @@ import java.util.function.IntFunction;
  *
  * @param <P_OUT> type of output elements from the pipeline
  * @since 1.8
+ * @author kit
+ * @date 20200825
  */
 abstract class PipelineHelper<P_OUT> {
 

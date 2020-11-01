@@ -1,22 +1,28 @@
 package java.util.concurrent.locks;
+
 import java.util.concurrent.TimeUnit;
 import java.util.Collection;
 
 /**
- * @since 1.5
  * @author Doug Lea
- *
  * @author wangheng
  * @date 2019/08/14
+ * @since 1.5
  */
 public class ReentrantReadWriteLock
         implements ReadWriteLock, java.io.Serializable {
     private static final long serialVersionUID = -6992448646407690164L;
-    /** Inner class providing readlock */
+    /**
+     * Inner class providing readlock
+     */
     private final ReentrantReadWriteLock.ReadLock readerLock;
-    /** Inner class providing writelock */
+    /**
+     * Inner class providing writelock
+     */
     private final ReentrantReadWriteLock.WriteLock writerLock;
-    /** Performs all synchronization mechanics */
+    /**
+     * Performs all synchronization mechanics
+     */
     final Sync sync;
 
     /**
@@ -39,8 +45,13 @@ public class ReentrantReadWriteLock
         writerLock = new WriteLock(this);
     }
 
-    public ReentrantReadWriteLock.WriteLock writeLock() { return writerLock; }
-    public ReentrantReadWriteLock.ReadLock  readLock()  { return readerLock; }
+    public ReentrantReadWriteLock.WriteLock writeLock() {
+        return writerLock;
+    }
+
+    public ReentrantReadWriteLock.ReadLock readLock() {
+        return readerLock;
+    }
 
     /**
      * Synchronization implementation for ReentrantReadWriteLock.
@@ -49,22 +60,39 @@ public class ReentrantReadWriteLock
     abstract static class Sync extends AbstractQueuedSynchronizer {
         private static final long serialVersionUID = 6317671515068378041L;
 
-        static final int SHARED_SHIFT   = 16;
-        static final int SHARED_UNIT    = (1 << SHARED_SHIFT);
-        static final int MAX_COUNT      = (1 << SHARED_SHIFT) - 1;
+        static final int SHARED_SHIFT = 16;
+        // 由于读锁用高位部分，所以读锁个数加1，其实是状态值加 2^16
+        static final int SHARED_UNIT = (1 << SHARED_SHIFT);
+        // 写锁的可重入的最大次数、读锁允许的最大数量
+        static final int MAX_COUNT = (1 << SHARED_SHIFT) - 1;
+        // 写锁的掩码，用于状态的低16位有效值
         static final int EXCLUSIVE_MASK = (1 << SHARED_SHIFT) - 1;
 
-        /** Returns the number of shared holds represented in count  */
-        static int sharedCount(int c)    { return c >>> SHARED_SHIFT; }
-        /** Returns the number of exclusive holds represented in count  */
-        static int exclusiveCount(int c) { return c & EXCLUSIVE_MASK; }
+        // 读锁计数，当前持有读锁的线程数
+
+        /**
+         * Returns the number of shared holds represented in count
+         */
+        static int sharedCount(int c) {
+            return c >>> SHARED_SHIFT;
+        }
+        // 写锁的计数，也就是它的重入次数
+
+        /**
+         * Returns the number of exclusive holds represented in count
+         */
+        static int exclusiveCount(int c) {
+            return c & EXCLUSIVE_MASK;
+        }
 
         /**
          * A counter for per-thread read hold counts.
          * Maintained as a ThreadLocal; cached in cachedHoldCounter
+         * 每个线程特定的 read 持有计数。存放在ThreadLocal，不需要是线程安全的。
          */
         static final class HoldCounter {
             int count = 0;
+            // 使用id而不是引用是为了避免保留垃圾。注意这是个常量
             // Use id, not reference, to avoid garbage retention
             final long tid = getThreadId(Thread.currentThread());
         }
@@ -72,24 +100,45 @@ public class ReentrantReadWriteLock
         /**
          * ThreadLocal subclass. Easiest to explicitly define for sake
          * of deserialization mechanics.
+         * 采用继承是为了重写 initialValue 方法，这样就不用进行这样的处理：
+         * 如果ThreadLocal没有当前线程的计数，则new一个，再放进ThreadLocal里。
+         * 可以直接调用 get。
          */
         static final class ThreadLocalHoldCounter
-            extends ThreadLocal<HoldCounter> {
+                extends ThreadLocal<HoldCounter> {
             public HoldCounter initialValue() {
                 return new HoldCounter();
             }
         }
 
+        //保存当前线程重入读锁的次数的容器。在读锁重入次数为 0 时移除。
         private transient ThreadLocalHoldCounter readHolds;
 
+        /**
+         * 最近一个成功获取读锁的线程的计数。这省却了ThreadLocal查找，
+         * 通常情况下，下一个释放线程是最后一个获取线程。这不是 volatile 的，
+         * 因为它仅用于试探的，线程进行缓存也是可以的
+         * （因为判断是否是当前线程是通过线程id来比较的）。
+         */
         private transient HoldCounter cachedHoldCounter;
-
+        /**
+         * firstReader是这样一个特殊线程：它是最后一个把 共享计数 从 0 改为 1 的
+         * （在锁空闲的时候），而且从那之后还没有释放读锁的。如果不存在则为null。
+         * firstReaderHoldCount 是 firstReader 的重入计数。
+         *
+         * firstReader 不能导致保留垃圾，因此在 tryReleaseShared 里设置为null，
+         * 除非线程异常终止，没有释放读锁。
+         *
+         * 作用是在跟踪无竞争的读锁计数时非常便宜。
+         *
+         * firstReader及其计数firstReaderHoldCount是不会放入 readHolds 的。
+         */
         private transient Thread firstReader = null;
         private transient int firstReaderHoldCount;
 
         Sync() {
             readHolds = new ThreadLocalHoldCounter();
-            setState(getState()); // ensures visibility of readHolds
+            setState(getState()); // ensures visibility of readHolds , 确保 readHolds 的内存可见性，利用 volatile 写的内存语义。
         }
 
         abstract boolean readerShouldBlock();
@@ -122,7 +171,7 @@ public class ReentrantReadWriteLock
                 return true;
             }
             if (writerShouldBlock() ||
-                !compareAndSetState(c, c + acquires))
+                    !compareAndSetState(c, c + acquires))
                 return false;
             setExclusiveOwnerThread(current);
             return true;
@@ -148,7 +197,7 @@ public class ReentrantReadWriteLock
                 }
                 --rh.count;
             }
-            for (;;) {
+            for (; ; ) {
                 int c = getState();
                 int nextc = c - SHARED_UNIT;
                 if (compareAndSetState(c, nextc))
@@ -161,19 +210,19 @@ public class ReentrantReadWriteLock
 
         private IllegalMonitorStateException unmatchedUnlockException() {
             return new IllegalMonitorStateException(
-                "attempt to unlock read lock, not locked by current thread");
+                    "attempt to unlock read lock, not locked by current thread");
         }
 
         protected final int tryAcquireShared(int unused) {
             Thread current = Thread.currentThread();
             int c = getState();
             if (exclusiveCount(c) != 0 &&
-                getExclusiveOwnerThread() != current)
+                    getExclusiveOwnerThread() != current)
                 return -1;
             int r = sharedCount(c);
             if (!readerShouldBlock() &&
-                r < MAX_COUNT &&
-                compareAndSetState(c, c + SHARED_UNIT)) {
+                    r < MAX_COUNT &&
+                    compareAndSetState(c, c + SHARED_UNIT)) {
                 if (r == 0) {
                     firstReader = current;
                     firstReaderHoldCount = 1;
@@ -198,7 +247,7 @@ public class ReentrantReadWriteLock
          */
         final int fullTryAcquireShared(Thread current) {
             HoldCounter rh = null;
-            for (;;) {
+            for (; ; ) {
                 int c = getState();
                 if (exclusiveCount(c) != 0) {
                     if (getExclusiveOwnerThread() != current)
@@ -273,10 +322,10 @@ public class ReentrantReadWriteLock
          */
         final boolean tryReadLock() {
             Thread current = Thread.currentThread();
-            for (;;) {
+            for (; ; ) {
                 int c = getState();
                 if (exclusiveCount(c) != 0 &&
-                    getExclusiveOwnerThread() != current)
+                        getExclusiveOwnerThread() != current)
                     return false;
                 int r = sharedCount(c);
                 if (r == MAX_COUNT)
@@ -352,13 +401,15 @@ public class ReentrantReadWriteLock
          * Reconstitutes the instance from a stream (that is, deserializes it).
          */
         private void readObject(java.io.ObjectInputStream s)
-            throws java.io.IOException, ClassNotFoundException {
+                throws java.io.IOException, ClassNotFoundException {
             s.defaultReadObject();
             readHolds = new ThreadLocalHoldCounter();
             setState(0); // reset to unlocked state
         }
 
-        final int getCount() { return getState(); }
+        final int getCount() {
+            return getState();
+        }
     }
 
     /**
@@ -366,9 +417,11 @@ public class ReentrantReadWriteLock
      */
     static final class NonfairSync extends Sync {
         private static final long serialVersionUID = -8159625535654395037L;
+
         final boolean writerShouldBlock() {
             return false; // writers can always barge
         }
+
         final boolean readerShouldBlock() {
             return apparentlyFirstQueuedIsExclusive();
         }
@@ -379,9 +432,11 @@ public class ReentrantReadWriteLock
      */
     static final class FairSync extends Sync {
         private static final long serialVersionUID = -2274990926593161451L;
+
         final boolean writerShouldBlock() {
             return hasQueuedPredecessors();
         }
+
         final boolean readerShouldBlock() {
             return hasQueuedPredecessors();
         }
@@ -445,7 +500,7 @@ public class ReentrantReadWriteLock
         public String toString() {
             int r = sync.getReadLockCount();
             return super.toString() +
-                "[Read locks = " + r + "]";
+                    "[Read locks = " + r + "]";
         }
     }
 
@@ -474,7 +529,7 @@ public class ReentrantReadWriteLock
             sync.acquireInterruptibly(1);
         }
 
-        public boolean tryLock( ) {
+        public boolean tryLock() {
             return sync.tryWriteLock();
         }
 
@@ -494,8 +549,8 @@ public class ReentrantReadWriteLock
         public String toString() {
             Thread o = sync.getOwner();
             return super.toString() + ((o == null) ?
-                                       "[Unlocked]" :
-                                       "[Locked by thread " + o.getName() + "]");
+                    "[Unlocked]" :
+                    "[Locked by thread " + o.getName() + "]");
         }
 
         public boolean isHeldByCurrentThread() {
@@ -526,6 +581,7 @@ public class ReentrantReadWriteLock
      * Queries the number of read locks held for this lock. This
      * method is designed for use in monitoring system state, not for
      * synchronization control.
+     *
      * @return the number of read locks held
      */
     public int getReadLockCount() {
@@ -540,7 +596,7 @@ public class ReentrantReadWriteLock
      * Queries if the write lock is held by the current thread.
      *
      * @return {@code true} if the current thread holds the write lock and
-     *         {@code false} otherwise
+     * {@code false} otherwise
      */
     public boolean isWriteLockedByCurrentThread() {
         return sync.isHeldExclusively();
@@ -583,7 +639,7 @@ public class ReentrantReadWriteLock
             throw new NullPointerException();
         if (!(condition instanceof AbstractQueuedSynchronizer.ConditionObject))
             throw new IllegalArgumentException("not owner");
-        return sync.hasWaiters((AbstractQueuedSynchronizer.ConditionObject)condition);
+        return sync.hasWaiters((AbstractQueuedSynchronizer.ConditionObject) condition);
     }
 
     public int getWaitQueueLength(Condition condition) {
@@ -591,7 +647,7 @@ public class ReentrantReadWriteLock
             throw new NullPointerException();
         if (!(condition instanceof AbstractQueuedSynchronizer.ConditionObject))
             throw new IllegalArgumentException("not owner");
-        return sync.getWaitQueueLength((AbstractQueuedSynchronizer.ConditionObject)condition);
+        return sync.getWaitQueueLength((AbstractQueuedSynchronizer.ConditionObject) condition);
     }
 
     protected Collection<Thread> getWaitingThreads(Condition condition) {
@@ -599,7 +655,7 @@ public class ReentrantReadWriteLock
             throw new NullPointerException();
         if (!(condition instanceof AbstractQueuedSynchronizer.ConditionObject))
             throw new IllegalArgumentException("not owner");
-        return sync.getWaitingThreads((AbstractQueuedSynchronizer.ConditionObject)condition);
+        return sync.getWaitingThreads((AbstractQueuedSynchronizer.ConditionObject) condition);
     }
 
     public String toString() {
@@ -608,7 +664,7 @@ public class ReentrantReadWriteLock
         int r = Sync.sharedCount(c);
 
         return super.toString() +
-            "[Write locks = " + w + ", Read locks = " + r + "]";
+                "[Write locks = " + w + ", Read locks = " + r + "]";
     }
 
     static final long getThreadId(Thread thread) {
@@ -618,12 +674,13 @@ public class ReentrantReadWriteLock
     // Unsafe mechanics
     private static final sun.misc.Unsafe UNSAFE;
     private static final long TID_OFFSET;
+
     static {
         try {
             UNSAFE = sun.misc.Unsafe.getUnsafe();
             Class<?> tk = Thread.class;
             TID_OFFSET = UNSAFE.objectFieldOffset
-                (tk.getDeclaredField("tid"));
+                    (tk.getDeclaredField("tid"));
         } catch (Exception e) {
             throw new Error(e);
         }

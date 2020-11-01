@@ -1,0 +1,64 @@
+
+u	java:S115ê"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(£Û°Úþÿÿÿÿ
+[
+java:S1124*"EReorder the modifiers to comply with the Java Language Specification.(û´¸è
+W	java:S125£"<This block of commented-out lines of code should be removed.(é™©ûÿÿÿÿ
+S
+java:S1197h"8Move the array designator from the variable to the type.(¥Àåòüÿÿÿÿ
+\
+java:S1124³"EReorder the modifiers to comply with the Java Language Specification.(Þççã
+a
+java:S1124°"EReorder the modifiers to comply with the Java Language Specification.(Äý››þÿÿÿÿ
+†
+java:S1130à"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(íÍ‹øÿÿÿÿ
+†
+java:S1130£"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(Ä±ÞÁÿÿÿÿÿ
+†
+java:S1130À"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ó™±¨úÿÿÿÿ
+a
+java:S1124À"EReorder the modifiers to comply with the Java Language Specification.(Þ¯§€ûÿÿÿÿ
+Q
+java:S1161È":Add the "@Override" annotation above this method signature(‘øÈ„
+=
+java:S1659Š"!Declare "len" on a separate line.(Åƒ¥üÿÿÿÿ
+=
+java:S1110ç"!Remove these useless parentheses.(¿Íûýÿÿÿÿ
+n
+java:S3776ñ"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Š£êÓüÿÿÿÿ
+?	java:S108«")Either remove or fill this block of code.(¼šÎÚ
+n
+java:S3776ò"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(§…‚Õüÿÿÿÿ
+I
+java:S1135Ø"2Complete the task associated to this TODO comment.(¥°Õ
+8
+java:S2129"!Remove this "Integer" constructor(€¿°Ú
+;
+java:S1659"Declare "r" on a separate line.(‚ÍÜùøÿÿÿÿ
+†
+java:S1130Ã"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(¯€ŠÚþÿÿÿÿ
+Q
+java:S1191ò"5Use classes from the Java API instead of Sun classes.(û¾ìŒýÿÿÿÿ
+p	java:S115ë"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¡¦Û
+†
+java:S1130ó"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(Ýë¯ûÿÿÿÿ
+O
+java:S1197ì"8Move the array designator from the variable to the type.(ú˜“Ó
+†
+java:S1130Ú"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ºûÞÍúÿÿÿÿ
+D	java:S108°")Either remove or fill this block of code.(é–³öûÿÿÿÿ
+R	java:S125“"<This block of commented-out lines of code should be removed.(‘ÞÌÃ
+=
+java:S1110ê"!Remove these useless parentheses.(Ø¥…½øÿÿÿÿ
+Q
+java:S1161Ñ":Add the "@Override" annotation above this method signature(…Ø±€
+=
+java:S2129‚"!Remove this "Integer" constructor(½›Òþÿÿÿÿ
+†
+java:S1130¿"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ù˜„Ýüÿÿÿÿ
+[
+java:S3358¯	"DExtract this nested ternary operation into an independent statement.(©¾±±
+[
+java:S1134Ø"DTake the required action to fix the issue indicated by this comment.(¥°Õ
+
+java:S1130ò"jRemove the declaration of thrown exception 'java.lang.NumberFormatException' which is a runtime exception.(ðéÐ™
+R	java:S125›"<This block of commented-out lines of code should be removed.(šêÅ˜

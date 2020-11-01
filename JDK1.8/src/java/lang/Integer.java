@@ -12,6 +12,7 @@ import java.lang.annotation.Native;
  * @author  Joseph D. Darcy
  * @since JDK1.0
  * @date 20200324
+ * @author kit
  */
 public final class Integer extends Number implements Comparable<Integer> {
     /**

@@ -6,6 +6,9 @@ import java.util.function.UnaryOperator;
 
 /**
  * ArrayList是一个内部以数组方式实现列表、可以自动扩容的集合。其内部实现有5个重要的属性
+ *
+ * Serializable接口：实现该序列化接口，表明该类可以被序列化，什么是序列化？
+ * 简单的说，就是能够从类变成字节流传输，然后还能从字节流变成原来的类
  * @param <E>
  */
 public class ArrayList<E> extends AbstractList<E>
