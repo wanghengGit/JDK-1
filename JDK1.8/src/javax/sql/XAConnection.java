@@ -39,6 +39,7 @@ import java.sql.*;
  * it is used by a transaction manager working in the middle tier server.
  *
  * @since 1.4
+ * @date 20200716
  */
 
 public interface XAConnection extends PooledConnection {

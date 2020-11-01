@@ -29,6 +29,8 @@ package java.sql;
  * a vendor specific data type.
  *
  * @since 1.8
+ * @author kit
+ * @date 20200815
  */
 public interface SQLType {
 

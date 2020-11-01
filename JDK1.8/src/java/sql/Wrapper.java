@@ -37,6 +37,7 @@ package java.sql;
  * represented by their proxy, to permit direct access to the resource delegates.
  *
  * @since 1.6
+ * @date 20200716
  */
 
 public interface Wrapper {
@@ -58,6 +59,7 @@ public interface Wrapper {
      * @return an object that implements the interface. May be a proxy for the actual implementing object.
      * @throws java.sql.SQLException If no object found that implements the interface
      * @since 1.6
+     * 返回未经过包装的JDBC驱动原始类型实例
      */
         <T> T unwrap(java.lang.Class<T> iface) throws java.sql.SQLException;
 
@@ -75,6 +77,7 @@ public interface Wrapper {
      * @throws java.sql.SQLException  if an error occurs while determining whether this is a wrapper
      * for an object with the given interface.
      * @since 1.6
+     * 用于判断当前实例是否是jdbc驱动中某一类型的包装类型
      */
     boolean isWrapperFor(java.lang.Class<?> iface) throws java.sql.SQLException;
 

@@ -36,6 +36,8 @@ import java.sql.SQLException;
  * (JNDI).
  *
  * @since 1.4
+ * @date 20200716
+ * 支持缓存和复用connection对象
  */
 
 public interface ConnectionPoolDataSource  extends CommonDataSource {

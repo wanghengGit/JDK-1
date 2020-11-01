@@ -40,6 +40,7 @@ package java.sql;
  * @see Connection#createStatement
  * @see ResultSet
  * @date 20200403
+ * sql执行器
  */
 public interface Statement extends Wrapper, AutoCloseable {
 

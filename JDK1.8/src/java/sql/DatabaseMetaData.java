@@ -67,6 +67,7 @@ package java.sql;
  * entries matching the search pattern are returned. If a search pattern
  * argument is set to <code>null</code>, that argument's criterion will
  * be dropped from the search.
+ * @date 20200716
  *
  */
 public interface DatabaseMetaData extends Wrapper {

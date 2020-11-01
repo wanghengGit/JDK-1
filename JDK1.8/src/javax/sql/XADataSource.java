@@ -37,6 +37,8 @@ import java.sql.*;
  * An implementation of {@code XADataSource} must include a public no-arg
  * constructor.
  * @since 1.4
+ * @date 20200716
+ * 支持分布式事务
  */
 
 public interface XADataSource extends CommonDataSource {
