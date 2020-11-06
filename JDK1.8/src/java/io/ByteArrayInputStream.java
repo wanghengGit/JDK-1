@@ -39,6 +39,8 @@ package java.io;
  * @author  Arthur van Hoff
  * @see     java.io.StringBufferInputStream
  * @since   JDK1.0
+ * @author kit
+ * @date 20201106
  */
 public
 class ByteArrayInputStream extends InputStream {
@@ -99,6 +101,7 @@ class ByteArrayInputStream extends InputStream {
      * <code>buf</code>.
      *
      * @param   buf   the input buffer.
+     * 构造器，从一个byte[]创建一个ByteArrayInputStream
      */
     public ByteArrayInputStream(byte buf[]) {
         this.buf = buf;

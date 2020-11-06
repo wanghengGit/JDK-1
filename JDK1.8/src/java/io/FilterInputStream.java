@@ -46,8 +46,9 @@ public
 class FilterInputStream extends InputStream {
     /**
      * The input stream to be filtered.
+     * //装饰器的代码特征：被装饰的对象一般是装饰器的成员变量
      */
-    protected volatile InputStream in;
+    protected volatile InputStream in;//将要被装饰的字节输入流
 
     /**
      * Creates a <code>FilterInputStream</code>
