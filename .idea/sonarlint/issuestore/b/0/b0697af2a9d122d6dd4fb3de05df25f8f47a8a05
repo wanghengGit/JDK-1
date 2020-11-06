@@ -1,0 +1,16 @@
+
+n	java:S115C"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÿýòh
+S
+java:S11975"8Move the array designator from the variable to the type.(ÂÛµÄüÿÿÿÿ
+S
+java:S1197<"8Move the array designator from the variable to the type.(‰Ûà–ûÿÿÿÿ
+`
+java:S1124@"EReorder the modifiers to comply with the Java Language Specification.(Í÷Ì²üÿÿÿÿ
+S
+java:S1197@"8Move the array designator from the variable to the type.(Í÷Ì²üÿÿÿÿ
+S
+java:S1197F"8Move the array designator from the variable to the type.(ÿ¾ðèùÿÿÿÿ
+n
+java:S3038j"S"close" is defined in the "Closeable" interface and can be removed from this class.(Îöò¹úÿÿÿÿ
+`
+java:S1124j"EReorder the modifiers to comply with the Java Language Specification.(Îöò¹úÿÿÿÿ

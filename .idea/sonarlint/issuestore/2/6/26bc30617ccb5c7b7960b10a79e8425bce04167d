@@ -1,0 +1,51 @@
+
+P
+java:S1191&"5Use classes from the Java API instead of Sun classes.(°¿”Œúÿÿÿÿ
+w
+java:S1192€"`Define a constant instead of duplicating this literal "Unable to create temporary file" 3 times.(Š¢³Û
+n
+java:S1192é"RDefine a constant instead of duplicating this literal "Invalid file path" 3 times.(¢°øÛúÿÿÿÿ
+t
+java:S1192‰"XDefine a constant instead of duplicating this literal "getFileSystemAttributes" 3 times.(¹ŸÈÿÿÿÿÿ
+a	java:S112â"FDefine and throw a dedicated exception instead of using a generic one.(åÇóèşÿÿÿÿ
+\	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Âğğ
+n
+java:S3077™"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(İˆ²‹
+p	java:S115Ø"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ìÓªğ
+u	java:S115ß"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(§†æ§üÿÿÿÿ
+u	java:S115ë"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’½½Âûÿÿÿÿ
+p	java:S115ò"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘÷½á
+O
+java:S2675ö"3Remove the "synchronized" keyword from this method.(¤ğ¹òÿÿÿÿÿ
+E
+java:S2786«")Remove this redundant "static" qualifier.(…á£¥ıÿÿÿÿ
+8
+java:S1116«"Remove this empty statement.(…á£¥ıÿÿÿÿ
+L
+java:S1133«"5Do not forget to remove this deprecated code someday.(ØÚÏ
+_
+java:S1123ª"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+=
+java:S1168á"&Return an empty array instead of null.(¥¹ï
+O
+java:S1197„	"8Move the array designator from the variable to the type.(¨ùï¥
+B
+java:S1168¹	"&Return an empty array instead of null.(½ëÂüÿÿÿÿ
+S
+java:S1117»	"7Rename "fs" which hides the field declared at line 157.(”¾™’ıÿÿÿÿ
+O
+java:S1197á	"8Move the array designator from the variable to the type.(À¿¬¨
+B
+java:S1168â	"&Return an empty array instead of null.(½ëÂüÿÿÿÿ
+O
+java:S1197‡
+"8Move the array designator from the variable to the type.(À¿¬¨
+B
+java:S1168ˆ
+"&Return an empty array instead of null.(½ëÂüÿÿÿÿ
+_
+java:S4201À"IRemove this unnecessary null check; "instanceof" returns false for nulls.(Û…àY
+P
+java:S1117ş"9Rename "path" which hides the field declared at line 166.(ş»¯Š
+\
+java:S1124™"EReorder the modifiers to comply with the Java Language Specification.(İˆ²‹

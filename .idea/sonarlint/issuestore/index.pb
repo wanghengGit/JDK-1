@@ -373,3 +373,17 @@ P
 JDK1.8/src/note,f\e\fe15ae64302121aa80e27dd564f1716449d4287e
 N
 JDK1.8/src/java/util/note_util,c\1\c19671b95227ee909f129171d761237f190c7824
+_
+/JDK1.8/src/java/lang/annotation/Repeatable.java,e\6\e6349f3aeb1c32339a73a82170afa1e64b00c7e1
+S
+#JDK1.8/src/java/io/InputStream.java,3\4\341be46d1f3b810e6ca828e114bc685e7435bb4b
+T
+$JDK1.8/src/java/io/OutputStream.java,1\c\1c3e7cdac0db2961ad19fc1aeb1f04dce674628f
+N
+JDK1.8/src/java/io/Reader.java,b\0\b0697af2a9d122d6dd4fb3de05df25f8f47a8a05
+N
+JDK1.8/src/java/io/Writer.java,6\b\6b7b7a51a6f0b6dd21068a8a0fb4cd0e71468346
+L
+JDK1.8/src/java/io/File.java,2\6\26bc30617ccb5c7b7960b10a79e8425bce04167d
+J
+JDK1.8/src/java/io/note_io,9\f\9f6ce74440f6100f22f99b020a34714a847d2e1f
