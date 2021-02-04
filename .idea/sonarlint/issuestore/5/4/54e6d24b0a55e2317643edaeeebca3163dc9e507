@@ -1,0 +1,33 @@
+
+p
+java:S2095Ë"MUse try-with-resources or close this "DirectoryStream" in a "finally" clause.(ÚÊ˜îúÿÿÿÿ8ŠËîâÙ.
+S
+java:S1191Œ"5Use classes from the Java API instead of Sun classes.(ÃŒÍ£8ŠËîâÙ.
+O
+java:S1612ü",Replace this lambda with a method reference.(ÿ¸˜•úÿÿÿÿ8ŠËîâÙ.
+O
+java:S1612î",Replace this lambda with a method reference.(ÿ¸˜•úÿÿÿÿ8ŠËîâÙ.
+F
+java:S1604‰"(Make this anonymous inner class a lambda(‹’äÈ8ŠËîâÙ.
+F
+java:S1604Š"(Make this anonymous inner class a lambda(¼ø‡á8ŠËîâÙ.
+F
+java:S1604“"(Make this anonymous inner class a lambda(Â²Ñˆ8ŠËîâÙ.
+|
+java:S2293—"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØäÍÿÿÿÿÿ8ŠËîâÙ.
+u
+java:S3776İ"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(©¬Àúÿÿÿÿ8ŠËîâÙ.
+D
+java:S1181—"!Catch Exception instead of Error.(ü¬©îÿÿÿÿÿ8ŠËîâÙ.
+H
+java:S1181"%Catch Exception instead of Throwable.(ôÃïåıÿÿÿÿ8ŠËîâÙ.
+K	java:S108")Either remove or fill this block of code.(ôÃïåıÿÿÿÿ8ŠËîâÙ.
+D
+java:S1181ı"!Catch Exception instead of Error.(ü¬©îÿÿÿÿÿ8ŠËîâÙ.
+D
+java:S1181ï"!Catch Exception instead of Error.(ü¬©îÿÿÿÿÿ8ŠËîâÙ.
+D
+java:S1181¥"!Catch Exception instead of Error.(ü¬©îÿÿÿÿÿ8ŠËîâÙ.
+H
+java:S1181«"%Catch Exception instead of Throwable.(ôÃïåıÿÿÿÿ8ŠËîâÙ.
+K	java:S108«")Either remove or fill this block of code.(ôÃïåıÿÿÿÿ8ŠËîâÙ.

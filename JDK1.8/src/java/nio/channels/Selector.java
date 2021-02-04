@@ -201,6 +201,8 @@ import java.util.Set;
  *
  * @see SelectableChannel
  * @see SelectionKey
+ * @author kit
+ * @date 20201106
  */
 
 public abstract class Selector implements Closeable {

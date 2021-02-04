@@ -85,6 +85,8 @@ import java.util.stream.StreamSupport;
  * file system provider to perform the file operations.
  *
  * @since 1.7
+ * @author kit
+ * @date 20201106
  */
 
 public final class Files {

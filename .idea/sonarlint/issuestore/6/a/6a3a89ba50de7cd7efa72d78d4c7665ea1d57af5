@@ -1,0 +1,39 @@
+
+P
+java:S1191,"5Use classes from the Java API instead of Sun classes.(ˆ¼í¥ıÿÿÿÿ
+E
+java:S1066®"/Merge this if statement with the enclosing one.(£ã¦
+a	java:S112º"FDefine and throw a dedicated exception instead of using a generic one.(úæœùÿÿÿÿ
+a	java:S112©"FDefine and throw a dedicated exception instead of using a generic one.(åÇóèşÿÿÿÿ
+a	java:S112Í"FDefine and throw a dedicated exception instead of using a generic one.(åÇóèşÿÿÿÿ
+o	java:S135±"YReduce the total number of break and continue statements in this loop to use at most one.(»³½‹
+D
+java:S1604—"(Make this anonymous inner class a lambda(ÉÂÅºøÿÿÿÿ
+D
+java:S1604¯"(Make this anonymous inner class a lambda(†úø»ûÿÿÿÿ
+?
+java:S1604½"(Make this anonymous inner class a lambda(°äƒš
+B
+java:S3077Å"&Use an "AtomicReferenceArray" instead.( £Êõùÿÿÿÿ
+=
+java:S3077Æ"&Use an "AtomicReferenceArray" instead.(¦æÔ…
+n
+java:S3077Ï"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(ÏËì
+1
+java:S5164€"Call "remove()" on "gate".(à˜¼‚
+h
+java:S3776«"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ö®§8
+V
+java:S1161ø":Add the "@Override" annotation above this method signature(¦³üëûÿÿÿÿ
+p
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(îà€®
+=
+java:S5164¥"&Use "remove()" instead of "set(null)".(Ñ„ø–
+u
+java:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(şİ†ëıÿÿÿÿ
+V
+java:S4719å":Replace Charset.forName() call with StandardCharsets.UTF_8(Ş«ÓÊÿÿÿÿÿ
+p
+java:S2293š"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÍÖ¤ô
+o
+java:S3012œ"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¨û 

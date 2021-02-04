@@ -1,0 +1,15 @@
+
+s
+java:S3038Ş"\"read" is defined in the "SeekableByteChannel" interface and can be removed from this class.(‹ş€
+|
+java:S3038³"`"position" is defined in the "SeekableByteChannel" interface and can be removed from this class.(İ£—‚ÿÿÿÿÿ
+u
+java:S2293Ï"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØäÍÿÿÿÿÿ
+y
+java:S3038ƒ"]"write" is defined in the "SeekableByteChannel" interface and can be removed from this class.(–Ê“±ùÿÿÿÿ
+s
+java:S3038İ"\"size" is defined in the "SeekableByteChannel" interface and can be removed from this class.(€È¼
+z
+java:S3038‘"^"write" is defined in the "GatheringByteChannel" interface and can be removed from this class.(‰Ó°¸úÿÿÿÿ
+z
+java:S3038é"^"read" is defined in the "ScatteringByteChannel" interface and can be removed from this class.(øÅæ¼ıÿÿÿÿ

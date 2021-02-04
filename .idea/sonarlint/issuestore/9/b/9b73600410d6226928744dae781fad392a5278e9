@@ -1,0 +1,35 @@
+
+n
+java:S3776É"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¦ó°Ÿøÿÿÿÿ
+U
+java:S1128*":Remove this unused import 'sun.nio.ch.ChannelInputStream'.(Û•‰­ùÿÿÿÿ
+T
+java:S1197¸"8Move the array designator from the variable to the type.(‚ÂÇŠûÿÿÿÿ
+i
+java:S3776“"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Âìì€
+P
+java:S1191*"5Use classes from the Java API instead of Sun classes.(Û•‰­ùÿÿÿÿ
+N
+java:S1117å"7Rename "bb" which hides the field declared at line 205.(İ¸¼
+V
+java:S1161³":Add the "@Override" annotation above this method signature(æÔ«÷şÿÿÿÿ
+o
+java:S1450¹"SRemove the "open" field and declare it as a local variable in the relevant methods.(èßøÿÿÿÿ
+N
+java:S1117­"7Rename "bb" which hides the field declared at line 279.(İ¸¼
+D
+java:S1068î"(Remove this unused "open" private field.(èßøÿÿÿÿ
+N
+java:S1117©"7Rename "bb" which hides the field declared at line 149.(İ¸¼
+[	java:S112R"FDefine and throw a dedicated exception instead of using a generic one.( À¡©
+D
+java:S1068¹"(Remove this unused "open" private field.(èßøÿÿÿÿ
+T
+java:S1197í"8Move the array designator from the variable to the type.(‚ÂÇŠûÿÿÿÿ
+V
+java:S1161 ":Add the "@Override" annotation above this method signature(ºÁîıÿÿÿÿ
+o	java:S135ú"YReduce the total number of break and continue statements in this loop to use at most one.(€¬Ô
+o
+java:S1450î"SRemove the "open" field and declare it as a local variable in the relevant methods.(èßøÿÿÿÿ
+E
+java:S1940ÿ")Use the opposite operator ("<=") instead.(‡Ê¦Ùşÿÿÿÿ
